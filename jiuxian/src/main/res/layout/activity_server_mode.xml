@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/server_mode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_marginTop="24.0dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/develop"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开发环境"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <RadioButton
+                    android:id="@+id/develop_new"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开发环境新"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <RadioButton
+                    android:id="@+id/test"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:text="测试环境"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <RadioButton
+                    android:id="@+id/test_new"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:text="测试环境新"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <RadioButton
+                    android:id="@+id/test_new_cloud"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:text="测试环境新https133"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <RadioButton
+                    android:id="@+id/test_new_34"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:text="测试环境新https34"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <RadioButton
+                    android:id="@+id/pre"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:text="预发布环境"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <RadioButton
+                    android:id="@+id/pre_new"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:text="预发布环境KDDI"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <RadioButton
+                    android:id="@+id/release_test"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:text="灰度环境"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <RadioButton
+                    android:id="@+id/release"
+                    style="@style/checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:text="正式环境"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:text="打开网址"
+                android:textColor="@color/gray_66"
+                android:textSize="16.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <EditText
+                    android:id="@+id/url"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:paddingBottom="2.0dip"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:paddingTop="2.0dip"
+                    android:textColor="@color/gray_66"
+                    android:textSize="16.0dip" />
+
+                <Button
+                    android:id="@+id/open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:background="@drawable/selector_button_round_red"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:text="打开网址"
+                    android:textColor="@color/white"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_marginTop="24.0dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_button_square_gray"
+                    android:text="取消"
+                    android:textColor="@color/white"
+                    android:textSize="16.0dip" />
+
+                <Button
+                    android:id="@+id/restart"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_button_square_red"
+                    android:text="设置重启"
+                    android:textColor="@color/white"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/channel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:textColor="@color/gray_66"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@+id/build_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:textColor="@color/gray_66"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

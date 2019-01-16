@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/promotion_praise_item"
+    android:layout_width="84.0dip"
+    android:layout_height="106.0dip">
+
+    <ImageView
+        android:id="@+id/promotion_praise_img"
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_marginTop="1.0dip" />
+
+    <ImageView
+        android:id="@+id/promotion_praise_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/community_promotion_praise_bg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_marginTop="2.0dip"
+            android:src="@drawable/white_circle_bg" />
+
+        <TextView
+            android:id="@+id/promotion_prize_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center"
+            android:textColor="@color/gray_66"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/promotion_praise_level"
+        android:layout_width="wrap_content"
+        android:layout_height="24.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/black_25"
+        android:textSize="10.0sp" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_video_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/default_iamge" />
+
+    <TextView
+        android:id="@+id/tv_video_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/size_13sp"
+        tools:text="名称" />
+
+    <TextView
+        android:id="@+id/tv_video_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/size_13sp"
+        tools:text="3分41秒" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_video_thumnum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/size_12sp"
+            tools:text="XX人查看" />
+
+        <TextView
+            android:id="@+id/tv_video_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_reward_n"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/color_ffffff"
+            android:textSize="12sp"
+            tools:text="关注" />
+    </LinearLayout>
+</LinearLayout>

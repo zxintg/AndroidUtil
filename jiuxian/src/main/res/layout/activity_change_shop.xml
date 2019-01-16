@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="358.0dip"
+    android:background="@color/white"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="15.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingTop="15.0dip">
+
+        <TextView
+            android:id="@+id/change_shop_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/textview_lightgray"
+            android:textSize="15.0dip" />
+
+        <ImageView
+            android:id="@+id/change_shop_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:src="@drawable/buynow_close" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/change_shop_product"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" />
+</LinearLayout>

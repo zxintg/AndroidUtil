@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="82.0dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="14.0dip"
+    android:paddingTop="14.0dip">
+
+    <FrameLayout
+        android:layout_width="54.0dip"
+        android:layout_height="54.0dip">
+
+        <ImageView
+            android:id="@+id/product_icon"
+            android:layout_width="54.0dip"
+            android:layout_height="54.0dip"
+            android:background="@drawable/bg_square_stroke_gray"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/item_state"
+            android:layout_width="fill_parent"
+            android:layout_height="16.0dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_square_stroke_translucent"
+            android:gravity="center"
+            android:text="@string/cart_item_out_of_stock"
+            android:textColor="@color/white"
+            android:textSize="10.0dip"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.0dip"
+            android:maxLines="2"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/product_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="14.0dip"
+            android:singleLine="true"
+            android:textColor="@color/red_fc"
+            android:textSize="12.0dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

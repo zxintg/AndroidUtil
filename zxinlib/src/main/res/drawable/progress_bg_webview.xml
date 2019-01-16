@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- background -->
+    <item
+        android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_ffffff"/>
+        </shape>
+    </item>
+    <!-- progress进度 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="@color/color_ffae12"/>
+                <!--<gradient
+                    android:endColor="@color/blue"
+                    android:startColor="@color/white"/>-->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

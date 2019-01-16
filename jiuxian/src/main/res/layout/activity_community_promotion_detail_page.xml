@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/detail_page_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:right_button_image="@drawable/icon_title_share_transparent"
+        app:right_button_size="13px"
+        app:title_text="标题"
+        app:show_left_button="true"
+        app:show_right_button="true" />
+</RelativeLayout>

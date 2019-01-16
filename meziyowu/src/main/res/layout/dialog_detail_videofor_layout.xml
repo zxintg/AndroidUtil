@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bevip_privilege_layout_bg">
+
+    <ImageView
+        android:id="@+id/dialog_detail_videofor_shutdown_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/shutdown_gray"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dialog_detail_videofor_hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50.0dip"
+        android:layout_marginTop="50.0dip"
+        android:gravity="center"
+        android:text="@string/detail_dowmload_goto_videofor"
+        android:textColor="@color/detail_hint_color"
+        android:textSize="15.0sp" />
+
+    <View
+        android:id="@+id/dialog_detail_division"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/dialog_detail_videofor_hint_tv"
+        android:background="@color/bevip_dialog_division_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51.0dip"
+        android:layout_below="@+id/dialog_detail_division"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_detail_videofor_return_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/detail_return"
+            android:textColor="@color/detail_video_num_color"
+            android:textSize="17.0sp" />
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="@color/bevip_dialog_division_bg" />
+
+        <TextView
+            android:id="@+id/dialog_detail_videofor_gotodownload_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/detail_gotodownload"
+            android:textColor="@color/common_bright"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+</RelativeLayout>

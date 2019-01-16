@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ab_user_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_00000000">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/iv_user_ivImage"
+                android:layout_width="fill_parent"
+                android:layout_height="244.0dip"
+                android:background="?colorPrimary"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="244.0dip"
+                android:background="#66000000"
+                android:fitsSystemWindows="true" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/head_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50.0dip">
+
+                    <ImageView
+                        android:id="@+id/image_user_info_head"
+                        android:layout_width="68.0dip"
+                        android:layout_height="68.0dip"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_user_v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/image_user_info_head"
+                        android:layout_alignRight="@+id/image_user_info_head"
+                        android:src="@drawable/icon_v"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_atten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/head_bg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14.0dip"
+                    android:background="@drawable/bg_atten"
+                    android:drawableLeft="@drawable/icon_atten"
+                    android:drawablePadding="6.0dip"
+                    android:text="1.6万人已关注"
+                    android:textColor="@color/white"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="86.0dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layout_follow"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="城市"
+                            android:textColor="@color/white_p"
+                            android:textSize="11.0sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7.0dip"
+                            android:drawablePadding="3.5dip"
+                            android:gravity="center"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dip"
+                        android:layout_height="28.0dip"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_gift"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="三围"
+                            android:textColor="@color/white_p"
+                            android:textSize="11.0sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_bwh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7.0dip"
+                            android:drawablePadding="3.5dip"
+                            android:gravity="center"
+                            android:text="88-60-88"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dip"
+                        android:layout_height="28.0dip"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_level"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="身高"
+                            android:textColor="@color/white_p"
+                            android:textSize="11.0sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5.0dip"
+                            android:drawablePadding="3.5dip"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/appbar_layout_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin">
+
+                <com.zxin.zxinlib.view.CommonCrosswiseBar
+                    android:id="@+id/ccb_jdxsxp_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bar_background="@color/color_00000000"
+                    app:isTopBar="true"
+                    app:left_button_image="@drawable/back_pressed"
+                    app:left_button_size="20px"
+                    app:show_bar_line="false"
+                    app:show_left_button="true"
+                    app:title_text="详情"
+                    app:title_textColor="@color/color_ffffff"
+                    app:title_textSize="@dimen/size_18px"
+                    app:view_alpha="0"
+                    app:view_alpha_showType="TitleView" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <View style="@style/line_style" />
+
+        <com.zxin.zxinlib.view.PagerSlidingTabStrip
+            android:id="@+id/pst_user_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/size_14sp"
+            app:pstsDividerColor="@color/color_00000000"
+            app:pstsIndicatorColor="@color/red"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsSelectTabTextColor="@color/color_333333"
+            app:pstsSelectTabTextSize="@dimen/size_16sp"
+            app:pstsShouldExpand="true"
+            app:pstsTabBackground="@color/color_ffffff"
+            app:pstsTextAllCaps="false"
+            app:pstsUnderlineColor="@color/line_color"
+            app:pstsUnderlineHeight="0.5dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_user_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>

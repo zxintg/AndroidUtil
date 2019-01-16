@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="180.0dip"
+    android:background="@color/not_club_head_bg_color"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/li_my_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <RelativeLayout
+            android:id="@+id/login_portrait_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40.0dip"
+            android:background="@drawable/icon_club_login_header_bg"
+            android:padding="2.0dip">
+
+            <ImageView
+                android:id="@+id/login_Portrait"
+                android:layout_width="64.0dip"
+                android:layout_height="64.0dip"
+                android:src="@drawable/icon_club_login_header" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fill_up_profile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="58.0dip"
+            android:layout_marginTop="30.0dip"
+            android:src="@drawable/mine_fill_up_profile"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="64.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="40.0dip"
+            android:layout_toRightOf="@+id/login_portrait_layout"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nikeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#fff2d398"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/rankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#fff2d398"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/club_detail_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/club_bottom_bg" />
+
+    <TextView
+        android:id="@+id/mebmer_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="145.0dip"
+        android:drawablePadding="4.0dip"
+        android:drawableRight="@drawable/icon_circle_silver_arrow"
+        android:text="@string/click_to_obtain_character"
+        android:textColor="#ff94640f"
+        android:textSize="13.0dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="30.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="6.0dip"
+            android:layout_height="2.0dip"
+            android:background="#ff9a6b18" />
+
+        <TextView
+            android:id="@+id/mebmer_privilege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:text="@string/six_power_before_character"
+            android:textColor="#ff94640f"
+            android:textSize="14.0dip" />
+
+        <View
+            android:layout_width="6.0dip"
+            android:layout_height="2.0dip"
+            android:background="#ff9a6b18" />
+    </LinearLayout>
+</RelativeLayout>

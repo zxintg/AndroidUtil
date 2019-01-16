@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_ui_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/order_detail_showall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="10.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/order_detail_showall_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:drawablePadding="12.0dip"
+            android:drawableRight="@drawable/icon_open"
+            android:text="@string/order_show_all"
+            android:textColor="@color/gray_99"
+            android:textSize="12.0dip" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/order_detail_showpart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="10.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:drawablePadding="12.0dip"
+            android:drawableRight="@drawable/icon_close"
+            android:text="@string/order_show_part"
+            android:textColor="@color/gray_99"
+            android:textSize="12.0dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_payment_way"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <RadioGroup
+            android:id="@+id/pay_way_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/pay_way_online"
+                style="@style/cart_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/payment_info_pay_online"
+                android:textColor="@color/black_25"
+                android:textSize="12.0dip"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/pay_way_offline"
+                style="@style/cart_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="34.0dip"
+                android:drawablePadding="10.0dip"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/payment_info_pay_offline"
+                android:textColor="@color/black_25"
+                android:textSize="12.0dip"
+                android:visibility="gone" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="12.0dip"
+        android:background="@color/comm_bg_line" />
+
+    <LinearLayout
+        android:id="@+id/order_footer_invoice_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="14.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="16.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:singleLine="true"
+            android:text="@string/order_invoice"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_footer_invoice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/black_25"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.0dip"
+            android:src="@drawable/icon_jump" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invoice_info_number_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/bg_invoice_info" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_footer_invoice_numberLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="32.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:singleLine="true"
+            android:text="@string/order_number"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_footer_invoice_number"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/black_25"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_footer_coupons_info"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/order_coupons"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/order_footer_coupons_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:background="@drawable/user_bg_image"
+            android:gravity="center"
+            android:paddingLeft="2.0dip"
+            android:text="使用2张"
+            android:textColor="@color/red_fc"
+            android:textSize="12.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/order_footer_coupons_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:gravity="center"
+            android:paddingLeft="2.0dip"
+            android:text="无可用优惠券"
+            android:textColor="@color/textview_black"
+            android:textSize="13.0dip"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/order_footer_coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:textColor="@color/black_25"
+            android:textSize="12.0dip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.0dip"
+            android:src="@drawable/icon_jump" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="12.0dip"
+        android:background="@color/comm_bg_line" />
+
+    <LinearLayout
+        android:id="@+id/order_footer_cashback_info"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_cashback"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/order_footer_cashback_icon"
+            style="@style/tag_red"
+            android:text="@string/order_cashback" />
+
+        <TextView
+            android:id="@+id/order_footer_cashback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:textColor="@color/black_25"
+            android:textSize="12.0dip" />
+
+        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+            android:id="@+id/order_footer_cashback_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.0dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="12.0dip"
+        android:background="@color/comm_bg_line" />
+
+    <LinearLayout
+        android:id="@+id/order_footer_balance_info"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_balance"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/order_footer_balance_icon"
+            style="@style/tag_red"
+            android:text="@string/order_balance" />
+
+        <TextView
+            android:id="@+id/order_footer_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:textColor="@color/black_25"
+            android:textSize="12.0dip" />
+
+       <!-- <com.zxin.zxinlib.view.switchbutton.SwitchButton
+            android:id="@+id/order_footer_balance_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.0dip" />-->
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="10.0dip">
+
+        <EditText
+            android:id="@+id/order_footer_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_round_stroke_gray"
+            android:gravity="top"
+            android:hint="@string/order_message_hint"
+            android:lines="2"
+            android:maxLines="4"
+            android:padding="10.0dip"
+            android:textColor="@color/black_25"
+            android:textColorHint="@color/gray_99"
+            android:textSize="14.0dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/order_giftorder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/order_giftorder_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="7.0dip">
+
+            <CheckBox
+                android:id="@+id/order_giftorder_cb"
+                style="@style/checkbox_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5.0dip"
+                android:text="@string/order_gift"
+                android:textColor="@color/textview_gray"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/yellow_ffe" />
+
+        <TextView
+            android:id="@+id/order_giftorder_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red_fff4"
+            android:paddingBottom="5.0dip"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="15.0dip"
+            android:paddingTop="5.0dip"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/red_fc"
+            android:textSize="12.0dip" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/yellow_ffe" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip">
+
+        <LinearLayout
+            android:id="@+id/order_total_price_info"
+            android:layout_width="fill_parent"
+            android:layout_height="42.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_total_price"
+                android:textColor="@color/gray_66"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/order_total_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/red_fc"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="12.0dip"
+            android:background="@color/comm_bg_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/order_price_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0.0dip"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/transparent"
+        android:minHeight="40.0dip" />
+</LinearLayout>

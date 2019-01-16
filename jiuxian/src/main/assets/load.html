@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width;initial-scale=1.0;maximum-scale=1.0;" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+    <title>load.html</title>
+</head>
+
+<script type="text/javascript">
+
+function doHideAction(id) {
+	document.getElementById(id).value = passGuardManager.getText(id);
+}
+
+function showKeyBoard(id) {
+	if (!passGuardManager.hasPassGuard(id)) {
+		passGuardManager.newPassGuard(id);
+		//passGuardManager.setCipherKey(id, "abcdefghijklmnopqrstuvwxyz123456");
+		//passGuardManager.setPublicKey(id, "3081890281810092d9d8d04fb5f8ef9b8374f21690fd46fdbf49b40eeccdf416b4e2ac2044b0cfe3bd67eb4416b26fd18c9d3833770a526fd1ab66a83ed969af74238d6c900403fc498154ec74eaf420e7338675cad7f19332b4a56be4ff946b662a3c2d217efbe4dc646fb742b8c62bfe8e25fd5dc59e7540695fa8b9cd5bfd9f92dfad009d230203010001");
+		passGuardManager.setNumberORLetterPad(id,true);
+		//passGuardManager.useNumberPad(id,false);
+		passGuardManager.setMaxLength(id, 20);
+		passGuardManager.setInputRegex(id, "[a-zA-Z0-9@_\\.]");
+		passGuardManager.setMatchRegex(id, "^[a-zA-Z]+[0-9]+$");
+		passGuardManager.initPassGuardKeyBoard(id);
+	}
+	passGuardManager.StartPassGuardKeyBoard(id);
+	document.getElementById(id).value = passGuardManager.getText(id);
+}
+
+function submit() {
+	//document.getElementById("output").innerHTML = "cardNo:" + passGuardManager.getOutput1('cardNo') + "selpwd:" + passGuardManager.getOutput1('selpwd') + "\n";
+	//document.getElementById("output").innerHTML = "cardNo:" + passGuardManager.getOutput0('cardNo', "3081890281810092d9d8d04fb5f8ef9b8374f21690fd46fdbf49b40eeccdf416b4e2ac2044b0cfe3bd67eb4416b26fd18c9d3833770a526fd1ab66a83ed969af74238d6c900403fc498154ec74eaf420e7338675cad7f19332b4a56be4ff946b662a3c2d217efbe4dc646fb742b8c62bfe8e25fd5dc59e7540695fa8b9cd5bfd9f92dfad009d230203010001","abcdefghijklmnopqrstuvwxyz111456"); 
+	document.getElementById("output").innerHTML = "cardNo:" + passGuardManager.getOutput1('cardNo',"abcdefghijklmnopqrstuvwxyz111456"); 
+}
+
+  
+</script>
+
+<body>
+
+   <table  align="center" border="0"  border="1"   cellspacing="1"   cellpadding="0" cellspacing="0">
+     <tr>
+      <td>account</td><td><input type="text" name="cardNo" id="cardNo" value="" onfocus="blur()" onclick="showKeyBoard('cardNo')"/></td>
+     </tr>
+	 </br></br>
+      <tr>
+      <td>password</td><td><input type="text" name="selpwd" id="selpwd"  onfocus="blur()" onclick="showKeyBoard('selpwd')" value=""/></td><td></td>
+     </tr>
+     </tr>
+
+     </br></br>
+     <tr >
+      <td>identifying</td><td><input type="text" name="addition" id="addition"  onfocus="blur()" onclick="showKeyBoard('addition')" value=""/></td>
+     </tr>
+	 <tr><td></td><td align="center"><input type="button" value="login" onclick="submit()" /></td><td></td></tr>
+	 <div id="output" />
+   </table>
+</body>
+</html>

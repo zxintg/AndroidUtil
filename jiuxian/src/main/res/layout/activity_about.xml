@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="@string/about_title"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <!--<com.tencent.qcloud.ui.LineControllerView
+        android:id="@+id/imsdk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        app:name="@string/about_imsdk" />
+
+    <com.tencent.qcloud.ui.LineControllerView
+        android:id="@+id/qalsdk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:name="@string/about_qalsdk" />
+
+    <com.tencent.qcloud.ui.LineControllerView
+        android:id="@+id/tlssdk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:name="@string/about_tlssdk" />
+
+    <com.tencent.qcloud.ui.LineControllerView
+        android:id="@+id/env"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:canNav="true"
+        app:name="@string/about_env" />
+
+    <com.tencent.qcloud.ui.LineControllerView
+        android:id="@+id/logLevel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:canNav="true"
+        app:isBottom="true"
+        app:name="@string/about_log" />-->
+</LinearLayout>

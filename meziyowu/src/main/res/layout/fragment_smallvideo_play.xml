@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_333333"
+    android:tag="layout/fragment_smallvideo_play_0">
+
+    <RelativeLayout
+        android:id="@+id/relative_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:tag="binding_1">
+
+        <!--<com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/cloudVideoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" />-->
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/top_manu"
+            layout="@layout/banner_play_video" />
+
+        <LinearLayout
+            android:id="@+id/linear_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60.0dip"
+            android:layout_marginRight="6.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip">
+
+                <LinearLayout
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/video_play_head_bg"
+                    android:padding="1.0dip">
+
+                    <ImageView
+                        android:id="@+id/iv_headIcon"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_follow_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35.0dip"
+                    android:src="@mipmap/play_jia"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_follow_v_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35.0dip"
+                    android:src="@mipmap/play_gou"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15.0dip"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/play_fenxiang" />
+
+                <TextView
+                    android:id="@+id/tv_share_video_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5.0dip"
+                    android:text=""
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="礼包详情"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/dim90"
+        android:layout_marginTop="@dimen/dim100">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/gift_logo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:viewAspectRatio="1.6" />
+
+            <TextView
+                android:id="@+id/gift_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim96"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dim34"
+                android:text="测试测试"
+                android:textColor="@color/order_radio_bg"
+                android:textSize="@dimen/dim30" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim70"
+                android:layout_marginTop="@dimen/dim20"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_spree_time"
+                        android:drawablePadding="@dimen/dim10"
+                        android:paddingLeft="@dimen/dim34"
+                        android:text="有效期："
+                        android:textSize="@dimen/dim25" />
+
+                    <TextView
+                        android:id="@+id/createtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/dim10"
+                        android:lines="1"
+                        android:text="20303-24-324"
+                        android:textSize="@dimen/dim20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim1"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_spree_phone"
+                        android:drawablePadding="@dimen/dim10"
+                        android:paddingLeft="@dimen/dim34"
+                        android:text="咨询电话："
+                        android:textSize="@dimen/dim25" />
+
+                    <TextView
+                        android:id="@+id/explain_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/dim10"
+                        android:lines="1"
+                        android:text="\ 18729382981"
+                        android:textSize="@dimen/dim20" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim70"
+                android:layout_marginTop="@dimen/dim1"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_spree_address"
+                    android:drawablePadding="@dimen/dim10"
+                    android:paddingLeft="@dimen/dim34"
+                    android:text="兑换地址："
+                    android:textSize="@dimen/dim25" />
+
+                <TextView
+                    android:id="@+id/exchange_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dim10"
+                    android:text="西安换成哪哪路"
+                    android:textSize="@dimen/dim25" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim70"
+                android:layout_marginTop="@dimen/dim20"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dim10"
+                    android:paddingLeft="@dimen/dim34"
+                    android:text="兑换码"
+                    android:textSize="@dimen/dim25" />
+
+                <TextView
+                    android:id="@+id/tv_code_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dim34"
+                    android:drawablePadding="@dimen/dim10"
+                    android:text="sss"
+                    android:textSize="@dimen/dim25" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/qrcode"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim60"
+                android:layout_marginTop="@dimen/dim1"
+                android:background="@color/white"
+                android:drawablePadding="@dimen/dim10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dim34"
+                android:text="\ 383739947477"
+                android:textSize="@dimen/dim25" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim260"
+                android:layout_marginTop="@dimen/dim1"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/qrcode_img"
+                    android:layout_width="@dimen/dim220"
+                    android:layout_height="@dimen/dim220" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim83"
+                android:layout_marginTop="@dimen/dim20"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="用户须知" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim3"
+                android:background="@color/order_radio_bg" />
+
+            <com.zxin.zxinlib.view.X5WebView
+                android:id="@+id/tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dim50"
+                android:paddingLeft="@dimen/dim34"
+                android:paddingRight="@dimen/dim34"
+                android:paddingTop="@dimen/dim20" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim98"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dim20"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dim10"
+            android:paddingLeft="@dimen/dim34"
+            android:text="兑换码" />
+
+        <TextView
+            android:id="@+id/tv_qrcode"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim96"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dim34"
+            android:textColor="@color/order_radio_bg"
+            android:textSize="@dimen/dim30" />
+    </LinearLayout>
+</LinearLayout>

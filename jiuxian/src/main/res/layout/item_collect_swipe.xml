@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="84.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/red_fc"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/delete"
+                style="@style/textview_14"
+                android:text="@string/cancel_collect"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mCollectItemLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_listview_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mCollectItemCheckBox"
+                style="@style/checkbox_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.0dip"
+                android:gravity="center"
+                android:padding="5.0dip"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:layout_width="120.0dip"
+                android:layout_height="120.0dip">
+
+                <ImageView
+                    android:id="@+id/mCollectItemImage"
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_launcher" />
+
+                <TextView
+                    android:id="@+id/mStockoutTextView"
+                    style="@style/text_understock_style"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mOnSelTextView"
+                    style="@style/text_understock_style"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="15.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mCollectItemNameText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textColor="@color/black_25"
+                    android:textSize="14.0dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="24.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14.0dip"
+                            android:layout_weight="1.0"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/mCollectItemPriceText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red_fc"
+                                android:textSize="14.0dip" />
+
+                            <LinearLayout
+                                android:id="@+id/mCollectItemClubll"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="6.0dip"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/mCollectItemClubPriceText"
+                                    style="@style/textview_12"
+                                    android:maxLines="1" />
+
+                                <ImageView
+                                    android:id="@+id/mClubImg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="3.0dip"
+                                    android:src="@drawable/icon_club"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0.0"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/mAddToCartImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/icon_active_add_to_cart" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

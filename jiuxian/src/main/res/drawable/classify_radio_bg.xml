@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/icon_goods_show_as_grid" android:state_checked="false"/>
+    <item android:drawable="@drawable/icon_goods_show_as_list" android:state_checked="true"/>
+
+</selector>

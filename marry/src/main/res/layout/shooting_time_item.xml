@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim70"
+        android:layout_marginLeft="@dimen/dim16"
+        android:layout_marginRight="@dimen/dim16"
+        android:gravity="center"
+        android:src="@drawable/num1" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="@dimen/dim200"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dim8"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_d" />
+
+    <TextView
+        android:id="@+id/tv_shooting_type"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3.0"
+        android:gravity="center_vertical"
+        android:textColor="@color/main_context_gray"
+        android:textSize="@dimen/text_size_d" />
+</LinearLayout>

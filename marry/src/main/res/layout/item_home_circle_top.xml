@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/convenientBanner"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim146"
+            android:background="@color/white"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/wel1" />
+
+    <include layout="@layout/common_recycle_notitle" />
+</LinearLayout>

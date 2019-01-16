@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_gravity="center"
+        android:layout_margin="5.0dip"
+        android:background="@drawable/shape_1"
+        android:gravity="center"
+        android:text="北"
+        android:textColor="#ffff0000"
+        android:textSize="30.0sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="北京快三"
+        android:textColor="#ff6b6b6b"
+        android:textSize="18.0sp" />
+</LinearLayout>

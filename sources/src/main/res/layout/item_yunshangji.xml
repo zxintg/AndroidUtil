@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/color_ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/item_yunshangji_iamge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/default_iamge" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/item_yunshangji_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/size_14sp"
+            tools:text="标题" />
+
+        <com.zxin.zxinlib.view.CommonCrosswiseBar
+            android:id="@+id/item_yunshangji_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_button_text="成立时间"
+            app:left_button_textColor="@color/color_666666"
+            app:left_button_textSize="@dimen/size_13px"
+            app:right_button_text="成立时间"
+            app:show_bar_line="false"
+            app:right_button_textColor="@color/color_999999"
+            app:right_button_textSize="@dimen/size_13px" />
+
+        <com.zxin.zxinlib.view.CommonCrosswiseBar
+            android:id="@+id/item_yunshangji_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_button_text="主营产品"
+            app:left_button_textColor="@color/color_666666"
+            app:left_button_textSize="@dimen/size_13px"
+            app:right_button_text="主营产品"
+            app:right_button_textColor="@color/color_999999"
+            app:right_button_textSize="@dimen/size_13px" />
+
+        <TextView
+            android:id="@+id/item_yunshangji_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/size_13sp"
+            tools:text="内容" />
+
+        <View style="@style/line_style"
+            android:layout_marginTop="@dimen/size_10dp"
+            />
+
+        <com.zxin.zxinlib.view.CommonCrosswiseBar
+            android:id="@+id/item_yunshangji_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_button_text="地址"
+            app:left_button_textColor="@color/color_666666"
+            app:left_button_textSize="@dimen/size_13px"
+            app:right_button_text="地址"
+            app:right_button_textColor="@color/color_999999"
+            app:right_button_textSize="@dimen/size_13px"
+            />
+
+        <com.zxin.zxinlib.view.CommonCrosswiseBar
+            android:id="@+id/item_yunshangji_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_button_text="联系方式"
+            app:left_button_textColor="@color/color_666666"
+            app:left_button_textSize="@dimen/size_13px"
+            app:right_button_text="联系方式"
+            app:right_button_textColor="@color/color_999999"
+            app:right_button_textSize="@dimen/size_15px"
+            app:show_bar_line="false"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

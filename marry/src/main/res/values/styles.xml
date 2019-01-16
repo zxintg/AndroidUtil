@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dim60</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:maxHeight">@dimen/dim60</item>
+        <item name="android:progressDrawable">@drawable/rating_drawable_selector</item>
+        <item name="android:minHeight">@dimen/dim60</item>
+        <item name="android:numStars">5</item>
+        <item name="android:rating">1.0</item>
+        <item name="android:stepSize">1.0</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+
+    <style name="ShopCommentRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dim20</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:maxHeight">@dimen/dim20</item>
+        <item name="android:progressDrawable">@drawable/rating_soures</item>
+        <item name="android:minHeight">@dimen/dim20</item>
+        <item name="android:numStars">5</item>
+        <item name="android:rating">1.0</item>
+        <item name="android:stepSize">1.0</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+
+    <style name="loading_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/button_ok</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="minRatingBar" parent="@style/Widget.AppCompat.RatingBar">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dim32</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:maxHeight">@dimen/dim32</item>
+        <item name="android:progressDrawable">@drawable/min_rating_selector</item>
+        <item name="android:minHeight">@dimen/dim32</item>
+        <item name="android:numStars">5</item>
+        <item name="android:rating">1.0</item>
+        <item name="android:stepSize">1.0</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+
+    <style name="person_information_left">
+        <item name="android:textSize">@dimen/second_text_content_title_size</item>
+        <item name="android:textColor">@color/main_context_gray</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dim35</item>
+    </style>
+
+    <style name="person_information_right">
+        <item name="android:textSize">@dimen/text_content_title_size</item>
+        <item name="android:textColor">@color/t757575</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">@dimen/dim20</item>
+    </style>
+
+    <style name="shadow_textview">
+        <item name="android:shadowColor">#55000000</item>
+        <item name="android:shadowDx">5.0</item>
+        <item name="android:shadowDy">5.0</item>
+        <item name="android:shadowRadius">10.0</item>
+    </style>
+
+    <style name="shapRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dim45</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:maxHeight">@dimen/dim45</item>
+        <item name="android:progressDrawable">@drawable/shap_rating_drawable_selector</item>
+        <item name="android:minHeight">@dimen/dim45</item>
+        <item name="android:numStars">5</item>
+        <item name="android:rating">1.0</item>
+        <item name="android:stepSize">1.0</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+
+    <style name="weekName">
+        <item name="android:textSize">@dimen/dim20</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">@dimen/dim30</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="detail_item_theme">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">@dimen/dim30</item>
+        <item name="android:paddingRight">@dimen/dim30</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/dim96</item>
+    </style>
+</resources>

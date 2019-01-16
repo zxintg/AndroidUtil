@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/img_store_img"
+            android:layout_width="@dimen/dim50"
+            android:layout_height="@dimen/dim50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim34" />
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_toRightOf="@+id/img_store_img"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/dim34"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim30" />
+
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dim34"
+            android:text="" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_goods_order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim2"
+        android:divider="@color/main_bg"
+        android:dividerHeight="@dimen/dim2" />
+</LinearLayout>

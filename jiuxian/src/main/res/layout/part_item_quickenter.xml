@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_quickenter"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:cacheColorHint="@android:color/transparent"
+    android:listSelector="@android:color/transparent"
+    android:numColumns="5"
+    android:scrollbars="none"
+    android:stretchMode="columnWidth" />

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_qq_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/icon_qq"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/login_qq"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/size_14sp" />
+
+    <TextView
+        android:id="@+id/tv_weixin_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/icon_wxin"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/login_wxin"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/size_14sp" />
+
+    <TextView
+        android:id="@+id/tv_alipay_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/icon_zhi"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/login_zhi"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/size_14sp" />
+
+    <TextView
+        android:id="@+id/tv_sina_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/icon_sina"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/login_sina"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/size_14sp" />
+
+</LinearLayout>

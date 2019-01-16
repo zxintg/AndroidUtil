@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="@string/yuyueshijian"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dim30"
+        android:paddingRight="@dimen/dim30">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_redhead" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim20"
+            android:text="佳偶天成"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim30" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:text="￥"
+            android:textColor="@color/text_e7"
+            android:textSize="@dimen/dim30" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="888"
+            android:textColor="@color/text_e7"
+            android:textSize="@dimen/dim30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元/桌"
+            android:textColor="@color/text_e7"
+            android:textSize="@dimen/dim30" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_dishes"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim100"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ll_goto_vip"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim70"
+            android:layout_marginLeft="@dimen/dim30"
+            android:layout_marginRight="@dimen/dim30"
+            android:background="@drawable/btn_shape"
+            android:text="查询会员优惠" />
+    </LinearLayout>
+</LinearLayout>

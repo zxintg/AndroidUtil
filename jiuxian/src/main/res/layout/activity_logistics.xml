@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="14.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logistics_order_number"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/logistics_order_number"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_weight="1.0"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/logistics_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:textColor="@color/red_fc"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logistics_carry_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logistics_carry"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/logistics_carry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logistics_number_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logistics_number"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/logistics_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:text="@string/logistics_detail"
+        android:textColor="@color/black_25"
+        android:textSize="14.0dip" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/comm_bg_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/logistics_detail_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+</LinearLayout>

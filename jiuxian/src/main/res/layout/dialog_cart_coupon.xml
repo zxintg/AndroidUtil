@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/cate_side"
+    android:orientation="vertical"
+    android:paddingTop="14.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_product_coupon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/coupon_product_dialog_title"
+            android:textColor="@color/gray_33"
+            android:textSize="17.0sp" />
+
+        <ImageView
+            android:id="@+id/dialog_product_coupon_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="14.0dip"
+            android:src="@drawable/cart_coupon_close" />
+    </RelativeLayout>
+
+    <!--<com.jiuxian.client.widget.PinnedHeaderListView.PinnedHeaderRefreshListView
+        android:id="@id/dialog_product_coupon_data"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/dialog_product_coupon_sub_title"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />-->
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim40">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim34"
+                android:background="@drawable/icon_service_callback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dim15"
+                android:text="@string/serviceReply"
+                android:textSize="@dimen/dim25" />
+
+            <TextView
+                android:id="@+id/tv_commentreply"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/t727272"
+                android:textSize="@dimen/dim25" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/serviceReply2"
+                android:textSize="@dimen/dim25" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/tv_commentdate"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1.0"
+                android:paddingRight="@dimen/dim34"
+                android:textColor="@color/t727272"
+                android:textSize="@dimen/dim25" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commentcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dim35"
+        android:paddingLeft="@dimen/dim70"
+        android:paddingRight="@dimen/dim70"
+        android:paddingTop="@dimen/dim25"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim30" />
+</LinearLayout>

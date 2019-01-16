@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="关于我们"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/order_detail_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim300"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_logo" />
+        </LinearLayout>
+
+        <com.zxin.zxinlib.view.CommonCrosswiseBar
+            android:id="@+id/ll_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_background="@color/color_ffffff"
+            app:left_button_text="@string/versioninfo"
+            app:left_button_textColor="@color/color_666666"
+            app:left_button_textSize="@dimen/size_13px"
+            app:right_button_text="V1.0.0"
+            app:right_button_textColor="@color/color_666666"
+            app:right_button_textSize="13px" />
+
+        <com.zxin.zxinlib.view.CommonCrosswiseBar
+            android:id="@+id/ll_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_background="@color/color_ffffff"
+            app:left_button_text="@string/servicestatement"
+            app:left_button_textColor="@color/color_666666"
+            app:left_button_textSize="@dimen/size_13px"
+            app:show_right_button="true" />
+
+        <com.zxin.zxinlib.view.CommonCrosswiseBar
+            android:id="@+id/ll_mescore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_background="@color/color_ffffff"
+            app:left_button_text="@string/mescore"
+            app:left_button_textColor="@color/color_666666"
+            app:left_button_textSize="@dimen/size_13px"
+            app:show_right_button="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim55"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="@dimen/dim220"
+                android:layout_height="@dimen/dim220"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_qrcode" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim25"
+                android:text="@string/qrcode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim25" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

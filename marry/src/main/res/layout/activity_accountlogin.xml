@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/login_logo"/>
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/icon_use"
+        android:drawablePadding="10dp"
+        android:hint="@string/phonenum"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/color_666666"
+        android:textColorHint="@color/color_999999"
+        android:textCursorDrawable="@null"
+        android:textSize="13sp" />
+
+    <View
+        style="@style/line_style"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/icon_pwd"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:hint="@string/pwd"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/color_666666"
+        android:textColorHint="@color/color_999999"
+        android:textSize="13sp" />
+
+    <View
+        style="@style/line_style"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btn_shape_red"
+        android:text="@string/login"
+        android:textColor="@color/color_ffffff"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/dim40">
+
+        <TextView
+            android:id="@+id/tv_phonelogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="手机快捷登陆"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/forgetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/forget_psd"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/forget"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/copyright"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="132.0dip"
+    android:background="@color/white"
+    android:minHeight="140.0dip"
+    android:orientation="horizontal"
+    android:paddingBottom="14.0dip"
+    android:paddingLeft="16.0dip"
+    android:paddingRight="24.0dip"
+    android:paddingTop="14.0dip">
+
+    <ImageView
+        android:id="@+id/comment_center_icon"
+        android:layout_width="104.0dip"
+        android:layout_height="104.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="14.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_center_product_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comment_center_get_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="24.0dip"
+                android:background="@drawable/comment_center_goldinfo"
+                android:gravity="center_vertical"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:singleLine="true"
+                android:textColor="@color/red_fb"
+                android:textSize="13.0dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/comment_center_comment_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="24.0dip"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray_99"
+                android:textSize="14.0dip"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/comment_center_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|left"
+                android:textColor="@color/gray_99"
+                android:textSize="12.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/comment_center_gocomment_lay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/comment_center_gocomment"
+                        android:layout_width="70.0dip"
+                        android:layout_height="26.0dip"
+                        android:layout_gravity="bottom|center|right"
+                        android:background="@drawable/bg_round_solid_red"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/add_comment"
+                        android:textColor="@color/white"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comment_center_golook_lay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/comment_center_golook"
+                        android:layout_width="70.0dip"
+                        android:layout_height="26.0dip"
+                        android:layout_gravity="bottom|center|right"
+                        android:background="@drawable/bg_round_stroke_gray_bb"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/gray_66"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectord"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/serviCecoment" />
+
+        <View style="@style/line_style" />
+
+        <TextView
+            android:id="@+id/content_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@drawable/my_order720_06"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp"
+            tools:text="bbbbb" />
+
+        <RelativeLayout
+            android:id="@+id/rl_onlinebooking"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_onlinebooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_onlinebooking"
+                android:drawablePadding="10dp"
+                android:text="@string/check_Coment"
+                android:textColor="@color/color_ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_to_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selectord"
+            android:drawableLeft="@drawable/web_photo"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/icon_next"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp"
+            tools:text="aaaaaa" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/service_toast"
+            android:textColor="@color/color_666666"
+            android:background="@color/color_ffffff"
+            android:textSize="15sp" />
+
+        <View style="@style/line_red_style" />
+
+        <TextView
+            android:id="@+id/text_toast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:background="@color/color_ffffff"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:textColor="@color/order_context" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

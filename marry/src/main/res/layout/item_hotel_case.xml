@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim340"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/tf4f4f4"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim70"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent_60"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dim30"
+            android:paddingRight="@dimen/dim30">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="至少还有诗和远方"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim25" />
+
+            <ImageView
+                android:layout_width="@dimen/dim40"
+                android:layout_height="@dimen/dim40"
+                android:src="@drawable/icon_collection_un" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim10"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim25" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim70">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dim10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_price" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim20"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hotel"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dim10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_custom" />
+
+            <TextView
+                android:id="@+id/tv_hotelname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim10"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim20" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim30"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

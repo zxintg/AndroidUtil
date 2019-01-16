@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/bestpay_progress"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:progressDrawable="@drawable/bestpay_progress_bar" />
+
+    <WebView
+        android:id="@+id/bestpay_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

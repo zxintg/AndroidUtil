@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/jump_margin"
+    android:paddingLeft="@dimen/jump_margin"
+    android:paddingRight="@dimen/jump_margin"
+    android:paddingTop="@dimen/jump_margin">
+
+    <LinearLayout
+        android:id="@+id/mCollectItemLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/mCollectItemCheckBox"
+            style="@style/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5.0dip"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/bg_square_stroke_gray">
+
+            <ImageView
+                android:id="@+id/mCollectItemImage"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/mStockoutTextView"
+                style="@style/text_understock_style" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/comm_margin_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mCollectItemNameText"
+                    style="@style/textview_14"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:singleLine="false" />
+
+                <TextView
+                    android:id="@+id/mCollectItemPriceText"
+                    style="@style/textview_14"
+                    android:layout_marginTop="16.0dip"
+                    android:textColor="@color/red_fc" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

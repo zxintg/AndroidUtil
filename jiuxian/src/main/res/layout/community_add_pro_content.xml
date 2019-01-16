@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="11.0dip"
+        android:layout_marginRight="11.0dip"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/community_choose_pro_bug"
+            layout="@layout/community_choose_pro_tab"
+            android:layout_width="74.0dip"
+            android:layout_height="26.0dip"
+            android:layout_gravity="center_vertical" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/white" />
+
+        <include
+            android:id="@+id/community_choose_pro_cart"
+            layout="@layout/community_choose_pro_tab"
+            android:layout_width="74.0dip"
+            android:layout_height="26.0dip"
+            android:layout_gravity="center_vertical" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/white" />
+
+        <include
+            android:id="@+id/community_choose_pro_collect"
+            layout="@layout/community_choose_pro_tab"
+            android:layout_width="74.0dip"
+            android:layout_height="26.0dip"
+            android:layout_gravity="center_vertical" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/white" />
+
+        <include
+            android:id="@+id/community_choose_pro_browser_history"
+            layout="@layout/community_choose_pro_tab"
+            android:layout_width="74.0dip"
+            android:layout_height="26.0dip"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <View style="@style/text_divider_normal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/community_choose_pro_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+</LinearLayout>

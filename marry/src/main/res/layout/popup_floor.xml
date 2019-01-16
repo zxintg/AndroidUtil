@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dim160"
+    android:layout_height="@dimen/dim480"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:minWidth="@dimen/dim160"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_floor_up"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim60"
+        android:drawablePadding="@dimen/dim10"
+        android:drawableRight="@drawable/floor_up"
+        android:gravity="center_vertical"
+        android:text="首页"
+        android:textColor="@color/te64b50"
+        android:textSize="@dimen/dim28" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:id="@+id/tv_floor_down"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim60"
+        android:drawablePadding="@dimen/dim10"
+        android:drawableRight="@drawable/floor_down"
+        android:gravity="center_vertical"
+        android:text="尾页"
+        android:textColor="@color/te64b50"
+        android:textSize="@dimen/dim28" />
+</LinearLayout>

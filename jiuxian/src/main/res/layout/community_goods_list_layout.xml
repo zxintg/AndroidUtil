@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/community_choose_pro_header_layout"
+        layout="@layout/community_add_pro_header" />
+
+    <FrameLayout
+        android:id="@+id/community_add_product_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/community_choose_pro_header_layout"
+        android:layout_marginBottom="82.0dip"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="82.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/text_divider_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="82.0dip">
+
+            <HorizontalScrollView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/community_choose_pro_bottom_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/community_pro_select_done"
+                android:layout_width="58.0dip"
+                android:layout_height="58.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/community_choose_pro_red_circle_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8.0dip"
+                    android:text="@string/community_already_selected"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/community_choose_pro_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8.0dip"
+                    android:text="0/6"
+                    android:textColor="@color/white"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

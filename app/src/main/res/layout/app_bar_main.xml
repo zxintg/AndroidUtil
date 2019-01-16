@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/tools">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.zxin.zxinlib.view.CommonCrosswiseBar
+            android:id="@+id/ccb_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_background="@color/color_ffae12"
+            app:isTopBar="true"
+            app:left_button_size="25px"
+            app:left_button_image="@mipmap/abc_ic_menu_selectall_mtrl_alpha"
+            app:show_left_button="true"
+            app:title_text="@string/app_name"
+            app:title_textColor="@color/color_ffffff"
+            app:title_textSize="@dimen/size_18px" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.zxin.floats.FloatingActionMenu
+        android:id="@+id/fam_menu_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        fab:menu_labels_style="@style/MenuLabelsStyle"
+        fab:menu_labels_showAnimation="@anim/jump_from_down"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_shadowColor="#444"
+        fab:menu_colorNormal="#FFB805"
+        fab:menu_colorPressed="#F2AB00"
+        fab:menu_colorRipple="#D99200">
+
+        <com.zxin.floats.FloatingActionButton
+            android:id="@+id/fab12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_label="Menu item 1"
+            style="@style/MenuButtonsStyle" />
+
+        <com.zxin.floats.FloatingActionButton
+            android:id="@+id/fab22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_label="Menu item 2"
+            style="@style/MenuButtonsStyle" />
+
+    </com.zxin.floats.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

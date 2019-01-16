@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:right_button_text="@string/exchange_record_character"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="15px"
+        app:show_left_button="true"
+        app:title_text="@string/member_channel_title"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <include layout="@layout/member_channel_header" />
+    <!--
+        <com.jiuxian.client.widget.NestedXListViewLayout
+            android:id="@+id/nested_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/comm_ui_bg"
+            android:orientation="vertical"
+            app:isPinned="true"
+            app:pinned_view_height="48.0dip">
+
+            <RelativeLayout
+                android:id="@+id/id_jx_nested_top_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/member_channel_header" />
+            </RelativeLayout>
+
+            <com.jiuxian.client.widget.JXViewPagerIndicator
+                android:id="@+id/id_jx_nested_indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@color/white"
+                app:indicatorMode="wrap"
+                app:indicatorTextSize="14.0sp"
+                app:unSelectedColor="@color/gray_99" />
+
+        </com.jiuxian.client.widget.NestedXListViewLayout>-->
+    <com.zxin.zxinlib.view.PagerSlidingTabStrip
+        android:id="@+id/pst_channel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/size_14sp"
+        app:pstsDividerColor="@color/color_00000000"
+        app:pstsIndicatorColor="@color/color_333333"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsSelectTabTextColor="@color/color_333333"
+        app:pstsSelectTabTextSize="@dimen/size_16sp"
+        app:pstsShouldExpand="true"
+        app:pstsTabBackground="@color/color_ffffff"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/line_color"
+        app:pstsUnderlineHeight="0.5dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/user_channel_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

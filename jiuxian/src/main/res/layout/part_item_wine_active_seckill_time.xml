@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="17.0dip"
+        android:layout_height="15.0dip"
+        android:background="@drawable/bg_round_solid_gray_7f"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="1.0dip"
+        android:textColor="@android:color/white"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:layout_width="7.0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="1.0dip"
+        android:text="@string/_maohao"
+        android:textColor="@color/gray_33"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="17.0dip"
+        android:layout_height="15.0dip"
+        android:background="@drawable/bg_round_solid_gray_7f"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="1.0dip"
+        android:textColor="@android:color/white"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:layout_width="7.0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="1.0dip"
+        android:text="@string/_maohao"
+        android:textColor="@color/gray_33"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/seconds"
+        android:layout_width="17.0dip"
+        android:layout_height="15.0dip"
+        android:background="@drawable/bg_round_solid_gray_7f"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="1.0dip"
+        android:textColor="@android:color/white"
+        android:textSize="12.0dip" />
+</LinearLayout>

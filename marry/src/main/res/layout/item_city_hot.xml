@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <TextView
+        android:id="@+id/btn_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/button_gray"
+        android:gravity="center"
+        android:text="北京"
+        android:textSize="@dimen/size_13sp"
+        android:textColor="@color/color_333333" />
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_dishes_goods"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim96"
+        android:layout_marginTop="@dimen/dim1"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dim34"
+            android:drawableLeft="@drawable/icon_greens"
+            android:drawablePadding="@dimen/dim10"
+            android:gravity="center"
+            android:text="13道菜" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dim34"
+            android:background="@color/white"
+            android:drawablePadding="@dimen/dim10"
+            android:drawableRight="@drawable/icon_next"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dim34"
+            android:text="￥699元/桌"
+            android:textColor="@color/f4666d"
+            android:textSize="@dimen/dim30" />
+    </RelativeLayout>
+</LinearLayout>

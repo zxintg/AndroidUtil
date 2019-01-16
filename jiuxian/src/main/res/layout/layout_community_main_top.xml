@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:jx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    jx:layout_collapseMode="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/community_ad_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="122.0dip"
+            android:layout_below="@+id/community_top"
+            android:layout_marginTop="@dimen/divider">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="122.0dip"
+                android:background="@color/white">
+
+             <!--   <com.jiuxian.client.widget.ScaleViewPager
+                    android:id="@+id/community_ad_banner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="122.0dip"
+                    android:layout_gravity="top"
+                    android:background="@color/white"
+                    jx:scale="0.3389" />-->
+
+                <LinearLayout
+                    android:id="@+id/banner_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

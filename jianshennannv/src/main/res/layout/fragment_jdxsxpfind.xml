@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_find_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/et_find_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_search"
+            android:focusableInTouchMode="false"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="请输入关键字"
+            app:closeIcon="@drawable/x"
+            app:searchIcon="@drawable/search_black"
+            app:queryBackground="@null"
+            />
+
+        <TextView
+            android:id="@+id/tv_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/size_15sp" />
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_find_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

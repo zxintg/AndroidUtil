@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/comm_ui_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/img_exchange_advertisement"
+            android:layout_width="fill_parent"
+            android:layout_height="122.0dip"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:id="@+id/exchange_banner_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center|right"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginRight="12.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff998899"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/weixin_share_friend_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="weixin_share_friend_btn" />
+
+        <Button
+            android:id="@+id/weixin_share_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="weixin_share_btn" />
+
+        <Button
+            android:id="@+id/weixin_auth_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="weixin_auth_btn" />
+
+        <Button
+            android:id="@+id/weibo_share_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="weibo_share_btn" />
+
+        <Button
+            android:id="@+id/weibo_auth_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="weibo_auth_btn" />
+
+        <Button
+            android:id="@+id/qq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="qq_share" />
+
+        <Button
+            android:id="@+id/qq_auth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="qq_auth" />
+
+        <Button
+            android:id="@+id/QZONE_share"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="QZONE_share" />
+
+        <Button
+            android:id="@+id/Alipay_auth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Alipay_auth" />
+
+        <Button
+            android:id="@+id/invoke_uiview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="invoke_UIView" />
+
+        <Button
+            android:id="@+id/alipay_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="alipay_pay" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

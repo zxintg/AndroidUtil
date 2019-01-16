@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/share_item_parent_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#90ffffff"
+                android:gravity="bottom|center">
+
+                <TextView
+                    android:id="@+id/id_share_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:clickable="true"
+                    android:drawablePadding="6.0dip"
+                    android:drawableTop="@drawable/share_weixin_icon"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/more_window_item_margin"
+                    android:text="微信好友" />
+
+                <TextView
+                    android:id="@+id/id_share_weixin_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:layout_toRightOf="@+id/id_share_weixin"
+                    android:clickable="true"
+                    android:drawablePadding="6.0dip"
+                    android:drawableTop="@drawable/share_weixin_circle"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/more_window_item_margin"
+                    android:text="朋友圈" />
+
+                <TextView
+                    android:id="@+id/id_share_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:layout_toRightOf="@+id/id_share_weixin_circle"
+                    android:clickable="true"
+                    android:drawablePadding="6.0dip"
+                    android:drawableTop="@drawable/share_qq"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/more_window_item_margin"
+                    android:text="QQ好友" />
+
+                <TextView
+                    android:id="@+id/id_share_qq_qzone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_share_weixin"
+                    android:layout_marginRight="30.0dip"
+                    android:clickable="true"
+                    android:drawablePadding="6.0dip"
+                    android:drawableTop="@drawable/share_qq_qzone"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/more_window_item_margin"
+                    android:text="QQ空间" />
+
+                <TextView
+                    android:id="@+id/id_share_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_share_weixin_circle"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_toRightOf="@+id/id_share_qq_qzone"
+                    android:clickable="true"
+                    android:drawablePadding="6.0dip"
+                    android:drawableTop="@drawable/share_weibo"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/more_window_item_margin"
+                    android:text="新浪微博" />
+            </RelativeLayout>
+
+            <View style="@style/text_divider_normal" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#ff666666" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

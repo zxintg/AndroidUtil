@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_ciecle_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="41.0dip"
+    android:background="@color/title_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <TextView
+            android:id="@+id/circle_name"
+            style="@style/textview_size14_gray33"
+            android:layout_width="210.0dip"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/topic_num"
+            style="@style/textview_size12_gray99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230.0dip" />
+
+        <TextView
+            android:id="@+id/popular_num"
+            style="@style/textview_size12_gray99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View style="@style/text_divider_normal" />
+</LinearLayout>

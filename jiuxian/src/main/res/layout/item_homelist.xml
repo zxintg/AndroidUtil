@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8.0dip">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_left"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="4.0dip"
+        android:layout_weight="1.0"
+        android:background="@android:color/white"
+        android:padding="10.0dip">
+
+        <ImageView
+            android:id="@+id/iv_proImg_left"
+            android:layout_width="110.0dip"
+            android:layout_height="110.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4.0dip"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_proName_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/iv_proImg_left"
+            android:layout_marginTop="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/tv_proPrice_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_proName_left"
+            android:layout_marginTop="6.0dip"
+            android:singleLine="true"
+            android:textColor="@color/red_fc"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item_right"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="1.0"
+        android:background="@android:color/white"
+        android:padding="10.0dip">
+
+        <ImageView
+            android:id="@+id/iv_proImg_right"
+            android:layout_width="110.0dip"
+            android:layout_height="110.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4.0dip"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_proName_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/iv_proImg_right"
+            android:layout_marginTop="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/tv_proPrice_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_proName_right"
+            android:layout_marginTop="6.0dip"
+            android:singleLine="true"
+            android:textColor="@color/red_fc"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+</LinearLayout>

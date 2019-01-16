@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:right_button_text="@string/clean"
+        app:right_button_textColor="@color/color_ffffff"
+        app:right_button_textSize="15px"
+        app:show_right_button="true"
+        app:show_left_button="true"
+        app:title_text="下一页"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cate_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_password" />
+
+        <EditText
+            android:id="@+id/register_securitycode_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:drawableRight="@drawable/icon_clear"
+            android:ems="10"
+            android:hint="@string/register_hind_pw"
+            android:maxLength="20"
+            android:paddingLeft="10.0dip"
+            android:textColorHint="@color/gray_d9"
+            android:textSize="15.0dip">
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0">
+
+            <!--<com.zxin.zxinlib.view.switchbutton.SwitchButton
+                android:id="@+id/reg_password_switch"
+                style="@style/SwitchButton_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/text_divider_normal" />
+
+    <Button
+        android:id="@+id/register_next_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_gravity="right"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/bg_button_gray_select"
+        android:clickable="false"
+        android:enabled="false"
+        android:padding="10.0dip"
+        android:text="@string/register_ok"
+        android:textColor="@color/cate_white" />
+</LinearLayout>

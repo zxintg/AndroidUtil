@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_banner_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="44.0dip"
+    android:background="#ffffffff"
+    android:tag="layout/banner_common_0">
+
+    <LinearLayout
+        android:id="@+id/activity_banner_back_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minWidth="50.0dip"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2.0dip"
+            android:src="@mipmap/arrow_gray" />
+
+        <TextView
+            android:id="@+id/activity_banner_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/activity_banner_text_color"
+            android:textSize="16.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_banner_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80.0dip"
+        android:layout_marginRight="80.0dip"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/activity_banner_text_color"
+        android:textSize="16.199982dip" />
+
+    <LinearLayout
+        android:id="@+id/activity_banner_next_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="12.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/activity_banner_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="下一步"
+            android:textColor="@color/activity_banner_text_color"
+            android:textSize="17.0dip" />
+
+        <ImageView
+            android:id="@+id/activity_banner_arrow_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:clickable="false"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

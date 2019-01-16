@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="34.0dip"
+    android:background="@color/comm_ui_bg"
+    android:minHeight="34.0dip">
+
+    <LinearLayout
+        android:id="@+id/notice_time_info_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="34.0dip"
+        android:background="@color/comm_ui_bg"
+        android:gravity="center_vertical"
+        android:minHeight="34.0dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_weight="1.0"
+            android:background="@color/comm_bg_line" />
+
+        <TextView
+            android:id="@+id/notice_time_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_weight="1.0"
+            android:background="@color/comm_bg_line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notice_ing_time_info"
+        android:layout_width="fill_parent"
+        android:layout_height="34.0dip"
+        android:background="@color/black_25"
+        android:drawableLeft="@drawable/icon_seckill_time"
+        android:drawablePadding="10.0dip"
+        android:gravity="center_vertical"
+        android:minHeight="34.0dip"
+        android:paddingLeft="12.0dip"
+        android:textColor="@color/white"
+        android:textSize="14.0dip"
+        android:visibility="gone" />
+</FrameLayout>

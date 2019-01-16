@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jdxsxp_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background_res = "@drawable/bg_status_bar_shape"
+        app:isTopBar="true"
+        app:title_text="专辑"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px"
+        app:left_button_image="@drawable/icon_main_message_n"
+        app:show_left_button="true"
+        app:right_button_image="@drawable/icon_search_n"
+        app:show_right_button="true"
+        app:right_button_size="@dimen/size_20px"
+        app:left_button_size="@dimen/size_20px"
+        />
+
+    <com.zxin.zxinlib.view.PagerSlidingTabStrip
+        android:id="@+id/pst_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/size_14sp"
+        app:pstsDividerColor="@color/color_00000000"
+        app:pstsIndicatorColor="@color/orange"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsSelectTabTextColor="@color/orange"
+        app:pstsSelectTabTextSize="@dimen/size_16sp"
+        app:pstsTabBackground="@color/color_ffffff"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/line_color"
+        app:pstsUnderlineHeight="0.5dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

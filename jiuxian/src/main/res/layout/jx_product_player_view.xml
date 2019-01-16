@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_jx_video_box"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/rl_jx_dynamic_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black">
+
+        <VideoView
+            android:id="@+id/jx_video_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/ll_ijk_video_replay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_ijk_video_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_ijk_video_thumb"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ijk_video_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/pb_ijk_video"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateOnly="true" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/ll_jx_video_bottom_bar"
+            layout="@layout/ijk_product_player_control_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/iv_ijk_video_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8.0dip"
+            android:src="@drawable/jx_video_start" />
+
+        <ImageView
+            android:id="@+id/iv_ijk_video_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:src="@drawable/ijk_video_close" />
+
+        <ImageView
+            android:id="@+id/iv_ijk_video_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/ijk_video_volum_open" />
+    </RelativeLayout>
+</LinearLayout>

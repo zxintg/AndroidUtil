@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/capture_wine_zoom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/comm_ui_bg">
+
+                <ImageView
+                    android:id="@+id/head_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="164.0dip"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/wine_wiki_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="20.0dip">
+
+                <TextView
+                    android:id="@+id/wine_wiki_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textColor="@color/gray_33"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/wine_wiki_en_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wine_wiki_name"
+                    android:layout_marginTop="6.0dip"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/gray_66"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/wine_wiki_year_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wine_wiki_en_name"
+                    android:layout_marginTop="12.0dip"
+                    android:text="@string/wiki_year"
+                    android:textColor="@color/gray_66"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/wine_wiki_year_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wine_wiki_en_name"
+                    android:layout_marginLeft="14.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:layout_toRightOf="@+id/wine_wiki_year_title"
+                    android:textColor="@color/gray_66"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/wine_wiki_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/wine_wiki_price_value"
+                    android:layout_below="@+id/wine_wiki_year_title"
+                    android:layout_marginTop="12.0dip"
+                    android:text="@string/wiki_price"
+                    android:textColor="@color/gray_66"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/wine_wiki_price_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wine_wiki_year_title"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginTop="14.0dip"
+                    android:layout_toRightOf="@+id/wine_wiki_price_title"
+                    android:textColor="@color/red_fc"
+                    android:textSize="18.0sp" />
+
+                <Button
+                    android:id="@+id/wine_wiki_jx_buy"
+                    android:layout_width="66.0dip"
+                    android:layout_height="26.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_button_round_red"
+                    android:text="@string/wiki_jx_buy"
+                    android:textColor="@color/white"
+                    android:textSize="13.0sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/wine_wiki_site_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="10.0dip" />
+
+            <LinearLayout
+                android:id="@+id/wine_wiki_variety_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingTop="20.0dip">
+
+                <LinearLayout
+                    android:id="@+id/wine_wiki_variety_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:orientation="horizontal"
+                    android:paddingRight="12.0dip">
+
+                    <View
+                        android:layout_width="2.0dip"
+                        android:layout_height="13.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/red_fd" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:text="@string/wiki_variety"
+                        android:textColor="@color/gray_33"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wine_wiki_variety_content_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:orientation="vertical"
+                    android:paddingRight="12.0dip" />
+
+                <View style="@style/text_divider_normal" />
+
+                <LinearLayout
+                    android:id="@+id/wine_wiki_type_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:orientation="horizontal"
+                    android:paddingRight="12.0dip">
+
+                    <View
+                        android:layout_width="2.0dip"
+                        android:layout_height="13.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/red_fd" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:text="@string/wiki_type"
+                        android:textColor="@color/gray_33"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wine_wiki_type_content_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:orientation="vertical"
+                    android:paddingRight="12.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wine_wiki_desc_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/wine_wiki_desc_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20.0dip"
+                    android:paddingRight="12.0dip"
+                    android:paddingTop="20.0dip">
+
+                    <View
+                        android:layout_width="2.0dip"
+                        android:layout_height="13.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/red_fd" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:text="@string/wiki_desc"
+                        android:textColor="@color/gray_33"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/wine_wiki_desc_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wine_wiki_occasion_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="20.0dip">
+
+                <LinearLayout
+                    android:id="@+id/wine_wiki_occasion_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13.0dip"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="2.0dip"
+                        android:layout_height="13.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/red_fd" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:text="@string/wiki_occasion"
+                        android:textColor="@color/gray_33"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wine_wiki_occasion_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wine_wiki_other_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingTop="20.0dip">
+
+                <LinearLayout
+                    android:id="@+id/wine_wiki_other_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13.0dip">
+
+                    <View
+                        android:layout_width="2.0dip"
+                        android:layout_height="13.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/red_fd" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:text="@string/wiki_other"
+                        android:textColor="@color/gray_33"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wine_wiki_other_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.0dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wiki_wendu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9.0dip"
+                            android:text="@string/wiki_other_wendu"
+                            android:textColor="@color/gray_66"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/wiki_wendu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7.0dip"
+                            android:textColor="@color/gray_66"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wiki_shijian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9.0dip"
+                            android:text="@string/wiki_other_shijian"
+                            android:textColor="@color/gray_66"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/wiki_shijian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7.0dip"
+                            android:textColor="@color/gray_66"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wiki_rongliang" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9.0dip"
+                            android:text="@string/wiki_other_rongliang"
+                            android:textColor="@color/gray_66"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/wiki_rongliang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7.0dip"
+                            android:textColor="@color/gray_66"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wiki_jiujing" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9.0dip"
+                            android:text="@string/wiki_other_jiujingdu"
+                            android:textColor="@color/gray_66"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/wiki_jiujingdu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7.0dip"
+                            android:textColor="@color/gray_66"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24.0dip"
+                android:layout_marginTop="20.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="64.0dip"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_d0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:gravity="center_vertical"
+                    android:text="酒咔嚓提供识别及数据支持"
+                    android:textColor="@color/textview_lightgray"
+                    android:textSize="12.0sp" />
+
+                <View
+                    android:layout_width="64.0dip"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_d0" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

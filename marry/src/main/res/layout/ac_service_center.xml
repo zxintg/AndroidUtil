@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="客服与投诉"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim210"
+                android:background="@color/main_title_background"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dim180"
+                    android:layout_height="@dimen/dim180"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dim20"
+                    android:background="@drawable/icon_serivce" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim60"
+                android:background="@color/main_title_background">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dim60"
+                    android:gravity="center"
+                    android:text="客服顾问"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim35" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_phone1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dim180"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim34"
+                    android:gravity="center_vertical"
+                    android:text="客服电话1:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_phone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim30"
+                    android:gravity="center_vertical"
+                    android:text="\ 18729311990"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dim35" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_phone1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/img_phone1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dim34"
+                        android:background="@drawable/icon_phone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_phone2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:layout_marginTop="@dimen/dim1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dim180"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim34"
+                    android:gravity="center_vertical"
+                    android:text="客服电话2:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_phone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim30"
+                    android:gravity="center_vertical"
+                    android:text="\ 18729311990"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dim35" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_phone2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dim34"
+                        android:background="@drawable/icon_phone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_taking_pictures"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:layout_marginTop="@dimen/dim1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dim180"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim34"
+                    android:gravity="center_vertical"
+                    android:text="拍照档期查询:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_taking_pictures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim30"
+                    android:gravity="center_vertical"
+                    android:text="\ 18729311990"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dim35" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_taking_pictures"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dim34"
+                        android:background="@drawable/icon_phone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sample"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:layout_marginTop="@dimen/dim1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dim180"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim34"
+                    android:gravity="center_vertical"
+                    android:text="选样档期查询:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_sample"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim30"
+                    android:gravity="center_vertical"
+                    android:text="\ 18729311990"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dim35" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_sample"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dim34"
+                        android:background="@drawable/icon_phone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_getphoto"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:layout_marginTop="@dimen/dim1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dim180"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim34"
+                    android:gravity="center_vertical"
+                    android:text="取件档期查询:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_getphoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim30"
+                    android:gravity="center_vertical"
+                    android:text="\ 18729311990"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dim35" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_getphoto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dim34"
+                        android:background="@drawable/icon_phone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim20"
+                android:background="@color/background" />
+
+            <LinearLayout
+                android:id="@+id/ll_qq1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dim180"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim34"
+                    android:gravity="center_vertical"
+                    android:text="客服QQ1:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_qq1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim30"
+                    android:gravity="center_vertical"
+                    android:text="\ 18729311990"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dim35" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_qq1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dim34"
+                        android:background="@drawable/icon_qq" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_qq2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:layout_marginTop="@dimen/dim1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dim180"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim34"
+                    android:gravity="center_vertical"
+                    android:text="客服QQ2:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_qq2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim30"
+                    android:gravity="center_vertical"
+                    android:text="\ 18729311990"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dim35" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_qq2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dim34"
+                        android:background="@drawable/icon_qq" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim20"
+                android:background="@color/background" />
+
+            <LinearLayout
+                android:id="@+id/ll_weixin"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dim180"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim34"
+                    android:gravity="center_vertical"
+                    android:text="微信公众号:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim30"
+                    android:gravity="center_vertical"
+                    android:text="\ 18729311990"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/dim35" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_weixin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dim34"
+                        android:background="@drawable/icon_weixin" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dim100"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dim34"
+                    android:text="客服将为您提供以下服务" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:drawablePadding="@dimen/dim10"
+                        android:drawableTop="@drawable/icon_order_query"
+                        android:gravity="center"
+                        android:text="订单查询" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:drawablePadding="@dimen/dim10"
+                        android:drawableTop="@drawable/icon_management"
+                        android:gravity="center"
+                        android:text="取件管理" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:drawablePadding="@dimen/dim10"
+                        android:drawableTop="@drawable/icon_activity_consulting"
+                        android:gravity="center"
+                        android:text="活动查询" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:drawablePadding="@dimen/dim10"
+                        android:drawableTop="@drawable/icon_opinion_complaints"
+                        android:gravity="center"
+                        android:text="意见投诉" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

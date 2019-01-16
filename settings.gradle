@@ -1,0 +1,6 @@
+include ':app', ':zxinlib', ':lkcamera', ':shortcutbadger', ':refreshlib', ':floataction', ':viewsort', ':network', ':pullzoom', ':router', ':routerhelper', ':sources', ':marry', ':ncalendar', ':basemodel', ':jiuxian', ':jianshennannv', ':jjdxm-ijkplayer', ':meziyowu'
+
+/*
+project(':app').projectDir = new File("ZxinProject/app")
+project(':shopping').projectDir = new File("ZxinProject/shopping")
+project(':sources').projectDir = new File("ZxinProject/sources")*/

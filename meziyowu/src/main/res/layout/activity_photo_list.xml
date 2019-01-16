@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:tag="layout/activity_photo_list_0">
+
+    <include layout="@layout/banner_common" />
+
+    <View
+        android:id="@+id/photo_list_division"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/detail_division_color" />
+
+    <GridView
+        android:id="@+id/photo_list_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/photo_list_bottom"
+        android:layout_below="@+id/photo_list_division"
+        android:layout_marginTop="2.0dip"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="3.0dip"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3.0dip" />
+
+    <LinearLayout
+        android:id="@+id/photo_list_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ff2d3644"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/photo_list_dir_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:src="@mipmap/me_arrow" />
+
+        <TextView
+            android:id="@+id/photo_list_dir_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+</RelativeLayout>

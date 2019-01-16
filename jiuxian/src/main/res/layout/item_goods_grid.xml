@@ -1,0 +1,144 @@
+<?xml version="1" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2.5dp"
+    android:background="@drawable/selector_listview_normal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mGoodsImg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@mipmap/default_iamge" />
+
+        <TextView
+            android:id="@+id/text_whp_1"
+            style="@style/text_understock_style"
+            android:layout_height="20dp"
+            android:alpha="0.7"
+            android:background="@color/black_25"/>
+
+        <ImageView
+            android:id="@+id/mPlayImgLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/icon_play_list_big"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/mGoodsNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2dp"
+        tools:text="三皇冠 Apple/苹果 iPhone 6s国行美版苹果6sp正品未激活4G手机"
+        android:textSize="@dimen/size_13sp"
+        android:textColor="@color/color_666666"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/mGoodsAdvTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_store_pro_list"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/color_999999"
+        tools:text="蘑菇街数码科技店"
+        android:textSize="@dimen/size_12sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_shop_labs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/mGoodsPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/red_fc"
+            android:textSize="@dimen/size_13sp"
+            tools:text="￥0.00" />
+
+        <TextView
+            android:id="@+id/mClubPriceOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:textSize="@dimen/size_10sp"
+            tools:text="￥0.00" />
+
+        <ImageView
+            android:id="@+id/mClubImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_club" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mEvaContentLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageJiuxianOwnOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_jiuxian_own" />
+
+        <ImageView
+            android:id="@+id/imageAuthenticity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_test_authenticity_small" />
+
+        <TextView
+            android:id="@+id/mGoodsEvalu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/size_12sp"
+            tools:text="0%好评" />
+
+        <TextView
+            android:id="@+id/mGoodsCountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:maxLines="1"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/size_12sp"
+            tools:text="0人评论" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_scan"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <!--<com.jiuxian.client.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip">
+
+            <ImageView
+                android:id="@+id/title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4.0dip"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:src="@drawable/icon_scan_back" />
+
+            <TextView
+                android:id="@+id/title_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="32.0dip"
+                android:layout_marginRight="32.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/scan_title"
+                android:textColor="@color/white"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@+id/title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4.0dip"
+                android:gravity="center"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:singleLine="true"
+                android:textColor="@color/gray_66"
+                android:textSize="15.0dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include layout="@layout/view_custom_dialog" />
+</RelativeLayout>

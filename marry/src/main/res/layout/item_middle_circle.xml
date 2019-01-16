@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@color/color_ffffff"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recommend_shape"
+            android:minHeight="0.0dip"
+            android:minWidth="0.0dip"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="置顶"
+            android:textColor="@color/te64b50"
+            android:textSize="@dimen/dim20" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:enabled="true"
+            android:text="text"
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+
+    <View
+        android:id="@+id/item_middle_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="gone" />
+</LinearLayout>

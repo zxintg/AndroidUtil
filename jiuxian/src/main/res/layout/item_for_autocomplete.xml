@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/jump_margin"
+    android:paddingRight="@dimen/jump_margin">
+
+    <LinearLayout
+        android:id="@+id/linear_lexicon_item"
+        android:layout_width="fill_parent"
+        android:layout_height="39.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_auto_name"
+            style="@style/textview_14"
+            android:layout_width="0.0dip"
+            android:layout_height="39.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_del"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="7.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/history_search"
+                    android:textSize="11.0dip" />
+
+                <ImageView
+                    android:id="@+id/iv_delete_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3.0dip"
+                    android:paddingLeft="3.0dip"
+                    android:paddingTop="3.0dip"
+                    android:src="@drawable/icon_delete" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_keyword_count"
+                style="@style/textview_12"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:textColor="@color/gray_99"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View style="@style/text_divider_normal" />
+</LinearLayout>

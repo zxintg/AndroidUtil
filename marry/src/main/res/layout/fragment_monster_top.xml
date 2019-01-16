@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/cb_slidePage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="230dp"
+        app:canLoop="true"
+        app:layout_collapseMode="parallax"
+        app:layout_scrollFlags="scroll" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_goods_clazz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/color_ffffff" />
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:id="@+id/ll_marry_hot"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim140"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/dim200"
+            android:layout_height="fill_parent"
+            fresco:placeholderImage="@drawable/ic_marry_hot" />
+
+        <View style="@style/line_ver_style" />
+
+        <com.zxin.zxinlib.view.banner.VerticalBannerView
+            android:id="@+id/vbv_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            app:vertical_duration="1000"
+            app:vertical_gap="5000"
+            app:vertical_item_num="2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim20" />
+
+    <ImageView
+        android:id="@+id/sdv_wedding_party"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_hotel_guide" />
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_marry_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/crown_marry_product"
+                android:text="优选婚品"
+                android:textColor="#fff4a026"
+                android:textSize="@dimen/dim26" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="百款婚品每日更新"
+                android:textSize="@dimen/dim20" />
+
+            <ImageView
+                android:layout_width="@dimen/dim180"
+                android:layout_height="wrap_content"
+                android:src="@drawable/marry_product" />
+        </LinearLayout>
+
+        <View style="@style/line_ver_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/id_monster_wedding_budget"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dim140"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/monster_wedding_budget" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="婚礼测算"
+                        android:textColor="#ffe64b50"
+                        android:textSize="@dimen/dim30" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim5"
+                        android:text="DIY一下更明确钱花哪了"
+                        android:textSize="@dimen/dim20" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line_style" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_marry_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim100"
+                        android:layout_height="@dimen/dim130"
+                        android:src="@drawable/icon_sentiment_wedding" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="免费设计"
+                            android:textColor="#ff36bbe7"
+                            android:textSize="@dimen/dim30" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dim5"
+                            android:gravity="center"
+                            android:text="足不出户\n稿比三家"
+                            android:textSize="@dimen/dim20" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/line_ver_style" />
+
+                <LinearLayout
+                    android:id="@+id/ll_wedding_planner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim100"
+                        android:layout_height="@dimen/dim130"
+                        android:src="@drawable/icon_wedding_supplies" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="婚礼顾问"
+                            android:textColor="#ff73b23b"
+                            android:textSize="@dimen/dim30" />
+
+                        <TextView
+                            android:id="@+id/tv_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dim5"
+                            android:gravity="center"
+                            android:text="一站式服务\n"
+                            android:textSize="@dimen/dim20" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_monster_goods"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffae12" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="值得买的好婚品"
+            android:textColor="@color/color_ffae12"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/ic_black_right_arrow"
+            android:gravity="center_vertical"
+            android:text="更多"
+            android:textColor="@color/color_ffae12"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_monster_goods"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:padding="5dp" />
+
+</LinearLayout>

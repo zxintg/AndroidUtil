@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="在线选摄影师"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/spaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim20"
+            android:background="@color/body_background" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/body_background"
+            android:paddingRight="@dimen/dim35">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_recommend" />
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:drawableLeft="@drawable/refresh"
+                android:drawablePadding="@dimen/dim5"
+                android:minHeight="0.0dip"
+                android:minWidth="0.0dip"
+                android:text="换一换"
+                android:textColor="@color/te64b50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim160"
+            android:paddingBottom="@dimen/dim20"
+            android:paddingLeft="@dimen/dim35"
+            android:paddingRight="@dimen/dim35"
+            android:paddingTop="@dimen/dim20">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/dim120"
+                android:layout_height="@dimen/dim120" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dim20"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/recommend_camera"
+                        android:drawablePadding="@dimen/dim8" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/minRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim20"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_describe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim70"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_satisfaction"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="@dimen/dim1"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/dim20"
+                android:layout_marginTop="@dimen/dim20"
+                android:background="@color/content_line_color" />
+
+            <TextView
+                android:id="@+id/tv_attention"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="@dimen/dim1"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/dim20"
+                android:layout_marginTop="@dimen/dim20"
+                android:background="@color/content_line_color" />
+
+            <TextView
+                android:id="@+id/tv_works"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim96"
+        android:layout_marginBottom="@dimen/dim1"
+        android:layout_marginTop="@dimen/dim20"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="10.0dip"
+            android:gravity="center"
+            android:tag="0"
+            android:text="默认排序"
+            android:textColor="@color/radio_text_selector"
+            android:textSize="@dimen/text_content_size" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:drawablePadding="10.0dip"
+            android:gravity="center"
+            android:tag="3"
+            android:text="关注度"
+            android:textColor="@color/radio_text_selector"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/drawableButton"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/filter_camera_selector"
+            android:drawablePadding="10.0dip"
+            android:gravity="center"
+            android:text="筛选"
+            android:textColor="@color/radio_text_selector"
+            android:textSize="@dimen/text_content_size" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim70"
+            android:gravity="center"
+            android:text="已约拍照日期为"
+            android:textColor="@color/t727272" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim35"
+            android:layout_marginRight="@dimen/dim35"
+            android:background="@color/content_line_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim120"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv0"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70" />
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70" />
+
+            <ImageView
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:layout_marginBottom="@dimen/dim20"
+                android:src="@drawable/time_year" />
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70" />
+
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70" />
+
+            <ImageView
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:layout_marginBottom="@dimen/dim20"
+                android:src="@drawable/time_month" />
+
+            <ImageView
+                android:id="@+id/iv6"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70" />
+
+            <ImageView
+                android:id="@+id/iv7"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70" />
+
+            <ImageView
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:layout_marginBottom="@dimen/dim20"
+                android:src="@drawable/time_day" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

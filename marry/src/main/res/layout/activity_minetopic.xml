@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="我的话题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <com.zxin.zxinlib.view.PagerSlidingTabStrip
+        android:id="@+id/pst_topic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/size_14sp"
+        app:pstsDividerColor="@color/color_00000000"
+        app:pstsIndicatorColor="@color/red_light"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsSelectTabTextColor="@color/red_light"
+        app:pstsSelectTabTextSize="@dimen/size_16sp"
+        app:pstsTabBackground="@color/color_ffffff"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/line_color"
+        app:pstsUnderlineHeight="0.5dp"
+        app:pstsShouldExpand="true"
+        />
+
+    <!--可滑动的布局内容-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_topic_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

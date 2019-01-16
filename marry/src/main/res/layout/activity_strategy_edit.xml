@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_atrategy_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_atrategy_leftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/icon_back"
+            android:drawablePadding="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_atrategy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            >
+            <RadioButton
+                android:id="@+id/rb_atrategy_outdoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@drawable/radio_textcolor"
+                android:button="@null"
+                android:text="外景"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+                android:checked="true"
+                android:paddingBottom="8dp"
+                android:tag="0"
+                />
+            <View
+                style="@style/line_ver_style"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <RadioButton
+                android:id="@+id/rb_atrategy_indoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:button="@null"
+                android:textColor="@drawable/radio_textcolor"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:tag="1"
+                android:text="内景"
+                />
+
+        </RadioGroup>
+    </RelativeLayout>
+    <!--可滑动的布局内容-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_atrategy_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

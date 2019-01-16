@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/icon"
+    android:layout_width="74.0dip"
+    android:layout_height="74.0dip"
+    android:background="@drawable/bg_square_stroke_e8"
+    android:minHeight="74.0dip"
+    android:minWidth="74.0dip"
+    android:padding="1.0dip" />

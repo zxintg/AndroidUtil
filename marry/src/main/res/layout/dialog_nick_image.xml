@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dim70"
+    android:layout_marginRight="@dimen/dim70"
+    android:background="@drawable/white_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim96">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dim34"
+            android:layout_marginRight="@dimen/dim10"
+            android:text="完善头像和昵称,让更多的圈友认识你哦"
+            android:textSize="@dimen/dim28" />
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim10"
+            android:layout_marginTop="@dimen/dim10"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_delphoto" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/content_line_color" />
+
+    <ImageView
+        android:id="@+id/civ"
+        android:layout_width="@dimen/dim180"
+        android:layout_height="@dimen/dim180"
+        android:layout_marginBottom="@dimen/dim40"
+        android:layout_marginTop="@dimen/dim40"
+        android:contentDescription="@null"
+        android:src="@drawable/default_user" />
+
+    <EditText
+        android:id="@+id/et_nick"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim70"
+        android:layout_marginLeft="@dimen/dim34"
+        android:layout_marginRight="@dimen/dim34"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="请填写你的昵称"
+        android:maxLength="15"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim26" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:layout_marginLeft="@dimen/dim20"
+        android:layout_marginRight="@dimen/dim20"
+        android:background="@color/content_line_color" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim69"
+        android:layout_marginBottom="@dimen/dim30"
+        android:layout_marginLeft="@dimen/dim20"
+        android:layout_marginRight="@dimen/dim20"
+        android:layout_marginTop="@dimen/dim30"
+        android:background="@drawable/red_button"
+        android:text="提交"
+        android:textColor="@color/white" />
+</LinearLayout>

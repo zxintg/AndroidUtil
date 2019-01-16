@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.0dip"
+        android:gravity="center"
+        android:text="@string/product_promise_title"
+        android:textColor="@color/red_fc"
+        android:textSize="16.0dip" />
+
+    <ListView
+        android:id="@+id/promise_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="260.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginTop="12.0dip"
+        android:divider="@null"
+        android:dividerHeight="0.0dip"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/selector_button_square_red"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/product_service_detail_sure"
+        android:textColor="@color/white"
+        android:textSize="16.0dip" />
+</LinearLayout>

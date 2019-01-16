@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        style="@style/text_divider_normal"
+        android:layout_height="10.0dip"
+        android:background="@color/comm_ui_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_item_pack_suit_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14.0dip"
+        android:paddingLeft="@dimen/jump_margin"
+        android:paddingRight="@dimen/jump_margin"
+        android:paddingTop="14.0dip">
+
+        <TextView
+            android:id="@+id/text_ps_title_name"
+            style="@style/textview_12"
+            android:layout_centerVertical="true"
+            android:text="活动套餐1"
+            android:textColor="@color/gray_66"
+            android:textSize="13.0dip" />
+
+        <ImageView
+            android:id="@+id/img_ps_title_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingLeft="10.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_down_gray" />
+    </RelativeLayout>
+
+    <View style="@style/text_divider_normal" />
+</LinearLayout>

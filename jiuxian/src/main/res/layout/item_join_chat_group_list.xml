@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_chat_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="76.0dip"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3.0dip">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="38.0dip"
+                        android:layout_height="38.0dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_chat_normal_two" />
+                </LinearLayout>
+
+                <!--<com.jiuxian.client.widget.MsgView xmlns:mv="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/message_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right|top"
+                    android:layout_marginLeft="30.0dip"
+                    android:gravity="center"
+                    android:text="123"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0dip"
+                    android:visibility="gone"
+                    mv:mv_backgroundColor="#fffd481f"
+                    mv:mv_isRadiusHalfHeight="true"
+                    mv:mv_strokeColor="#ffffffff"
+                    mv:mv_strokeWidth="1.0dip" />-->
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black_25"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_99"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/openBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/icon_open_btn"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="15.0dip"
+            android:background="@color/gray_d9"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip"
+        android:background="@color/comm_ui_bg"
+        android:visibility="gone" />
+</LinearLayout>

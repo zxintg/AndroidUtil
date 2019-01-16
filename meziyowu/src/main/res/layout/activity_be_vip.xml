@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:tag="layout/activity_be_vip_0">
+
+    <include
+        android:id="@+id/be_vip_banner"
+        layout="@layout/banner_common" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/v_infromation_new" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/mine_vip_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50.0dip"
+                android:src="@mipmap/me_vip_img" />
+
+            <RelativeLayout
+                android:id="@+id/be_vip_tj_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="36.0dip"
+                android:background="@mipmap/me_vip_bg2"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/be_vip_recommend_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11.0dip"
+                    android:layout_marginRight="11.0dip"
+                    android:src="@mipmap/me_vip_tj" />
+
+                <TextView
+                    android:id="@+id/be_vip_popularize_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/be_vip_recommend_iv"
+                    android:textColor="@color/mine_popularize_text_color"
+                    android:textSize="15.0sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6.0dip">
+
+                    <Button
+                        android:id="@+id/be_vip_goto_popularize_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="@string/be_vip_goto_popularize"
+                        android:textColor="@color/white"
+                        android:textSize="14.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/me_vip_btn" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="@mipmap/me_vip_bg2">
+
+                <ImageView
+                    android:id="@+id/be_vip_recommend_gone_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11.0dip"
+                    android:layout_marginRight="11.0dip"
+                    android:src="@mipmap/me_vip_tj"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/be_vip_recommend_gone_iv"
+                    android:text="@string/be_vip_oneyear_text"
+                    android:textColor="@color/mine_popularize_text_color"
+                    android:textSize="15.0sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6.0dip">
+
+                    <Button
+                        android:id="@+id/be_vip_price_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:textColor="@color/white"
+                        android:textSize="14.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/me_vip_btn" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/be_vip_privilege_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.0dip"
+                android:text="@string/be_vip_privilege"
+                android:textColor="@color/be_vip_privilege_text_color"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

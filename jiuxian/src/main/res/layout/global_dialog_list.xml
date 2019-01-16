@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/translucent_30">
+
+    <LinearLayout
+        style="@style/dialog_bg"
+        android:layout_width="280.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:gravity="center"
+            android:paddingLeft="42.0dip"
+            android:paddingRight="42.0dip"
+            android:paddingTop="24.0dip"
+            android:text="@string/global_alert_info"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="24.0dip"
+            android:background="@color/comm_bg_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip">
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/red_fc"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

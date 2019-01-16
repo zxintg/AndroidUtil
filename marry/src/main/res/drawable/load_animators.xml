@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"> //oneshottrue,就是循环一次
+<item android:duration="100" android:drawable="@drawable/hrart1" />
+    <item android:duration="100" android:drawable="@drawable/hrart2" />
+    <item android:duration="100" android:drawable="@drawable/hrart3" />
+    <item android:duration="100" android:drawable="@drawable/hrart4" />
+    <item android:duration="100" android:drawable="@drawable/hrart5" />
+    <item android:duration="100" android:drawable="@drawable/hrart6" />
+    <item android:duration="100" android:drawable="@drawable/hrart7" />
+    <item android:duration="100" android:drawable="@drawable/hrart8" />
+    <item android:duration="100" android:drawable="@drawable/hrart9" />
+    <item android:duration="100" android:drawable="@drawable/hrart10" />
+</animation-list>

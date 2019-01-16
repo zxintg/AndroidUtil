@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/updte_progress_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dim600"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="1.0dip"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/appointmentRemind" />
+
+        <TextView
+            android:id="@+id/appointment_context"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim20"
+            android:layout_marginRight="@dimen/dim20"
+            android:layout_marginTop="@dimen/dim20"
+            android:lineSpacingExtra="@dimen/dim2"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/text_content_color"
+            android:textSize="@dimen/dim25" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/dim10"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_backgroundreversal"
+                android:gravity="center"
+                android:text="@string/crop__done" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/dim10"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_backgroundreversal"
+                android:gravity="center"
+                android:text="@string/delete_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

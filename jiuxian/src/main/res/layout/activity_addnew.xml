@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="46.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_search_inputbox"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:id="@+id/inputSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="@string/search_hint"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_gray1"
+                android:textCursorDrawable="@color/black"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/search_cancel"
+            android:textColor="@color/text_blue1"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/title"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/noResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280.0dip"
+        android:text="@string/search_no_result"
+        android:textColor="@color/text_gray1"
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/divider" />
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_tailor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isTopBar="true"
+        app:show_left_button="true"
+        app:title_text="相片裁剪"
+        app:title_textSize="@dimen/size_18px"
+        app:right_button_textSize="@dimen/size_17px"
+        app:right_button_text="完成"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.common.camera.crop.view.UCropView
+            android:id="@+id/UCropView_crop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/tv_signinshow_superrotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_signinshow_reduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dsan_camera_reduction"
+                android:textSize="@dimen/size_15sp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="@drawable/dsan_camera_reduction_text"
+                android:layout_marginRight="30dp"
+                android:text="还原"
+                android:enabled="false"
+                />
+
+            <TextView
+                android:id="@+id/tv_signinshow_rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dsan_camera_rotate"
+                android:textSize="@dimen/size_15sp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="@drawable/dsan_camera_rotate_text"
+                android:layout_marginLeft="30dp"
+                android:text="旋转"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

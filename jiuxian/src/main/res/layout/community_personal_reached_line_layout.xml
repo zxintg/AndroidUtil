@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1355.0dip"
+    android:layout_height="60.0dip"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/reached"
+        android:layout_width="100.0dip"
+        android:layout_height="3.0dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/community_reached_line" />
+
+    <View
+        android:id="@+id/unreached"
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/community_unreached_line" />
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exit_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@drawable/corners10_white_rectangle_top_bg">
+
+        <ImageView
+            android:id="@+id/iv_dialog_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10.0dip"
+            android:src="@drawable/dialog_dismiss" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:gravity="center"
+            android:padding="10.0dip"
+            android:text="@string/app_tip"
+            android:textColor="@color/textview_black"
+            android:textSize="14.0dip" />
+    </RelativeLayout>
+
+    <View style="@style/text_divider_normal" />
+
+    <LinearLayout
+        android:id="@+id/picture_check_code_layout"
+        android:layout_width="@dimen/common_layout_width"
+        android:layout_height="40.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/pictrue_checkcode_content"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/transparent"
+                android:gravity="center|left"
+                android:hint="@string/picturecode_hind"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="22.0dip"
+                android:singleLine="true"
+                android:textColor="@color/textview_gray"
+                android:textSize="12.0dip" />
+
+            <ImageView
+                android:id="@+id/img_picture_code"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0"
+                android:background="@color/transparent"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tip_other_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:gravity="center|right"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="@string/character_another"
+            android:textColor="@color/textview_lightgray"
+            android:textSize="12.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/one_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/text_divider_normal" />
+
+        <LinearLayout
+            android:layout_width="@dimen/common_layout_width"
+            android:layout_height="44.0dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_style_white_red_rectangle_bottom_bg"
+                android:text="@string/character_submit"
+                android:textColor="@color/red_fc"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

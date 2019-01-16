@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seckill_time_info"
+    android:layout_width="fill_parent"
+    android:layout_height="32.0dip"
+    android:background="@color/comm_ui_bg"
+    android:gravity="center_vertical"
+    android:minHeight="32.0dip"
+    android:orientation="horizontal"
+    android:paddingLeft="16.0dip"
+    android:paddingRight="16.0dip">
+
+    <TextView
+        android:id="@+id/seckill_status"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:drawableLeft="@drawable/icon_seckill_time"
+        android:drawablePadding="6.0dip"
+        android:text="@string/seckill_time_ing"
+        android:textColor="@color/gray_66"
+        android:textSize="14.0dip" />
+
+    <TextView
+        android:id="@+id/seckill_time_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10.0dip"
+        android:text="@string/seckill_time_end"
+        android:textColor="@color/gray_66"
+        android:textSize="12.0dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="17.0dip"
+            android:layout_height="15.0dip"
+            android:background="@drawable/bg_round_solid_gray_7f"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="1.0dip"
+            android:textColor="@android:color/white"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:layout_width="7.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="1.0dip"
+            android:text="@string/_maohao"
+            android:textColor="@color/gray_33"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:id="@+id/minutes"
+            android:layout_width="17.0dip"
+            android:layout_height="15.0dip"
+            android:background="@drawable/bg_round_solid_gray_7f"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="1.0dip"
+            android:textColor="@android:color/white"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:layout_width="7.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="1.0dip"
+            android:text="@string/_maohao"
+            android:textColor="@color/gray_33"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:id="@+id/seconds"
+            android:layout_width="17.0dip"
+            android:layout_height="15.0dip"
+            android:background="@drawable/bg_round_solid_gray_7f"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="1.0dip"
+            android:textColor="@android:color/white"
+            android:textSize="12.0dip" />
+    </LinearLayout>
+</LinearLayout>

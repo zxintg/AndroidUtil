@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff3f5f6"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/alert_icon"
+            android:drawablePadding="10.0dip"
+            android:maxLines="2"
+            android:minHeight="46.0dip"
+            android:paddingBottom="13.0dip"
+            android:paddingLeft="21.0dip"
+            android:paddingRight="21.0dip"
+            android:paddingTop="13.0dip"
+            android:text="@string/expenses_detail_title"
+            android:textColor="@color/gray_66"
+            android:textSize="13.0dip" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/operationstoplist"
+        android:layout_width="fill_parent"
+        android:layout_height="196.0dip"
+        android:layout_marginLeft="24.0dip"
+        android:divider="@color/comm_bg_line"
+        android:dividerHeight="1.0px"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/comm_bg_line" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="46.0dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/leftBtn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rightBtn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/red_fc"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

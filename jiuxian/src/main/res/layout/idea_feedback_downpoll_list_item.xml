@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View style="@style/text_divider_normal" />
+
+    <TextView
+        android:id="@+id/tv_IdeaFeedbackType"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="12.0dip"
+        android:textColor="@drawable/tv_grad_red_selector" />
+</LinearLayout>

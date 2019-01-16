@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.mbg.library.RefreshRelativeLayout
+        android:id="@+id/common_refresh_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/common_refresh_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/common_refresh_RecyclerView_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <ListView
+            android:id="@+id/common_refresh_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/common_refresh_GridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <ExpandableListView
+            android:id="@+id/common_refresh_ExpandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone"
+            android:childDivider="@color/line_color"
+            android:divider="@color/line_color"
+            android:dividerHeight="0.5dp"
+            android:groupIndicator="@null"
+            />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/common_refresh_NestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <HorizontalScrollView
+            android:id="@+id/common_refresh_HorizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/common_refresh_none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/common_refresh_noneimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/default_iamge"
+                />
+            <TextView
+                android:id="@+id/common_refresh_nonetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/size_14sp"
+                android:layout_marginTop="10dp"
+                tools:text="暂时没有相关信息哦~"
+                />
+            <TextView
+                android:id="@+id/common_refresh_nonetext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/size_12sp"
+                android:layout_marginTop="5dp"
+                tools:text="暂时没有相关信息哦~"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/common_refresh_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/white_round_corner_bg"
+                android:gravity="center"
+                android:text="按钮"
+                android:visibility="gone"
+                android:textColor="@color/color_666666"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+    </com.mbg.library.RefreshRelativeLayout>
+</LinearLayout>

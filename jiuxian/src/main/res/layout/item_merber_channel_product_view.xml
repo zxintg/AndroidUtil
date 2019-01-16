@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/first_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip"
+        android:background="@color/comm_ui_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/product_icon"
+            android:layout_width="76.0dip"
+            android:layout_height="76.0dip"
+            android:layout_marginBottom="14.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginTop="14.0dip"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="title"
+                android:textColor="@color/black_25"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/product_notice_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/gold_layout"
+                android:layout_marginBottom="3.0dip"
+                android:text="浙江、江苏会员可兑换"
+                android:textColor="@color/gray_99"
+                android:textSize="12.0sp" />
+
+            <LinearLayout
+                android:id="@+id/gold_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gold_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/gold_coin_icon"
+                    android:drawablePadding="4.0dip"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/gold_color"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/gold_coin_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/gold_coin_character"
+                    android:textColor="@color/gold_color"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/money_and_gold_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/gold_color"
+                    android:textSize="14.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0" />
+
+                <Button
+                    android:id="@+id/exchange_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_round_stroke_gray"
+                    android:gravity="right"
+                    android:padding="5.0dip"
+                    android:text="@string/exchange_detail_character"
+                    android:textColor="@color/gray_66"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginTop="2.0dip"
+        android:background="@color/gray_e8" />
+</LinearLayout>

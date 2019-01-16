@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/color_ffffff">
+
+    <ImageView
+        android:id="@+id/iv_album_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/iv_album_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@color/transparent_50"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/color_ffffff"
+        android:textSize="15sp"
+        tools:text="标题" />
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.MyViewPager
+        android:id="@+id/vp_jiuxian_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:viewpager_canscroll="false"
+        app:viewpager_orientation="horizontal"
+        />
+
+    <View style="@style/line_style" />
+
+    <RadioGroup
+        android:id="@+id/rg_jiuxian_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+
+</LinearLayout>

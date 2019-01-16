@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_youmei_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:left_button_size="15px"
+        app:show_left_button="true"
+        app:title_text="本地收藏"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px"
+        app:right_button_text="备份"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="@dimen/size_15px"
+        />
+
+    <include layout="@layout/common_refresh_notitle2" />
+</LinearLayout>

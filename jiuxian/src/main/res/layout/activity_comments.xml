@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/comm_ui_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_left_image_right_image" />
+
+    <View style="@style/text_divider_normal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/comments_all_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comments_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments_all"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/comments_all_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="20.0dip"
+            android:background="@color/comm_bg_line" />
+
+        <LinearLayout
+            android:id="@+id/comments_good_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comments_good_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments_good"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/comments_good_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="20.0dip"
+            android:background="@color/comm_bg_line" />
+
+        <LinearLayout
+            android:id="@+id/comments_general_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comments_general_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments_genera"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/comments_general_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="20.0dip"
+            android:background="@color/comm_bg_line" />
+
+        <LinearLayout
+            android:id="@+id/comments_bad_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comments_bad_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments_bad"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/comments_bad_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="20.0dip"
+            android:background="@color/comm_bg_line" />
+
+        <LinearLayout
+            android:id="@+id/comments_img_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comments_img_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments_img"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/comments_img_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/text_divider_normal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/text_divider_normal" />
+
+        <com.zxin.zxinlib.view.RefreshCommonView
+            android:id="@+id/rcv_comments_commonlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bottonViewText="我是有底线的~~~"
+            app:content_bgColor="@color/background_color"
+            app:noneText="您暂无评价信息~"
+            app:orientation="vertical"
+            app:vessel_type="RecyclerView"/>
+    </LinearLayout>
+</LinearLayout>

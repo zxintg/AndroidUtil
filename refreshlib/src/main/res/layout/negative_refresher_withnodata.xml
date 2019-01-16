@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="13dp">
+
+    <ImageView
+        android:id="@+id/negative_withnodata_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/refreshing_gray" />
+
+    <TextView
+        android:id="@+id/negative_withnodata_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在加载..."
+        android:textColor="#5c5c5c"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

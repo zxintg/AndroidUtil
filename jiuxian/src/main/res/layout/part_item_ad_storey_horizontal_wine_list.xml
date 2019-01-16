@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/horizontal_wine_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:focusable="true"
+        android:paddingBottom="1.0dip"
+        android:paddingTop="1.0dip"
+        android:scrollbars="none" />
+</LinearLayout>

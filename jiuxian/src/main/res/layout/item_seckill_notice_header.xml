@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notice_time_info"
+    android:layout_width="fill_parent"
+    android:layout_height="34.0dip"
+    android:background="@color/black_25"
+    android:drawableLeft="@drawable/icon_seckill_time"
+    android:drawablePadding="10.0dip"
+    android:gravity="center_vertical"
+    android:minHeight="34.0dip"
+    android:paddingLeft="12.0dip"
+    android:textColor="@color/white"
+    android:textSize="14.0dip" />

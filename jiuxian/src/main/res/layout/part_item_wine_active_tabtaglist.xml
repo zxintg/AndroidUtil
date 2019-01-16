@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_ui_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/comm_bg_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tablist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_wine_active_tab_bg_default" />
+<!--
+    <com.jiuxian.client.widget.tagView.TagListView xmlns:f="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/taglistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="8.0dip"
+        android:visibility="gone"
+        f:horizontalSpacing="8.0dip"
+        f:orientation="horizontal"
+        f:verticalSpacing="10.0dip" />-->
+</LinearLayout>

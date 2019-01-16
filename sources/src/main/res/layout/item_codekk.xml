@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_codekk_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/color_1aa0ed"
+        android:textSize="@dimen/size_15sp"
+        tools:text="标题" />
+
+    <TextView
+        android:id="@+id/item_codekk_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/size_15sp"
+        tools:text="内容" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/item_codekk_createtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_button_text="创建时间"
+        app:left_button_textColor="@color/color_666666"
+        app:left_button_textSize="@dimen/size_13px"
+        app:right_button_text="创建时间"
+        app:right_button_textColor="@color/color_999999"
+        app:right_button_textSize="@dimen/size_13px" />
+
+    <View style="@style/line_style" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="项目路径"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/size_14sp" />
+
+    <TextView
+        android:id="@+id/item_codekk_projecturl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_common_bg"
+        android:padding="10dp"
+        android:textColor="@color/color_ff43c6ff"
+        android:textSize="@dimen/size_14sp"
+        tools:text="点击项目路径" />
+</LinearLayout>

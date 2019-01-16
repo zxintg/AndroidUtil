@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pro_recommend_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="4.0dip"
+    android:cacheColorHint="@color/transparent"
+    android:divider="@color/transparent"
+    android:dividerHeight="4.0dip"
+    android:headerDividersEnabled="false"
+    android:listSelector="@color/transparent"
+    android:scrollbars="none"
+    android:visibility="gone" />

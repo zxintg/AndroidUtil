@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip"
+        android:background="@color/colorPrimary1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_fragment_mine_personal_info"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:background="@color/colorPrimary1">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_fragment_mine_head"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/mine_tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:text="@string/fragment_mine_topname"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/tv_fragment_mine_my_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_mine_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="昵称："
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_mine_user_lv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6.0dip"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="等級："
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_mine_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="積分："
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/qiandao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:background="@drawable/common_round_bg"
+                    android:gravity="center"
+                    android:text="签到"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12.0dip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/share_people"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dimen_90px_4_640px"
+                        android:layout_marginLeft="@dimen/mafin"
+                        android:drawableLeft="@mipmap/icon_jf"
+                        android:drawablePadding="6.0dip"
+                        android:gravity="center_vertical"
+                        android:text="我的积分"
+                        android:textColor="#ff423e3e"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/jifen"
+                        android:layout_width="29.0dip"
+                        android:layout_height="29.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18.0dip"
+                        android:background="@drawable/shape_circle"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_line" />
+
+                <RelativeLayout
+                    android:id="@+id/tv_fragment_mine_become_merchant"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18.0dip"
+                        android:src="@mipmap/icon_jt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_90px_4_640px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/mafin"
+                        android:drawableLeft="@mipmap/icon_wdsc"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/become_merchant"
+                        android:textColor="#ff423e3e"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/view_xx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18.0dip"
+                        android:src="@drawable/point" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_90px_4_640px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/mafin"
+                        android:drawableLeft="@mipmap/wdxx"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/fragment_mine_mymassge"
+                        android:textColor="#ff423e3e"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_line" />
+
+                <RelativeLayout
+                    android:id="@+id/tv_fragment_mine_notice_center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18.0dip"
+                        android:src="@mipmap/icon_jt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_90px_4_640px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/mafin"
+                        android:drawableLeft="@mipmap/icon_wdfb"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="H5小游戏"
+                        android:textColor="#ff423e3e"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_line" />
+
+                <RelativeLayout
+                    android:id="@+id/view_tj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18.0dip"
+                        android:src="@mipmap/icon_jt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_90px_4_640px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/mafin"
+                        android:drawableLeft="@mipmap/imfx"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/fragment_mine_share"
+                        android:textColor="#ff423e3e"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_line" />
+
+                <RelativeLayout
+                    android:id="@+id/view_jcgx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18.0dip"
+                        android:src="@mipmap/icon_jt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_90px_4_640px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/mafin"
+                        android:drawableLeft="@mipmap/jxx"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/fragment_mine_check"
+                        android:textColor="#ff423e3e"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/adclose"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_adclose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12.0dip"
+                        android:src="@drawable/anniuk" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_90px_4_640px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/mafin"
+                        android:drawableLeft="@mipmap/ad"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/fragment_mine_closead"
+                        android:textColor="#ff423e3e"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/view_qchc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18.0dip"
+                        android:src="@mipmap/icon_jt" />
+
+                    <TextView
+                        android:id="@+id/tv_qchc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dimen_90px_4_640px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/mafin"
+                        android:drawableLeft="@mipmap/qchc"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/fragment_mine_clear"
+                        android:textColor="#ff423e3e"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/share_people"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/view_glyx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/dimen_90px_4_640px"
+                            android:layout_marginLeft="@dimen/mafin"
+                            android:drawableLeft="@mipmap/gl"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:text="@string/fragment_mine_good"
+                            android:textColor="#ff423e3e"
+                            android:textSize="14.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="18.0dip"
+                            android:src="@mipmap/icon_jt" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/erweima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35.0dip"
+                android:drawableTop="@drawable/erweima"
+                android:text="@string/erweima_text"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35.0dip">
+
+                <LinearLayout
+                    android:id="@+id/ll_ad_fullscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="22.0dip"
+                    android:layout_gravity="top"
+                    android:background="#fffafafa"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="bottom"
+                    android:background="#fffafafa"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/more_clear_cache"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/shape_btn_green_5"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="16.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

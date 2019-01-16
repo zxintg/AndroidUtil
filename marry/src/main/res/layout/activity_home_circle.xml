@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ab_circle_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax"
+                app:layout_scrollFlags="scroll">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dim340"
+                    android:scaleType="fitXY"
+                   />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/dim10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dim40"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/dim10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dim24" />
+
+                    <TextView
+                        android:id="@+id/tv_describe"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/dim10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dim24" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/appbar_layout_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin">
+
+                <com.zxin.zxinlib.view.CommonCrosswiseBar
+                    android:id="@+id/ccb_marray_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bar_background="@color/color_00000000"
+                    app:isTopBar="true"
+                    app:left_button_image="@drawable/gray_back"
+                    app:left_button_size="20px"
+                    app:show_left_button="true"
+                    app:title_text="标题"
+                    app:title_textColor="@color/color_ffffff"
+                    app:title_textSize="@dimen/size_18px"
+                    app:view_alpha="0"
+                    app:show_bar_line="false"
+                    app:view_alpha_showType="TitleView"
+                    app:right_button_image="@drawable/issue_topic"
+                    app:show_right_button="true"
+                    app:right_button_size="20px"
+                    />
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <com.zxin.zxinlib.view.PagerSlidingTabStrip
+            android:id="@+id/tabStripLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/size_14sp"
+            app:pstsDividerColor="@color/color_00000000"
+            app:pstsIndicatorColor="@color/red_light"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsSelectTabTextColor="@color/red_light"
+            app:pstsSelectTabTextSize="@dimen/size_16sp"
+            app:pstsTabBackground="@color/color_ffffff"
+            app:pstsTextAllCaps="false"
+            app:pstsUnderlineColor="@color/line_color"
+            app:pstsUnderlineHeight="0.5dp"
+            app:pstsShouldExpand="false"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_circle_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+</android.support.design.widget.CoordinatorLayout>

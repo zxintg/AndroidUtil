@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/welcome_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:background="@drawable/icon_welcome_continue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <TextView
+            android:id="@+id/welcome_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="1.0dip"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:textColor="@android:color/white"
+            android:textSize="16.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="@string/welcome_continue"
+            android:textColor="@android:color/white"
+            android:textSize="16.0dip" />
+    </LinearLayout>
+</FrameLayout>

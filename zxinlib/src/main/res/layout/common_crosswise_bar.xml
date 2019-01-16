@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/common_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height">
+
+    <LinearLayout
+        android:id="@+id/ll_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/common_bar_leftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:padding="10dp"
+            tools:text="左边按钮" />
+
+        <ImageView
+            android:id="@+id/common_bar_leftImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:scaleType="fitStart"
+            android:src="@mipmap/default_iamge"  />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/common_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:maxLength="15"
+        android:visibility="gone"
+        android:ellipsize="end"
+        tools:text="霸气侧漏" />
+
+    <EditText
+        android:id="@+id/common_bar_et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/ll_left_layout"
+        android:layout_toStartOf="@+id/ll_right_layout"
+        android:background="@drawable/search_edittext_shape"
+        android:drawableRight="@drawable/iv_delete_bg"
+        android:padding="5dp"
+        android:textSize="@dimen/size_15sp"
+        android:visibility="gone" />
+
+   <LinearLayout
+       android:id="@+id/ll_right_layout"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:layout_alignParentEnd="true"
+       android:gravity="center_vertical"
+       >
+       <ImageView
+           android:id="@+id/common_bar_rightImage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp"
+           android:layout_marginRight="10dp"
+           android:scaleType="fitEnd"
+           android:visibility="gone"
+           android:src="@mipmap/default_iamge" />
+
+       <TextView
+           android:id="@+id/common_bar_rightBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:drawablePadding="5dp"
+           android:ellipsize="end"
+           android:gravity="center_vertical|right"
+           android:maxLines="1"
+           android:visibility="gone"
+           android:paddingBottom="10dp"
+           android:paddingRight="10dp"
+           android:paddingTop="10dp"
+           tools:text="右边按钮" />
+   </LinearLayout>
+
+    <View
+        android:id="@+id/common_bar_line"
+        style="@style/line_style"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

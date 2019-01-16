@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:left_image="@mipmap/icon_left_close"
+        app:left_image_width="25px"
+        app:left_image_height="25px"
+        app:show_left_image="true"
+        app:title_text="网页"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <com.zxin.zxinlib.view.X5WebView
+        android:id="@+id/web_filechooser"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff" />
+
+</LinearLayout>

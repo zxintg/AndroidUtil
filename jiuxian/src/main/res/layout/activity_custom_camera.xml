@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/scan_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout">
+
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/mImgPhotograph"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter" />
+
+      <!--  <com.jiuxian.client.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />-->
+
+        <LinearLayout
+            android:id="@+id/scan_check_bg_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_scan_checklist"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/scan_check_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:paddingTop="70.0dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/scan_code_bg_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/translucent_30"
+            android:visibility="gone"
+            >
+
+            <FrameLayout
+                android:id="@+id/scan_code_bg"
+                android:layout_width="250.0dip"
+                android:layout_height="250.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="154.0dip">
+
+                <View
+                    android:id="@+id/scan_code_grid_line_icon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/scan_code_grid_line_icon" />
+
+                <ImageView
+                    android:id="@+id/scan_code_grid_icon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/scan_code_grid_icon" />
+
+                <ImageView
+                    android:id="@+id/scan_code_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_barcode_tip"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/scan_code_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scan_code_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24.0dip"
+                android:text="@string/scan_text"
+                android:textColor="@color/white"
+                android:textSize="14.0dip" />
+
+            <Button
+                android:id="@+id/scan_qrcode_raiders"
+                android:layout_width="115.0dip"
+                android:layout_height="35.0dip"
+                android:layout_below="@+id/scan_code_info"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38.0dip"
+                android:background="@drawable/bg_round_stroke_white"
+                android:text="@string/scan_qrcode_raiders"
+                android:textColor="@color/white"
+                android:textSize="14.0dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/capture_wine_identify_bg"
+            android:visibility="gone" />
+
+        <!--<com.jiuxian.client.widget.CenterTransBgLayout
+            android:id="@+id/scan_wine_bg_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/translucent_30"
+            app:way="child">
+
+            <View
+                android:id="@+id/scan_wine_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="115.0dip"
+                android:layout_marginLeft="25.0dip"
+                android:layout_marginRight="25.0dip"
+                android:layout_marginTop="90.0dip"
+                android:background="@drawable/capture_wine_identify_bg" />
+        </com.jiuxian.client.widget.CenterTransBgLayout>-->
+
+        <ImageView
+            android:id="@+id/capture_wine_scan_line"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip"
+            android:layout_marginBottom="115.0dip"
+            android:layout_marginLeft="28.0dip"
+            android:layout_marginRight="28.0dip"
+            android:layout_marginTop="90.0dip"
+            android:background="@drawable/bottom_line"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btoom_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23.0dip"
+        android:orientation="horizontal"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="12.0dip"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/cb_flash_ligth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/selector_flashlight"
+            android:checked="false"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/select_photograph_image"
+            android:layout_width="44.0dip"
+            android:layout_height="44.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/select_photograph_icon" />
+
+        <Button
+            android:id="@+id/btn_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/capture_picture_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btoom_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/identify_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20.0dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5.0dip"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="?android:progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/identify_ding_please_wait" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@color/trans_33"
+                android:orientation="horizontal"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <TextView
+                    android:id="@+id/again_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:padding="10.0dip"
+                    android:text="@string/anagin_capture"
+                    android:textColor="@color/white"
+                    android:textSize="18.0dip" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+
+                <TextView
+                    android:id="@+id/use_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:padding="10.0dip"
+                    android:text="@string/user_picture"
+                    android:textColor="@color/white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mtitle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <ImageView
+            android:id="@+id/mImgScanBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="10.0dip"
+            android:paddingLeft="0.0dip"
+            android:src="@drawable/scan_wine_back_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_rw_code"
+                android:textColor="@color/white"
+                android:textSize="18.0dip"
+                android:visibility="gone" />
+
+            <!--<com.jiuxian.client.widget.CaptureWineIndicator
+                android:id="@+id/capture_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                app:cp_indicatorColor="@color/white"
+                app:cp_indicatorHeight="2.0dip"
+                app:cp_indicatorTextSize="16.0sp"
+                app:indicatorMargin="16.0dip" />-->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mImgCaptureAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="10.0dip"
+            android:paddingRight="0.0dip"
+            android:src="@drawable/capture_alert_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_character_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="236.0dip"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/character_tip"
+            android:text="请将正面酒标" />
+
+        <TextView
+            style="@style/character_tip"
+            android:text="置于取景框内" />
+
+        <TextView
+            style="@style/character_tip"
+            android:text="然后拍照搜索" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/capture_wine_guide_page"
+        layout="@layout/capture_wine_guide_page"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/item_cantainer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/size_12sp"
+            tools:text="标题" />
+
+        <ImageView
+            android:id="@+id/item_cantainer_arrow"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/ic_black_down_arrow"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_cantainer_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_dfdfdf"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>

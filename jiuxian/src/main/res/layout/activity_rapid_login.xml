@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:right_button_text="@string/register_jiuxian_title"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="@dimen/size_15px"
+        app:show_left_button="true"
+        app:title_text="@string/prompt_input_phonenumber"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <EditText
+        android:id="@+id/register_phonenum_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_ffffff"
+        android:digits="\ 0123456789"
+        android:drawableLeft="@drawable/ic_login_account"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/icon_clear"
+        android:hint="@string/register_hind_tishi_2"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_999999"
+        android:textSize="@dimen/size_14sp" />
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/register_securitycode_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_check_code_icon"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/icon_clear"
+            android:hint="@string/phone_check_code_11"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="10dp"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/size_14sp" />
+
+        <View
+            style="@style/line_ver_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/register_getcode_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@null"
+            android:clickable="false"
+            android:enabled="false"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/register_get_checkcode"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/size_14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_next_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button_gray_select"
+        android:clickable="false"
+        android:enabled="false"
+        android:padding="10dp"
+        android:text="@string/login_fast_login"
+        android:textColor="@color/color_ffffff" />
+
+    <TextView
+        android:id="@+id/login_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:text="@string/login_title_account"
+        android:textColor="@color/textview_gray"
+        android:textSize="@dimen/size_13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/line_style"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/login_cooperate"
+            android:textColor="@color/textview_gray"
+            android:textSize="12dp" />
+
+        <View
+            style="@style/line_style"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <include layout="@layout/thirdparty_login_view"/>
+</LinearLayout>

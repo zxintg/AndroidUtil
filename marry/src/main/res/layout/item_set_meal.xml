@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dim20"
+        android:paddingTop="@dimen/dim20">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/dim34" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim114"
+            android:layout_marginLeft="@dimen/dim20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《时尚新娘》 婚尚闺蜜派对"
+                android:textSize="@dimen/dim30" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_icon_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/tf4666b"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11998"
+                    android:textColor="@color/tf4666b"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_marketprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim10"
+                    android:paddingTop="@dimen/dim5"
+                    android:text="22998"
+                    android:textSize="@dimen/dim25" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim10"
+                    android:text="收藏"
+                    android:textSize="@dimen/dim25" />
+
+                <TextView
+                    android:id="@+id/tv_goods_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim10"
+                    android:layout_marginRight="@dimen/dim34"
+                    android:textSize="@dimen/dim25" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim80"
+        android:layout_marginTop="@dimen/dim1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="查看更多"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim10"
+        android:background="@color/body_background" />
+</LinearLayout>

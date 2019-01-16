@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15.0dip"
+    android:layout_marginRight="15.0dip"
+    android:layout_marginTop="10.0dip"
+    app:cardCornerRadius="4.0dip"
+    app:cardElevation="1.2999878dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="手把手教你搜索公众号往期文章"
+            android:textColor="@android:color/black"
+            android:textSize="16.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="我们在微信平台后台经常收到读者朋友们关键词的留言。确实，随着我们文章量的积累，在微信历史消息里查找之前的文章确实很麻烦。..."
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvChannelName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1.0"
+                android:text="标签: 健康养生"
+                android:textSize="13.0dip" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1.0"
+                android:gravity="end|center"
+                android:text="20101010"
+                android:textSize="13.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

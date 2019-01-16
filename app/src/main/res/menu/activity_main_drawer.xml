@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="测试" />
+
+        <item
+            android:id="@+id/nav_marry"
+            android:icon="@drawable/ic_launcher_marry"
+            android:title="结婚小秘书" />
+
+        <item
+            android:id="@+id/nav_jiuxian"
+            android:icon="@drawable/icon_launcher_new"
+            android:title="酒仙网" />
+
+        <item
+            android:id="@+id/nav_jdxsxp"
+            android:icon="@mipmap/icon_launcher_jdxsxp"
+            android:title="美女图片精选" />
+
+        <item
+            android:id="@+id/nav_yowu"
+            android:icon="@mipmap/icon_launcher_jdxsxp"
+            android:title="美女尤物" />
+
+    </group>
+
+    <item android:title="附录">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="系统设置" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="分享" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="关于" />
+        </menu>
+    </item>
+
+</menu>

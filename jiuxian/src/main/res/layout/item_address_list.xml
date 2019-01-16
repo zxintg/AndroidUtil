@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_listview_normal"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/mAddressItemLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/comm_margin_14"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/comm_margin_14">
+
+        <ImageView
+            android:id="@+id/mAddressItemImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:padding="5.0dip"
+            android:src="@drawable/icon_check_false"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mNameText"
+                    style="@style/textview_14"
+                    android:maxEms="5" />
+
+                <TextView
+                    android:id="@+id/mPhoneText"
+                    style="@style/textview_14"
+                    android:layout_marginLeft="10.0dip" />
+
+                <TextView
+                    android:id="@+id/mApproveText"
+                    style="@style/textview_12"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/icon_approve_address"
+                    android:paddingLeft="2.0dip"
+                    android:paddingRight="2.0dip"
+                    android:text="@string/approve_address"
+                    android:textColor="@color/white"
+                    android:textSize="9.0dip"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_margin_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mProvinceText"
+                    style="@style/textview_12"
+                    android:textColor="@color/gray_99" />
+
+                <TextView
+                    android:id="@+id/mCityText"
+                    style="@style/textview_12"
+                    android:gravity="center"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:textColor="@color/gray_99" />
+
+                <TextView
+                    android:id="@+id/mDistrictText"
+                    style="@style/textview_12"
+                    android:textColor="@color/gray_99" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mAddressDetailText"
+                style="@style/textview_12"
+                android:gravity="center|left"
+                android:singleLine="false"
+                android:textColor="@color/gray_99" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mEditAddressImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:padding="4.0dip"
+            android:src="@drawable/icon_edit_address" />
+    </LinearLayout>
+</LinearLayout>

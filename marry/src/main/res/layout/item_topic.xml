@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="@dimen/dim52"
+        android:layout_marginLeft="@dimen/dim30"
+        android:background="#ffaaaaaa" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim18"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/floor_shape"
+            android:gravity="center"
+            android:minWidth="10dp"
+            android:text="1"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dim18" />
+
+        <TextView
+            android:id="@+id/tv_nice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="nick"
+            android:textColor="#ffaaaaaa"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <FrameLayout
+            android:id="@+id/fl_replay_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim30"
+            android:paddingTop="15dp"
+            android:background="@drawable/replay_frame">
+
+            <LinearLayout
+                android:id="@+id/ll_replay_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/replay_bg"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_reply_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim20"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:gravity="center_vertical"
+                    android:text="回复"
+                    android:textColor="@color/color_333333"
+                    android:textSize="13sp" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/default_iamge"
+                    android:minHeight="30.0dip" />
+
+                <LinearLayout
+                    android:id="@+id/ll_gray"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim20"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:layout_marginTop="@dimen/dim20"
+                    android:background="#ffeeeeee"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dim20"
+                    android:paddingRight="@dimen/dim20"
+                    android:paddingTop="@dimen/dim20">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_floor_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dim24"
+                            android:background="@drawable/floor_shape"
+                            android:gravity="center"
+                            android:minWidth="@dimen/dim24"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dim18" />
+
+                        <TextView
+                            android:id="@+id/tv_nice_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_floor_gray"
+                            android:layout_marginLeft="@dimen/dim10"
+                            android:layout_toRightOf="@+id/tv_floor_gray"
+                            android:text="nick"
+                            android:textColor="#ffaaaaaa"
+                            android:textSize="@dimen/dim24" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_reply_content_gray"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dim60"
+                        android:paddingBottom="@dimen/dim10"
+                        android:paddingTop="@dimen/dim10"
+                        android:text="回复回复回复回复回复回复回复回复回复回复"
+                        android:textColor="#ffaaaaaa"
+                        android:textSize="@dimen/dim24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dim60"
+                    android:layout_marginBottom="-5.0dip"
+                    android:layout_marginLeft="@dimen/dim20"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26.0dip"
+                        android:drawablePadding="@dimen/dim5"
+                        android:gravity="center_vertical"
+                        android:text="一天前"
+                        android:textSize="@dimen/dim22" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+
+                    <TextView
+                        android:id="@+id/tv_laud"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26.0dip"
+                        android:layout_marginRight="@dimen/dim20"
+                        android:drawableLeft="@drawable/laud_selector"
+                        android:drawablePadding="@dimen/dim5"
+                        android:gravity="center_vertical"
+                        android:text="99"
+                        android:textSize="@dimen/dim22" />
+
+                    <TextView
+                        android:id="@+id/tv_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:drawableLeft="@drawable/reply"
+                        android:drawablePadding="@dimen/dim5"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/dim22" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/civ"
+            android:layout_width="@dimen/dim60"
+            android:layout_height="@dimen/dim60"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/default_user"/>
+    </FrameLayout>
+    <View
+        android:id="@+id/view_topic_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="gone"
+        />
+</LinearLayout>

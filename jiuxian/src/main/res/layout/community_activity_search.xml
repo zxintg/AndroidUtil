@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mLlSearchContent"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:background="@color/title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/jump_margin">
+
+        <ImageView
+            android:id="@+id/titlebar_left_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_title_back_bg"
+            android:contentDescription="@null"
+            android:paddingLeft="@dimen/jump_margin"
+            android:paddingRight="@dimen/jump_margin"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_title_back" />
+
+        <EditView
+            android:id="@+id/mCevSearchWord"
+            android:layout_width="0.0dip"
+            android:layout_height="32.0dip"
+            android:layout_marginRight="@dimen/jump_margin"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/btn_begin_search"
+            style="@style/textview_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:textColor="@color/gray_66" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/community_search_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/mLlSearchContent"
+        android:layout_marginBottom="82.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="82.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/text_divider_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="82.0dip">
+
+            <HorizontalScrollView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/community_choose_pro_bottom_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/community_pro_select_done"
+                android:layout_width="58.0dip"
+                android:layout_height="58.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/community_choose_pro_red_circle_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8.0dip"
+                    android:text="@string/community_already_selected"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/community_choose_pro_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8.0dip"
+                    android:text="0/6"
+                    android:textColor="@color/white"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

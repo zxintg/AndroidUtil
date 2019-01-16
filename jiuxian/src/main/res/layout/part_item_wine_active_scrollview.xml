@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/ad_title_info"
+        android:layout_width="fill_parent"
+        android:layout_height="34.0dip"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ad_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/ad_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="12.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View style="@style/text_divider_normal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ad_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefefef"
+    android:tag="layout/fragment_small_video_list_0">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/pull_refresh_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="7.0dip"
+        android:layout_marginRight="7.0dip"
+        android:background="#ffefefef"
+        android:gravity="fill"
+        android:horizontalSpacing="7.0dip"
+        android:numColumns="2"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"/>
+
+    <LinearLayout
+        android:id="@+id/linear_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff6f7f9"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_gif"
+            android:layout_width="120.0dip"
+            android:layout_height="96.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_load_failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/loadingfail_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19.0dip"
+            android:text="@string/net_load_fail"
+            android:textColor="#ffbbbbbb"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.0dip"
+            android:text="@string/please_refresh"
+            android:textColor="#ffbbbbbb"
+            android:textSize="15.0dip" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36.0dip"
+            android:background="@mipmap/loadingfail_refresh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_focus_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_focus_anybody"
+            android:textColor="#ffbbbbbb"
+            android:textSize="15.0dip" />
+    </LinearLayout>
+</RelativeLayout>

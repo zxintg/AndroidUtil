@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="12.0dip"
+    android:paddingRight="12.0dip">
+
+    <Button
+        android:id="@+id/order_pay_success_advType_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="38.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/selector_button_round_red"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14.0dip" />
+
+    <View
+        android:id="@+id/bottom_space_view"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:visibility="gone" />
+</LinearLayout>

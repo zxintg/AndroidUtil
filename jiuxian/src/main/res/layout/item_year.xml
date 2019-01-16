@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/jump_margin"
+    android:paddingRight="@dimen/jump_margin">
+
+    <TextView
+        android:id="@+id/tv_year_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip" />
+</LinearLayout>

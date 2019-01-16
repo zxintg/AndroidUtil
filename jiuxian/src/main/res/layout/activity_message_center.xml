@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_ui_bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <com.zxin.zxinlib.view.CommonCrosswiseBar
+            android:id="@+id/ccb_jiuxian_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_background="@color/color_ffffff"
+            app:isTopBar="true"
+            app:left_button_image="@mipmap/ic_black_left_arrow"
+            app:show_left_button="true"
+            app:title_text="@string/message_center_title"
+            app:title_textColor="@color/color_333333"
+            app:title_textSize="@dimen/size_18px"
+            app:show_right_button="true"
+            app:right_button_image="@drawable/setting_icon"
+            app:right_button_size="@dimen/size_20px"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/message_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/down_price_guide_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#bb000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/id_down_price_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="170.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_down_price_remind_guide_item" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_down_price_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_down_price_remind_guide" />
+
+        <ImageView
+            android:id="@+id/down_price_guide_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="62.0dip"
+            android:src="@drawable/capture_wine_known_btn_bg" />
+    </RelativeLayout>
+</RelativeLayout>

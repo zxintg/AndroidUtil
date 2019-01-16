@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#99000000"
+    android:padding="12.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pop_item_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_menu_up"
+            android:gravity="center"
+            android:textColor="@color/gray_99"
+            android:textSize="13.0dip" />
+
+        <TextView
+            android:id="@+id/pop_item_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_menu_middle"
+            android:gravity="center"
+            android:text="@string/comment_menu_take_photo"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/pop_item_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_menu_down"
+            android:gravity="center"
+            android:text="@string/comment_menu_photo"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/pop_item_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/pop_menu_one"
+            android:gravity="center"
+            android:text="@string/comment_menu_cancel"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+</FrameLayout>

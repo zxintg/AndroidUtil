@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0"
+        android:gravity="center"
+        android:paddingBottom="54.0dip">
+
+        <ImageView
+            android:id="@+id/prolist_receive_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_orderlist_receive_coupon"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/prolist_conpon_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/prolist_conpon_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_productlist_conpon"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="220.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="40.0dip"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="30.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="25.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/prolist_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4.0dip"
+                        android:gravity="bottom"
+                        android:textColor="@color/color_red_27"
+                        android:textSize="20.0dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/prilist_manjian_info_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_yellow_17"
+                        android:textSize="12.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/prilist_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:textColor="@color/color_yellow_17"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="30.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prolist_info_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="14.0dip"
+                    android:gravity="center_horizontal"
+                    android:maxWidth="220.0dip"
+                    android:textColor="@color/color_yellow_25"
+                    android:textSize="14.0dip" />
+
+                <ImageView
+                    android:id="@+id/prolist_receive_srue_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_productlist_sure" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="9.0"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/prolist_dialog_back"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="68.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_xinke_off" />
+    </LinearLayout>
+</LinearLayout>

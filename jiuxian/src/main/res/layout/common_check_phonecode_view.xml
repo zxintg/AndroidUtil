@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/phone_number_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:gravity="center"
+            android:src="@drawable/phone_icon" />
+
+        <EditText
+            android:id="@+id/edt_phone_number_input"
+            android:layout_width="0.0dip"
+            android:layout_height="46.0dip"
+            android:layout_weight="6.0"
+            android:background="@color/white"
+            android:hint="@string/check_phone_number"
+            android:inputType="number"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/textview_lightgray"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+    <View
+        style="@style/text_divider_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:gravity="center"
+            android:src="@drawable/ic_login_phone_verify" />
+
+        <EditText
+            android:id="@+id/edt_check_vercode_input"
+            android:layout_width="0.0dip"
+            android:layout_height="46.0dip"
+            android:layout_weight="6.0"
+            android:background="@color/white"
+            android:hint="@string/prompt_input_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/textview_lightgray"
+            android:textSize="14.0dip" />
+
+        <View
+            style="@style/text_divider_normal"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:progressBarStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_check_vercode"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.5"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:text="@string/obtain_check_code"
+                android:textColor="@color/gray_66"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_youmei_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:left_button_size="15px"
+        app:show_left_button="true"
+        app:title_text="收藏数据备份"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="本地收藏备份"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="数据源（JSON）:"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_13sp" />
+
+            <TextView
+                android:id="@+id/et_youmei_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_shape"
+                android:gravity="left"
+                android:hint="备份信息"
+                android:lineSpacingExtra="3dp"
+                android:scrollbars="vertical"
+                android:minLines="5"
+                android:padding="10dp"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_youmei_copysource"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/registered_yzm1"
+                android:gravity="center"
+                android:text="资源拷贝"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="备份数据（JSON）:"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_13sp" />
+
+            <EditText
+                android:id="@+id/et_youmei_backups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_shape"
+                android:gravity="left"
+                android:hint="备份数据"
+                android:lineSpacingExtra="3dp"
+                android:scrollbars="vertical"
+                android:maxLines="20"
+                android:minLines="10"
+                android:padding="10dp"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+            <View
+                style="@style/line_style"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="本地视频备份"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="数据源（JSON）:"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_13sp" />
+
+            <TextView
+                android:id="@+id/et_youmei_videosource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_shape"
+                android:gravity="left"
+                android:hint="备份信息"
+                android:lineSpacingExtra="3dp"
+                android:scrollbars="vertical"
+                android:minLines="5"
+                android:padding="10dp"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_youmei_copybackups"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/registered_yzm1"
+                android:gravity="center"
+                android:text="资源拷贝"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="备份数据（JSON）:"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_13sp" />
+
+            <EditText
+                android:id="@+id/et_youmei_videobackups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_shape"
+                android:gravity="left"
+                android:hint="备份数据"
+                android:lineSpacingExtra="3dp"
+                android:scrollbars="vertical"
+                android:maxLines="20"
+                android:minLines="10"
+                android:padding="10dp"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_youmei_backups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/registered_yzm1"
+                android:gravity="center"
+                android:text="确定备份"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_15sp" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_ui_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/promotion_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+
+        <ImageView
+            android:id="@+id/iv_back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="18.0dip"
+            android:layout_marginRight="15.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_back_to_top"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/community_promotion_publish"
+            android:layout_width="54.0dip"
+            android:layout_height="70.0dip"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_community_circle_publish" />
+
+       <!-- <com.jiuxian.client.widget.WaveView
+            android:id="@+id/community_promotion_wave_view"
+            android:layout_width="43.0dip"
+            android:layout_height="43.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18.0dip"
+            android:visibility="gone" />-->
+    </RelativeLayout>
+</RelativeLayout>

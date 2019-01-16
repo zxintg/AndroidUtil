@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/usercoupon_item_background"
+    android:layout_width="fill_parent"
+    android:layout_height="115.0dip"
+    android:background="@drawable/bg_coupon_grey"
+    android:gravity="center_vertical"
+    android:paddingRight="14.0dip">
+
+    <TextView
+        android:id="@+id/usercoupon_item_scope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:background="@drawable/bg_couponscope_bluedark"
+        android:gravity="center"
+        android:paddingBottom="2.0dip"
+        android:paddingLeft="3.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="2.0dip"
+        android:text="@string/user_coupon_item_type_all"
+        android:textColor="@android:color/white"
+        android:textSize="9.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_RMB"
+            android:layout_width="18.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:gravity="bottom"
+            android:text="¥"
+            android:textSize="24.0dip" />
+
+        <TextView
+            android:id="@+id/usercoupon_item_price"
+            android:layout_width="110.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:text="100"
+            android:textSize="60.0dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usercoupon_item_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corners_mycoupon_red_bg"
+                android:paddingBottom="1.0dip"
+                android:paddingLeft="3.0dip"
+                android:paddingRight="3.0dip"
+                android:paddingTop="1.0dip"
+                android:text="@string/user_coupon_item_type_discount_satisfy"
+                android:textColor="@android:color/white"
+                android:textSize="9.0dip" />
+
+            <TextView
+                android:id="@+id/usercoupon_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:lines="2"
+                android:maxLines="2"
+                android:textColor="@color/textview_black"
+                android:textSize="13.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/usercoupon_item_tag"
+        android:layout_width="78.0dip"
+        android:layout_height="78.0dip"
+        android:layout_gravity="center|right"
+        android:contentDescription="@null"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/usercoupon_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginBottom="4.0dip"
+        android:text="2015.08.17-2015.08.18"
+        android:textColor="@color/textview_gray" />
+</FrameLayout>

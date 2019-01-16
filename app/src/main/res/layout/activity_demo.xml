@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:title_text="测试"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_pullzoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="测试头部图片缩放"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_webapijson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="测试网络获取数据(json)"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_webapihtml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="测试网络获取数据(html)"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_router_sources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                android:layout_marginTop="10dp"
+                app:left_button_text="路由框架Router（去资源模块）"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_router_uri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="路由框架Router（隐式跳转）"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_router_toweb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="路由框架Router（跳转网页）"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="日历"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_sortview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="模仿支付宝排序"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_blog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="红鸟网络Android团队Blog"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

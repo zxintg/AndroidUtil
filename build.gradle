@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        mavenCentral()//如果 jcenter 很慢，尝试添加 mavenCentral 并调整到首行
+        //google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.1.0' // 添加插件 更好支持GreenDao
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        //**重要**
+        classpath 'com.bugtags.library:bugtags-gradle:latest.integration'
+        //classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8' //在project下的build.gradle中添加apt插件（使用apt导入时报警告：Warning:Using incompatible plugins for the annotation processing: android-apt. This may）
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()//如果 jcenter 很慢，尝试添加 mavenCentral 并调整到首行
+        //google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/"}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//定义全局属性
+ext{
+    greendaoSchemaVersion = 1
+    //项目的源和目标兼容性值保留为 Java 7
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.3"
+    minSdkVersion = 23
+    targetSdkVersion = 25
+    versionCode = 1
+    versionName = "1.0.1"
+    supportVersion = "27.1.1"
+
+    renderscriptTargetApi = 19
+    renderscriptSupportModeEnabled = true
+
+    //library版本
+    jjdxm_minSdkVersion = 9
+    jjdxm_versionCode = 1
+    jjdxm_versionName = "1.0.0"
+    jjdxm_v4 = 'com.android.support:support-v4:23.3.0'
+    jjdxm_v7 = 'com.android.support:appcompat-v7:23.3.0'
+}

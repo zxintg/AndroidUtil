@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:top="1.5dip">
+                <shape>
+                    <solid android:color="@color/dialog_shadow_color" />
+                    <corners android:radius="4.0dip" />
+                </shape>
+            </item>
+            <item android:bottom="1.5dip">
+                <shape>
+                    <solid android:color="@color/order_radio_bg" />
+                    <corners android:radius="3.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#33000000"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="哈哈哈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/second_text_content_title_size" />
+
+        <View
+            style="@style/line_style"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:text="哈哈哈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/second_text_content_title_size" />
+    </LinearLayout>
+</FrameLayout>

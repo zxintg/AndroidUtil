@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/default_iamge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tv_rl_goods_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="香格里拉大酒店"
+                    android:textSize="14sp" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_typea"
+                    android:layout_width="@dimen/dim35"
+                    android:layout_height="@dimen/dim35"
+                    android:layout_marginLeft="5dp"
+                    fresco:placeholderImage="@drawable/icon_hotel_a" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_typeb"
+                    android:layout_width="@dimen/dim35"
+                    android:layout_height="@dimen/dim35"
+                    android:layout_marginLeft="@dimen/dim10"
+                    fresco:placeholderImage="@drawable/icon_hotel_b" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_typec"
+                    android:layout_width="@dimen/dim35"
+                    android:layout_height="@dimen/dim35"
+                    android:layout_marginLeft="@dimen/dim10"
+                    fresco:placeholderImage="@drawable/icon_hotel_c" />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_goods_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="11998"
+                android:textColor="@color/tf4666b"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_areaid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="雁塔区"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_table_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="桌数 22"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+</LinearLayout>

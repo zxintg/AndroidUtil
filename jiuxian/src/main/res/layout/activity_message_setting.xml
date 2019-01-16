@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:title_text="@string/msg_set"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_margin_10"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="@dimen/size_13sp"
+            android:textColor="@color/color_666666"
+            android:text="@string/msg_push" />
+
+        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+            android:id="@+id/sb_notice_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            app:kswThumbColor="@color/color_ffffff"
+            app:kswTintColor="@color/color_red_27" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/msg_subscription"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/size_13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="@dimen/size_13sp"
+            android:textColor="@color/color_666666"
+            android:text="@string/msg_logistics" />
+
+        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+            android:id="@+id/sb_logistics_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            app:kswThumbColor="@color/color_ffffff"
+            app:kswTintColor="@color/color_red_27" />
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="@dimen/size_13sp"
+            android:textColor="@color/color_666666"
+            android:text="@string/msg_sales" />
+
+        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+            android:id="@+id/sb_sales_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            app:kswThumbColor="@color/color_ffffff"
+            app:kswTintColor="@color/color_red_27" />
+    </LinearLayout>
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="@dimen/size_13sp"
+            android:textColor="@color/color_666666"
+            android:text="@string/msg_depreciate" />
+
+        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+            android:id="@+id/sb_depreciate_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            app:kswThumbColor="@color/color_ffffff"
+            app:kswTintColor="@color/color_red_27" />
+    </LinearLayout>
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="@dimen/size_13sp"
+            android:textColor="@color/color_666666"
+            android:text="@string/msg_system" />
+
+        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+            android:id="@+id/sb_system_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            app:kswThumbColor="@color/color_ffffff"
+            app:kswTintColor="@color/color_red_27" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_ffffff"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/receive_time"
+            android:textSize="@dimen/size_13sp"
+            android:textColor="@color/color_666666"
+            />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/from"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/size_13sp" />
+
+            <TextView
+                android:id="@+id/tv_time_from"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:text="@string/notice_start_time"
+                android:textColor="@color/red_fc"
+                android:textSize="@dimen/size_13sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/to"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/size_13sp" />
+
+            <TextView
+                android:id="@+id/tv_time_to"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:text="@string/notice_end_time"
+                android:textColor="@color/red_fc"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_right"
+                android:textSize="@dimen/size_13sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="@dimen/comm_margin_20"
+        android:drawableLeft="@drawable/alert_icon"
+        android:gravity="left"
+        android:drawablePadding="5dp"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/notice_tip"
+        android:textColor="@color/color_999999" />
+</LinearLayout>

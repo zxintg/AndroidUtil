@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_coupon_up"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim70"
+        android:background="@drawable/icon_coupon_up"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_voucher_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim32"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_voucher_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dim32"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_coupon_down"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim190"
+        android:layout_marginTop="@dimen/dim70"
+        android:background="@drawable/icon_coupon_dowm"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim192">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_voucher_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim32"
+                    android:layout_marginTop="@dimen/dim40"
+                    android:text="dasdasd"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim60" />
+
+                <TextView
+                    android:id="@+id/voucher_t_storename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dim20"
+                    android:layout_marginLeft="@dimen/dim32"
+                    android:text="dasdas"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dim32"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tv_voucher_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dim60"
+                    android:text="dasdasd"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim30" />
+
+                <TextView
+                    android:id="@+id/tv_voucher_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/dim20"
+                    android:text="dasdas"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_overdue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim435"
+        android:layout_marginTop="@dimen/dim50"
+        android:background="@drawable/icon_coupon_overdue"
+        android:visibility="gone" />
+</RelativeLayout>

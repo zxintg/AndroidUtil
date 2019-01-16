@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:title_text="@string/collect_goods"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="15px"
+        app:right_button_text="@string/edit"
+        />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/xlistview_collect"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/comm_ui_bg"
+            android:divider="@null"
+            android:listSelector="@drawable/selector_listview_normal"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/mNoCollectLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:padding="10.0dip"
+                android:src="@drawable/icon_have_no_commodity" />
+
+            <TextView
+                android:id="@+id/mNoCollectText1"
+                style="@style/textview_14"
+                android:layout_marginTop="@dimen/comm_margin_14"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/have_no_collect_any_goods"
+                android:textColor="@color/gray_66" />
+
+            <TextView
+                android:id="@+id/mNoCollectText2"
+                style="@style/textview_12"
+                android:gravity="center"
+                android:padding="1.0dip"
+                android:singleLine="false"
+                android:text="@string/goto_stroll"
+                android:textColor="@color/gray_99" />
+
+            <Button
+                android:id="@+id/mGoToMainBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:layout_marginTop="32.0dip"
+                android:background="@drawable/selector_button_round_white"
+                android:paddingLeft="25.0dip"
+                android:paddingRight="25.0dip"
+                android:text="@string/goto_home"
+                android:textColor="@color/gray_66"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/mCollectManagerLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:background="@drawable/bg_bottom_column"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="12.0dip"
+        android:visibility="gone">
+
+        <View style="@style/text_divider_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <CheckBox
+                    android:id="@+id/mSelectAllCheckBox"
+                    style="@style/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4.0dip"
+                    android:text="@string/cart_select_all"
+                    android:textColor="@color/black_25"
+                    android:textSize="14.0dip" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/mCancelCollectTextView"
+                style="@style/textview_14"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_button_square_gray"
+                android:gravity="center"
+                android:text="@string/cancel_collect"
+                android:textColor="@color/gray_99" />
+
+            <TextView
+                android:id="@+id/mAddCartTextView"
+                style="@style/textview_14"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_button_square_red"
+                android:gravity="center"
+                android:text="@string/add_to_cart"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

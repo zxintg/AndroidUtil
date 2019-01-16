@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="25.0dip"
+    android:layout_marginRight="25.0dip"
+    android:background="@drawable/bg_white_corn"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:text="@string/hint"
+        android:textColor="@color/text_black_color_04"
+        android:textSize="18.0dip" />
+
+    <View
+        android:id="@+id/line_1"
+        style="@style/text_divider_normal"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@color/text_gray_color_c8" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16.0dip"
+        android:gravity="center"
+        android:text="@string/zxing_camera_error"
+        android:textColor="@color/text_black_color_66"
+        android:textSize="16.0dip" />
+
+    <View
+        style="@style/text_divider_normal"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="15.0dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_margin="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/dialog_button_item_selector"
+        android:gravity="center"
+        android:padding="8.0dip"
+        android:paddingBottom="16.0dip"
+        android:text="@string/sure"
+        android:textColor="@drawable/tv_red_white_selector"
+        android:textSize="16.0dip" />
+</LinearLayout>

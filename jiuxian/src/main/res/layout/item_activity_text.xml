@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingRight="5.0dip">
+
+    <TextView
+        android:id="@+id/text_activity_item"
+        style="@style/tag_red"
+        android:lines="1" />
+</LinearLayout>

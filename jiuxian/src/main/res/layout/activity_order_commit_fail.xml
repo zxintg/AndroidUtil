@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_ui_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/standard_title" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100.0dip"
+        android:src="@drawable/icon_order_commit_fail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.0dip"
+        android:text="@string/order_commit_fail_info"
+        android:textColor="@color/gray_66"
+        android:textSize="14.0dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:text="@string/order_commit_fail_detail"
+        android:textColor="@color/gray_99"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/order_detail"
+            android:layout_width="0.0dip"
+            android:layout_height="38.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_button_round_white"
+            android:gravity="center"
+            android:text="@string/order_commit_fail_order_detail"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/pay_again"
+            android:layout_width="0.0dip"
+            android:layout_height="38.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_button_round_white"
+            android:gravity="center"
+            android:text="@string/order_commit_fail_pay_again"
+            android:textColor="@color/red_fc"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pick"
+        style="@style/button_round_red"
+        android:layout_marginBottom="25.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="15.0dip"
+        android:text="@string/order_commit_fail_pick" />
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim180"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/goods_image"
+            android:layout_width="@dimen/dim180"
+            android:layout_height="@dimen/dim114"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dim34"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/rl_no_edtor"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dim13">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/dim34"
+                android:lines="2"
+                android:text="askdjkasjd"
+                android:textColor="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/dim30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="￥ 308.00"
+                    android:textColor="@color/orange_color"
+                    android:textSize="@dimen/dim30"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_buy_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dim34"
+                    android:text="X 1"
+                    android:textColor="@color/grey_color1"
+                    android:textSize="@dimen/dim30" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

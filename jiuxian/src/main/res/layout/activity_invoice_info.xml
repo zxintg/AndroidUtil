@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/comm_ui_bg"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40.0dip"
+        android:layout_marginTop="48.0dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14.0dip"
+                    android:text="@string/invoice_info"
+                    android:textColor="@color/black_25"
+                    android:textSize="14.0dip" />
+
+                <RadioGroup
+                    android:id="@+id/invoice_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/invoice_info_paper"
+                        style="@style/payment_info_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:paddingBottom="8.0dip"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip"
+                        android:paddingTop="8.0dip"
+                        android:text="@string/invoice_info_paper"
+                        android:textColor="@color/payment_checkbox_color"
+                        android:textSize="12.0dip" />
+
+                    <RadioButton
+                        android:id="@+id/invoice_info_electronic"
+                        style="@style/payment_info_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:paddingBottom="8.0dip"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip"
+                        android:paddingTop="8.0dip"
+                        android:text="@string/invoice_info_electronic"
+                        android:textColor="@color/payment_checkbox_color"
+                        android:textSize="12.0dip" />
+
+                    <RadioButton
+                        android:id="@+id/invoice_info_not"
+                        style="@style/payment_info_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:paddingBottom="8.0dip"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip"
+                        android:paddingTop="8.0dip"
+                        android:text="@string/invoice_info_not"
+                        android:textColor="@color/payment_checkbox_color"
+                        android:textSize="12.0dip" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invoice_info_type_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="14.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14.0dip"
+                    android:text="@string/invoice_info_content"
+                    android:textColor="@color/black_25"
+                    android:textSize="14.0dip" />
+
+                <RadioGroup
+                    android:id="@+id/invoice_info_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/invoice_info_type_wine"
+                        style="@style/checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:paddingBottom="8.0dip"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip"
+                        android:paddingTop="8.0dip"
+                        android:text="@string/invoice_info_type_wine"
+                        android:textColor="@color/black_25"
+                        android:textSize="13.0dip" />
+
+                    <RadioButton
+                        android:id="@+id/invoice_info_type_custom"
+                        style="@style/checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="44.0dip"
+                        android:gravity="center"
+                        android:paddingBottom="8.0dip"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip"
+                        android:paddingTop="8.0dip"
+                        android:text="@string/invoice_info_type_custom"
+                        android:textColor="@color/black_25"
+                        android:textSize="13.0dip" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invoice_info_title_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="14.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14.0dip"
+                        android:text="@string/invoice_info_title_info"
+                        android:textColor="@color/black_25"
+                        android:textSize="14.0dip" />
+
+                    <RadioGroup
+                        android:id="@+id/invoice_title_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20.0dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/invoice_title_type_peple"
+                            style="@style/checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:paddingBottom="8.0dip"
+                            android:paddingLeft="16.0dip"
+                            android:paddingRight="16.0dip"
+                            android:paddingTop="8.0dip"
+                            android:text="@string/invoice_info_title_people"
+                            android:textColor="@color/black_25"
+                            android:textSize="13.0dip" />
+
+                        <RadioButton
+                            android:id="@+id/invoice_title_type_company"
+                            style="@style/checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="44.0dip"
+                            android:gravity="center"
+                            android:paddingBottom="8.0dip"
+                            android:paddingLeft="16.0dip"
+                            android:paddingRight="16.0dip"
+                            android:paddingTop="8.0dip"
+                            android:text="@string/invoice_info_title_company"
+                            android:textColor="@color/black_25"
+                            android:textSize="13.0dip" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/invoice_info_title_detail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14.0dip"
+                        android:background="@drawable/bg_round_stroke_gray"
+                        android:drawableRight="@drawable/icon_clear"
+                        android:hint="@string/invoice_info_title_hint"
+                        android:maxLines="2"
+                        android:padding="10.0dip"
+                        android:textColor="@color/black_25"
+                        android:textColorHint="@color/gray_99"
+                        android:textSize="12.0dip"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/invoice_info_number_detail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:background="@drawable/bg_round_stroke_gray"
+                        android:digits="@string/filter_vcode"
+                        android:drawableRight="@drawable/icon_clear"
+                        android:hint="@string/invoice_info_number"
+                        android:inputType="number"
+                        android:maxLength="50"
+                        android:maxLines="2"
+                        android:padding="10.0dip"
+                        android:textColor="@color/black_25"
+                        android:textColorHint="@color/gray_99"
+                        android:textSize="12.0dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/invoice_info_addressee_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="20.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14.0dip"
+                        android:text="@string/invoice_info_addressee"
+                        android:textColor="@color/black_25"
+                        android:textSize="14.0dip" />
+
+                    <EditText
+                        android:id="@+id/invoice_info_addressee_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14.0dip"
+                        android:background="@drawable/bg_round_stroke_gray"
+                        android:digits="\ 0123456789"
+                        android:drawableRight="@drawable/icon_clear"
+                        android:hint="@string/invoice_info_addressee_hint"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:maxLines="2"
+                        android:padding="10.0dip"
+                        android:textColor="@color/black_25"
+                        android:textColorHint="@color/gray_99"
+                        android:textSize="12.0dip"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/invoice_info_number_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal"
+                    android:paddingBottom="14.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="20.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="14.0dip"
+                        android:layout_height="14.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingTop="3.0dip"
+                        android:src="@drawable/alert_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invoice_info_number_info"
+                        android:textColor="@color/gray_66"
+                        android:textSize="12.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <TextView
+        android:id="@+id/invoice_info_finish"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="24.0dip"
+        android:background="@color/red_fc"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/white" />
+</FrameLayout>

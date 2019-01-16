@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="@string/yuyueshijian"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffece8e6"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim70"
+                android:background="#ffe64b50"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/prevMonth"
+                    android:layout_width="@dimen/dim100"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dim125"
+                    android:scaleType="center"
+                    android:src="@drawable/toleft" />
+
+                <TextView
+                    android:id="@+id/currentMonth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim35" />
+
+                <ImageView
+                    android:id="@+id/nextMonth"
+                    android:layout_width="@dimen/dim100"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/dim125"
+                    android:scaleType="center"
+                    android:src="@drawable/toright" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:background="#ffe64b50">
+
+                <TextView
+                    style="@style/weekName"
+                    android:text="@string/seven" />
+
+                <TextView
+                    style="@style/weekName"
+                    android:text="@string/one" />
+
+                <TextView
+                    style="@style/weekName"
+                    android:text="@string/two" />
+
+                <TextView
+                    style="@style/weekName"
+                    android:text="@string/three" />
+
+                <TextView
+                    style="@style/weekName"
+                    android:text="@string/four" />
+
+                <TextView
+                    style="@style/weekName"
+                    android:text="@string/five" />
+
+                <TextView
+                    style="@style/weekName"
+                    android:text="@string/six" />
+            </LinearLayout>
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim500"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim75"
+                android:layout_marginTop="@dimen/dim40"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dim100"
+                    android:gravity="center"
+                    android:text="@string/service_toast"
+                    android:textColor="#ff989898"
+                    android:textSize="@dimen/dim25" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dim2"
+                    android:background="#ffe64b50" />
+
+                <TextView
+                    android:id="@+id/tv_explain"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/odre_line_extra"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="@dimen/dim20"
+                    android:paddingRight="@dimen/dim20"
+                    android:textColor="@color/order_context"
+                    android:textSize="@dimen/dim25" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

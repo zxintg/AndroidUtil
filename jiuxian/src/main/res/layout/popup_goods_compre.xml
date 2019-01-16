@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View style="@style/text_divider_normal" />
+
+    <LinearLayout
+        android:id="@+id/mCompreRG"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:id="@+id/mCompreRela"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/mCompreText"
+                style="@style/textview_14"
+                android:layout_centerVertical="true"
+                android:paddingBottom="8.0dip"
+                android:paddingTop="8.0dip"
+                android:text="@string/compre_sort"
+                android:textColor="@color/gray_66" />
+
+            <ImageView
+                android:id="@+id/mCompreImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_condition_checked"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/text_divider_normal" />
+
+        <RelativeLayout
+            android:id="@+id/mNewGoodsRela"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mNewGoodsText"
+                style="@style/textview_12"
+                android:layout_centerVertical="true"
+                android:paddingBottom="8.0dip"
+                android:paddingTop="8.0dip"
+                android:text="@string/new_goods"
+                android:textColor="@color/gray_66"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:id="@+id/mNewGoodsImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_condition_checked"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/text_divider_normal" />
+
+        <RelativeLayout
+            android:id="@+id/mEvaluateRela"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mEvaluateText"
+                style="@style/textview_14"
+                android:layout_centerVertical="true"
+                android:paddingBottom="8.0dip"
+                android:paddingTop="8.0dip"
+                android:text="@string/evaluate_best"
+                android:textColor="@color/gray_66"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:id="@+id/mSignEvaluateImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_condition_checked"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/text_divider_normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRelaShadow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/translucent_30" />
+</LinearLayout>

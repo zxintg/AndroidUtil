@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        fresco:actualImageScaleType="fitXY"
+        fresco:placeholderImageScaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/tencent_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simple"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fresco:placeholderImage="@drawable/gate_logo"
+        fresco:viewAspectRatio="2.6766" />
+</LinearLayout>

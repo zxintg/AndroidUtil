@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="94.0dip"
+            android:layout_marginTop="22.0dip"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="144.0dip"
+            android:paddingRight="14.0dip">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:text="565"
+                android:textColor="@color/red_fc"
+                android:textSize="18.0dip" />
+
+            <TextView
+                android:id="@+id/identifier"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:text="@string/buy_now_dialog_identifier"
+                android:textColor="@color/gray_66"
+                android:textSize="13.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="116.0dip"
+            android:layout_height="116.0dip"
+            android:layout_marginLeft="14.0dip"
+            android:background="@drawable/bg_round_stroke_white"
+            android:padding="3.0dip"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|top"
+            android:layout_marginRight="4.0dip"
+            android:layout_marginTop="26.0dip"
+            android:padding="10.0dip"
+            android:src="@drawable/buynow_close" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="80.0dip"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="14.0dip"
+        android:paddingTop="28.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_now_dialog_num"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/num_limit"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24.0dip"
+            android:layout_weight="1.0"
+            android:textColor="@color/red_fc"
+            android:textSize="14.0dip" />
+
+    <!--    <com.jiuxian.client.widget.NumberController
+            android:id="@+id/number_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip" />-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sure"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/selector_button_square_red"
+        android:minHeight="0.0dip"
+        android:minWidth="0.0dip"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="16.0dip" />
+</LinearLayout>

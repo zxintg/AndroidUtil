@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:right_button_text="逛逛案例"
+        app:right_button_textColor="@color/color_ffffff"
+        app:show_left_button="true"
+        app:title_text="免费设置"
+        app:title_textColor="@color/color_ffffff"
+        app:right_button_textSize="@dimen/size_15px"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="4步为您打造专属浪漫婚礼"
+                    android:textColor="@color/color_666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="结婚小秘书联合当地优选商家 为您开启梦幻婚礼之旅"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+
+                <com.zxin.zxinlib.view.ViewPagerTransitionView
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:is_indicator="false"
+                    app:pager_bgcolor="@color/color_ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="姓名"
+                    android:textSize="@dimen/size_13sp" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center|right"
+                    android:hint="请输入姓名"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/size_13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_style" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="手机号"
+                    android:textSize="@dimen/size_13sp" />
+
+                <EditText
+                    android:id="@+id/edt_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center|right"
+                    android:hint="请选输入您的电话号码"
+                    android:inputType="phone"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/size_13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_style" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="微信号"
+                    android:textSize="@dimen/size_13sp" />
+
+                <EditText
+                    android:id="@+id/edt_weixin_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center|right"
+                    android:hint="请输入您的微信号"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/size_13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_style" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="婚期"
+                    android:textSize="@dimen/size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_marry_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_black_right_arrow"
+                    android:ellipsize="end"
+                    android:gravity="center|right"
+                    android:hint="请选择"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/size_13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/select_relogin"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="提交需求"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/size_15sp" />
+</LinearLayout>

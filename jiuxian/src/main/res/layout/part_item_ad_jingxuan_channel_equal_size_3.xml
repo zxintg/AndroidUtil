@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ad_one"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/interval_line_one"
+            style="@style/text_divider_normal"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/ad_two"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/interval_line_two"
+            style="@style/text_divider_normal"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/ad_three"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

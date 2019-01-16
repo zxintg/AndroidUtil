@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/capture_wine_zoom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/comm_ui_bg">
+
+                <ImageView
+                    android:id="@+id/head_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="164.0dip"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jkc_count_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="20.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="64.0dip"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_d0" />
+
+                <TextView
+                    android:id="@+id/totle_wine_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/textview_gray"
+                    android:textSize="13.0sp" />
+
+                <View
+                    android:layout_width="64.0dip"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_d0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jkc_search_result_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/jkc_notice_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24.0dip"
+                android:layout_marginTop="20.0dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="64.0dip"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_d0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:gravity="center_vertical"
+                    android:text="酒咔嚓提供识别及数据支持"
+                    android:textColor="@color/gray_99"
+                    android:textSize="13.0sp" />
+
+                <View
+                    android:layout_width="64.0dip"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_d0" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

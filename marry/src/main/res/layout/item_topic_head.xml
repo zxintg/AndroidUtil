@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim96"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/civ"
+            android:layout_width="@dimen/dim62"
+            android:layout_height="@dimen/dim62"
+            zhy:placeholderImage="@drawable/default_user"
+            zhy:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tv_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dim10"
+            android:textSize="@dimen/dim24" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_essence"
+            android:layout_width="@dimen/dim70"
+            android:layout_height="@dimen/dim70"
+            android:layout_marginRight="@dimen/dim10"
+            android:visibility="gone"
+            zhy:placeholderImage="@drawable/essence" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_recommend"
+            android:layout_width="@dimen/dim70"
+            android:layout_height="@dimen/dim70"
+            android:layout_marginRight="@dimen/dim10"
+            android:visibility="gone"
+            zhy:placeholderImage="@drawable/recommend" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:background="@drawable/gray_shape_aa"
+            android:minHeight="0.0dip"
+            android:minWidth="0.0dip"
+            android:paddingBottom="@dimen/dim3"
+            android:paddingLeft="@dimen/dim5"
+            android:paddingRight="@dimen/dim5"
+            android:paddingTop="@dimen/dim3"
+            android:text="楼主"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:minHeight="@dimen/dim96"
+        android:paddingBottom="@dimen/dim10"
+        android:paddingTop="@dimen/dim10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="@dimen/dim36" />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tagFlowLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        zhy:auto_select_effect="false"
+        zhy:max_select="-1" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/dim96"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="@dimen/dim10"
+        android:paddingTop="@dimen/dim10"
+        android:textSize="@dimen/dim26" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_headtopic_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim70"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="26.0dip"
+            android:drawablePadding="@dimen/dim5"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dim22" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/tv_laud"
+            android:layout_width="wrap_content"
+            android:layout_height="26.0dip"
+            android:layout_marginRight="@dimen/dim20"
+            android:drawableLeft="@drawable/laud"
+            android:drawablePadding="@dimen/dim5"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dim22" />
+
+        <TextView
+            android:id="@+id/tv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="26.0dip"
+            android:drawableLeft="@drawable/reply"
+            android:drawablePadding="@dimen/dim5"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dim22" />
+    </LinearLayout>
+</LinearLayout>

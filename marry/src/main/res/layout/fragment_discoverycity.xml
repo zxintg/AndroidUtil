@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zxin.zxinlib.view.RefreshCommonView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rcv_discoverycity_commonlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:bottonViewText="我是有底线的~~~"
+    app:content_bgColor="@color/background_color"
+    app:headerResource="@layout/fragment_monster_top"
+    app:noneText="暂无商品数据~"
+    app:orientation="vertical"
+    app:vessel_type="RecyclerView" />

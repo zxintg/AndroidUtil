@@ -1,0 +1,185 @@
+apply plugin: 'com.android.application'
+//应用 Bugtags 插件
+apply plugin: 'com.bugtags.library.plugin'
+//apply plugin: 'com.neenbedankt.android-apt'
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    //需要加入的两句话
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "com.zxin"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        renderscriptTargetApi rootProject.ext.renderscriptTargetApi
+        renderscriptSupportModeEnabled  rootProject.ext.renderscriptSupportModeEnabled
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            //abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 设置支持的 SO 库构架，一般而言，取你所有的库支持的构架的`交集`。
+            abiFilters "armeabi", "armeabi-v7a", "x86","x86_64", 'mips'
+        }
+        //突破65536
+        multiDexEnabled true
+        // 默认是_360的渠道
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
+    }
+    buildTypes {
+        release {
+            // 测试混淆
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /*packagingOptions {
+        exclude 'lib/armeabi/libvinit.so'
+        exclude 'lib/armeabi-v7a/libvinit.so'
+    }*/
+
+    /*dexOptions {
+        incremental true
+        javaMaxHeapSize "2048M"
+    }
+    */
+
+    //签名 支付必须正式签名
+    signingConfigs {
+        release {
+            keyAlias 'zxin'
+            keyPassword '147258369'
+            storeFile file('C:/keystore/androidutil-key.jks')
+            storePassword '147258369'
+        }
+        debug {
+            keyAlias 'zxin'
+            keyPassword '147258369'
+            storeFile file('C:/keystore/androidutil-key.jks')
+            storePassword '147258369'
+        }
+    }
+
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //debuggable
+            debuggable true
+            // 移除无用的resource文件,依赖minifyEnabled true
+            minifyEnabled true
+            shrinkResources false
+            // 是否混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            //多渠道打包
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为aplus-xiaomi-release-v1.0.apk
+                        def fileName = outputFile.name.replace("app", "zxin_util")
+                        def appName = fileName.replace(".apk", "-v${defaultConfig.versionName}.apk")
+                        output.outputFile = new File(outputFile.parent, appName)
+                    }
+                }
+            }
+        }
+
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            //name后缀
+            //versionNameSuffix "-debug"
+            //debuggable TODO:打正式包时记得关掉
+            debuggable true
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 移除无用的resource文件
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+    }
+    //android studio默认so文件加载目录为:src/main/jniLibs
+    //如在module的build.gradle按照如下方式,自定义了so文件加载目录请确保对应目录下只有armeabi目录
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    //分包使用
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    /* 多渠道打包*/
+    productFlavors {
+        /*_360 {}
+        xiaomi {}
+        meizu {}
+        huawei {}
+        wandoujia {}
+        yingyongbao {}*/
+        baidu {}
+    }
+
+    //由于Android目前不是完全支持Java 8的语言特性，会导致编译出错。这里将项目的源和目标兼容性值保留为 Java 7。
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
+}
+
+afterEvaluate {
+    android.applicationVariants.each { variant ->
+        def bugtagsAppKey = null;
+        def bugtagsAppSecret = null;
+
+        if (variant.name.contains("debug")) {
+            //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+            bugtagsAppKey = 'e8c283891f44c4c44f3e3f12a32bc3be'//这里是你的 appKey
+            bugtagsAppSecret = '2aa4f1bb0bb59722d7f07f207eca00fe'//这里是你的 appSecret，管理员在设置页可以查看
+        } else if (variant.name.contains("release")) {
+            bugtagsAppKey = 'e8c283891f44c4c44f3e3f12a32bc3be'
+            bugtagsAppSecret = '2aa4f1bb0bb59722d7f07f207eca00fe'
+        }
+
+        variant.ext.bugtagsAppKey = bugtagsAppKey
+        variant.ext.bugtagsAppSecret = bugtagsAppSecret
+    }
+}
+
+//网络跟踪功能配置(企业版)
+bugtags {
+    trackingNetworkEnabled false
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':sources')
+    compile project(':marry')
+    compile project(':basemodel')
+    compile project(':jiuxian')
+    compile project(':jianshennannv')
+    compile project(':meziyowu')
+    //ButterKnife依赖（模块独立依赖）
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    debugCompile 'com.bugtags.library:bugtags-lib:latest.integration'
+    releaseCompile 'com.bugtags.metrics:bugtags-lib:latest.integration'
+}

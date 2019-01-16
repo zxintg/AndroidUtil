@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/convenientBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="230dp"
+        app:layout_scrollFlags="scroll" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ll_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_image="@drawable/heart"
+        app:left_button_text="结婚圈"
+        app:left_button_textColor="@color/color_666666"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_text="更多"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="13px"
+        app:show_left_button="true"
+        app:show_right_button="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dragRecyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:padding="5dp" />
+
+    <FrameLayout
+        android:id="@+id/fl_mid_message"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim116"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/marriage_shape"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dim10"
+            android:paddingLeft="@dimen/dim20"
+            android:paddingRight="@dimen/dim20"
+            android:paddingTop="@dimen/dim10">
+
+            <ImageView
+                android:id="@+id/iv_mid_message"
+                android:layout_width="@dimen/dim60"
+                android:layout_height="@dimen/dim60"
+                android:contentDescription="@null"
+                android:src="@drawable/mid_message" />
+
+            <TextView
+                android:id="@+id/tv_mid_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim20"
+                android:text="你有一条消息"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim28" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim20" />
+
+    <FrameLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dim34"
+        android:paddingRight="@dimen/dim34" />
+</LinearLayout>

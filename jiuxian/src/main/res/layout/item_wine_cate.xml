@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/item_cate_color"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#ffffa500" />
+
+        <TextView
+            android:id="@+id/tv_cate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/hot_brand"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/size_13sp" />
+
+        <TextView
+            android:id="@+id/tv_cate_allgoods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/icon_right"
+            android:text="@string/cate_all_brand"
+            android:textColor="@color/color_999999"
+            android:padding="10dp"
+            android:textSize="@dimen/size_13sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item_cate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

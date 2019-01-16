@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/promotion_hint_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:visibility="gone"
+    android:background="@drawable/bg_square_solid_red">
+
+    <ImageView
+        android:id="@+id/promotion_hint_icon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/msg_hint_icon" />
+
+    <TextView
+        android:id="@+id/promotion_hint_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/color_ffffff"
+        tools:text = "标题"
+        android:textSize="@dimen/size_12sp" />
+
+    <ImageView
+        android:id="@+id/close_promotion_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/msg_hint_close_icon" />
+</LinearLayout>

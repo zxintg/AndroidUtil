@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dialog_bg"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:checked="true"
+                android:text="@string/chat_expose_type_rubbish"
+                android:textColor="@color/black_25" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/chat_expose_type_pornography"
+                android:textColor="@color/black_25" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/radioButton1"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/chat_expose_type_country_safe"
+                android:textColor="@color/black_25" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/radioButton3"
+                android:text="@string/chat_expose_type_plagiarism"
+                android:textColor="@color/black_25" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/radioButton3"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/chat_expose_type_personal_attack"
+                android:textColor="@color/black_25" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/radioButton5"
+                android:text="@string/chat_expose_type_false_info"
+                android:textColor="@color/black_25" />
+        </RelativeLayout>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip">
+
+        <TextView
+            android:id="@+id/left_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <ImageView
+            android:id="@+id/button_line"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="@color/comm_bg_line" />
+
+        <TextView
+            android:id="@+id/right_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/red_fc"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+</LinearLayout>

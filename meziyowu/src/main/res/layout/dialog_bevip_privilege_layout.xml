@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bevip_privilege_layout_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:gravity="center"
+        android:text="@string/be_vip_privilege_dialog_title"
+        android:textColor="@color/be_vip_privilege_text_color"
+        android:textSize="15.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/bevip_dialog_division_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:paddingLeft="28.0dip"
+            android:text="@string/be_privilege"
+            android:textColor="@color/detail_hint_color"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/be_vip"
+            android:textColor="@color/detail_hint_color"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28.0dip"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:text="@string/be_vip_ordinary_user"
+            android:textColor="@color/detail_hint_color"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/bevip_dialog_division_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:paddingLeft="28.0dip"
+            android:text="@string/be_vip_exclusive_sign"
+            android:textColor="@color/bevip_dialog_gray_text_color"
+            android:textSize="15.0sp" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/me_vip_have" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="28.0dip"
+            android:layout_weight="2.0"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/me_vip_none" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/bevip_dialog_division_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:paddingLeft="28.0dip"
+            android:text="@string/be_vip_watch_beauty_video"
+            android:textColor="@color/bevip_dialog_gray_text_color"
+            android:textSize="15.0sp" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/me_vip_have" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="28.0dip"
+            android:layout_weight="2.0"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/me_vip_none" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/bevip_dialog_division_bg" />
+
+    <TextView
+        android:id="@+id/dialog_bevip_privilege_know"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:gravity="center"
+        android:text="@string/be_vip_i_konw" />
+</LinearLayout>

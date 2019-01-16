@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_comment_tag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_margin_top"
+        android:layout_width="fill_parent"
+        android:layout_height="16.0dip"
+        android:visibility="gone" />
+
+   <!-- <com.jiuxian.client.widget.tagCommentView.TagListView xmlns:f="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/commend_taglist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/jump_margin"
+        android:paddingRight="@dimen/jump_margin"
+        f:horizontalSpacing="10.0dip"
+        f:orientation="horizontal"
+        f:verticalSpacing="10.0dip" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_spread"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0px"
+            android:layout_weight="1.0"
+            android:background="@color/gray_d9" />
+
+        <ImageView
+            android:id="@+id/image_spread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip"
+            android:src="@drawable/icon_open" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0px"
+            android:layout_weight="1.0"
+            android:background="@color/gray_d9" />
+    </LinearLayout>
+</LinearLayout>

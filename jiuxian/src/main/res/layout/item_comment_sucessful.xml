@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/bg_listview_comment_successful_divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:minHeight="120.0dip"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/product_icon"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="14.0dip"
+            android:orientation="vertical"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/gray_66"
+                android:textSize="14.0dip" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip">
+
+                <TextView
+                    android:id="@+id/gold_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24.0dip"
+                    android:background="@drawable/comment_center_goldinfo"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/red_fb"
+                    android:textSize="11.0dip"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/status_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_99"
+                    android:textSize="13.0dip"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/comment_success_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:textColor="@color/gray_99"
+                    android:textSize="12.0dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/add_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center|right"
+                        android:background="@drawable/bg_round_solid_red"
+                        android:minHeight="0.0dip"
+                        android:minWidth="0.0dip"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:paddingTop="4.0dip"
+                        android:text="@string/add_comment"
+                        android:textColor="@color/white"
+                        android:textSize="14.0dip"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/append_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center|right"
+                        android:background="@drawable/bg_round_solid_red"
+                        android:minHeight="0.0dip"
+                        android:minWidth="0.0dip"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:paddingTop="4.0dip"
+                        android:text="@string/comment_append"
+                        android:textColor="@color/white"
+                        android:textSize="14.0dip"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/show_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center|right"
+                        android:background="@drawable/bg_round_stroke_gray_bb"
+                        android:minHeight="0.0dip"
+                        android:minWidth="0.0dip"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:paddingTop="4.0dip"
+                        android:text="@string/comment_detail"
+                        android:textColor="@color/gray_66"
+                        android:textSize="14.0dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

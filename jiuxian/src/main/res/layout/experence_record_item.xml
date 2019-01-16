@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_ui_bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="7.0dip">
+
+        <!--<com.jiuxian.client.widget.IntervalLine
+            android:layout_width="2.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip"
+            android:src="@drawable/time_axis_dot" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.0dip"
+        android:orientation="vertical"
+        android:paddingTop="15.0dip">
+
+        <TextView
+            android:id="@+id/experence_record_time"
+            style="@style/textview_size14_gray99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9.0dip"
+            android:layout_marginLeft="9.0dip" />
+
+        <LinearLayout
+            android:id="@+id/experence_record_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/bg_round_e8_degree5_px1"
+            android:orientation="vertical"
+            android:paddingBottom="17.0dip"
+            android:paddingTop="17.0dip" />
+    </LinearLayout>
+</LinearLayout>

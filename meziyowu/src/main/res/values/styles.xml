@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--全屏-->
+    <style name="FullScreenTheme" parent="BaseAppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MeiZiYoWuSplashTheme" parent="FullScreenTheme">
+        <item name="android:windowBackground">@drawable/screen_default2</item>
+    </style>
+
+    <style name="btn_style">
+        <item name="android:textSize">@dimen/text_big_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/line_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">62.0dip</item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name="android:textSize">@dimen/text_medium_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">46.0dip</item>
+    </style>
+</resources>

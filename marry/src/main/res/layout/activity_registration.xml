@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:right_button_image="@drawable/choose_address"
+        app:right_button_size="20px"
+        app:right_button_text="@string/locationing"
+        app:right_button_textColor="@color/color_ffffff"
+        app:right_button_textSize="@dimen/size_13px"
+        app:show_left_button="true"
+        app:show_right_button="true"
+        app:title_text="@string/registration"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_doubt"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:text="@string/registration_tips"
+            android:textColor="#fff4666b"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_error_correction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/icon_worng"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:text="@string/error_correction"
+            android:textColor="@color/color_666666"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View style="@style/line_style" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_registration_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:show_right_button="true"
+        app:title_text="@string/married_process"
+        app:title_textColor="@color/color_666666"
+        app:title_textSize="@dimen/size_18px" />
+
+    <com.zxin.zxinlib.view.RefreshCommonView
+        android:id="@+id/rcv_regist_commonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bottonViewText="我是有底线的~~~"
+        app:content_bgColor="@color/background_color"
+        app:noneText="该地区暂无婚姻登记处信息~"
+        app:orientation="vertical"
+        app:vessel_type="RecyclerView"/>
+</LinearLayout>

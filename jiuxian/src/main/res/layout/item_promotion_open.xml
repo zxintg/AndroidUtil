@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_discount_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/item_discount_label"
+        style="@style/tag_red"
+        android:layout_gravity="top"
+        android:layout_marginLeft="12.0dip" />
+
+    <TextView
+        android:id="@+id/item_discount_detail"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_weight="1.0"
+        android:textColor="@color/textview_black"
+        android:textSize="14.0dip" />
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/icon_jump"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+</LinearLayout>

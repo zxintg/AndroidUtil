@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/jiuxian_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="8.0dip"
+        android:gravity="center"
+        android:paddingLeft="42.0dip"
+        android:paddingRight="42.0dip"
+        android:paddingTop="30.0dip"
+        android:text="@string/offline_notify_title_character"
+        android:textColor="@color/gray_33"
+        android:textSize="18.0dip"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="42.0dip"
+        android:paddingRight="42.0dip"
+        android:paddingTop="18.0dip"
+        android:text="@string/offline_notify_message_character"
+        android:textColor="@color/gray_88"
+        android:textSize="16.0dip" />
+
+    <View
+        android:id="@+id/line_view"
+        style="@style/text_divider_normal"
+        android:layout_marginTop="30.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/left_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/offline_notify_message_exit_character"
+            android:textColor="@color/gray_33"
+            android:textSize="17.0dip" />
+
+        <TextView
+            android:id="@+id/right_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_custom_dialog_red"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/offline_notify_message_login_again_character"
+            android:textColor="@color/white"
+            android:textSize="17.0dip" />
+    </LinearLayout>
+</LinearLayout>

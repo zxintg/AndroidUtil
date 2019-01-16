@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/shape_witie"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_registration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="婚姻登记处"
+        android:textColor="#fff4666b"
+        android:textSize="15sp" />
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_register_address"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="婚姻登记处"
+            android:textColor="#ff727272"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dim30"
+            android:layout_height="@dimen/dim30"
+            android:background="@mipmap/ic_black_right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_number"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="12221"
+            android:textColor="#ff727272"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dim30"
+            android:layout_height="@dimen/dim30"
+            android:background="@mipmap/ic_black_right_arrow" />
+    </LinearLayout>
+</LinearLayout>

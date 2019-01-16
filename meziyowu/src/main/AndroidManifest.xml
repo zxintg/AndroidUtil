@@ -1,0 +1,114 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxin.meziyowu">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="75a54cccbf" />
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1.0" />
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="gw" />
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+
+        <activity
+            android:name="com.zxin.meziyowu.activity.YoWuSplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MeiZiYoWuSplashTheme" />
+
+        <activity
+            android:name="com.zxin.meziyowu.activity.YoWuGuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MeiZiYoWuSplashTheme" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.BeVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.ModifyNickNameActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.zxin.meziyowu.activity.CropImageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.SmallVideoPlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.DetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.NewDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.MineActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.BackupsYoMeiActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.YoWuMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.GoToDownLoadWebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.PhotoListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.YoMeiUserDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.VersionUpdateActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.zxin.meziyowu.activity.YoMeiLocalVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.zxin.meziyowu.activity.YoMeiCollectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"  />
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="25.4.0" />
+    </application>
+
+</manifest>

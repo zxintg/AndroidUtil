@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60.0dip"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/selector_listview_normal"
+    android:gravity="center_vertical"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip">
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2.0dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/textview_black"
+            android:textSize="14.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/textview_gray"
+            android:textSize="12.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/two_item_arrows"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:gravity="center_vertical"
+        android:src="@drawable/icon_right"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/state_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/two_item_arrows"
+        android:layout_toRightOf="@+id/ll_layout"
+        android:gravity="center|right"
+        android:text="description"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_width="60.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="gone" />
+</RelativeLayout>

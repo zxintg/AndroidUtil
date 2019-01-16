@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mine_jiuxian_head_notlogin"
+        layout="@layout/fragment_main_mine_head_not_login" />
+
+    <include
+        android:id="@+id/mine_jiuxian_head_login"
+        layout="@layout/fragment_main_mine_head_login"
+        android:visibility="gone" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_mine_orderlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_text="@string/order_commit_successful_orders"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:right_button_text="@string/check_all_phone_goods"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="@dimen/size_13px"
+        app:show_right_button="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_myorder_unpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/wait_pay"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/usercenter_unpay"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/size_13sp" />
+
+        <TextView
+            android:id="@+id/tv_myorder_undispatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/wait_shipments"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/usercenter_undispatch"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/size_13sp" />
+
+        <TextView
+            android:id="@+id/tv_myorder_unreceiving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/wait_receive"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/usercenter_unreceiving"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/size_13sp" />
+
+        <TextView
+            android:id="@+id/tv_myorder_uncomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/wait_comment"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/usercenter_uncomment"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/size_13sp" />
+
+    </LinearLayout>
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_mine_mywallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_text="@string/user_wallet_title"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:right_button_text="@string/check_details"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="@dimen/size_13px"
+        app:show_right_button="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_mine_mywallet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_account_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/gray_66"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/account_money"
+                android:textColor="@color/gray_66"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mine_backmoney"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_back_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/gray_66"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/back_money"
+                android:textColor="@color/gray_66"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mine_couponcount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_discount_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/gray_66"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/coupon"
+                android:textColor="@color/gray_66"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mine_goldmoney"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/gray_66"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/gold_money"
+                android:textColor="@color/gray_66"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_mine_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_text="@string/member_channel_character"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:right_button_text="@string/gold_coin_convert_desc"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="@dimen/size_13px"
+        app:show_right_button="true" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_mine_goodexchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_text="@string/commodity_exchange"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:show_right_button="true" />
+
+
+    <include
+        layout="@layout/part_item_club_my_collect" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mine_module"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:padding="5dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_club_product_title" />
+
+        <TextView
+            android:id="@+id/tv_recommond_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_silver_arrow"
+            android:padding="10dp"
+            android:textColor="#ffc59d72"
+            android:textSize="@dimen/size_12sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mine_recommond"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:scrollbars="none" />
+</LinearLayout>

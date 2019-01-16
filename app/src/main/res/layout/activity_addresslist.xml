@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:title_text="地址信息维护"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px"
+        app:right_button_text="添加"
+        app:right_button_textSize="@dimen/size_15px"
+        app:right_button_textColor="@color/color_666666"
+        />
+
+    <com.zxin.zxinlib.view.RefreshCommonView
+        android:id="@+id/rcv_address_commonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bottonViewText="淡定,已经到底了~~~"
+        app:noneImage="@mipmap/default_iamge"
+        app:noneText="没有搜索到相关信息哦！"
+        app:orientation="vertical"
+        app:vessel_type="RecyclerView" />
+</LinearLayout>

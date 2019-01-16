@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_tabs_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans_33"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/gray_fb"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/phone_vip_tab_all"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <ImageView
+            android:id="@+id/all_tabs_close"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_phone_vip_tab_close" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tab_all_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>

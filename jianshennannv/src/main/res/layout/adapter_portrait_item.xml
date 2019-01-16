@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_white_round_10">
+
+    <ImageView
+        android:id="@+id/iv_portrait_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/bg_default_pic"
+        android:src="@mipmap/default_iamge"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/iv_portrait_photo"
+        android:layout_marginTop="-5dp"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/iv_portrait_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/iv_portrait_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sex_boy_p" />
+
+    <ImageView
+        android:id="@+id/iv_portrait_v"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignBottom="@+id/iv_portrait_head"
+        android:layout_alignRight="@+id/iv_portrait_head"
+        android:layout_marginRight="-3dp"
+        android:src="@drawable/icon_v"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_portrait_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/iv_portrait_photo"
+        android:padding="10dp"
+        android:src="@drawable/btn_portrait_more_selector" />
+
+    <TextView
+        android:id="@+id/iv_portrait_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_portrait_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:maxLines="1"
+        android:text="李逍遥"
+        android:textColor="@color/color_333333"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/iv_portrait_look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_portrait_name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:padding="8dp"
+        android:text="0人查看"
+        android:textColor="@color/color_666666"
+        android:textSize="11.0sp"/>
+</RelativeLayout>

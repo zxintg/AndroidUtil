@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+<!--
+    <com.jiuxian.client.widget.gridviewpager.GridViewPager
+        android:id="@+id/mGridViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_quick_enter_icon_heightx2" />-->
+</LinearLayout>

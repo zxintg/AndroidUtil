@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:right_button_image="@drawable/icon_orderlist_seach"
+        app:right_button_size="@dimen/size_20px"
+        app:right_button_text="@string/submit"
+        app:right_button_textSize="@dimen/size_15px"
+        app:show_left_button="true"
+        app:show_right_button="true"
+        app:title_text="@string/order_list_title"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <com.zxin.zxinlib.view.PagerSlidingTabStrip
+        android:id="@+id/pst_order_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/size_14sp"
+        app:pstsDividerColor="@color/color_00000000"
+        app:pstsIndicatorColor="@color/color_333333"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsSelectTabTextColor="@color/color_333333"
+        app:pstsSelectTabTextSize="@dimen/size_16sp"
+        app:pstsShouldExpand="true"
+        app:pstsTabBackground="@color/color_ffffff"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/line_color"
+        app:pstsUnderlineHeight="0.5dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/user_order_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

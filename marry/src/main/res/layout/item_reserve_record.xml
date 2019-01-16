@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim160"
+        android:paddingBottom="@dimen/dim20"
+        android:paddingLeft="@dimen/dim35"
+        android:paddingRight="@dimen/dim35"
+        android:paddingTop="@dimen/dim20">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/dim120"
+            android:layout_height="@dimen/dim120" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dim20"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.5">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/minRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim20"
+                    android:isIndicator="true"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:textColor="@color/te64b50" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_photot_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textSize="@dimen/second_text_content_title_size" />
+
+            <TextView
+                android:id="@+id/tv_payment_type"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/te64b50"
+                android:textSize="10.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:layout_marginLeft="@dimen/dim35"
+        android:layout_marginRight="@dimen/dim35"
+        android:background="@color/content_line_color" />
+
+    <TextView
+        android:id="@+id/tv_reserve_time"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim60"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dim35"
+        android:paddingRight="@dimen/dim35"
+        android:textSize="@dimen/second_text_content_title_size" />
+
+    <TextView
+        android:id="@+id/tv_reserve_number"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim60"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dim35"
+        android:paddingRight="@dimen/dim35"
+        android:textSize="@dimen/second_text_content_title_size" />
+
+    <TextView
+        android:id="@+id/tv_payment_time"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim60"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dim35"
+        android:paddingRight="@dimen/dim35"
+        android:textSize="@dimen/second_text_content_title_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim20"
+        android:background="@color/body_background" />
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:right_button_text="保存"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="@dimen/size_15px"
+        app:show_left_button="true"
+        app:title_text="地址信息编辑"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:padding="10dp"
+                android:text="网站名称"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_18sp" />
+
+            <EditText
+                android:id="@+id/et_editurl_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="left"
+                android:hint="输入网址"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="4"
+                android:minLines="2"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/color_666666"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/size_15sp" />
+
+            <View style="@style/line_style" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:padding="10dp"
+                android:text="网站标签"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_18sp" />
+
+            <EditText
+                android:id="@+id/et_editurl_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="left"
+                android:hint="输入标签"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="4"
+                android:minLines="2"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/color_666666"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/size_15sp" />
+
+            <View style="@style/line_style" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:padding="10dp"
+                android:text="录入网址"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_18sp" />
+
+            <View style="@style/line_style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_editurl_isused"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <com.zxin.zxinlib.view.switchbutton.SwitchButton
+                    android:id="@+id/sw_editurl_isused"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp"
+                    app:kswThumbColor="@color/color_ffffff"
+                    app:kswTintColor="@color/color_ffae12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="是否有效"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/size_16sp" />
+
+            </RelativeLayout>
+
+            <View style="@style/line_style" />
+
+            <EditText
+                android:id="@+id/et_editurl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="left"
+                android:hint="输入网址"
+                android:lineSpacingExtra="3dp"
+                android:minLines="5"
+                android:padding="10dp"
+                android:textColor="@color/color_666666"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/size_15sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

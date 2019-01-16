@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    >
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_recycle_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:isTopBar="true"
+        app:title_text="在线直播课"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px"
+        />
+
+    <com.zxin.zxinlib.view.RefreshCommonView
+        android:id="@+id/rcv_mine_commonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        app:orientation="vertical"
+        app:vessel_type="RecyclerView"
+        app:noneText="暂时没有相关信息哦~"
+        app:bottonViewText="我是有底线的~~~"
+        />
+</LinearLayout>

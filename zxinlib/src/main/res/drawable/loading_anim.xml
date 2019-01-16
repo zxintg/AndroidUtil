@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--设置是否循环播放，默认的是循环播放，false为只播放一次-->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/loading_anim_1"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/loading_anim_2"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/loading_anim_3"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/loading_anim_4"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/loading_anim_5"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/loading_anim_6"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/loading_anim_7"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/loading_anim_8"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/loading_anim_9"
+        android:duration="50" />
+
+    <item
+        android:drawable="@drawable/loading_anim_10"
+        android:duration="50" />
+</animation-list>
+

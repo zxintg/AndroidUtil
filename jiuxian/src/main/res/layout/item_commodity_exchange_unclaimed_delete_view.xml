@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/package_title_view_stub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/comm_ui_bg"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="6.0dip"
+            android:paddingTop="10.0dip">
+
+            <View
+                android:layout_width="10.0dip"
+                android:layout_height="2.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10.0dip"
+                android:background="@color/color_666666" />
+
+            <TextView
+                android:id="@+id/package_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="新客活动礼品 3选一"
+                android:textColor="@color/color_666666"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="10.0dip"
+                android:layout_height="2.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:background="@color/color_666666" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/swipe"
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="58.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/red_fc"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/delete"
+                style="@style/textview_14"
+                android:text="@string/commodity_delete_str"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="90.0dip"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="14.0dip"
+            android:paddingTop="14.0dip">
+
+            <RelativeLayout
+                android:id="@+id/item_commodity_exchange_unclaimed_list_img_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="62.0dip"
+                android:layout_marginRight="10.0dip">
+
+                <ImageView
+                    android:id="@+id/item_commodity_exchange_unclaimed_list_img"
+                    android:layout_width="62.0dip"
+                    android:layout_height="62.0dip"
+                    android:background="@drawable/bg_square_stroke_e8" />
+
+                <RelativeLayout
+                    android:id="@+id/item_commodity_exchange_unclaimed_list_note"
+                    android:layout_width="62.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_commodity_exchange_unclaimed_list_note_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="11.0dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_commodity_exchange_unclaimed_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_toLeftOf="@+id/package_right_title"
+                android:layout_toRightOf="@+id/item_commodity_exchange_unclaimed_list_img_layout"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black_25"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/package_right_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/commodity_tag"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:paddingTop="1.0dip"
+                android:textColor="@color/white"
+                android:textSize="12.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_commodity_exchange_unclaimed_list_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_commodity_exchange_unclaimed_list_title"
+                android:layout_toRightOf="@+id/item_commodity_exchange_unclaimed_list_img_layout"
+                android:textColor="@color/textview_bb8443"
+                android:textSize="12.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/item_commodity_exchange_unclaimed_list_source"
+                android:layout_toRightOf="@+id/item_commodity_exchange_unclaimed_list_img_layout"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="14.0dip">
+
+                <FrameLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/item_commodity_exchange_unclaimed_list_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/gray_66"
+                        android:textSize="12.0dip" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/item_commodity_exchange_unclaimed_list_add_cart_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_commodity_exchange_unclaimed_list_add_cart_tv"
+                        android:layout_width="1.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@color/gray_bb" />
+
+                    <ImageView
+                        android:id="@+id/item_commodity_exchange_unclaimed_list_add_cart_img"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_marginRight="7.0dip"
+                        android:src="@drawable/icon_exchange_add_cart" />
+
+                    <TextView
+                        android:id="@+id/item_commodity_exchange_unclaimed_list_add_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/commodity_add_cart"
+                        android:textColor="@color/gray_66"
+                        android:textSize="12.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/commodity_exchange_bottom_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="14.0dip"
+        android:background="@color/comm_bg_line" />
+
+    <View
+        android:id="@+id/item_commodity_exchange_unclaimed_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="24.0dip"
+        android:background="@color/comm_ui_bg"
+        android:visibility="gone" />
+</LinearLayout>

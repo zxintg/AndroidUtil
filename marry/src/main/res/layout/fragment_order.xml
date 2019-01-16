@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:right_button_image="@drawable/message_icon"
+        app:right_button_size="20px"
+        app:show_right_button="true"
+        app:title_text="订单"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <com.zxin.zxinlib.view.PagerSlidingVerTabStrip
+            android:id="@+id/pst_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="@dimen/size_14sp"
+            android:textColor="@color/color_999999"
+            app:pstsVerWith="70dp"
+            app:pstsVerDividerColor="@color/color_00000000"
+            app:pstsVerIndicatorColor="@color/red_light"
+            app:pstsVerIndicatorWight="2dp"
+            app:pstsVerSelectTabTextColor="@color/color_999999"
+            app:pstsVerSelectTabTextSize="@dimen/size_16sp"
+            app:pstsVerTextAllCaps="false"
+            app:pstsVerUnderlineColor="@color/line_color"
+            app:pstsVerUnderlineWeight="4dp"
+            app:pstsVerTextBgColor="@color/body_background"
+            app:pstsVerTextCheckedBgColor="@color/color_ffffff"
+            app:pstsVerImageSize="8dp"
+            />
+        <!--可滑动的布局内容-->
+        <com.zxin.zxinlib.view.MyViewPager
+            android:id="@+id/vvp_order_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:viewpager_canscroll="true"
+            app:viewpager_orientation="vertical"
+            />
+    </LinearLayout>
+</LinearLayout>

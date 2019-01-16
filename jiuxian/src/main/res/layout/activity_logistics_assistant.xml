@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <com.zxin.zxinlib.view.RefreshCommonView
+        android:id="@+id/rcv_comments_commonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bottonViewText="我是有底线的~~~"
+        app:content_bgColor="@color/background_color"
+        app:noneImage="@drawable/logistics_ssistant_list_empty_icon"
+        app:noneText="@string/logistics_ssistant_list_empty"
+        app:orientation="vertical"
+        app:vessel_type="RecyclerView" />
+</LinearLayout>

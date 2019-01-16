@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mConditionBrandRela"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/jump_margin"
+    android:paddingRight="@dimen/jump_margin">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="fill_parent"
+        android:layout_height="39.0dip">
+
+        <TextView
+            android:id="@+id/mConditionBrandTV"
+            style="@style/textview_14"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="8.0dip"
+            android:paddingTop="8.0dip"
+            android:textColor="@color/gray_66" />
+
+        <ImageView
+            android:id="@+id/mSignSelectedImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_condition_checked"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        style="@style/text_divider_normal"
+        android:layout_below="@+id/rl_item" />
+</RelativeLayout>

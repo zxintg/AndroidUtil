@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:title_text="@string/coupon"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px"
+        app:right_button_textSize="@dimen/size_13px"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_text="@string/user_coupon_add"
+        />
+
+    <com.zxin.zxinlib.view.PagerSlidingTabStrip
+        android:id="@+id/pst_coupon_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/size_14sp"
+        app:pstsDividerColor="@color/color_00000000"
+        app:pstsIndicatorColor="@color/color_333333"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsSelectTabTextColor="@color/color_333333"
+        app:pstsSelectTabTextSize="@dimen/size_16sp"
+        app:pstsTabBackground="@color/color_ffffff"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/line_color"
+        app:pstsUnderlineHeight="0.5dp"
+        app:pstsShouldExpand="true"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/user_coupon_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/user_coupon_morecoupon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/corners_mycoupon_morecoupon_bg"
+        android:gravity="center"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="@string/user_coupon_morecoupon_tip"
+        android:textColor="@android:color/white" />
+</LinearLayout>

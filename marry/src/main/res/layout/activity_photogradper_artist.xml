@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_department"
+            android:layout_width="fill_parent"
+            android:layout_height="80.0dip"
+            android:layout_marginBottom="@dimen/dim20"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+                <ImageView
+                    android:id="@+id/information_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/circle_photo" />
+
+                <LinearLayout
+                    android:id="@+id/rl_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_manager_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dim25" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:textColor="@color/t727272"
+                        android:textSize="@dimen/dim25" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/background_tu">
+
+                    <LinearLayout
+                        android:id="@+id/rl_dep"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/dim25" />
+
+                        <TextView
+                            android:id="@+id/tv_dep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:text="服务经理"
+                            android:textColor="@color/t727272"
+                            android:textSize="@dimen/dim25" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewLine"
+                        android:layout_width="1.0dip"
+                        android:layout_height="47.5dip"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/rl_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/selectord1"
+                        android:gravity="center"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:id="@+id/iv_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/call_he" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5.0dip"
+                            android:text="联系TA"
+                            android:textColor="@color/t727272"
+                            android:textSize="@dimen/dim25" />
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/line_style" />
+
+        <TextView
+            android:id="@+id/service_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="我的服务进度" />
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectord"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="@dimen/dim130"
+                    android:layout_height="@dimen/dim146">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_camera"
+                        android:layout_width="@dimen/dim130"
+                        android:layout_height="@dimen/dim130"
+                        fresco:actualImageScaleType="fitCenter"
+                        fresco:placeholderImage="@drawable/user_1"
+                        fresco:placeholderImageScaleType="fitCenter"
+                        fresco:roundAsCircle="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_optional_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:contentDescription="@null"
+                        android:src="@drawable/optional_camera"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icon_camera" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_maquilleur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dim35"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_num1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_design_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dim20" />
+
+                    <TextView
+                        android:id="@+id/tv_maquilleur_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dim20" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="@dimen/dim130"
+                    android:layout_height="@dimen/dim146">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="@dimen/dim130"
+                        android:layout_height="@dimen/dim130"
+                        fresco:actualImageScaleType="fitCenter"
+                        fresco:placeholderImage="@drawable/user_2"
+                        fresco:placeholderImageScaleType="fitCenter"
+                        fresco:roundAsCircle="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icon_comb" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_photographer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dim35"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_num2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_design_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dim20" />
+
+                    <TextView
+                        android:id="@+id/tv_photographer_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dim20" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:padding="10dp"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/btn_on_line"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/dim66"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/dim10"
+                android:layout_weight="1.0"
+                android:textColor="@color/color_ffffff"
+                android:background="@drawable/button_ok"
+                android:text="在线预约摄影师" />
+
+            <Button
+                android:id="@+id/btn_reserve_record"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/dim66"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dim10"
+                android:layout_weight="1.0"
+                android:textColor="@color/color_ffffff"
+                android:background="@drawable/button_ok"
+                android:text="查看预约记录" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/service_toast"
+            android:textColor="@color/t757575"
+            android:textSize="@dimen/dim30"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/te64b50" />
+
+        <TextView
+            android:id="@+id/tv_remind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:textColor="@color/order_context" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

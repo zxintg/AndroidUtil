@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-3.4.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/basemodel" />
+            <option value="$PROJECT_DIR$/floataction" />
+            <option value="$PROJECT_DIR$/jianshennannv" />
+            <option value="$PROJECT_DIR$/jiuxian" />
+            <option value="$PROJECT_DIR$/jjdxm-ijkplayer" />
+            <option value="$PROJECT_DIR$/lkcamera" />
+            <option value="$PROJECT_DIR$/marry" />
+            <option value="$PROJECT_DIR$/meziyowu" />
+            <option value="$PROJECT_DIR$/ncalendar" />
+            <option value="$PROJECT_DIR$/network" />
+            <option value="$PROJECT_DIR$/pullzoom" />
+            <option value="$PROJECT_DIR$/refreshlib" />
+            <option value="$PROJECT_DIR$/router" />
+            <option value="$PROJECT_DIR$/routerhelper" />
+            <option value="$PROJECT_DIR$/shortcutbadger" />
+            <option value="$PROJECT_DIR$/sources" />
+            <option value="$PROJECT_DIR$/viewsort" />
+            <option value="$PROJECT_DIR$/zxinlib" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+    <TextView
+        android:id="@+id/man_active_info"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:background="@color/comm_ui_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:singleLine="true"
+        android:textColor="@color/gray_66"
+        android:textSize="12.0dip" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/man_active_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:id="@+id/to_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center|right"
+            android:layout_marginBottom="24.0dip"
+            android:layout_marginRight="12.0dip"
+            android:src="@drawable/icon_back_to_top"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

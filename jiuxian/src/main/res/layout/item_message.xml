@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/systemMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:textColor="@color/text_gray2"
+        android:textSize="12.0sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/leftPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip">
+
+            <ImageView
+                android:id="@+id/leftAvatar"
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/head_other" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/leftAvatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="6.0dip"
+                    android:text="name"
+                    android:textColor="@color/gray_c6"
+                    android:textSize="13.0sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/leftMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/jx_ic_other_chat_bg"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:longClickable="true"
+                        android:padding="12.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_left_voice_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:textColor="@color/gray_99"
+                        android:textSize="14.0sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rightPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip">
+
+            <ImageView
+                android:id="@+id/rightAvatar"
+                android:layout_width="38.0dip"
+                android:layout_height="38.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="6.0dip"
+                android:src="@drawable/head_me" />
+
+            <RelativeLayout
+                android:id="@+id/rightMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/rightAvatar"
+                android:background="@drawable/jx_ic_my_chat_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:longClickable="true"
+                android:padding="12.0dip" />
+
+            <TextView
+                android:id="@+id/rightDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/rightMessage"
+                android:layout_below="@+id/rightMessage"
+                android:layout_marginRight="3.0dip"
+                android:textColor="@color/text_gray1"
+                android:textSize="12.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_right_voice_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8.0dip"
+                android:layout_toLeftOf="@+id/rightMessage"
+                android:textColor="@color/gray_99"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/sendStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/rightMessage">
+
+                <ProgressBar
+                    android:id="@+id/sending"
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip" />
+
+                <ImageView
+                    android:id="@+id/sendError"
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:src="@drawable/ic_error"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

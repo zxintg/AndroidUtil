@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim2"
+        android:background="#ffe5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dim100">
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim16"
+            android:layout_marginTop="@dimen/dim30"
+            android:textColor="@color/black"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim30"
+            android:layout_marginRight="@dimen/dim25"
+            android:layout_marginTop="@dimen/dim30"
+            android:layout_toRightOf="@+id/tv_position"
+            android:lineSpacingExtra="3.0dip"
+            android:textColor="@color/black"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dim6"
+        android:paddingLeft="@dimen/dim48"
+        android:paddingRight="@dimen/dim26" />
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim20"
+        android:paddingBottom="@dimen/dim6"
+        android:paddingLeft="@dimen/dim37"
+        android:paddingRight="@dimen/dim37"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入..."
+            android:lineSpacingExtra="3.0dip"
+            android:minHeight="@dimen/dim140"
+            android:padding="15.0dip"
+            android:textColor="@color/black"
+            android:textColorHint="@color/t727272"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tv_total_number"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim70"
+            android:layout_below="@+id/et_input"
+            android:layout_marginLeft="@dimen/dim20"
+            android:layout_marginRight="@dimen/dim30"
+            android:gravity="bottom|center|right"
+            android:text="0/300"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

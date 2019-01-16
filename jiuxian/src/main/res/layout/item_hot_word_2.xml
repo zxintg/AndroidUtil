@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="8.0dip">
+
+    <TextView
+        android:id="@+id/text_hot_1"
+        android:layout_width="wrap_content"
+        android:layout_height="22.0dip"
+        android:background="@drawable/bg_hot_word"
+        android:gravity="center"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:singleLine="true"
+        android:textColor="@color/gray_66"
+        android:textSize="13.0dip"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="20.0dip"
+        android:layout_height="10.0dip" />
+
+    <TextView
+        android:id="@+id/text_hot_2"
+        android:layout_width="wrap_content"
+        android:layout_height="22.0dip"
+        android:background="@drawable/bg_hot_word"
+        android:gravity="center"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:singleLine="true"
+        android:textColor="@color/gray_66"
+        android:textSize="13.0dip"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="20.0dip"
+        android:layout_height="10.0dip" />
+
+    <TextView
+        android:id="@+id/text_hot_3"
+        android:layout_width="wrap_content"
+        android:layout_height="22.0dip"
+        android:background="@drawable/bg_hot_word"
+        android:gravity="center"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:singleLine="true"
+        android:textColor="@color/gray_66"
+        android:textSize="13.0dip"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="20.0dip"
+        android:layout_height="10.0dip" />
+
+    <TextView
+        android:id="@+id/text_hot_4"
+        android:layout_width="wrap_content"
+        android:layout_height="22.0dip"
+        android:background="@drawable/bg_hot_word"
+        android:gravity="center"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:singleLine="true"
+        android:textColor="@color/gray_66"
+        android:textSize="13.0dip"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="20.0dip"
+        android:layout_height="10.0dip" />
+
+    <TextView
+        android:id="@+id/text_hot_5"
+        android:layout_width="wrap_content"
+        android:layout_height="22.0dip"
+        android:background="@drawable/bg_hot_word"
+        android:gravity="center"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:singleLine="true"
+        android:textColor="@color/gray_66"
+        android:textSize="13.0dip"
+        android:visibility="gone" />
+</LinearLayout>

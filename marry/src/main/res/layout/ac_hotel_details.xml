@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="话题详情"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_coverimage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_hotel_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_optionpriceid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/f4666d"
+                android:textSize="13sp" />
+
+            <View style="@style/line_style" />
+
+            <TextView
+                android:id="@+id/tv_shop_address"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/color_ffffff"
+                android:drawableLeft="@drawable/store_address"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/iocn_discovery_next"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/ll_gift"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/icon_next"
+                    android:padding="10dp"
+                    android:text="会员特权"
+                    android:textSize="13sp" />
+
+                <View style="@style/line_style" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_gift"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_servicecharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableLeft="@drawable/icon_service_money"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="服务费："
+                    android:textSize="13sp" />
+
+                <View style="@style/line_ver_style" />
+
+                <TextView
+                    android:id="@+id/tv_parkisfree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableLeft="@drawable/icon_parking_space"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="停车位："
+                    android:textSize="13sp" />
+
+                <View style="@style/line_ver_style" />
+
+                <TextView
+                    android:id="@+id/tv_lawn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableLeft="@drawable/icon_lawn"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="草坪："
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View style="@style/line_style" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_corkagefee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableLeft="@drawable/icon_decapitate_money"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="开瓶费："
+                    android:textSize="13sp" />
+
+                <View style="@style/line_ver_style" />
+
+                <TextView
+                    android:id="@+id/tv_slottingfee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableLeft="@drawable/iocn_comein_money"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="进场费："
+                    android:textSize="13sp" />
+
+                <View style="@style/line_ver_style" />
+
+                <TextView
+                    android:id="@+id/tv_weddingroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableLeft="@drawable/icon_marriage_room"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="婚房："
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_goods"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="宴会厅"
+                        android:textColor="@color/color_666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_banquet_count"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View style="@style/line_style" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lv_banquet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_more_banquet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff"
+                    android:drawableRight="@drawable/iocn_discovery_next"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="查看更多"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dishes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="菜单"
+                        android:textColor="@color/color_666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cookbook_count"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <View style="@style/line_style" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lv_dishes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_more_dishes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff"
+                    android:drawableRight="@drawable/iocn_discovery_next"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="查看更多"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_case"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="婚礼案例"
+                        android:textColor="@color/color_666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_casenum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <View style="@style/line_style" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lv_cas_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_casemore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff"
+                    android:drawableRight="@drawable/iocn_discovery_next"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="查看更多"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_ffffff"
+                android:padding="10dp"
+                android:text="酒店介绍"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+
+            <View style="@style/line_style" />
+
+            <TextView
+                android:id="@+id/tv_introduce"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:lineSpacingExtra="2dp"
+                android:padding="10dp"
+                android:text="酒店介绍"
+                android:textSize="@dimen/size_12sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/color_ffffff"
+                android:padding="5dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ll_schedulequery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/hotel_schedulequery"
+            android:padding="10dp"
+            android:text="档期查询"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/f4666d"
+            android:gravity="center"
+            android:text="预约看场地"
+            android:textColor="@color/color_ffffff"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>

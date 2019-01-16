@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="新增收货地址"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/new_address_item_style"
+                        android:minHeight="53.0dip">
+
+                        <TextView
+                            style="@style/item_text_name"
+                            android:text="@string/consignee" />
+
+                        <EditText
+                            android:id="@+id/mConsigneeEdit"
+                            style="@style/clear_edittext_style"
+                            android:layout_marginLeft="@dimen/comm_margin_22" />
+                    </LinearLayout>
+
+                    <View style="@style/text_divider_normal" />
+
+                    <LinearLayout
+                        style="@style/new_address_item_style"
+                        android:minHeight="53.0dip">
+
+                        <TextView
+                            style="@style/item_text_name"
+                            android:text="@string/mobile" />
+
+                        <EditText
+                            android:id="@+id/mMobileEdit"
+                            style="@style/clear_edittext_style"
+                            android:layout_marginLeft="@dimen/comm_margin_22"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_contacts_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/comm_bg_line" />
+
+                    <LinearLayout
+                        android:layout_width="84.0dip"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_add_new_address_select_contacts" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="6.0dip"
+                            android:gravity="center"
+                            android:text="@string/add_new_address_select_contacts"
+                            android:textColor="@color/gray_66"
+                            android:textSize="13.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/text_divider_normal" />
+
+            <LinearLayout
+                style="@style/new_address_item_style"
+                android:minHeight="53.0dip"
+                android:paddingBottom="0.0dip"
+                android:paddingTop="0.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/item_text_name"
+                        android:text="@string/tel" />
+
+                    <TextView
+                        style="@style/item_text_name"
+                        android:text="@string/choose_write" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/mTelEdit"
+                    style="@style/clear_edittext_style"
+                    android:layout_marginLeft="@dimen/comm_margin_22"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <View style="@style/text_divider_normal" />
+
+            <RelativeLayout
+                style="@style/new_address_item_style"
+                android:minHeight="53.0dip">
+
+                <TextView
+                    android:id="@+id/text_location_context"
+                    style="@style/item_text_name"
+                    android:layout_centerVertical="true"
+                    android:text="@string/location" />
+
+                <LinearLayout
+                    android:id="@+id/mSelectAddressLinear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/comm_margin_22"
+                    android:layout_toRightOf="@+id/text_location_context"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mProvinceText"
+                        style="@style/textview_14"
+                        android:layout_marginRight="2.0dip" />
+
+                    <TextView
+                        android:id="@+id/mCityText"
+                        style="@style/textview_14"
+                        android:layout_marginRight="2.0dip" />
+
+                    <TextView
+                        android:id="@+id/mDistrictText"
+                        style="@style/textview_14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <View style="@style/text_divider_normal" />
+
+            <LinearLayout
+                style="@style/new_address_item_style"
+                android:layout_height="wrap_content"
+                android:minHeight="53.0dip"
+                android:paddingBottom="5.0dip"
+                android:paddingTop="5.0dip">
+
+                <TextView
+                    style="@style/item_text_name"
+                    android:text="@string/address_detail" />
+
+                <EditText
+                    android:id="@+id/mAddressDetailEdit"
+                    style="@style/clear_edittext_style"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_margin_22"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <View style="@style/text_divider_normal" />
+
+            <RelativeLayout
+                style="@style/new_address_item_style"
+                android:layout_height="wrap_content"
+                android:minHeight="53.0dip"
+                android:paddingBottom="10.0dip"
+                android:paddingTop="10.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/item_text_name"
+                        android:text="@string/set_approve_address" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        android:text="@string/new_use_this_address_every_time"
+                        android:textColor="@color/gray_99"
+                        android:textSize="12.0dip" />
+                </LinearLayout>
+
+                <!--<SwitchButton
+                    android:id="@+id/mApproveSwitch"
+                    style="@style/SwitchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />-->
+            </RelativeLayout>
+
+            <View style="@style/text_divider_normal" />
+
+            <Button
+                android:id="@+id/mSaveAndUseBtn"
+                style="@style/comm_button_style"
+                android:layout_gravity="center_horizontal"
+                android:enabled="false"
+                android:text="@string/save_and_use" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

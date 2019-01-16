@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="详情"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="fill_parent"
+                android:layout_height="244.0dip"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:singleLine="true"
+                android:textColor="@color/black_25"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/detail_en_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:singleLine="true"
+                android:textColor="@color/gray_66"
+                android:textSize="14.0dip" />
+
+            <LinearLayout
+                android:id="@+id/detail_date_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/baike_date"
+                    android:textColor="@color/gray_66"
+                    android:textSize="13.0dip" />
+
+                <TextView
+                    android:id="@+id/detail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black_25"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_price_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/baike_price"
+                    android:textColor="@color/gray_66"
+                    android:textSize="13.0dip" />
+
+                <TextView
+                    android:id="@+id/detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black_25"
+                    android:textSize="16.0dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_expand_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="6.0dip">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10.0dip"
+                    android:layout_marginBottom="6.0dip"
+                    android:background="@color/comm_ui_bg" />
+
+                <LinearLayout
+                    android:id="@+id/detail_country_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/baike_country"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/detail_country"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26.0dip"
+                        android:layout_weight="1.0"
+                        android:singleLine="true"
+                        android:textColor="@color/black_25"
+                        android:textSize="13.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_jump" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_address_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/baike_address"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/detail_address"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26.0dip"
+                        android:layout_weight="1.0"
+                        android:singleLine="true"
+                        android:textColor="@color/black_25"
+                        android:textSize="13.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_jump" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_chateau_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/baike_chateau"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/detail_chateau"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26.0dip"
+                        android:layout_weight="1.0"
+                        android:singleLine="true"
+                        android:textColor="@color/black_25"
+                        android:textSize="13.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_jump" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_type_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/baike_type"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/detail_type"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26.0dip"
+                        android:layout_weight="1.0"
+                        android:singleLine="true"
+                        android:textColor="@color/black_25"
+                        android:textSize="13.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_jump"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_feel_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/baike_feel"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/detail_feel"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26.0dip"
+                        android:layout_weight="1.0"
+                        android:singleLine="true"
+                        android:textColor="@color/black_25"
+                        android:textSize="13.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/icon_jump"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_breed_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10.0dip"
+                    android:background="@color/comm_ui_bg" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:text="@string/baike_breed"
+                    android:textColor="@color/black_25"
+                    android:textSize="14.0dip" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/detail_breed_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@null"
+                    android:dividerHeight="0.0dip"
+                    android:listSelector="@color/transparent"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_description_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10.0dip"
+                    android:background="@color/comm_ui_bg" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:text="@string/baike_description"
+                    android:textColor="@color/black_25"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/detail_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginTop="16.0dip"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingLeft="16.0dip"
+                    android:paddingRight="16.0dip"
+                    android:textColor="@color/gray_66"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

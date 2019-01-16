@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_youmei_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:title_text="优美壁纸"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px"
+        app:left_button_text="我的收藏"
+        app:left_button_textSize="@dimen/size_15px"
+        app:left_button_textColor="@color/color_666666"
+        app:right_button_text="本地资源"
+        app:right_button_textSize="@dimen/size_15px"
+        app:right_button_textColor="@color/color_666666"
+        />
+
+    <com.zxin.zxinlib.view.PagerSlidingTabStrip
+        android:id="@+id/pst_yomei_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/size_14sp"
+        app:pstsDividerColor="@color/color_00000000"
+        app:pstsIndicatorColor="@color/text_pink"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsSelectTabTextColor="@color/text_pink"
+        app:pstsSelectTabTextSize="@dimen/size_16sp"
+        app:pstsTabBackground="@color/color_ffffff"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/line_color"
+        app:pstsUnderlineHeight="0.5dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_yomei_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

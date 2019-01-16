@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:background="@drawable/bg_title_column">
+
+    <ImageView
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:src="@drawable/icon_jiuxian_back"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/title_close_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@+id/title_back"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="关闭"
+            android:textColor="@color/black_25"
+            android:textSize="16.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80.0dip"
+        android:layout_marginRight="80.0dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black_25"
+        android:textSize="16.0dip" />
+
+    <ImageView
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4.0dip"
+        android:background="@drawable/button_title_back_bg"
+        android:gravity="center"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:singleLine="true"
+        android:src="@drawable/icon_title_share"
+        android:visibility="gone" />
+</RelativeLayout>

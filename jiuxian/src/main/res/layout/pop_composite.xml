@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_com_pop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans_33"
+    android:orientation="vertical">
+
+    <View style="@style/text_divider_normal" />
+
+    <LinearLayout
+        android:id="@+id/rg_composite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <View style="@style/text_divider_normal" />
+
+        <FrameLayout
+            android:id="@+id/frame_composite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_composite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:paddingBottom="8.0dip"
+                android:paddingTop="8.0dip"
+                android:text="@string/compre_sort"
+                android:textColor="@color/selector_com_text"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:id="@+id/image_composite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_condition_checked"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View style="@style/text_divider_normal" />
+
+        <FrameLayout
+            android:id="@+id/mEvaluateRela"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/radio_evaluate_best"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:paddingBottom="8.0dip"
+                android:paddingTop="8.0dip"
+                android:text="@string/evaluate_best"
+                android:textColor="@color/selector_com_text"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:id="@+id/image_evaluate_best"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_condition_checked"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View style="@style/text_divider_normal" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/radio_new_product"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:paddingBottom="8.0dip"
+                android:paddingTop="8.0dip"
+                android:text="@string/new_goods"
+                android:textColor="@color/selector_com_text"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:id="@+id/image_new_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_condition_checked"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View style="@style/text_divider_normal" />
+    </LinearLayout>
+</LinearLayout>

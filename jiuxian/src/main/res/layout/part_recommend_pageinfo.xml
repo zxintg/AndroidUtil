@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recommend_page_info"
+    android:layout_width="36.0dip"
+    android:layout_height="2.0dip"
+    android:layout_marginLeft="0.5dip"
+    android:layout_marginRight="0.5dip"
+    android:background="@drawable/selector_recommend_pageinfo"
+    android:button="@null"
+    android:checked="true"
+    android:clickable="false"
+    android:gravity="center" />

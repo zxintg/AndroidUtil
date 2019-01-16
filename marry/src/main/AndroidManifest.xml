@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxin.marry">
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activity.MarryWeComeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarrySettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShippingAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddShippingAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryShoppingCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryVoucherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryCDkeyVoucherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SpreeBounsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryAppointmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryPayOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VoucherOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserCentryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccountLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeCircleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InvitationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SmallPhotosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AuspiciousCalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WeddingBudgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShootStrategyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OnLineCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReserveRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CameraInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ServiceCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewCircuitSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SceneDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AllCircleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RecommendADVActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopCaseDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HotNewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WeddingStoreDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BanquetHallDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SubjectDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewAllStrategyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CityListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SubjectListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProductListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WeddingPartyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FindHotleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HotNewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DesignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WeddingPlannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CheckInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CDkeyOrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SpreeDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReservationDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderDetalisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InputTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrivacyProtectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HotCommentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarriedProcessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VipPrivlegeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopCommentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopCaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ConsultingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DishesGoodsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HotelListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BanquetHallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DishsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HotelCaseListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ComentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PickUpDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewStrategyEditActvitiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InformationTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarryRegisterActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

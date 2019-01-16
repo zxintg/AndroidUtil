@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_ui_bg">
+
+ <!--   <com.jiuxian.client.widget.XListView.XListViewCommunity
+        android:id="@+id/xl_home"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginRight="9.0dip"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="10.0dip"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false" />-->
+
+    <ImageView
+        android:id="@+id/iv_back_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18.0dip"
+        android:layout_marginRight="15.0dip"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_back_to_top"
+        android:visibility="gone" />
+</RelativeLayout>

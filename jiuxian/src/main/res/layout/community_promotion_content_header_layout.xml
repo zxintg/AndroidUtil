@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_ui_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="169.0dip">
+
+        <ImageView
+            android:id="@+id/pormotin_detail_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/promotion_popular_num"
+            android:layout_width="wrap_content"
+            android:layout_height="16.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/community_promotion_popular_bg"
+            android:gravity="center"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:textColor="@color/title_bg"
+            android:textSize="11.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/promotion_praise_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="9.0dip"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/community_topic_title_left_icon"
+            android:drawablePadding="12.0dip"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black_25"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/promotion_trial_layout"
+            layout="@layout/community_promotion_trial_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip" />
+
+        <HorizontalScrollView
+            android:id="@+id/promotion_praise_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/promotion_praise_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginRight="9.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/community_topic_item_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="8.0dip"
+            android:drawableLeft="@drawable/community_topic_title_left_icon"
+            android:drawablePadding="12.0dip"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/community_promotion_description"
+            android:textColor="@color/black_25"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/promotion_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:lineSpacingExtra="3.0dip"
+            android:textColor="@color/promotion_description_select"
+            android:textSize="14.0sp" />
+
+        <Button
+            android:id="@+id/promotion_show_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="13.0dip"
+            android:background="@null"
+            android:drawablePadding="8.0dip"
+            android:drawableRight="@drawable/community_promotion_icon_down"
+            android:gravity="center"
+            android:text="@string/community_promotion_check_all"
+            android:textColor="@color/gray_99"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/promotion_emptyview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/comm_ui_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="160.0dip"
+            android:layout_height="50.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="14.0dip"
+            android:layout_marginTop="40.0dip"
+            android:src="@drawable/activity_comming" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40.0dip"
+            android:text="@string/community_promotion_comming"
+            android:textColor="@color/gray_cc"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+</LinearLayout>

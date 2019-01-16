@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_trans_10"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/product_footprint_title"
+            android:textColor="@color/black_25"
+            android:textSize="16.0dip" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7.0dip"
+            android:layout_toRightOf="@+id/title"
+            android:textColor="@color/gray_99"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+
+    <!--<com.jiuxian.client.widget.FootPrintGallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="240.0dip"
+        android:listSelector="@drawable/selector_listview_normal"
+        android:scrollbars="none"
+        android:spacing="16.0dip" />-->
+
+    <include
+        android:id="@+id/empty"
+        layout="@layout/part_footprint_empty"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_random"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rela_address_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/select_address_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:src="@drawable/icon_address_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/address_choose_title"
+            android:textColor="@color/gray_99"
+            android:textSize="15.0dip" />
+
+        <LinearLayout
+            android:id="@+id/select_address_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:src="@drawable/icon_address_cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="360.0dip"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/address_user"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0.0dip"
+            android:listSelector="@color/transparent"
+            android:paddingBottom="48.0dip"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/address_choose_other"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_gravity="bottom"
+            android:background="@color/red_e8"
+            android:gravity="center"
+            android:text="@string/address_choose_other"
+            android:textColor="@color/white"
+            android:textSize="16.0dip"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/address_choose"
+            android:layout_width="fill_parent"
+            android:layout_height="360.0dip"
+            android:background="#ffffffff"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

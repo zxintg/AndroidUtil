@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selected_photo_root"
+    android:layout_width="66.0dip"
+    android:layout_height="66.0dip"
+    android:minHeight="66.0dip"
+    android:minWidth="66.0dip">
+
+    <ImageView
+        android:id="@+id/selected_photo"
+        android:layout_width="58.0dip"
+        android:layout_height="58.0dip"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/selected_photo_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right|top"
+        android:src="@drawable/icon_photo_remove" />
+</FrameLayout>

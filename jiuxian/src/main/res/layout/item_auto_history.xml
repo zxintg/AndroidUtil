@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/jump_margin"
+    android:paddingRight="@dimen/jump_margin">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="39.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_history_word"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center|left"
+            android:text="关键字" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center_vertical"
+                android:text="历史搜索" />
+
+            <ImageView
+                android:id="@+id/iv_delete_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3.0dip"
+                android:src="@drawable/icon_clear" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/text_divider_normal" />
+</LinearLayout>

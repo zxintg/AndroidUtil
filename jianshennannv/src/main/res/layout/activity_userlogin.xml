@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jdxsxp_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/back_pressed"
+        app:right_button_text="注册"
+        app:right_button_textSize="@dimen/size_15px"
+        app:show_left_button="true"
+        app:title_text="登录"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="50.0dip"
+        android:layout_marginRight="50.0dip"
+        android:layout_marginTop="89.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_phone_num"
+                android:drawablePadding="10.0dip"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:textColor="#ff222222"
+                android:textCursorDrawable="@null"
+                android:textSize="14.0sp" />
+
+            <View
+                style="@style/h_divider"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip" />
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_pwd"
+                android:drawablePadding="10.0dip"
+                android:hint="请输入6~12位密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:textColor="#ff222222"
+                android:textCursorDrawable="@null"
+                android:textSize="14.0sp" />
+
+            <View
+                style="@style/h_divider"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip" />
+
+            <TextView
+                android:id="@+id/text_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10.0dip"
+                android:paddingBottom="5.0dip"
+                android:paddingTop="5.0dip"
+                android:text="忘记密码？"
+                android:textColor="#ff333333"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/btn_login"
+                android:layout_width="225.0dip"
+                android:layout_height="44.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65.0dip"
+                android:background="@drawable/btn_login_fast_bg"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="64.0dip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1.0"
+                    android:background="#ff999999" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:text="第三方登录"
+                    android:textColor="#ff999999"
+                    android:textSize="12.099976sp" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1.0"
+                    android:background="#ff999999" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33.5dip"
+                android:layout_marginRight="33.5dip"
+                android:layout_marginTop="20.0dip">
+
+                <ImageView
+                    android:id="@+id/btn_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/btn_qq_big_seletor" />
+
+                <ImageView
+                    android:id="@+id/btn_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/btn_wechat_big_seletor" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

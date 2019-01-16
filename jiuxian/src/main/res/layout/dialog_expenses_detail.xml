@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.0dip"
+        android:gravity="center"
+        android:text="@string/expenses_detail_title"
+        android:textColor="@color/red_fc"
+        android:textSize="16.0dip" />
+
+    <ListView
+        android:id="@+id/promise_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_weight="1.0"
+        android:divider="@color/comm_bg_line"
+        android:dividerHeight="1.0px"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/comm_bg_line" />
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/red_fc"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/expenses_detail_sure"
+        android:textColor="@color/white"
+        android:textSize="14.0dip" />
+</LinearLayout>

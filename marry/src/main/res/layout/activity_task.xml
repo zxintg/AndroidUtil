@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_marray_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/main_title_background"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_back"
+        app:left_button_size="20px"
+        app:right_button_image="@drawable/task_edit"
+        app:right_button_size="20px"
+        app:show_left_button="true"
+        app:show_right_button="true"
+        app:title_text="婚礼任务"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/body_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/task_blur"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/task_title" />
+
+            <TextView
+                android:id="@+id/task_tv1"
+                style="@style/shadow_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:text="@string/task_jishi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_content_title_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_below="@+id/task_tv1"
+                android:layout_marginTop="-20.0dip"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_day_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/task_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/tv_day_time"
+                        android:src="@drawable/task_day" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_task"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/task_rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/task_date_sort_selector"
+                android:drawablePadding="8dp"
+                android:padding="10dp"
+                android:tag="0"
+                android:text="@string/task_date"
+                android:textColor="@drawable/radio_textcolor2"
+                android:textSize="15sp" />
+
+            <View style="@style/line_ver_style" />
+
+            <RadioButton
+                android:id="@+id/task_rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/task_class_sort_selector"
+                android:drawablePadding="8dp"
+                android:padding="10dp"
+                android:tag="1"
+                android:text="@string/task_types"
+                android:textColor="@drawable/radio_textcolor2"
+                android:textSize="15sp" />
+
+            <View style="@style/line_ver_style" />
+
+            <RadioButton
+                android:id="@+id/task_rb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/task_complete_sort_selector"
+                android:drawablePadding="8dp"
+                android:padding="10dp"
+                android:tag="2"
+                android:text="@string/task_complete"
+                android:textColor="@drawable/radio_textcolor2"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

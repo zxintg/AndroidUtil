@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="defalut_task_type">
+        <item>主持人/司仪</item>
+        <item>住宿</item>
+        <item>婚宴酒店</item>
+        <item>婚庆</item>
+        <item>摄影摄像</item>
+        <item>服装</item>
+        <item>珠宝</item>
+        <item>结婚证明</item>
+        <item>婚礼跟妆</item>
+        <item>蜜月</item>
+        <item>邀请</item>
+        <item>音乐</item>
+        <item>食品</item>
+        <item>鲜花</item>
+        <item>其他</item>
+        <item>婚车</item>
+    </string-array>
+    <string-array name="image_dialog">
+        <item>照相机打开</item>
+        <item>相册打开</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <string-array name="marry_colors">
+        <item>\#fd898a</item>
+        <item>\#9fd96b</item>
+        <item>\#fbcb4b</item>
+        <item>\#ff71ab</item>
+        <item>\#af94db</item>
+        <item>\#83d7f3</item>
+    </string-array>
+    <array name="marry_icons">
+        <item>@drawable/marry_dress</item>
+        <item>@drawable/marry_shoes</item>
+        <item>@drawable/marry_undies</item>
+        <item>@drawable/marry_clothes</item>
+        <item>@drawable/marry_jewelry</item>
+        <item>@drawable/marry_sweet</item>
+        <item>@drawable/marry_letter</item>
+        <item>@drawable/marry_furnishing</item>
+        <item>@drawable/marry_decoration</item>
+        <item>@drawable/marry_props</item>
+    </array>
+    <string-array name="marry_products">
+        <item>婚纱礼服</item>
+        <item>婚包婚鞋</item>
+        <item>内衣配件</item>
+        <item>男士礼服</item>
+        <item>珠宝配饰</item>
+        <item>喜糖糖盒</item>
+        <item>喜帖红包</item>
+        <item>家居家纺</item>
+        <item>婚房布置</item>
+        <item>结婚道具</item>
+    </string-array>
+    <string-array name="month_name">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="sex_dialog">
+        <item>保密</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+</resources>

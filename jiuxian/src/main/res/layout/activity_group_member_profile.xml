@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="@string/group_member_profile"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:src="@drawable/head_other" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="20.0dip"
+        android:background="@color/line" />
+
+    <!--<com.tencent.qcloud.ui.LineControllerView
+        android:id="@+id/manager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:isSwitch="true"
+        app:name="@string/group_member_manage" />
+
+    <com.tencent.qcloud.ui.LineControllerView
+        android:id="@+id/setQuiet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:canNav="true"
+        app:name="@string/group_member_quiet" />
+
+    <com.tencent.qcloud.ui.LineControllerView
+        android:id="@+id/groupCard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:isBottom="true"
+        app:name="@string/group_member_card" />-->
+
+    <TextView
+        android:id="@+id/kick"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/bg_negative_btn"
+        android:gravity="center"
+        android:text="@string/group_member_del"
+        android:textColor="@color/text_btn"
+        android:textSize="18.0sp" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_cate_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cate_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_jiuxian_search"
+            android:background="@color/background_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/search_goods"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/size_12sp" />
+
+        <ImageView
+            android:id="@+id/iv_cate_scanning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_cate_scan" />
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <com.zxin.zxinlib.view.PagerSlidingVerTabStrip
+            android:id="@+id/pst_cate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/size_13sp"
+            app:pstsVerDividerColor="@color/color_00000000"
+            app:pstsVerHasImage="false"
+            app:pstsVerIndicatorColor="@color/common_main_color"
+            app:pstsVerIndicatorWight="2dp"
+            app:pstsVerSelectTabTextColor="@color/common_main_color"
+            app:pstsVerSelectTabTextSize="@dimen/size_13sp"
+            app:pstsVerTextAllCaps="false"
+            app:pstsVerTextBgColor="@color/background_color"
+            app:pstsVerTextCheckedBgColor="@color/color_ffffff"
+            app:pstsVerUnderlineColor="@color/line_color"
+            app:pstsVerUnderlineWeight="4dp"
+            app:pstsVerWith="80dp" />
+        <!--可滑动的布局内容-->
+        <com.zxin.zxinlib.view.MyViewPager
+            android:id="@+id/vvp_cate_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:viewpager_canscroll="false"
+            app:viewpager_orientation="vertical"
+            />
+    </LinearLayout>
+</LinearLayout>

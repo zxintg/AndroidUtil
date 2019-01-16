@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim160"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="@dimen/dim200"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim25" />
+
+            <RatingBar
+                android:id="@+id/rb_coment"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:rating="0.0"
+                android:stepSize="1.0" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim30"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:layout_centerInParent="true"
+                android:background="@color/t727272" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/comm_ui_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/commodity_exchange_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="36.0dip"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/exchange_left_btn"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="30.0dip"
+                android:paddingRight="30.0dip"
+                android:text="@string/exchange_unclaimed"
+                android:textColor="@color/order_tab_item_selector"
+                android:textSize="14.0dip" />
+
+            <RadioButton
+                android:id="@+id/exchange_right_btn"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="30.0dip"
+                android:paddingRight="30.0dip"
+                android:text="@string/exchange_code_str"
+                android:textColor="@color/order_tab_item_selector"
+                android:textSize="14.0dip" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/comm_bg_line" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ec_code_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_margin_10"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/jump_margin"
+                android:paddingRight="@dimen/jump_margin">
+
+                <EditText
+                    android:id="@+id/mCeCodeEdit"
+                    style="@style/clear_edittext_style"
+                    android:layout_height="44.0dip"
+                    android:background="@null"
+                    android:hint="@string/input_commodity_exchange_code"
+                    android:padding="2.0dip"
+                    android:textColorHint="@color/gray_d9" />
+            </LinearLayout>
+
+            <View style="@style/common_divider_style" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/jump_margin"
+                android:paddingRight="@dimen/jump_margin">
+
+                <EditText
+                    android:id="@+id/mCeVeriCodeEdit"
+                    style="@style/clear_edittext_style"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/input_verification_code"
+                    android:padding="2.0dip"
+                    android:textColorHint="@color/gray_d9" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/mChangeAnotherPageImg"
+                        android:layout_width="0.0dip"
+                        android:layout_height="44.0dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/mChangeAnotherPageText"
+                        style="@style/textview_12"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="@dimen/jump_margin"
+                        android:gravity="center|right"
+                        android:padding="3.0dip"
+                        android:text="@string/change_another_page"
+                        android:textColor="@color/gray_66" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/mCeSubBtn"
+                style="@style/comm_button_style"
+                android:layout_height="40.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40.0dip"
+                android:enabled="false"
+                android:text="@string/user_gold_convert"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

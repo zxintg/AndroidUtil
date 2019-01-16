@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:title_text="@string/user_wallet_title"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px"
+        />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_wallet_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_image="@drawable/ic_myallet_balance"
+        app:left_button_text="@string/user_wallet_balance"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:show_left_button="true"
+        app:show_right_button="true" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_wallet_cashback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_image="@drawable/ic_myallet_cachback"
+        app:left_button_text="@string/user_wallet_cashback"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:show_left_button="true"
+        app:show_right_button="true" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_wallet_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_image="@drawable/ic_myallet_coupon"
+        app:left_button_text="@string/user_wallet_coupon"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:show_left_button="true"
+        app:show_right_button="true" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_wallet_gold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_image="@drawable/ic_myallet_gold"
+        app:left_button_text="@string/user_wallet_gold"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:show_left_button="true"
+        app:show_right_button="true" />
+
+</LinearLayout>

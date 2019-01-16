@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headLine_root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="32.0dip"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4.0">
+
+        <ImageView
+            android:id="@+id/headViewImg"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:textSize="20.0sp" />
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="14.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:background="@color/comm_ui_bg" />
+
+       <!-- <com.jiuxian.client.widget.JDAdverView
+            android:id="@+id/jdadver"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3.0" />-->
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/convenientBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="230dp"
+        app:layout_scrollFlags="scroll" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_goods_clazz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/color_ffffff" />
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:id="@+id/ll_marry_hot"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim140"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/dim200"
+            android:layout_height="fill_parent"
+            fresco:placeholderImage="@drawable/ic_marry_hot" />
+
+        <View style="@style/line_ver_style"/>
+
+        <com.zxin.zxinlib.view.banner.VerticalBannerView
+            android:id="@+id/vbv_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            app:vertical_duration="1000"
+            app:vertical_gap="5000"
+            app:vertical_item_num="2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim20" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:viewAspectRatio="2.88" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/front_view"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/redred_button" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="优选婚品每日更新"
+            android:textSize="@dimen/size_13sp" />
+    </LinearLayout>
+</LinearLayout>

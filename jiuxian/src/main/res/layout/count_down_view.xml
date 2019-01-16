@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/phone_only_price_time_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="5.0dip">
+
+    <TextView
+        android:id="@+id/surplus_typeface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_detail_surplus"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/phone_only_price_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/phone_only_price_days_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_detail_day"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/phone_only_price_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/id_hour_characters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_detail_hour"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/phone_only_price_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/id_minute_characters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_detail_min"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/phone_only_price_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip" />
+
+    <TextView
+        android:id="@+id/id_second_characters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_detail_sec"
+        android:textColor="@color/textview_gray"
+        android:textSize="12.0dip" />
+</LinearLayout>

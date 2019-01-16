@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="camera_photos" path=""/>
+    <!-- 需要临时授权访问的路径（.代表所有路径） -->
+    <!--对应Environment.getExternalStorageDirectory()-->
+    <external-path name="storPath" path=""/>
+    <!--对应Context.getExternalCacheDir()得到的目录-->
+    <external-cache-path  name="cachePath"  path=""/>
+    <!--对应Context#getExternalFilesDir(String) Context.getExternalFilesDir(null)-->
+    <external-files-path name="filePath" path="zxin_app"/>
+    <!--对应APP下载得到的目录-->
+    <external-cache-path name="files_root" path=""/>
+    <!--对应 getCacheDir()得到的目录-->
+    <cache-path name="cacheDir" path=""/>
+    <!--对应Context.getFilesDir() 目录-->
+    <files-path name="filesDir" path=""/>
+    <!-- root-path 手机存储根目录 -->
+    <root-path name="rootPath" path=""/>
+
+</paths>

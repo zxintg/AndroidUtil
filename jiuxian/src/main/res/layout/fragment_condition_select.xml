@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPopupRl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/condition_brand_title"
+            layout="@layout/common_titlebar_left_right" />
+
+        <View
+            style="@style/text_divider_normal"
+            android:layout_height="0.5dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/mBrandTypeRG"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/mHotBrandRB"
+                    style="@style/goods_compre_radiobutton_style"
+                    android:layout_weight="1.0"
+                    android:checked="true"
+                    android:drawableRight="@null"
+                    android:gravity="center"
+                    android:text="@string/hot_brand"
+                    android:textColor="@color/goods_radio_selector"
+                    android:textSize="14.0dip" />
+
+                <RadioButton
+                    android:layout_width="0.5dip"
+                    android:layout_height="25.0dip"
+                    android:background="@color/comm_bg_line" />
+
+                <RadioButton
+                    android:id="@+id/mLetterSortRB"
+                    style="@style/goods_compre_radiobutton_style"
+                    android:layout_weight="1.0"
+                    android:drawableRight="@null"
+                    android:gravity="center"
+                    android:text="@string/sort_letter"
+                    android:textColor="@color/goods_radio_selector"
+                    android:textSize="14.0dip" />
+            </RadioGroup>
+
+            <View
+                style="@style/text_divider_normal"
+                android:layout_height="0.5dip" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_touch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/mConditionItemLv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:dividerHeight="0.0dip"
+                        android:listSelector="@drawable/selector_listview_normal"
+                        android:scrollbars="none" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_input_price"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="39.0dip"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/jump_margin"
+                            android:paddingRight="@dimen/jump_margin"
+                            android:visibility="visible">
+
+                            <TextView
+                                style="@style/textview_14"
+                                android:gravity="center"
+                                android:text="@string/price_interval"
+                                android:textColor="@color/textview_black" />
+
+                            <LinearLayout
+                                android:layout_width="0.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="@dimen/comm_margin_10"
+                                android:layout_weight="1.0"
+                                android:gravity="center_vertical">
+
+                                <EditText
+                                    android:id="@+id/mMinPriceEdit"
+                                    android:layout_width="65.0dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_margin="2.0dip"
+                                    android:layout_weight="1.0"
+                                    android:background="@drawable/bg_square_stroke_gray"
+                                    android:gravity="center"
+                                    android:hint="@string/start_price"
+                                    android:inputType="number"
+                                    android:maxLength="9"
+                                    android:paddingLeft="5.0dip"
+                                    android:paddingRight="5.0dip"
+                                    android:textSize="14.0dip" />
+
+                                <View
+                                    style="@style/text_divider_normal"
+                                    android:layout_width="10.0dip"
+                                    android:layout_gravity="center_vertical" />
+
+                                <EditText
+                                    android:id="@+id/mMaxPriceEdit"
+                                    android:layout_width="65.0dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_margin="2.0dip"
+                                    android:layout_weight="1.0"
+                                    android:background="@drawable/bg_square_stroke_gray"
+                                    android:gravity="center"
+                                    android:hint="@string/end_price"
+                                    android:inputType="number"
+                                    android:maxLength="9"
+                                    android:paddingLeft="5.0dip"
+                                    android:paddingRight="5.0dip"
+                                    android:textSize="14.0dip" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            style="@style/text_divider_normal"
+                            android:layout_marginLeft="@dimen/jump_margin"
+                            android:layout_marginRight="@dimen/jump_margin" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mRelaLetterContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <!--<com.jiuxian.client.widget.PinnedHeaderListView.PinnedHeaderListView
+                            android:id="@+id/mLetterPListView"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:divider="@null"
+                            android:dividerHeight="0.0dip"
+                            android:scrollbars="none" />
+
+                        <com.jiuxian.client.widget.SideBar
+                            android:id="@+id/mSideBarLetter"
+                            android:layout_width="30.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical" />-->
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_dislog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="20.0dip"
+                        android:gravity="center"
+                        android:textColor="@color/gray_66"
+                        android:textSize="20.0dip" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

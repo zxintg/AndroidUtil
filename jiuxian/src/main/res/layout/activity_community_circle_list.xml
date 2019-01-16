@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <include
+                android:id="@+id/circle_info_view"
+                layout="@layout/circle_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/community_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+              <!--  <com.jiuxian.client.widget.ViewPagerSlide
+                    android:id="@+id/circle_viewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/comm_ui_bg" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/community_title_bg">
+
+        <ImageView
+            android:id="@+id/titlebar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@null"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="20.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_title_back_transparent" />
+
+        <TextView
+            android:id="@+id/titlebar_text"
+            style="@style/textview_size16_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/community_circle_publish"
+            android:layout_width="54.0dip"
+            android:layout_height="70.0dip"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_community_circle_publish" />
+
+        <!--<com.jiuxian.client.widget.WaveView
+            android:id="@+id/community_circle_wave_view"
+            android:layout_width="43.0dip"
+            android:layout_height="43.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18.0dip"
+            android:visibility="gone" />-->
+    </RelativeLayout>
+</RelativeLayout>

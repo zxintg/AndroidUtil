@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <TextView style="@style/text_divider_normal" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_base_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/jump_margin"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="3.0dip"
+                        android:layout_height="14.0dip"
+                        android:layout_marginLeft="@dimen/jump_margin"
+                        android:background="@color/red_fc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:text="@string/chateau_info"
+                        android:textColor="@color/black_25"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/chateau_owner"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_owner"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/producting_area"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_producting_area"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/chateau_grade"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_grade"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/yearly_output"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_yearly_output"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/red_grape_area"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_red_grape_area"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/red_grape_scale"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_red_grape_scale"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/main_grape_variety"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_main_grape_variety"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/other_grape_variety"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_other_grape_variety"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="105.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/average_tree_age"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_average_tree_age"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="9.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/soil_type"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_soil_type"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/pick_way"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_pick_way"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/floor_space"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_floor_space"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="@color/comm_ui_bg" />
+
+            <LinearLayout
+                android:id="@+id/ll_detail_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/jump_margin"
+                android:paddingLeft="@dimen/jump_margin"
+                android:paddingRight="@dimen/jump_margin"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20.0dip">
+
+                    <View
+                        android:layout_width="3.0dip"
+                        android:layout_height="14.0dip"
+                        android:background="@color/red_fc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:text="@string/chateau_detail"
+                        android:textColor="@color/black_25"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_chateau"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="@color/gray_66" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

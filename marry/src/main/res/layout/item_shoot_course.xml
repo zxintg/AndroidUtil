@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/default_bg"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        fresco:actualImageScaleType="fitXY"
+        fresco:fadeDuration="300"
+        fresco:viewAspectRatio="1.5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_photo"
+        android:background="@color/white"
+        android:contentDescription="@null"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dim20"
+        android:paddingLeft="@dimen/dim20"
+        android:paddingRight="@dimen/dim20">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="70.0dip"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:minHeight="@dimen/dim40"
+            android:textColor="@color/grey_color2"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/tv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim10"
+            android:background="@drawable/border_shape_gray2"
+            android:drawableLeft="@drawable/set_final_circuit_gray"
+            android:drawablePadding="@dimen/dim3"
+            android:paddingBottom="@dimen/dim10"
+            android:paddingLeft="@dimen/dim20"
+            android:paddingRight="@dimen/dim20"
+            android:paddingTop="@dimen/dim10"
+            android:textColor="@color/grey_color2"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_page"
+        android:layout_width="wrap_content"
+        android:layout_height="15.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/jbshape"
+        android:contentDescription="@null"
+        android:minWidth="25.0dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="3.0dip"
+            android:src="@drawable/page_number" />
+
+        <TextView
+            android:id="@+id/tv_select_count"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="2.0dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3.0dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="22"
+            android:textColor="@color/white"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="10.0dip"
+        android:src="@drawable/delete_collect" />
+</RelativeLayout>

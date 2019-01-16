@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_jointlogin"
+            android:layout_width="90.0dip"
+            android:layout_height="90.0dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="14.0dip"
+            android:src="@drawable/user_head" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_jointlogin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/textview_black"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_jointlogin_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:text="@string/jointlogin_prompt"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/textview_gray"
+            android:textSize="13.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cate_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_login_account" />
+
+        <EditText
+            android:id="@+id/jointlogin_phonenum_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@null"
+            android:digits="\ 0123456789"
+            android:drawableRight="@drawable/icon_clear"
+            android:hint="@string/register_hind_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/textview_black"
+            android:textColorHint="@color/gray_d9"
+            android:textSize="15.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jointlogin_info_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_fff4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="9.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingTop="9.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/jointlogin_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/gray_66"
+            android:textSize="12.0dip" />
+    </LinearLayout>
+
+    <View style="@style/text_divider_normal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cate_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_login_phone_verify" />
+
+        <EditText
+            android:id="@+id/jointlogin_securitycode_edit"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:layout_weight="3.11"
+            android:background="@null"
+            android:drawableRight="@drawable/icon_clear"
+            android:hint="@string/enterverifycode"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textColorHint="@color/gray_d9"
+            android:textSize="15.0dip" />
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="@color/comm_bg_line" />
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:layout_gravity="right"
+            android:layout_weight="3.0">
+
+            <TextView
+                android:id="@+id/jointlogin_getcode_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:clickable="false"
+                android:enabled="false"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="@string/register_getcode"
+                android:textColor="@color/textview_gray"
+                android:textSize="15.0dip" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/jointlogin_ok_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_gravity="right"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="24.0dip"
+        android:background="@drawable/bg_button_gray_select"
+        android:clickable="false"
+        android:enabled="false"
+        android:text="@string/login_btn"
+        android:textColor="@color/cate_white"
+        android:textSize="14.0dip" />
+</LinearLayout>

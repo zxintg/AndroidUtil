@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:title_text="@string/jiujiu_click_exchange"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="15px"
+        app:right_button_text="@string/commentcenter_rule"
+        />
+    <include
+        android:id="@+id/commodity_exchange_header"
+        layout="@layout/activity_commodity_exchange" />
+    <!--<com.jiuxian.client.widget.ScrollableLayout.ScrollableLayout
+        android:id="@+id/scrollableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/commodity_exchange_header"
+            layout="@layout/activity_commodity_exchange" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.jiuxian.client.widget.XListView.XSmartRefreshLayoutHeader
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jiuxian.client.widget.XListView.TListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/transparent"
+                android:descendantFocusability="afterDescendants"
+                android:divider="@null"
+                android:dividerHeight="0.0dip"
+                android:fadingEdge="none"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none"
+                android:scrollingCache="false" />
+
+            <com.jiuxian.client.widget.XListView.XSmartRefreshLayoutFooter
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </com.jiuxian.client.widget.ScrollableLayout.ScrollableLayout>-->
+</LinearLayout>

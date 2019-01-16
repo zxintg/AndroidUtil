@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_ui_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/order_static_picture"
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:background="@drawable/icon_order_default_state"
+        android:minHeight="100.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="150.0dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="20.0dip">
+
+            <TextView
+                android:id="@+id/order_state_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16.0dip" />
+
+           <!-- <com.jiuxian.client.widget.OrderCountDownView
+                android:id="@+id/order_countdown_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="3"
+                android:textColor="@color/white"
+                android:textSize="12.0dip" />-->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="14.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="14.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_detail_number"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/order_detail_number"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textColor="@color/gray_66"
+            android:textSize="14.0dip" />
+
+        <ImageView
+            android:id="@+id/order_detail_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/icon_img_copy"
+            android:text="@string/copy"
+            android:textSize="12.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_detail_logistics_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/comm_bg_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="14.0dip"
+            android:paddingTop="14.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_detail_logistics"
+                android:textColor="@color/gray_66"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text="@string/order_detail_logistics_detail"
+                android:textColor="@color/black_25"
+                android:textSize="12.0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/icon_jump" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/comm_bg_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/order_detail_logistics_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="12.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="12.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_order_address"
+                android:drawablePadding="8.0dip"
+                android:singleLine="true"
+                android:text="@string/order_address_user_info"
+                android:textColor="@color/gray_33"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/order_detail_address_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/gray_33"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/order_detail_address_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38.0dip"
+                android:singleLine="true"
+                android:textColor="@color/gray_33"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_detail_address_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginTop="6.0dip"
+            android:maxLines="2"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/gray_66"
+            android:textSize="13.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shop_name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12.0dip"
+            android:drawablePadding="5.0dip"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+
+        <ImageView
+            android:id="@+id/tv_shop_link_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/order_list_arrow_link"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

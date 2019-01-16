@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/time_layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!--<com.jiuxian.client.widget.IntervalLine
+            android:id="@+id/top_line"
+            android:layout_width="2.0dip"
+            android:layout_height="18.0dip"
+            android:layout_marginLeft="19.0dip" />-->
+
+        <LinearLayout
+            android:id="@+id/time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/top_line"
+            android:layout_marginLeft="14.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_axis_dot" />
+
+            <TextView
+                android:id="@+id/exchange_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.0dip"
+                android:text="时间"
+                android:textColor="@color/gray_99"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <!--<com.jiuxian.client.widget.IntervalLine
+            android:id="@+id/bottom_line"
+            android:layout_width="2.0dip"
+            android:layout_height="4.0dip"
+            android:layout_below="@+id/time_layout"
+            android:layout_marginLeft="19.0dip" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_root"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<com.jiuxian.client.widget.IntervalLine
+            android:layout_width="2.0dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/time_layout"
+            android:layout_marginLeft="19.0dip" />-->
+
+        <RelativeLayout
+            android:id="@+id/exchange_record_content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginRight="14.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/bg_square_stroke_e8_bg_white"
+            android:paddingBottom="20.0dip">
+
+            <ImageView
+                android:id="@+id/exchange_record_sign_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/exchange_record_sign_get"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/exchange_record_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="28.0dip"
+                    android:drawableLeft="@drawable/icon_red_vertical_line"
+                    android:drawablePadding="10.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:text="@string/exchange_character"
+                    android:textColor="@color/gray_66"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24.0dip"
+                    android:layout_toLeftOf="@+id/gold_coin"
+                    android:layout_toRightOf="@+id/tv_title"
+                    android:textColor="@color/black_25" />
+
+                <TextView
+                    android:id="@+id/gold_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10.0dip"
+                    android:drawablePadding="4.0dip"
+                    android:drawableRight="@drawable/gold_coin_icon"
+                    android:textColor="@color/red_fc" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/exchange_code_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exchange_record_layout"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/exchange_code_character"
+                    android:textColor="@color/gray_66"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/exchange_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24.0dip"
+                    android:textColor="@color/black_25"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/exchange_record_lottery"
+                android:layout_width="58.0dip"
+                android:layout_height="24.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/exchange_record_layout"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="4.0dip"
+                android:background="@drawable/bg_round_stroke_red"
+                android:gravity="center"
+                android:text="@string/member_lottery_tv"
+                android:textColor="@color/red_fc"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

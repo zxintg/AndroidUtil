@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.RefreshCommonView
+        android:id="@+id/rcv_comments_commonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bottonViewText="我是有底线的~~~"
+        app:content_bgColor="@color/background_color"
+        app:noneImage="@drawable/icon_have_no_commodity"
+        app:noneText="@string/no_search_about_that_commodity"
+        app:noneText2="@string/try_another_keyword"
+        app:orientation="vertical"
+        app:vessel_type="RecyclerView" />
+
+    <ImageView
+        android:id="@+id/iv_back_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18.0dip"
+        android:layout_marginRight="15.0dip"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_back_to_top"
+        android:visibility="gone" />
+</RelativeLayout>

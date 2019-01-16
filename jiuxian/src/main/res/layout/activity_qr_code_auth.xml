@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="@string/qr_code_auth_title"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100.0dip"
+        android:src="@drawable/icon_qr_code_login" />
+
+    <TextView
+        style="@style/textview_18"
+        android:layout_marginTop="28.0dip"
+        android:text="@string/qr_code_auth_info" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:background="@drawable/selector_button_round_red"
+        android:gravity="center"
+        android:text="@string/qr_code_auth_sure"
+        android:textColor="@color/white"
+        android:textSize="14.0dip" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_marginBottom="34.0dip"
+        android:layout_marginTop="34.0dip"
+        android:gravity="center"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:text="@string/qr_code_auth_cancel"
+        android:textColor="@color/gray_99"
+        android:textSize="13.0dip" />
+</LinearLayout>

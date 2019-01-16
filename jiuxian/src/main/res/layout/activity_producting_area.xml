@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_ffffff"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_base_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/jump_margin"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="3.0dip"
+                        android:layout_height="14.0dip"
+                        android:layout_marginLeft="@dimen/jump_margin"
+                        android:background="@color/red_fc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:text="@string/producting_area_info"
+                        android:textColor="@color/black_25"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/producting_area_location"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/proportion"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_proportion"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/grape_variety"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_variety"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/recommend_year"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_year"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/grape_specialty"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_specialty"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/product_population"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_product_population"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/frangrance"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_frangrance"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/ripe_time"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_ripe_time"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_14"
+                        android:layout_width="94.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/jump_margin"
+                        android:text="@string/soil"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13.0dip" />
+
+                    <TextView
+                        android:id="@+id/tv_soil"
+                        style="@style/textview_14"
+                        android:layout_marginLeft="16.0dip"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="@color/comm_ui_bg" />
+
+            <LinearLayout
+                android:id="@+id/ll_detail_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/jump_margin"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="3.0dip"
+                        android:layout_height="14.0dip"
+                        android:layout_marginLeft="@dimen/jump_margin"
+                        android:background="@color/red_fc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:text="@string/producting_area_detail"
+                        android:textColor="@color/black_25"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_producting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingLeft="16.0dip"
+                    android:paddingRight="16.0dip"
+                    android:paddingTop="20.0dip"
+                    android:textColor="@color/gray_66" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

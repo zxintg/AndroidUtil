@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/service_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectord"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="我的服务进度"
+            android:textSize="15sp" />
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:id="@+id/ll_year"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim120"
+            android:background="@drawable/selectord"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/year_1"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:id="@+id/year_2"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:id="@+id/year_3"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:id="@+id/year_4"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_year" />
+
+            <ImageView
+                android:id="@+id/month_1"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:id="@+id/month_2"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_month" />
+
+            <ImageView
+                android:id="@+id/day_1"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:id="@+id/day_2"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim70"
+                android:src="@drawable/time_day" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim120"
+            android:layout_marginTop="@dimen/dim2"
+            android:background="@drawable/selectord"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到店时间" />
+
+            <ImageView
+                android:id="@+id/hour_1"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim50"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:id="@+id/hour_2"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim50"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:layout_width="@dimen/dim20"
+                android:layout_height="@dimen/dim50"
+                android:src="@drawable/icon_time" />
+
+            <ImageView
+                android:id="@+id/hour_3"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim50"
+                android:src="@drawable/time_00" />
+
+            <ImageView
+                android:id="@+id/hour_4"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim50"
+                android:src="@drawable/time_00" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/service_toast"
+            android:textColor="@color/color_666666"
+            android:textSize="15sp" />
+
+        <View style="@style/line_red_style" />
+
+        <TextView
+            android:id="@+id/text_toast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

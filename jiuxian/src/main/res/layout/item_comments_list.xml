@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/item_comments_divider"
+        style="@style/text_divider_normal" />
+
+    <RelativeLayout
+        android:id="@+id/relative_item_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="8.0dip">
+
+        <RatingBar
+            android:id="@+id/rb_comments_bar"
+            style="@style/RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_marginRight="15.0dip"
+            android:isIndicator="true"
+            android:minHeight="15.0dip"
+            android:numStars="5"
+            android:rating="4.0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_commend_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.0dip"
+                android:textColor="@color/textview_gray"
+                android:textSize="12.0dip" />
+
+            <ImageView
+                android:id="@+id/tv_comments_user_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_comments"
+        style="@style/textview_14"
+        android:layout_marginBottom="9.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="left"
+        android:singleLine="false"
+        android:textColor="@color/textview_black"
+        android:textSize="13.0dip" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_comments_img_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14.0dip"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/v_foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12.0dip"
+        android:background="@drawable/bg_round_stroke_red"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="@dimen/jump_margin"
+        android:paddingRight="@dimen/jump_margin"
+        android:paddingTop="5.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_comment_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:text="@string/product_look_detail"
+            android:textColor="@color/red_fc"
+            android:textSize="12.0dip" />
+    </LinearLayout>
+</LinearLayout>

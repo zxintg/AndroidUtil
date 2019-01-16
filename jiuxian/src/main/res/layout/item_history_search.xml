@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mTvHisWord"
+        style="@style/textview_14"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:ellipsize="end"
+        android:textColor="@color/gray_66" />
+
+    <View style="@style/text_divider_normal" />
+</LinearLayout>

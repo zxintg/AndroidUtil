@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="106.0dip"
+    android:gravity="center_vertical"
+    android:minHeight="106.0dip"
+    android:orientation="horizontal"
+    android:paddingLeft="12.0dip"
+    android:paddingRight="20.0dip">
+
+    <CheckBox
+        android:id="@+id/item_checkbox"
+        style="@style/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="78.0dip"
+        android:layout_height="78.0dip"
+        android:layout_marginLeft="12.0dip">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_square_stroke_gray"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/item_stock"
+            android:layout_width="fill_parent"
+            android:layout_height="16.0dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_square_stroke_translucent"
+            android:gravity="center"
+            android:text="@string/cart_item_out_of_stock"
+            android:textColor="@color/white"
+            android:textSize="10.0dip"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/black_25"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trade_price"
+                android:textColor="@color/gray_66"
+                android:textSize="12.0dip" />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:textColor="@color/red_fc"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:textSize="14.0dip"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

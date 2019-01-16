@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:right_button_text="帮助"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="14px"
+        app:show_left_button="true"
+        app:title_text="登录界面"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_userhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="用户头像"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:right_image="@mipmap/ic_launcher_round"
+                app:show_right_button="true"
+                app:show_right_image="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_center_opencity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="我的地址"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:right_button_image="@mipmap/ic_black_right_arrow"
+                app:show_bar_line="false"
+                app:right_button_textColor="@color/color_333333"
+                app:right_button_textHintColor="@color/color_666666"
+                app:right_button_hintText="请选择地址"
+                app:right_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                android:layout_marginTop="10dp"
+                app:left_button_text="账户与安全"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:right_button_image="@mipmap/ic_black_right_arrow"
+                app:show_right_button="true"
+                app:show_bar_line="false"
+                />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_usernicename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                android:layout_marginTop="10dp"
+                app:left_button_text="用户名"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:right_button_hintText="用户名称"
+                app:right_button_image="@mipmap/ic_black_right_arrow"
+                app:right_button_textColor="@color/color_333333"
+                app:right_button_textHintColor="@color/color_666666"
+                app:right_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="昵称"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:right_button_hintText="用户昵称"
+                app:right_button_image="@mipmap/ic_black_right_arrow"
+                app:right_button_textColor="@color/color_333333"
+                app:right_button_textHintColor="@color/color_666666"
+                app:right_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="我的二维码"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:right_button_image="@mipmap/ic_black_right_arrow"
+                app:right_image="@mipmap/default_iamge"
+                app:show_bar_line="false"
+                app:show_right_button="true"
+                app:show_right_image="true" />
+
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_center_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="性别"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:right_button_hintText="用户性别"
+                app:right_button_image="@mipmap/ic_black_right_arrow"
+                app:right_button_textColor="@color/color_333333"
+                app:right_button_textHintColor="@color/color_666666"
+                app:right_button_textSize="@dimen/size_15px"
+                app:show_bar_line="false"
+                app:show_right_button="true" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

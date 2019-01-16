@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="261.0dip">
+
+        <ImageView
+            android:id="@+id/detail_vague_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/detail_icon"
+            android:layout_width="85.0dip"
+            android:layout_height="85.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73.0dip"
+            android:background="@drawable/detail_icon_bg"
+            android:padding="2.0dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/headportrait" />
+
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11.0dip"
+            android:text="- -"
+            android:textColor="@color/white"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/detail_autograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11.0dip"
+            android:text="- -"
+            android:textColor="@color/white"
+            android:textSize="13.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/more_title_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9.0dip"
+            android:text="@string/detail_label"
+            android:textColor="@color/upload_video_text_color"
+            android:textSize="15.0sp" />
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <com.shipin.youmei.widget.FlowLayout
+                android:id="@+id/detail_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16.0dip"
+                android:textSize="13.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dip"
+        android:background="@color/detail_division_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more_title_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.0dip"
+            android:text="@string/detail_video"
+            android:textColor="@color/upload_video_text_color"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/detail_video_num"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center|right"
+            android:paddingRight="15.0dip"
+            android:text="@string/detail_video_num"
+            android:textColor="@color/detail_video_num_color"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+</LinearLayout>

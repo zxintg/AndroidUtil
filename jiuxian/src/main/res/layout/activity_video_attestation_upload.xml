@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <VideoView
+            android:id="@+id/videoView_show"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip" />
+
+        <ImageView
+            android:id="@+id/imageView_show"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip" />
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="64.0dip"
+            android:layout_height="64.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/video_play" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff000000">
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_root"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="15.0dip"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="7.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5.0dip"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView_count_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff707070"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar_loading"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="5.0dip"
+                android:progressDrawable="@drawable/progressbar_video" />
+
+            <Button
+                android:id="@+id/button_done"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:background="@color/xn_transparent"
+                android:text="发送"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:background="@color/xn_transparent"
+                android:text="取消"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

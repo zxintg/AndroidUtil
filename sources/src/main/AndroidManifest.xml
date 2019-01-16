@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxin.sources">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activity.SourcesMainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activity.CodeKKActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.YunShangActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.AndroidBusActivity"
+            android:screenOrientation="portrait"
+            />
+    </application>
+
+</manifest>

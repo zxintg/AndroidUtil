@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:tag="layout/activity_setting_nickname_0">
+
+    <include
+        android:id="@+id/setting_nickname_banner"
+        layout="@layout/banner_common" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/v_infromation_new" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="79.5dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48.5dip"
+            android:src="@mipmap/me_name_icon" />
+
+        <EditText
+            android:id="@+id/setting_nickname_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="@string/mine_imput_name"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="41.0dip"
+        android:layout_marginRight="41.0dip"
+        android:background="@color/modify_nickname_division_color" />
+
+    <TextView
+        android:id="@+id/setting_nickname_error_tip_tv"
+        android:layout_width="275.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4.0dip"
+        android:paddingLeft="15.0dip"
+        android:textColor="@color/error_text_color"
+        android:textSize="14.0dip"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/setting_nickname_confirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37.5dip"
+        android:background="@mipmap/me_namebg"
+        android:text="@string/mine_confirm"
+        android:textColor="@color/white"
+        android:textSize="17.0sp" />
+</LinearLayout>

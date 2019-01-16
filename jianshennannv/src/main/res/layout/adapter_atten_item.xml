@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_user_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageView
+            android:id="@+id/tv_user_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_user_head"
+            android:layout_alignRight="@+id/image_user_head"
+            android:layout_marginRight="-3.0dip"
+            android:src="@drawable/icon_v"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_user_head"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_user_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="东海小蛟龙"
+                android:textColor="@color/text_default_d"
+                android:textSize="14.0sp" />
+
+            <include layout="@layout/include_sex" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_1"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_user_head"
+            android:text="01.19 12:37"
+            android:textSize="11.0sp" />
+
+        <TextView
+            android:id="@+id/text_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="已被12345人浏览"
+            android:textColor="@color/text_default_l"
+            android:textSize="11.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_user_sign"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_default_d"
+        android:textSize="14.0sp"
+        tools:text="一元复始，万象更新。身体随着时间的步伐又打了一些。三个尤物又黏在一起了，忙乎着给屋里增加更多的喜气。" />
+
+    <LinearLayout
+        android:id="@+id/image_user_info"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/rl_user_info_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_user_info_01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/default_iamge" />
+
+            <ImageView
+                android:id="@+id/image_user_isvideo_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/icon_play_small_edit_dynamic" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/rl_user_info_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_user_info_02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/default_iamge" />
+
+            <ImageView
+                android:id="@+id/image_user_isvideo_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/icon_play_small_edit_dynamic" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text_thumbs_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_thumbs_n"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="321"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_comment_n"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="#ff666666"
+            android:textSize="14.0sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_collection_buy"
+            android:drawableLeft="@drawable/icon_atten_collection"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="收藏专辑" />
+
+        <TextView
+            android:id="@+id/text_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_collection_buy"
+            android:drawableLeft="@drawable/icon_buy"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="600猫币购买"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+</LinearLayout>

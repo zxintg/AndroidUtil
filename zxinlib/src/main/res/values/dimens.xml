@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="mtextsize">12sp</dimen>
+    <dimen name="line_size">0.5dp</dimen>
+    <dimen name="size_40sp">40sp</dimen>
+    <dimen name="size_20sp">20sp</dimen>
+    <dimen name="top_title">18sp</dimen>
+    <dimen name="size_17sp">17sp</dimen>
+    <dimen name="size_16sp">16sp</dimen>
+    <dimen name="size_15sp">15sp</dimen>
+    <dimen name="size_14sp">14sp</dimen>
+    <dimen name="size_13sp">13sp</dimen>
+    <dimen name="size_10sp">10sp</dimen>
+    <dimen name="size_11sp">11sp</dimen>
+    <dimen name="size_9sp">9sp</dimen>
+    <dimen name="size_5sp">5sp</dimen>
+    <dimen name="size_12sp">12sp</dimen>
+    <dimen name="top_hight">55dp</dimen>
+    <dimen name="size_18sp">18sp</dimen>
+    <dimen name="wait_dialog_WH">100dp</dimen>
+    <dimen name="button_radius">8dp</dimen>
+    <dimen name="vertical_line_margin">5dp</dimen>
+    <dimen name="list_margin">20dp</dimen>
+    <dimen name="listItem_title">18sp</dimen>
+    <dimen name="title_bar_height">45dp</dimen>
+    <dimen name="title_bar_height2">55dp</dimen>
+    <dimen name="size_18px">18px</dimen>
+    <dimen name="size_14px">14px</dimen>
+    <dimen name="size_5px">5px</dimen>
+    <dimen name="size_12px">12px</dimen>
+    <dimen name="size_13px">13px</dimen>
+    <dimen name="size_17px">17px</dimen>
+    <dimen name="size_15px">15px</dimen>
+    <dimen name="size_16px">16px</dimen>
+    <dimen name="size_20px">20px</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width">50dp</dimen>
+
+    <dimen name="size_42dp">42dp</dimen>
+    <dimen name="size_11dp">11dp</dimen>
+    <dimen name="size_10dp">10dp</dimen>
+    <dimen name="labels_text_size">14sp</dimen>
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+</resources>

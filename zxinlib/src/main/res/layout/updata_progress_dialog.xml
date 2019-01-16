@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/white_round_corner_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="版本升级中"
+        android:textColor="@color/color_333333"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/dialog_title_line"
+        style="@style/line_style" />
+
+    <TextView
+        android:id="@+id/update_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="有新版本更新了，速来体验新技能..."
+        android:scrollbars="vertical"
+        android:maxLines="5"
+        android:textColor="@color/color_666666"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ProgressBar
+            android:id="@+id/horizontal_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/update_process_text"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="0%"
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

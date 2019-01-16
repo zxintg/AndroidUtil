@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_round_e8_degree5_px1"
+    android:orientation="vertical"
+    android:paddingBottom="7.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/experence_rule_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="13.0dip"
+            android:textColor="@color/black_25"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="10.0dip"
+            android:layout_height="2.0dip"
+            android:layout_marginTop="22.0dip"
+            android:layout_toLeftOf="@+id/experence_rule_title"
+            android:background="#ff000000" />
+
+        <View
+            android:layout_width="10.0dip"
+            android:layout_height="2.0dip"
+            android:layout_marginTop="22.0dip"
+            android:layout_toRightOf="@+id/experence_rule_title"
+            android:background="#ff000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <TextView
+            android:id="@+id/experence_rule_action_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/community_add_rule"
+            android:textColor="@color/black_25"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/community_value_rule"
+            android:textColor="@color/black_25"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/community_top_rule"
+            android:textColor="@color/black_25"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/experence_rule_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:orientation="vertical" />
+</LinearLayout>

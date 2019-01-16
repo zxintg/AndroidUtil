@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPinnedItemLinear"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="39.0dip">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/textview_14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/jump_margin"
+            android:gravity="center_vertical"
+            android:text="HHH"
+            android:textColor="@color/gray_66" />
+
+        <ImageView
+            android:id="@+id/mSignLetterSelectedImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_condition_checked" />
+    </RelativeLayout>
+
+    <View style="@style/text_divider_normal" />
+</LinearLayout>

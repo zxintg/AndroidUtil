@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:title_text="@string/setting"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px"
+        />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_setting_clearcache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_text="@string/clear_cache"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_hintText="20MB"
+        app:right_button_textColor="@color/color_333333"
+        app:right_button_textSize="@dimen/size_15px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_set"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            style="@style/item_style"
+            android:background="@color/comm_ui_bg">
+
+
+            <!--<com.zxin.zxinlib.view.switchbutton.SwitchButton
+                android:id="@+id/mMsgPushTipSwitch"
+                style="@style/SwitchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />-->
+        </RelativeLayout>
+
+        <View style="@style/text_divider_normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/message_push_tip"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/size_13sp" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_setting_msgpush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_text="@string/accept_new_message_notify"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:show_right_button="true" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_setting_encouragerela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_text="@string/encourage_one_time"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:show_right_button="true" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_text="@string/about_us"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_image="@mipmap/ic_black_right_arrow"
+        app:right_button_text="v1.0.0"
+        app:right_button_textColor="@color/color_333333"
+        app:right_button_textSize="@dimen/size_15px"
+        app:show_right_button="true" />
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_setting_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:bar_background="@color/color_ffffff"
+        app:left_button_text="@string/monitor_active"
+        app:left_button_textColor="@color/color_333333"
+        app:left_button_textSize="@dimen/size_15px"
+        app:right_button_hintText="@string/monitor_close_info"
+        app:right_button_textColor="@color/color_333333"
+        app:right_button_textSize="@dimen/size_15px"
+        app:show_bar_line="false" />
+
+
+    <Button
+        android:id="@+id/btn_login_out"
+        style="@style/comm_button_style"
+        android:text="@string/login_out" />
+
+
+    <LinearLayout
+        android:id="@+id/mAppReCommendLinear"
+        style="@style/item_style"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View style="@style/line_style" />
+
+        <TextView
+            style="@style/textview_14"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip"
+            android:text="@string/jxw_sub_brand_boutique_app_recommend" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mAppGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:horizontalSpacing="-20.0dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

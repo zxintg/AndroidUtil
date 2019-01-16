@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/item_style">
+
+    <TextView
+        android:id="@+id/item_msgset_info"
+        style="@style/textview_14"
+        android:layout_centerVertical="true"
+        android:text="物流通知" />
+
+    <!--<com.zxin.zxinlib.view.switchbutton.SwitchButton
+        android:id="@+id/item_msgset_switch"
+        style="@style/SwitchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />-->
+</RelativeLayout>

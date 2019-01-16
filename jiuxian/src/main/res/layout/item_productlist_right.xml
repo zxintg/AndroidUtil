@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentRight="true"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_jiuxian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:right_button_text="@string/confirm"
+        app:right_button_textColor="@color/color_666666"
+        app:right_button_textSize="@dimen/size_13px"
+        app:show_left_button="true"
+        app:title_text="@string/condition"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="服务"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/size_13sp" />
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/mSelfLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:button="@drawable/selector_self_checked"
+                android:checked="false"
+                android:padding="5dp" />
+
+            <CheckBox
+                android:id="@+id/mClubLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:button="@drawable/selector_club_checked"
+                android:checked="false"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/mJXZhenxuanLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/selector_jxzx_checked"
+            android:checked="false"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mTypeLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mHotBrandTV"
+            style="@style/textview_14"
+            android:layout_weight="1.0"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/hot_brand" />
+
+        <TextView
+            android:layout_width="0.5dip"
+            android:layout_height="15dp"
+            android:background="@color/comm_bg_line" />
+
+        <TextView
+            android:id="@+id/mLetterSortTV"
+            style="@style/textview_14"
+            android:layout_weight="1.0"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/sort_letter" />
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+
+    <RelativeLayout
+        android:id="@+id/mLineRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:scaleType="matrix"
+            android:src="@color/textview_red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mAllRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/textview_14"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/comments_all" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_down_red" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vLine2"
+        style="@style/line_style"
+        android:layout_height="0.5dip"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mBrandLV"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@drawable/selector_listview_normal"
+        android:scrollbars="none" />
+
+    <View style="@style/line_style" />
+
+    <TextView
+        android:id="@+id/mBtnClearCondition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/clear_condition"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/size_14sp" />
+</LinearLayout>

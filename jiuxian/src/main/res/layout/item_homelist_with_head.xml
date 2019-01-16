@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_proImg"
+            android:layout_width="138dp"
+            android:layout_height="138dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/item_paly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_proImg"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/icon_play_list_big"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/sellOutImg"
+            android:layout_width="138dp"
+            android:layout_height="138dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_sell_out"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_proName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2dp"
+        android:padding="10dp"
+        android:text="doi阿狸电话管理局Eu级刷卡龙卷风离开的时间里卡萨丁积分"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/size_13sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_proPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:singleLine="true"
+            android:text="¥6874875894"
+            android:textColor="@color/red_fc"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_jxPrice_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="¥6874875894"
+            android:textColor="@color/gray_99"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_jx_club_price_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$45.99"
+            android:textColor="@color/textview_black"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tv_jx_club_icon_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/ic_club"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

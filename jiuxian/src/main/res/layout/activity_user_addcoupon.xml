@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:id="@+id/ccb_beike_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/red_home_title"
+        app:isTopBar="true"
+        app:left_button_image="@drawable/icon_title_back_transparent"
+        app:left_button_size="20px"
+        app:show_left_button="true"
+        app:title_text="标题"
+        app:title_textColor="@color/color_ffffff"
+        app:title_textSize="@dimen/size_18px" />
+
+    <EditText
+        android:id="@+id/coupon_serialnum"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:hint="@string/entercouponserialnumber"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/textview_black"
+        android:textSize="15.0dip" />
+
+    <View style="@style/text_divider_normal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/verifycode"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="13.0"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/enterverifycode"
+            android:inputType="number"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/textview_black"
+            android:textSize="15.0dip" />
+
+        <ImageView
+            android:id="@+id/img_verificode"
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="3.0"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/btn_chageapic"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.0"
+            android:gravity="center"
+            android:text="@string/changeapic"
+            android:textColor="@color/textview_gray"
+            android:textSize="15.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_activate"
+        style="@style/button_round_red"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="24.0dip"
+        android:text="@string/activate" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="50.0dip">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:src="@drawable/head_other" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16.0sp" />
+
+    <ImageView
+        android:id="@+id/chooseTag"
+        android:layout_width="15.0dip"
+        android:layout_height="15.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/unselected" />
+</LinearLayout>

@@ -4,6 +4,9 @@ import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
+import com.zxin.zxinlib.util.SystemInfoUtil;
+import com.zxin.zxinlib.util.UiUtils;
+
 /**
  * 实现ViewPager左右滑动时的时差
  * Created by xmuSistone on 2016/9/18.
@@ -14,7 +17,7 @@ public class CustPagerTransformer implements ViewPager.PageTransformer {
     private ViewPager viewPager;
 
     public CustPagerTransformer(Context context) {
-        this.maxTranslateOffsetX = dp2px(context, 180);
+        this.maxTranslateOffsetX = SystemInfoUtil.dip2px(180);
     }
 
     public void transformPage(View view, float position) {
@@ -33,13 +36,4 @@ public class CustPagerTransformer implements ViewPager.PageTransformer {
             view.setTranslationX(-maxTranslateOffsetX * offsetRate);
         }
     }
-
-    /**
-     * dp和像素转换
-     */
-    private int dp2px(Context context, float dipValue) {
-        float m = context.getResources().getDisplayMetrics().density;
-        return (int) (dipValue * m + 0.5f);
-    }
-
 }

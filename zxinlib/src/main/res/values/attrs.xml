@@ -368,4 +368,54 @@
         <attr name="bototmExtraIndicatorHeight" format="dimension" />
     </declare-styleable>
 
+    <declare-styleable name="MyRadioGroupView">
+        <!--高度-->
+        <attr name="groupPivotHeight" format="dimension|fraction" />
+        <!--横向间距-->
+        <attr name="groupSpaceHor" format="dimension" />
+        <!--纵向间距-->
+        <attr name="groupSpaceVer" format="dimension" />
+        <!--子元素默认样式-->
+        <attr name="groupItemStyle" format="reference" />
+        <!--子元素选中样式-->
+        <attr name="groupItemCheckedStyle" format="reference" />
+        <!--子元素字体默认样式-->
+        <attr name="groupItemTextColor" format="reference" />
+        <!--子元素字体选中样式-->
+        <attr name="groupItemTextCheckedColor" format="reference" />
+        <!--子元素宽度-->
+        <attr name="groupItemWidth" format="dimension|reference" />
+        <!--子元素高度-->
+        <attr name="groupItemHeight" format="dimension|reference" />
+        <!--横向个数-->
+        <attr name="groupHorNum" format="integer" />
+        <!--字体大小-->
+        <attr name="groupTextSize" format="dimension" />
+        <!--子布局左偏移量-->
+        <attr name="groupItemPaddingLeft" format="dimension" />
+        <!--子布局右偏移量-->
+        <attr name="groupItemPaddingRight" format="dimension" />
+        <!--子布局上偏移量-->
+        <attr name="groupItemPaddingTop" format="dimension" />
+        <!--子布局下偏移量-->
+        <attr name="groupItemPaddingBottom" format="dimension" />
+        <!--子元素数据数组-->
+        <attr name="groupDatas" format="reference" />
+        <!--是否单选-->
+        <attr name="groupSingleChecked" format="boolean" />
+        <!--是否可选-->
+        <attr name="groupIsChecked" format="boolean" />
+        <!--类型-->
+        <attr name="groupType">
+            <!--无-->
+            <enum name="groupNone" value="0" />
+            <!--竖直的-->
+            <enum name="groupVer" value="1" />
+            <!--水平的-->
+            <enum name="groupHor" value="2" />
+            <!--网格的-->
+            <enum name="groupGrid" value="3" />
+        </attr>
+
+    </declare-styleable>
 </resources>

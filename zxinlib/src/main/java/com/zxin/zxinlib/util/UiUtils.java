@@ -1,5 +1,6 @@
 package com.zxin.zxinlib.util;
 
+import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -136,4 +137,7 @@ public class UiUtils {
        return BaseApplication.getInstance().getContext().getResources().getDimensionPixelOffset(dimen);
     }
 
+    public static String[] getStringArray(int resId){
+       return BaseApplication.getInstance().getContext().getResources().getStringArray(resId);
+    }
 }

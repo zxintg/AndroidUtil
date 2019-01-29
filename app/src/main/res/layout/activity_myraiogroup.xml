@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.zxin.zxinlib.view.CommonCrosswiseBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_background="@color/color_ffffff"
+        app:isTopBar="true"
+        app:left_button_image="@mipmap/ic_black_left_arrow"
+        app:show_left_button="true"
+        app:title_text="自定义ViewGroup"
+        app:title_textColor="@color/color_333333"
+        app:title_textSize="@dimen/size_18px" />
+
+    <com.zxin.zxinlib.view.group.MyRadioGroupView
+        android:id="@+id/mrg_myradiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:groupDatas="@array/defalut_myraiogroup"
+        app:groupHorNum="4"
+        app:groupItemHeight="30px"
+        app:groupItemPaddingLeft="5px"
+        app:groupItemPaddingTop="5px"
+        app:groupItemPaddingRight="5px"
+        app:groupItemPaddingBottom="5px"
+        app:groupTextSize="@dimen/size_12px"
+        app:groupType="groupGrid"
+        app:groupSpaceHor="10px"
+        app:groupSpaceVer="10px"
+        app:groupSingleChecked="false"
+        app:groupIsChecked="true"
+        app:groupItemStyle="@drawable/btn_round_white_normal"
+        app:groupItemCheckedStyle="@drawable/btn_round_yellow_pressed"
+        app:groupItemTextColor="@color/color_666666"
+        app:groupItemTextCheckedColor="@color/color_ffffff"
+        />
+
+</LinearLayout>

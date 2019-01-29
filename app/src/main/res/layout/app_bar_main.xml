@@ -25,7 +25,13 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/content_main"
+        android:visibility="gone"
+        />
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_baidumap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     <com.zxin.floats.FloatingActionMenu
         android:id="@+id/fam_menu_yellow"
@@ -41,7 +47,9 @@
         fab:menu_shadowColor="#444"
         fab:menu_colorNormal="#FFB805"
         fab:menu_colorPressed="#F2AB00"
-        fab:menu_colorRipple="#D99200">
+        fab:menu_colorRipple="#D99200"
+        android:visibility="gone"
+        >
 
         <com.zxin.floats.FloatingActionButton
             android:id="@+id/fab12"

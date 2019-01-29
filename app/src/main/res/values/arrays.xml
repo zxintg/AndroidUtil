@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="defalut_myraiogroup">
+        <item>主持人/司仪</item>
+        <item>住宿</item>
+        <item>婚宴酒店</item>
+        <item>婚庆</item>
+        <item>摄影摄像</item>
+        <item>服装</item>
+        <item>珠宝</item>
+        <item>结婚证明</item>
+        <item>婚礼跟妆</item>
+        <item>蜜月</item>
+        <item>邀请</item>
+        <item>音乐</item>
+        <item>食品</item>
+        <item>鲜花</item>
+        <item>婚车</item>
+
+        <item>住宿2</item>
+        <item>婚宴酒店2</item>
+        <item>婚庆2</item>
+        <item>摄影摄像2</item>
+        <item>服装2</item>
+        <item>珠宝2</item>
+        <item>结婚证明2</item>
+        <item>婚礼跟妆2</item>
+        <item>蜜月2</item>
+        <item>邀请2</item>
+        <item>音乐2</item>
+        <item>食品2</item>
+        <item>鲜花2</item>
+        <item>婚车2</item>
+
+        <item>主持人3</item>
+        <item>住宿3</item>
+        <item>婚宴酒店3</item>
+        <item>婚庆3</item>
+        <item>摄影摄像3</item>
+        <item>服装3</item>
+        <item>珠宝3</item>
+        <item>结婚证明3</item>
+        <item>婚礼跟妆3</item>
+        <item>蜜月3</item>
+        <item>邀请3</item>
+        <item>音乐3</item>
+        <item>食品3</item>
+        <item>鲜花3</item>
+        <item>婚车3</item>
+    </string-array>
+</resources>

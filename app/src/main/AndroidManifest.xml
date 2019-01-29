@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name=".app.MyApplication"
@@ -83,6 +85,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.test.TestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.test.MyRaioGroupActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.test.PullRecyclerViewActivity"

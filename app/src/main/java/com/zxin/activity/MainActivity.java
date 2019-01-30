@@ -1,6 +1,8 @@
 package com.zxin.activity;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -20,6 +22,7 @@ import com.baidu.location.BDLocation;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.baidu.mapapi.map.BaiduMap;
+import com.baidu.mapapi.map.BaiduMapOptions;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.MyLocationData;
 import com.zxin.R;
@@ -31,12 +34,16 @@ import com.zxin.fragment.MainItemFragment;
 import com.zxin.router.Router;
 import com.zxin.util.StringUtils;
 import com.zxin.zxinlib.adapter.ViewPageFragmentAdapter;
+import com.zxin.zxinlib.app.SystemPersimManage;
 import com.zxin.zxinlib.bean.TitleBean;
 import com.zxin.zxinlib.dao.HttpUrlDaoUtil;
 import com.zxin.zxinlib.util.AppManager;
+import com.zxin.zxinlib.util.ContentUtil;
 import com.zxin.zxinlib.util.IntegerUtil;
 import com.zxin.zxinlib.util.ShareUtil;
+import com.zxin.zxinlib.view.CommonCrosswiseBar;
 import com.zxin.zxinlib.view.PagerSlidingTabStrip;
+import com.zxin.zxinlib.view.dialog.NiceDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,6 +55,8 @@ import butterknife.OnClick;
  * 主页
  */
 public class MainActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
+    @BindView(R.id.ccb_title)
+    CommonCrosswiseBar mTitle;
     @BindView(R.id.app_bar_main)
     View main;
     @BindView(R.id.drawer_layout)
@@ -65,6 +74,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     private BaiduMap mBaiduMap;
     private LocationClient mLocationClient;
+    private BaiduMapOptions options;
+    private int mapType;
 
 
     private TextView mName;
@@ -86,20 +97,27 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     }
 
     private void initMapView() {
-        mBaiduMap = mMapView.getMap();
+        if (mBaiduMap == null)
+            mBaiduMap = mMapView.getMap();
         //定位初始化
-        mLocationClient = new LocationClient(this);
+        if (mLocationClient == null)
+            mLocationClient = new LocationClient(this);
+        if (options == null)
+            options = new BaiduMapOptions();
+        mapType = BaiduMap.MAP_TYPE_NORMAL;
     }
 
     private void setMapView() {
         //开启地图的定位图层
         mBaiduMap.setMyLocationEnabled(true);
+        //普通地图 ,mBaiduMap是地图控制器对象
+        mBaiduMap.setMapType(mapType);
+        //关闭热力图
+        mBaiduMap.setBaiduHeatMapEnabled(false);
 
         //定位服务的客户端。宿主程序在客户端声明此类，并调用，目前只支持在主线程中启动
         //声明LocationClient类实例并配置定位参数
         LocationClientOption locationOption = new LocationClientOption();
-        //注册监听函数
-        mLocationClient.registerLocationListener(new MyLocationListener());
         //可选，默认高精度，设置定位模式，高精度，低功耗，仅设备
         locationOption.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
         //可选，默认gcj02，设置返回的定位结果坐标系，如果配合百度地图使用，建议设置为bd09ll;
@@ -130,8 +148,19 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         locationOption.setOpenAutoNotifyMode();
         //设置打开自动回调位置模式，该开关打开后，期间只要定位SDK检测到位置变化就会主动回调给开发者
         locationOption.setOpenAutoNotifyMode(3000, 1, LocationClientOption.LOC_SENSITIVITY_HIGHT);
-        //开启地图定位图层
-        mLocationClient.start();
+        mLocationClient.setLocOption(locationOption);
+        //注册监听函数
+        mLocationClient.registerLocationListener(new MyLocationListener());
+        //图片点击事件，回到定位点
+        mLocationClient.requestLocation();
+        new SystemPersimManage(mContext){
+            @Override
+            public void resultPerm(boolean isCan, int requestCode) {
+                if (isCan){
+                    mLocationClient.start();
+                }
+            }
+        }.CheckedLoaction();
     }
 
     private void postDatas() {
@@ -199,14 +228,64 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         return true;
     }
 
+    private NiceDialog niceDialog;
     @Override
-    @OnClick({R.id.common_bar_leftBtn, R.id.fab12, R.id.fab22, R.id.tv_main_edittitle})
+    @OnClick({R.id.common_bar_leftBtn, R.id.common_bar_rightBtn, R.id.fab12, R.id.fab22, R.id.tv_main_edittitle})
     public void onClick(View v) {
         switch (v.getId()) {
 
             case R.id.main_head_imageView:
                 //登录
                 startActivity(new Intent(mContext, MineMessageActivity.class));
+                break;
+
+            case R.id.common_bar_rightBtn:
+                //地图显示设置
+                if (niceDialog==null)
+                    if (niceDialog == null) {
+                        niceDialog = NiceDialog.init();
+                    }
+                niceDialog.setShowCancelBtn(false);
+                niceDialog.setOnNiceDialogListener(new NiceDialog.NiceDialogListener() {
+                    @Override
+                    public void onItemListener(int index, String item) {
+                        mTitle.setRightText(item);
+                        switch (index){
+                            case 0:
+                                //普通地图
+                                if(mapType != BaiduMap.MAP_TYPE_NORMAL) {
+                                    //mBaiduMap是地图控制器对象
+                                    mapType = BaiduMap.MAP_TYPE_NORMAL;
+                                    mBaiduMap.setMapType(mapType);
+                                    mBaiduMap.setBaiduHeatMapEnabled(false);
+                                }
+                                break;
+
+                            case 1:
+                                //卫星地图
+                                if(mapType != BaiduMap.MAP_TYPE_SATELLITE) {
+                                    //mBaiduMap是地图控制器对象
+                                    mapType = BaiduMap.MAP_TYPE_SATELLITE;
+                                    mBaiduMap.setMapType(mapType);
+                                    mBaiduMap.setBaiduHeatMapEnabled(false);
+                                }
+                                break;
+
+                            case 2:
+                                //路况图
+                                mBaiduMap.setTrafficEnabled(true);
+                                mBaiduMap.setBaiduHeatMapEnabled(false);
+                                break;
+
+                            case 3:
+                                //城市热力图
+                                mBaiduMap.setBaiduHeatMapEnabled(true);
+                                break;
+
+                        }
+                    }
+                });
+                niceDialog.setCommonLayout(ContentUtil.selectBaiDuMapType(), false);
                 break;
 
             case R.id.common_bar_leftBtn:
@@ -312,6 +391,20 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                     .direction(location.getDirection()).latitude(location.getLatitude())
                     .longitude(location.getLongitude()).build();
             mBaiduMap.setMyLocationData(locData);
+        }
+    }
+
+    @TargetApi(23)
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == IntegerUtil.PERMISSION_REQUEST_LOCATION){
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                //开启地图定位图层
+                mLocationClient.start();
+            } else {
+                showPremissionDialog("使用设备位置信息");
+            }
         }
     }
 

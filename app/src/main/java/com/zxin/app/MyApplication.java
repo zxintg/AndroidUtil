@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import com.alibaba.baichuan.android.trade.AlibcTradeSDK;
 import com.alibaba.baichuan.android.trade.callback.AlibcTradeInitCallback;
+import com.baidu.mapapi.CoordType;
 import com.baidu.mapapi.SDKInitializer;
 import com.bugtags.library.Bugtags;
 import com.bugtags.library.BugtagsOptions;
@@ -74,8 +75,11 @@ public class MyApplication extends BaseApplication {
                 // 模块名(即project.name)，每个使用Router的module都要在这里注册
                 .registerModules("jianshennannv","sources", "marry","jiuxian","meziyowu", "app")
                 .build());
-        //百度地图
+        //百度地图 在使用SDK各组件之前初始化context信息，传入ApplicationContext
         SDKInitializer.initialize(application);
+        //自4.3.0起，百度地图SDK所有接口均支持百度坐标和国测局坐标，用此方法设置您使用的坐标类型.
+        //包括BD09LL和GCJ02两种坐标，默认是BD09LL坐标。
+        SDKInitializer.setCoordType(CoordType.BD09LL);
     }
 
     public static MyApplication getInstance() {

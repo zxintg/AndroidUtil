@@ -129,4 +129,9 @@ public class ContentUtil {
         return new String[]{"视频","相册"};
     }
 
+
+    public static String[] selectBaiDuMapType() {
+        return new String[]{"普通地图","卫星图","路况图","城市热力图"};
+    }
+
 }

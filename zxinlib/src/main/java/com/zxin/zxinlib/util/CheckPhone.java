@@ -149,7 +149,4 @@ public class CheckPhone {
         Matcher match = pattern.matcher(str);
         return match.find();
     }
-
-
-
 }

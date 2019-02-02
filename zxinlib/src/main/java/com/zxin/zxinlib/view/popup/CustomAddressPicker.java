@@ -168,7 +168,7 @@ public class CustomAddressPicker {
         }
         if(cityList!=null){
             //请求县、区
-            this.initCity = CityDaoUtil.getCityByPid(selected.provinceId);
+            this.initCity = CityDaoUtil.getInstance().getCityByPid(selected.provinceId);
             cityList.clear();
             cityMap.clear();
             for (City city : this.initCity){
@@ -186,7 +186,7 @@ public class CustomAddressPicker {
         }
         if(districtList!=null){
             //请求县、区
-            initDistrict = CityDaoUtil.getCityByPid(selected.cityId);
+            initDistrict = CityDaoUtil.getInstance().getCityByPid(selected.cityId);
             districtList.clear();
             districtMap.clear();
             for (City city : initDistrict){
@@ -260,7 +260,7 @@ public class CustomAddressPicker {
         }
         if(cityList!=null){
             //请求县、区
-            this.initCity = CityDaoUtil.getCityByPid(selected.provinceId);
+            this.initCity = CityDaoUtil.getInstance().getCityByPid(selected.provinceId);
             cityList.clear();
             cityMap.clear();
             for (City city : this.initCity){
@@ -292,7 +292,7 @@ public class CustomAddressPicker {
         }
         if(districtList!=null){
             //请求县、区
-            initDistrict = CityDaoUtil.getCityByPid(selected.cityId);
+            initDistrict = CityDaoUtil.getInstance().getCityByPid(selected.cityId);
             districtList.clear();
             districtMap.clear();
             for (City city : initDistrict){
@@ -380,7 +380,7 @@ public class CustomAddressPicker {
         cityMap.clear();
         if(cityList!=null){
             //请求县、区
-            initCity = CityDaoUtil.getCityByPid(selected.provinceId);
+            initCity = CityDaoUtil.getInstance().getCityByPid(selected.provinceId);
             for (City city : initCity){
                 cityList.add(city.area_name);
                 cityMap.put(city.area_name,city);
@@ -415,7 +415,7 @@ public class CustomAddressPicker {
         districtMap.clear();
         if(districtList!=null){
             //请求县、区
-            initDistrict = CityDaoUtil.getCityByPid(selected.cityId);
+            initDistrict = CityDaoUtil.getInstance().getCityByPid(selected.cityId);
             for (City city : initDistrict){
                 districtList.add(city.area_name);
                 districtMap.put(city.area_name,city);

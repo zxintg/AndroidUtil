@@ -16,10 +16,23 @@ import java.util.List;
  */
 
 public class CityDaoUtil {
+    private static volatile CityDaoUtil daoUtil = null;
+
+    private CityDaoUtil(){}
+
+    public static CityDaoUtil getInstance(){
+        if (daoUtil==null)
+            synchronized (CityDaoUtil.class){
+                if (daoUtil==null)
+                    daoUtil = new CityDaoUtil();
+            }
+        return daoUtil;
+    }
+
     /**
      * 查询所有【省】级城市
      */
-    public static List<City> getAllCityProvince() {
+    public List<City> getAllCityProvince() {
         DaoSession daoSession = GreenDaoManager.getInstance().getmDaoSession();
         CityDao cityDao = daoSession.getCityDao();
         Query query = cityDao.queryBuilder()
@@ -31,7 +44,7 @@ public class CityDaoUtil {
     /**
      * 查询所有【pid】的城市
      */
-    public static List<City> getCityByPid(int pid) {
+    public List<City> getCityByPid(int pid) {
         DaoSession daoSession = GreenDaoManager.getInstance().getmDaoSession();
         CityDao cityDao = daoSession.getCityDao();
         daoSession.clear();
@@ -44,7 +57,7 @@ public class CityDaoUtil {
     /**
      * 根据上一级的PD和当前区域名字查询得到当前区域名字
      */
-    public static City getCityByIdAndName(int id, String name) {
+    public City getCityByIdAndName(int id, String name) {
         DaoSession daoSession = GreenDaoManager.getInstance().getmDaoSession();
         CityDao cityDao = daoSession.getCityDao();
         Query query = cityDao.queryBuilder().where(CityDao.Properties.Parent_id.eq(addZeroId(id)), CityDao.Properties.Area_name.eq(name)).build();
@@ -54,7 +67,7 @@ public class CityDaoUtil {
     /**
      * 查询【id】的城市
      */
-    public static City getCityById(String id) {
+    public City getCityById(String id) {
         DaoSession daoSession = GreenDaoManager.getInstance().getmDaoSession();
         daoSession.clear();
         CityDao cityDao = daoSession.getCityDao();
@@ -66,12 +79,12 @@ public class CityDaoUtil {
     /**
      * 查询【name】的城市
      */
-    public static City getCityByName(String name,String areaLevel) {
+    public City getCityByName(String name, String areaLevel) {
         DaoSession daoSession = GreenDaoManager.getInstance().getmDaoSession();
         CityDao cityDao = daoSession.getCityDao();
         daoSession.clear();
         QueryBuilder<City> query = cityDao.queryBuilder()
-                .where(CityDao.Properties.Area_name.eq(name),CityDao.Properties.Area_level.eq(areaLevel))
+                .where(CityDao.Properties.Area_name.eq(name), CityDao.Properties.Area_level.eq(areaLevel))
                 .orderAsc(CityDao.Properties.Area_id);
 
         return query.unique();
@@ -80,7 +93,7 @@ public class CityDaoUtil {
     /**
      * 查询【name】的城市
      */
-    public static City getCityByName(String name) {
+    public City getCityByName(String name) {
         DaoSession daoSession = GreenDaoManager.getInstance().getmDaoSession();
         CityDao cityDao = daoSession.getCityDao();
         daoSession.clear();
@@ -94,7 +107,7 @@ public class CityDaoUtil {
     /**
      * 查询所有【市】级城市
      */
-    public static List<City> getAllCity() {
+    public List<City> getAllCity() {
         DaoSession daoSession = GreenDaoManager.getInstance().getmDaoSession();
         CityDao cityDao = daoSession.getCityDao();
         QueryBuilder<City> query = cityDao.queryBuilder()
@@ -107,31 +120,31 @@ public class CityDaoUtil {
      * 地址补0
      * @param pid
      */
-     private static String addZeroId(Object pid){
-         String pidStr = pid instanceof String ? (String) pid : String.valueOf(pid);
-         switch (pidStr.length()){
-             case 1:
-                 pidStr +="00000";
-                 break;
+    private String addZeroId(Object pid) {
+        String pidStr = pid instanceof String ? (String) pid : String.valueOf(pid);
+        switch (pidStr.length()) {
+            case 1:
+                pidStr += "00000";
+                break;
 
-             case 2:
-                 pidStr +="0000";
-                 break;
+            case 2:
+                pidStr += "0000";
+                break;
 
-             case 3:
-                 pidStr +="000";
-                 break;
+            case 3:
+                pidStr += "000";
+                break;
 
-             case 4:
-                 pidStr +="00";
-                 break;
+            case 4:
+                pidStr += "00";
+                break;
 
-             case 5:
-                 pidStr +="0";
-                 break;
+            case 5:
+                pidStr += "0";
+                break;
 
-         }
-         return pidStr;
-     }
+        }
+        return pidStr;
+    }
 
 }

@@ -14,13 +14,12 @@ import java.util.Stack;
  * Note :
  */
 public class AppManager {
-    public Stack<AppCompatActivity> getActivityStack() {
-        return activityStack;
-    }
     private Stack<AppCompatActivity> activityStack;
-    private static AppManager appManager;
-    String tag = AppManager.class.getSimpleName();
+    private static volatile AppManager appManager = null;
 
+    /*****
+     * 私有化，防止外部调用实例化
+     */
     private AppManager() {
 
     }
@@ -29,8 +28,11 @@ public class AppManager {
      * 单一实例
      */
     public static AppManager getAppManager() {
-        if (appManager == null) {
-            appManager = new AppManager();
+        if (appManager==null){
+            synchronized (AppManager.class){
+                if (appManager==null)
+                    appManager = new AppManager();
+            }
         }
         return appManager;
     }
@@ -39,10 +41,13 @@ public class AppManager {
      * 添加Activity到堆栈
      */
     public void addActivity(AppCompatActivity activity) {
-        if (activityStack == null) {
+        if (activityStack == null)
             activityStack = new Stack<>();
-        }
         activityStack.add(activity);
+    }
+
+    public Stack<AppCompatActivity> getActivityStack() {
+        return activityStack;
     }
 
     /**
@@ -51,9 +56,7 @@ public class AppManager {
     public AppCompatActivity currentActivity() {
         if (activityStack==null||activityStack.isEmpty())
             return null;
-
-        AppCompatActivity activity = activityStack.lastElement();
-        return activity;
+        return activityStack.lastElement();
     }
 
     public FragmentManager getFragmentManager(){
@@ -69,21 +72,12 @@ public class AppManager {
         activityStack.lastElement().onBackPressed();
     }
 
+    /****
+     * 启动activity
+     * @param intent
+     */
     public void goToActivity(Intent intent){
         activityStack.lastElement().startActivity(intent);
-    }
-
-
-
-    /*****
-     * 获取前一个activity
-     * @return
-     */
-    public AppCompatActivity lastActivity() {
-        if (activityStack==null||activityStack.isEmpty())
-            return null;
-        AppCompatActivity activity = activityStack.elementAt(activityStack.size()-2<0?0:activityStack.size()-2);
-        return activity;
     }
 
     /**
@@ -92,19 +86,7 @@ public class AppManager {
     public void finishActivity() {
         if (activityStack==null||activityStack.isEmpty())
             return;
-        AppCompatActivity activity = activityStack.lastElement();
-        finishActivity(activity);
-    }
-
-    /**
-     * 结束指定的Activity
-     */
-    public void finishActivity(AppCompatActivity activity) {
-        if (activityStack==null||activityStack.isEmpty())
-            return;
-        if (activityStack!=null&&!activityStack.isEmpty()&&activity != null) {
-            activityStack.remove(activity);
-        }
+        finishActivity(activityStack.lastElement());
     }
 
     /**
@@ -121,6 +103,18 @@ public class AppManager {
     }
 
     /**
+     * 结束指定的Activity
+     */
+    public void finishActivity(AppCompatActivity activity) {
+        if (activityStack==null||activityStack.isEmpty())
+            return;
+        if (activityStack!=null&&!activityStack.isEmpty()&&activity != null) {
+            activity.finish();
+            activityStack.remove(activity);
+        }
+    }
+
+    /**
      * 结束所有Activity
      */
     public void finishAllActivity() {
@@ -128,32 +122,24 @@ public class AppManager {
             return;
         for (int i = 0, size = activityStack.size(); i < size; i++) {
             if (null != activityStack.get(i)) {
-                activityStack.get(i).finish();
+                finishActivity(activityStack.get(i));
             }
         }
-        activityStack.clear();
     }
 
     /**
-     * 结束所有Activity
+     * 栈里面只保留当前Activity
      */
-    public void finishAllActivityExceptByName(String cName) {
+    public void keepActivityForClass(Class<?> cls) {
         if (activityStack==null||activityStack.isEmpty())
             return;
-        AppCompatActivity mainActivity = null;
         for (AppCompatActivity activity : activityStack) {
             if (null != activity) {
-                if (!activity.getClass().getSimpleName().equals(cName)) {
-                    activity.finish();
-                } else {
-                    mainActivity = activity;
-                }
-                Log.d(tag, "finishAllActivityExceptByName:" + cName);
+                if (activity.getClass().equals(cls))
+                    continue;
+                finishActivity(activity);
             }
         }
-        activityStack.clear();
-        activityStack.add(mainActivity);
-        Log.d(tag, "activityStack.size(): " + activityStack.size());
     }
 
     /*****
@@ -167,9 +153,8 @@ public class AppManager {
             if (activity == null)
                 continue;
             if (activity.getClass().getName().equals(cName))
-                return;
-            activity.finish();
-            activityStack.remove(activity);
+                break;
+            finishActivity(activity);
         }
     }
 
@@ -184,18 +169,22 @@ public class AppManager {
             AppCompatActivity activity = activityStack.get(i);
             if (activity == null||activity.getClass().getName().equals(cName))
                 continue;
-            activity.finish();
-            activityStack.remove(activity);
+            finishActivity(activity);
         }
     }
 
-    public boolean isHasActivityForName(String activityName){
+    /*****
+     * 是否存在栈里面
+     * @param cName
+     * @return
+     */
+    public boolean isInnerStackForName(String cName){
         if (activityStack==null||activityStack.isEmpty())
             return false;
 
         for (int i =  0; i < activityStack.size(); i++) {
             AppCompatActivity activity = activityStack.get(i);
-            if (activity != null&&activity.getClass().getName().equals(activityName)){
+            if (activity != null&&activity.getClass().getName().equals(cName)){
                 return true;
             }
         }
@@ -220,7 +209,7 @@ public class AppManager {
      * @param cls
      * @return
      */
-    public boolean isHasActivity(Class<?> cls){
+    public boolean isInnerStack(Class<?> cls){
         if (activityStack==null||activityStack.isEmpty())
             return false;
         for (int i =  0; i < activityStack.size(); i++) {

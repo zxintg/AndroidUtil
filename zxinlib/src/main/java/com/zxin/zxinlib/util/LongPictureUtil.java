@@ -288,7 +288,8 @@ public class LongPictureUtil {
             }
             yPos = childHeight + yPos;
         }
-        canvas.save(Canvas.ALL_SAVE_FLAG);
+        //canvas.save(Canvas.ALL_SAVE_FLAG);
+        canvas.save();
         canvas.restore();
         bitmapList.add(bitmap);
     }

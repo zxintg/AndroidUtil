@@ -12,11 +12,16 @@ import java.util.List;
  */
 public class ContentUtil {
 
-    private static ContentUtil contentUtil;
+    private static volatile ContentUtil contentUtil = null;
+
+    private ContentUtil(){}
 
     public static ContentUtil getInstance() {
         if (contentUtil == null)
-            contentUtil = new ContentUtil();
+            synchronized (ContentUtil.class) {
+                if (contentUtil == null)
+                    contentUtil = new ContentUtil();
+            }
         return contentUtil;
     }
 
@@ -125,13 +130,13 @@ public class ContentUtil {
         return beanList;
     }
 
-    public static String[] selectOperatorYoMei() {
-        return new String[]{"视频","相册"};
+    public String[] selectOperatorYoMei() {
+        return new String[]{"视频", "相册"};
     }
 
 
-    public static String[] selectBaiDuMapType() {
-        return new String[]{"普通地图","卫星图","路况图","城市热力图"};
+    public String[] selectBaiDuMapType() {
+        return new String[]{"普通地图", "卫星图", "路况图", "城市热力图"};
     }
 
 }

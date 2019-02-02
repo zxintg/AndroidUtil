@@ -90,7 +90,7 @@ public class GreenDaoManager {
         //第一次安装，创建数据库存储路径，并拷贝解压数据库到系统目录
         LogUtils.d("创建数据库存储路径！");
         InputStream is = BaseApplication.contextApp.getResources().openRawResource(R.raw.bxharea);
-        File copyFile = FileUtil.copyFile(is , dbPath , BaseStringUtils.dbFile);
+        File copyFile = FileUtil.getInstance().copyFile(is , dbPath , BaseStringUtils.dbFile);
         if(copyFile != null && copyFile.exists()) {
             ZipUtil.unZip(copyFile.getAbsolutePath(), dbPath);
             copyFile.delete();

@@ -36,7 +36,7 @@ public class CrashHandlerUtil implements UncaughtExceptionHandler {
 	//系统默认的UncaughtException处理
 	private UncaughtExceptionHandler mDefaultHandler;
 	//CrashHandler实例
-	private static CrashHandlerUtil INSTANCE = new CrashHandlerUtil();
+	private static volatile CrashHandlerUtil INSTANCE = null;
 	//程序的Context对象
 	private Context mContext;
 	//用来存储设备信息和异常信
@@ -46,10 +46,17 @@ public class CrashHandlerUtil implements UncaughtExceptionHandler {
 
 	/** 保证只有一个CrashHandler实例 */
 	private CrashHandlerUtil() {
+
 	}
 
 	/** 获取CrashHandler实例 ,单例模式 */
 	public static CrashHandlerUtil getInstance() {
+		if (INSTANCE==null){
+			synchronized (CrashHandlerUtil.class){
+				if(INSTANCE==null)
+					INSTANCE  = new CrashHandlerUtil();
+			}
+		}
 		return INSTANCE;
 	}
 

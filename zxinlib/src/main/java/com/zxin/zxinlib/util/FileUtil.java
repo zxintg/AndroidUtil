@@ -54,15 +54,28 @@ import java.util.Locale;
  */
 public final class FileUtil {
 
+    private static volatile FileUtil util = null;
+
+    private FileUtil(){}
+
+    public static FileUtil getInstance(){
+        if (util==null)
+            synchronized (FileUtil.class){
+                if (util==null)
+                    util = new FileUtil();
+            }
+        return util;
+    }
+
     //格式化的模板
     private static final String TIME_FORMAT = "_yyyyMMdd_HHmmss";
 
     private static final String SDCARD_DIR = Environment.getExternalStorageDirectory().getPath();
 
-    private static String getTimeFormatName(String timeFormatHeader) {
-        final Date date = new Date(System.currentTimeMillis());
+    private String getTimeFormatName(String timeFormatHeader) {
+        Date date = new Date(System.currentTimeMillis());
         //必须要加上单引号
-        final SimpleDateFormat dateFormat = new SimpleDateFormat("'" + timeFormatHeader + "'" + TIME_FORMAT, Locale.getDefault());
+        SimpleDateFormat dateFormat = new SimpleDateFormat("'" + timeFormatHeader + "'" + TIME_FORMAT, Locale.getDefault());
         return dateFormat.format(date);
     }
 
@@ -72,7 +85,7 @@ public final class FileUtil {
      * @param imageUrl
      * @return
      */
-    public static File getNewFile(String imageUrl) {
+    public File getNewFile(String imageUrl) {
         File file;
         if (TextUtils.isEmpty(imageUrl)) {
             file = new File(Environment.getExternalStorageDirectory(), System.currentTimeMillis() + ".jpg");//filePath 图片地址
@@ -95,12 +108,12 @@ public final class FileUtil {
      * @param extension        后缀名
      * @return 返回时间格式化后的文件名
      */
-    public static String getFileNameByTime(String timeFormatHeader, String extension) {
+    public String getFileNameByTime(String timeFormatHeader, String extension) {
         return getTimeFormatName(timeFormatHeader) + "." + extension;
     }
 
     @SuppressWarnings("ResultOfMethodCallIgnored")
-    private static File createDir(String sdcardDirName) {
+    private File createDir(String sdcardDirName) {
         //拼接成SD卡中完整的dir
         final String dir = SDCARD_DIR + "/" + sdcardDirName + "/";
         final File fileDir = new File(dir);
@@ -111,23 +124,23 @@ public final class FileUtil {
     }
 
     @SuppressWarnings("ResultOfMethodCallIgnored")
-    public static File createFile(String sdcardDirName, String fileName) {
+    public File createFile(String sdcardDirName, String fileName) {
         return new File(createDir(sdcardDirName), fileName);
     }
 
-    private static File createFileByTime(String sdcardDirName, String timeFormatHeader, String extension) {
+    private File createFileByTime(String sdcardDirName, String timeFormatHeader, String extension) {
         final String fileName = getFileNameByTime(timeFormatHeader, extension);
         return createFile(sdcardDirName, fileName);
     }
 
     //获取文件的MIME
-    public static String getMimeType(String filePath) {
+    public String getMimeType(String filePath) {
         final String extension = getExtension(filePath);
         return MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);
     }
 
     //获取文件的后缀名
-    public static String getExtension(String filePath) {
+    public String getExtension(String filePath) {
         String suffix = "";
         final File file = new File(filePath);
         final String name = file.getName();
@@ -145,7 +158,7 @@ public final class FileUtil {
      * @param compress 压缩比例 100是不压缩,值约小压缩率越高
      * @return 返回该文件
      */
-    public static File saveBitmap(Bitmap mBitmap, String dir, int compress) {
+    public File saveBitmap(Bitmap mBitmap, String dir, int compress) {
         final String sdStatus = Environment.getExternalStorageState();
         // 检测sd是否可用
         if (!sdStatus.equals(Environment.MEDIA_MOUNTED)) {
@@ -185,8 +198,8 @@ public final class FileUtil {
         return fileName;
     }
 
-    public static File writeToDisk(InputStream is, String dir, String name) {
-        final File file = FileUtil.createFile(dir, name);
+    public File writeToDisk(InputStream is, String dir, String name) {
+        final File file = createFile(dir, name);
         BufferedInputStream bis = null;
         FileOutputStream fos = null;
         BufferedOutputStream bos = null;
@@ -229,8 +242,8 @@ public final class FileUtil {
         return file;
     }
 
-    public static File writeToDisk(InputStream is, String dir, String prefix, String extension) {
-        final File file = FileUtil.createFileByTime(dir, prefix, extension);
+    public File writeToDisk(InputStream is, String dir, String prefix, String extension) {
+        final File file = createFileByTime(dir, prefix, extension);
         BufferedInputStream bis = null;
         FileOutputStream fos = null;
         BufferedOutputStream bos = null;
@@ -276,7 +289,7 @@ public final class FileUtil {
     /**
      * 通知系统刷新系统相册，使照片展现出来
      */
-    private static void refreshDCIM() {
+    private void refreshDCIM() {
         if (Build.VERSION.SDK_INT >= 19) {
             //兼容android4.4版本，只扫描存放照片的目录
             MediaScannerConnection.scanFile(BaseApplication.getInstance().getContext(),
@@ -292,7 +305,7 @@ public final class FileUtil {
     /**
      * 读取raw目录中的文件,并返回为字符串
      */
-    public static String getRawFile(int id) {
+    public String getRawFile(int id) {
         final InputStream is = BaseApplication.getInstance().getContext().getResources().openRawResource(id);
         final BufferedInputStream bis = new BufferedInputStream(is);
         final InputStreamReader isr = new InputStreamReader(bis);
@@ -319,7 +332,7 @@ public final class FileUtil {
     }
 
 
-    public static void setIconFont(String path, TextView textView) {
+    public void setIconFont(String path, TextView textView) {
         final Typeface typeface = Typeface.createFromAsset(BaseApplication.getInstance().getContext().getAssets(), path);
         textView.setTypeface(typeface);
     }
@@ -327,7 +340,7 @@ public final class FileUtil {
     /**
      * 读取assets目录下的文件,并返回字符串
      */
-    public static String getAssetsFile(String name) {
+    public String getAssetsFile(String name) {
         InputStream is = null;
         BufferedInputStream bis = null;
         InputStreamReader isr = null;
@@ -375,13 +388,13 @@ public final class FileUtil {
      *
      * @return SD卡可用返回true
      */
-    public static boolean hasSdcard() {
+    public boolean hasSdcard() {
         String status = Environment.getExternalStorageState();
         return Environment.MEDIA_MOUNTED.equals(status);
     }
 
 
-    public static String getRealFilePath(final Context context, final Uri uri) {
+    public String getRealFilePath(final Context context, final Uri uri) {
         if (null == uri) return null;
         final String scheme = uri.getScheme();
         String data = null;
@@ -407,7 +420,7 @@ public final class FileUtil {
     /**
      * 相机拍照保存的文件全路径
      */
-    public static File getTakePhotoFile() {
+    public File getTakePhotoFile() {
         File file = null;
         try {
             file = new File(Environment.getExternalStorageDirectory(), "takephoto.jpg");
@@ -423,7 +436,7 @@ public final class FileUtil {
     /**
      * 相机拍照保存的文件全路径(裁剪后的临时路径)
      */
-    public static File getTempPhotoFile() {
+    public File getTempPhotoFile() {
         File file = null;
         try {
             file = new File(Environment.getExternalStorageDirectory(), System.currentTimeMillis() + ".jpg");
@@ -439,7 +452,7 @@ public final class FileUtil {
     /**
      * 相机拍照保存的文件全路径
      */
-    public static String getTakePhotoFileDirectory() {
+    public String getTakePhotoFileDirectory() {
         String dirs = Environment.getExternalStorageDirectory().getAbsolutePath();
         File fileDirectory = new File(dirs);
         if (!fileDirectory.exists()) {
@@ -454,7 +467,7 @@ public final class FileUtil {
      * @param path
      * @return
      */
-    public static File createDirFile(String path) {
+    public File createDirFile(String path) {
         int pos = path.lastIndexOf("/");
         String dirpath = path.substring(0, pos + 1);
         if (!dirpath.startsWith("/"))
@@ -470,7 +483,7 @@ public final class FileUtil {
      *
      * @param filename
      */
-    public static File isExitByFileName(String path, String filename) {
+    public File isExitByFileName(String path, String filename) {
         File isExitFile = null;
         File dir = new File(path);
         File[] listFiles = dir.listFiles();
@@ -493,7 +506,7 @@ public final class FileUtil {
      * @param fileName 文件名
      * @return
      */
-    public static File InputStreamToFile(InputStream is, String savePath, String fileName) {
+    public File InputStreamToFile(InputStream is, String savePath, String fileName) {
         try {
             File dir = new File(savePath);
             if (!dir.exists()) {
@@ -525,7 +538,7 @@ public final class FileUtil {
      *
      * @param path the file's absolute path
      */
-    public static void createDirs(String path) {
+    public void createDirs(String path) {
         path = path.substring(0, path.lastIndexOf("/") + 1);
         File dir = new File(path);
         if (!dir.exists()) {
@@ -537,7 +550,7 @@ public final class FileUtil {
      * 删除指定目录下得所有文件
      * @param dirPath
      */
-    public static boolean clearAllFile(String dirPath) {
+    public boolean clearAllFile(String dirPath) {
         File file = new File(dirPath);
         if (file != null && file.exists()) {
             if (file.isFile()) {
@@ -566,7 +579,7 @@ public final class FileUtil {
      * 删除指定路径APK文件
      * @param path
      */
-    public static void rmoveAPKFile(String path) {
+    public void rmoveAPKFile(String path) {
         File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), path.substring(path.lastIndexOf("/")));
         if (file.exists()) {
             file.delete();
@@ -582,7 +595,7 @@ public final class FileUtil {
      * @param path
      * @return
      */
-    public static File createDirByPath(String path) {
+    public File createDirByPath(String path) {
         File file = new File(path);
         if (file != null && !file.exists()) {
             file.mkdirs();
@@ -597,7 +610,7 @@ public final class FileUtil {
      * @param dirPath
      * @param fileName
      */
-    public static File copyFile(InputStream is, String dirPath, String fileName) {
+    public File copyFile(InputStream is, String dirPath, String fileName) {
         try {
             if (is != null) {
                 File file = new File(createDirByPath(dirPath), fileName);
@@ -623,7 +636,7 @@ public final class FileUtil {
      * @param uri The Uri to check.
      * @return Whether the Uri authority is ExternalStorageProvider.
      */
-    public static boolean isExternalStorageDocument(Uri uri) {
+    public boolean isExternalStorageDocument(Uri uri) {
         return "com.android.externalstorage.documents".equals(uri.getAuthority());
     }
 
@@ -631,7 +644,7 @@ public final class FileUtil {
      * @param uri The Uri to check.
      * @return Whether the Uri authority is DownloadsProvider.
      */
-    public static boolean isDownloadsDocument(Uri uri) {
+    public boolean isDownloadsDocument(Uri uri) {
         return "com.android.providers.downloads.documents".equals(uri.getAuthority());
     }
 
@@ -639,7 +652,7 @@ public final class FileUtil {
      * @param uri The Uri to check.
      * @return Whether the Uri authority is MediaProvider.
      */
-    public static boolean isMediaDocument(Uri uri) {
+    public boolean isMediaDocument(Uri uri) {
         return "com.android.providers.media.documents".equals(uri.getAuthority());
     }
 
@@ -654,7 +667,7 @@ public final class FileUtil {
      * @return
      * 参考 http://www.jianshu.com/p/c73b959b6bcf
      */
-    public static Uri getImageContentUri(String filePath) {
+    public Uri getImageContentUri(String filePath) {
         Cursor cursor = BaseApplication.getInstance().getContext().getContentResolver().query(
                 MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
                 new String[]{MediaStore.Images.Media._ID},
@@ -684,7 +697,7 @@ public final class FileUtil {
      * @param path
      * @return
      */
-    public static String getAssetFileToStr(AssetManager assetManager, String path) {
+    public String getAssetFileToStr(AssetManager assetManager, String path) {
         BufferedReader bufferedReader = null;
         StringBuilder result = new StringBuilder();
         try {
@@ -712,7 +725,7 @@ public final class FileUtil {
      * @return
      * liukui 2017/05/19
      */
-    public static String getRealPathFromURI(Uri contentUri) {
+    public String getRealPathFromURI(Uri contentUri) {
         if (contentUri == null) return null;
         int sdkVersion = Build.VERSION.SDK_INT;
         if (sdkVersion < 11) {
@@ -732,7 +745,7 @@ public final class FileUtil {
      * liukui 2017/05/19
      */
     @SuppressLint("NewApi")
-    private static String getRealPathFromUri_AboveApi19(Uri uri) {
+    private String getRealPathFromUri_AboveApi19(Uri uri) {
         if (DocumentsContract.isDocumentUri(BaseApplication.getInstance(), uri)) { // 【DocumentProvider】
             if (isExternalStorageDocument(uri)) { // 【ExternalStorageProvider】
                 String docId = DocumentsContract.getDocumentId(uri);
@@ -775,7 +788,7 @@ public final class FileUtil {
      * @param selectionArgs (Optional) Selection arguments used in the query.
      * @return The value of the _data column, which is typically a file path.
      */
-    public static String getDataColumn(Uri uri, String selection, String[] selectionArgs) {
+    public String getDataColumn(Uri uri, String selection, String[] selectionArgs) {
         Cursor cursor = null;
         String column = "_data";
         String[] projection = {column};
@@ -799,7 +812,7 @@ public final class FileUtil {
      * 适配api11-api18,根据uri获取图片的绝对路径
      * liukui 2017/05/19
      */
-    private static String getRealPathFromUri_Api11To18(Uri uri) {
+    private String getRealPathFromUri_Api11To18(Uri uri) {
         String filePath = null;
         String[] projection = {MediaStore.Images.Media.DATA};
 
@@ -818,7 +831,7 @@ public final class FileUtil {
      * 适配api11以下(不包括api11),根据uri获取图片的绝对路径
      * liukui 2017/05/19
      */
-    private static String getRealPathFromUri_BelowApi11(Uri uri) {
+    private String getRealPathFromUri_BelowApi11(Uri uri) {
         String filePath = null;
         String[] projection = {MediaStore.Images.Media.DATA};
         Cursor cursor = BaseApplication.getInstance().getContentResolver().query(uri, projection,
@@ -832,7 +845,7 @@ public final class FileUtil {
     }
 
 
-    public static void DeleteFile(String filePath) {
+    public void DeleteFile(String filePath) {
         File file = new File(filePath);
         if (file.exists()) {
             if (file.getAbsoluteFile().delete()) {
@@ -851,7 +864,7 @@ public final class FileUtil {
      * @param contentType 文件类型如：文本（text/html）
      *                    当手机中没有一个app可以打开file时会抛ActivityNotFoundException
      */
-    public static void startActionFile(Context context, File file, String contentType) throws ActivityNotFoundException {
+    public void startActionFile(Context context, File file, String contentType) throws ActivityNotFoundException {
         if (context == null) {
             return;
         }
@@ -866,7 +879,7 @@ public final class FileUtil {
         context.startActivity(intent);
     }
 
-    public static Uri getUriFromFile() {
+    public Uri getUriFromFile() {
         File file = getTakePhotoFile();
         if (file == null) {
             throw new NullPointerException();
@@ -888,11 +901,11 @@ public final class FileUtil {
      *
      * @return
      */
-    public static String cutoutActivity(Bitmap bitmap) {
+    public String cutoutActivity(Bitmap bitmap) {
         return saveBitmap(bitmap,"3rdedu",100).getAbsolutePath();
     }
 
-    public static List<MenuEntity> getAllMenuList() {
+    public List<MenuEntity> getAllMenuList() {
         StringBuilder stringBuilder = new StringBuilder();
         try {
             AssetManager assetManager = BaseApplication.getInstance().getAssets();

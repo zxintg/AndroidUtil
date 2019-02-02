@@ -363,7 +363,7 @@ public class ImageUtil {
             }
         }
         op.inJustDecodeBounds = false;
-        Bitmap bitmap = BitmapFactory.decodeFile(FileUtil.getTakePhotoFile().getPath(), op);
+        Bitmap bitmap = BitmapFactory.decodeFile(FileUtil.getInstance().getTakePhotoFile().getPath(), op);
         int digree = getDigreeFromFilePath(filePath);
         if (digree != 0) {
             LogUtils.d("读取图片中相机方向信息 旋转图片：" + digree);

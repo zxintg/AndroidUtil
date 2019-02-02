@@ -13,6 +13,19 @@ import java.util.List;
 
 public class DateUtil {
 
+    private static volatile DateUtil util = null;
+
+    private DateUtil(){}
+
+    public static DateUtil getInstance(){
+        if (util==null)
+            synchronized (DateUtil.class){
+                if (util==null)
+                    util = new DateUtil();
+            }
+        return util;
+    }
+
     /**
      * 时间戳转换成日期格式字符串
      *
@@ -20,7 +33,7 @@ public class DateUtil {
      * @param format
      * @return
      */
-    public static String timeStampDate(long seconds, String format) {
+    public String timeStampDate(long seconds, String format) {
         if (BaseStringUtils.textIsEmpty(format)) {
             format = "yyyy-MM-dd HH:mm";
         }
@@ -32,7 +45,7 @@ public class DateUtil {
      * @param stamp
      * @return
      */
-    public static Calendar timeStamp2Calendar(long stamp) {
+    public Calendar timeStamp2Calendar(long stamp) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date(stamp));
         return calendar;
@@ -45,7 +58,7 @@ public class DateUtil {
      * @param format
      * @return
      */
-    public static String timeStampWeek(long seconds, String format) {
+    public String timeStampWeek(long seconds, String format) {
         if (BaseStringUtils.textIsEmpty(format)) {
             format = "yyyy-MM-dd";
         }
@@ -58,7 +71,7 @@ public class DateUtil {
      * @param datetime
      * @return
      */
-    private static String dateToWeek(String datetime, String format) {
+    private String dateToWeek(String datetime, String format) {
         SimpleDateFormat f = new SimpleDateFormat(format);
         String[] weekDays = {"周日", "周一", "周二", "周三", "周四", "周五", "周六"};
         Calendar cal = Calendar.getInstance(); // 获得一个日历
@@ -82,7 +95,7 @@ public class DateUtil {
      * @param format
      * @return
      */
-    public static String timeStamp(long seconds, String format) {
+    public String timeStamp(long seconds, String format) {
         return new SimpleDateFormat(format).format(new Date(seconds));
     }
 
@@ -93,7 +106,7 @@ public class DateUtil {
      * @param format
      * @return
      */
-    public static String weekTimeStamp(Long seconds, String format) {
+    public String weekTimeStamp(Long seconds, String format) {
         String week = null;
         Calendar cd = Calendar.getInstance();
         cd.setTime(new Date(seconds));
@@ -122,7 +135,7 @@ public class DateUtil {
      *
      * @return
      */
-    public static String createTime() {
+    public String createTime() {
         String time = (new SimpleDateFormat("yyyy-MM-dd HH:mm")).format(new Date()).toString();
         return time;
     }
@@ -135,7 +148,7 @@ public class DateUtil {
      * @return
      * @throws ParseException
      */
-    public static boolean compare(String time1, String time2) throws ParseException {
+    public boolean compare(String time1, String time2) throws ParseException {
         //如果想比较日期则写成"yyyy-MM-dd"就可以了
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm");
         //将字符串形式的时间转化为Date类型的时间
@@ -154,7 +167,7 @@ public class DateUtil {
      *
      * @return
      */
-    public static String createDate() {
+    public String createDate() {
         String time = (new SimpleDateFormat("yyyy-MM-dd")).format(new Date()).toString();
         return time;
     }
@@ -164,13 +177,13 @@ public class DateUtil {
      *
      * @return
      */
-    public static String timeStamp() {
+    public String timeStamp() {
         long time = System.currentTimeMillis();
         String t = String.valueOf(time / 1000);
         return t;
     }
 
-    public static String getWeek(String mMeek) {
+    public String getWeek(String mMeek) {
         switch (mMeek) {
             case "周一":
                 return "1";
@@ -190,7 +203,7 @@ public class DateUtil {
         return "1";
     }
 
-    public static String getWeekDisable(int mMeek) {
+    public String getWeekDisable(int mMeek) {
         switch (mMeek) {
             case Calendar.MONDAY:
                 return "周一";
@@ -216,7 +229,7 @@ public class DateUtil {
      * @param format 如：yyyy-MM-dd HH:mm:ss
      * @return
      */
-    public static String dateTimeStamp(String date_str, String format) {
+    public String dateTimeStamp(String date_str, String format) {
         try {
             SimpleDateFormat sdf = new SimpleDateFormat(format);
             return String.valueOf(sdf.parse(date_str).getTime());
@@ -232,7 +245,7 @@ public class DateUtil {
      * @param format 如：yyyy-MM-dd HH:mm:ss
      * @return
      */
-    public static Long dateTimeStampLong(String date_str, String format) {
+    public Long dateTimeStampLong(String date_str, String format) {
         Long data = 0L;
         try {
             SimpleDateFormat sdf = new SimpleDateFormat(format);
@@ -243,7 +256,7 @@ public class DateUtil {
         return data;
     }
 
-    private static Date getThisWeekMonday(Date date) {
+    private Date getThisWeekMonday(Date date) {
         Calendar cal = Calendar.getInstance();
         if (date != null)
             cal.setTime(date);
@@ -262,11 +275,11 @@ public class DateUtil {
         return cal.getTime();
     }
 
-    public static String getDefaultDate(Date date) {
+    public String getDefaultDate(Date date) {
         return new SimpleDateFormat("yyyy-MM-dd").format(getThisWeekMonday(date)) + " 00:00";
     }
 
-    public static long getThisFirstDay(String dateStr, String format) {
+    public long getThisFirstDay(String dateStr, String format) {
         try {
             Calendar current = Calendar.getInstance();
             Calendar cal = Calendar.getInstance();
@@ -287,7 +300,7 @@ public class DateUtil {
      * @param format
      * @return
      */
-    public static List<String> formatList(List<String> times, String format) {
+    public List<String> formatList(List<String> times, String format) {
         List<String> newTime = new ArrayList<>();
         if (times == null || times.isEmpty()) {
             return newTime;
@@ -305,7 +318,7 @@ public class DateUtil {
      * 获取前月的第一天
      * @return
      */
-    public static Calendar getFirstDayLastMonth() {
+    public Calendar getFirstDayLastMonth() {
         Calendar calendar = Calendar.getInstance();//获取当前日期
         calendar.add(Calendar.MONTH, -1);
         calendar.set(Calendar.DAY_OF_MONTH, 1);//设置为1号,当前日期既为本月第一天
@@ -316,7 +329,7 @@ public class DateUtil {
      * 获取前月的最后一天
      * @return
      */
-    public static Calendar getLastDayLastMonth() {
+    public Calendar getLastDayLastMonth() {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.DAY_OF_MONTH, 0);//设置为1号,当前日期既为本月第一天
         return calendar;
@@ -326,7 +339,7 @@ public class DateUtil {
      * 获取当前月第一天
      * @return
      */
-    public static Calendar getFirstDayCurrentMonth() {
+    public Calendar getFirstDayCurrentMonth() {
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.MONTH, 0);
         calendar.set(Calendar.DAY_OF_MONTH, 1);//设置为1号,当前日期既为本月第一天
@@ -337,7 +350,7 @@ public class DateUtil {
      * 获取当前月最后一天
      * @return
      */
-    public static Calendar getLastDayCurrentMonth() {
+    public Calendar getLastDayCurrentMonth() {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.DAY_OF_MONTH, calendar.getActualMaximum(Calendar.DAY_OF_MONTH));
         return calendar;
@@ -348,7 +361,7 @@ public class DateUtil {
      *
      * @param cl
      */
-    public static Calendar getAfterDay(Calendar cl) {
+    public Calendar getAfterDay(Calendar cl) {
         // TODO Auto-generated method stub
         // 使用roll方法进行回滚到后一天的时间
         // cl.roll(Calendar.DATE, 1);
@@ -363,7 +376,7 @@ public class DateUtil {
      *
      * @param cl
      */
-    public static Calendar getBeforeDay(Calendar cl) {
+    public Calendar getBeforeDay(Calendar cl) {
         // TODO Auto-generated method stub
         // 使用roll方法进行向前回滚
         // cl.roll(Calendar.DATE, -1);
@@ -381,7 +394,7 @@ public class DateUtil {
      * @param date
      * @return
      */
-    public static Calendar setCalendar(int year, int month, int date) {
+    public Calendar setCalendar(int year, int month, int date) {
         Calendar cl = Calendar.getInstance();
         cl.set(year, month - 1, date);
         return cl;
@@ -394,7 +407,7 @@ public class DateUtil {
      * @param day
      * @return
      */
-    public static String forMatDateYYMMDD(int year, int month, int day) {
+    public String forMatDateYYMMDD(int year, int month, int day) {
         month += 1;
         return year + "-" + (month < 10 ? "0" + month : month) + "-" + (day < 10 ? "0" + day : day);
     }

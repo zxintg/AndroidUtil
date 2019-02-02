@@ -153,6 +153,7 @@ public class ArithUtils {
 
     private static final String[] s1 = { "零", "一", "二", "三", "四", "五", "六", "七", "八", "九" };
     private static final String[] s2 = { "十", "百", "千", "万", "十", "百", "千", "亿"};
+
     public static String munberToChinese(String string) {
         String result = "";
         int n = string.length();

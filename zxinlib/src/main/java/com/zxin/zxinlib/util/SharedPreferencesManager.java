@@ -397,7 +397,7 @@ public class SharedPreferencesManager extends SharePrefUtils {
         }.getType());
 
         if (menuList==null||menuList.isEmpty()){
-            menuList = FileUtil.getAllMenuList();
+            menuList = FileUtil.getInstance().getAllMenuList();
             saveMineMenu(menuList);
         }
         return menuList;

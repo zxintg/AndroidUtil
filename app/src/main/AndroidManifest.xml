@@ -98,6 +98,9 @@
         <activity
             android:name=".activity.test.MenuManageActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.test.TestExecutorActivity"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".activity.test.ImplicitActivity"
@@ -127,7 +130,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
-
+        <service android:name="com.zxin.service.InitializeService"/>
     </application>
 
 </manifest>

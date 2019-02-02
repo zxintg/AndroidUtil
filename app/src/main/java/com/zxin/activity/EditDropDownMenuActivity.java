@@ -1,7 +1,6 @@
 package com.zxin.activity;
 
 import android.view.View;
-
 import com.zxin.R;
 import com.zxin.base.BaseActivity;
 

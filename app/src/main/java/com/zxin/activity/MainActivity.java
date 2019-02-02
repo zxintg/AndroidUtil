@@ -285,7 +285,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                         }
                     }
                 });
-                niceDialog.setCommonLayout(ContentUtil.selectBaiDuMapType(), false);
+                niceDialog.setCommonLayout(ContentUtil.getInstance().selectBaiDuMapType(), false);
                 break;
 
             case R.id.common_bar_leftBtn:

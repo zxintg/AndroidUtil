@@ -109,7 +109,7 @@ public class MenuManageActivity extends BaseActivity implements DragTipListener 
 	}
 
 	private void initAllMenu() {
-		List<MenuEntity> indexAll =  FileUtil.getAllMenuList();
+		List<MenuEntity> indexAll =  FileUtil.getInstance().getAllMenuList();
 		menuList.clear();
 		try {
 			MenuEntity index = new MenuEntity();

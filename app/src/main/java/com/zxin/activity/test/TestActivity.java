@@ -27,7 +27,7 @@ public class TestActivity extends BaseActivity {
     }
 
     @OnClick({R.id.common_bar_leftBtn,R.id.ccb_test_pullzoom,R.id.ccb_test_webapijson,R.id.ccb_test_webapihtml,R.id.ccb_test_router_sources,R.id.ccb_test_router_uri,R.id.ccb_test_router_toweb,
-            R.id.ccb_test_calendar,R.id.ccb_test_sortview,R.id.ccb_test_myraiogroup,R.id.ccb_test_blog})
+            R.id.ccb_test_calendar,R.id.ccb_test_sortview,R.id.ccb_test_myraiogroup,R.id.ccb_test_blog,R.id.ccb_test_executor})
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -38,6 +38,11 @@ public class TestActivity extends BaseActivity {
 
             case R.id.ccb_test_pullzoom:
                 startActivity(new Intent(mContext, PullRecyclerViewActivity.class));
+                break;
+
+            case R.id.ccb_test_executor:
+                //自定线程池
+                startActivity(new Intent(mContext, TestExecutorActivity.class));
                 break;
 
             case R.id.ccb_test_webapijson:

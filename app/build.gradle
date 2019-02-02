@@ -18,19 +18,21 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
         renderscriptTargetApi rootProject.ext.renderscriptTargetApi
-        renderscriptSupportModeEnabled  rootProject.ext.renderscriptSupportModeEnabled
+        renderscriptSupportModeEnabled rootProject.ext.renderscriptSupportModeEnabled
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {
             //选择要添加的对应cpu类型的.so库。
             //abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
             // 设置支持的 SO 库构架，一般而言，取你所有的库支持的构架的`交集`。
-            abiFilters "armeabi", "armeabi-v7a", "x86","x86_64", 'mips'
+            abiFilters "armeabi", "armeabi-v7a", "x86", "x86_64", 'mips'
         }
         //突破65536
         multiDexEnabled true
         // 默认是_360的渠道
         manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
+        //版本名后面添加一句话，意思就是flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+        flavorDimensions "versionCode"
     }
     buildTypes {
         release {
@@ -84,7 +86,7 @@ android {
             signingConfig signingConfigs.release
 
             //多渠道打包
-            applicationVariants.all { variant ->
+            /*applicationVariants.all { variant ->
                 variant.outputs.each { output ->
                     def outputFile = output.outputFile
                     if (outputFile != null && outputFile.name.endsWith('.apk')) {
@@ -94,7 +96,23 @@ android {
                         output.outputFile = new File(outputFile.parent, appName)
                     }
                 }
+            }*/
+
+            //下面是经过修改之后3.0里面批量修改APK名字的配置：
+            applicationVariants.all { variant ->//批量修改Apk名字
+                variant.outputs.all { output ->
+                    if (!variant.buildType.isDebuggable()) {
+                        //获取签名的名字 variant.signingConfig.name
+                        //要被替换的源字符串
+                        def sourceFile = "-${variant.flavorName}-${variant.buildType.name}"
+                        //替换的字符串
+                        def replaceFile = "_V${variant.versionName}_${variant.flavorName}_${variant.buildType.name}_${buildTime()}"
+                        outputFileName = output.outputFile.name.replace(sourceFile, replaceFile);
+                        //遗留问题：如何获取当前module的name，如CodeBooke这个名字怎么获取到
+                    }
+                }
             }
+
         }
 
         debug {
@@ -121,11 +139,11 @@ android {
         }
     }
 
-    //分包使用
+    /*//分包使用  报错：DSL element 'DexOptions.incremental' is obsolete and will be removed at the end of 2018.
     dexOptions {
         incremental true
         javaMaxHeapSize "4g"
-    }
+    }*/
 
     /* 多渠道打包*/
     productFlavors {
@@ -170,16 +188,16 @@ bugtags {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':sources')
-    compile project(':marry')
-    compile project(':basemodel')
-    compile project(':jiuxian')
-    compile project(':jianshennannv')
-    compile project(':meziyowu')
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':sources')
+    api project(':marry')
+    api project(':basemodel')
+    api project(':jiuxian')
+    api project(':jianshennannv')
+    api project(':meziyowu')
     //ButterKnife依赖（模块独立依赖）
-    compile 'com.jakewharton:butterknife:8.6.0'
+    implementation 'com.jakewharton:butterknife:8.6.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
-    debugCompile 'com.bugtags.library:bugtags-lib:latest.integration'
-    releaseCompile 'com.bugtags.metrics:bugtags-lib:latest.integration'
+    debugImplementation 'com.bugtags.library:bugtags-lib:latest.integration'
+    releaseImplementation 'com.bugtags.metrics:bugtags-lib:latest.integration'
 }

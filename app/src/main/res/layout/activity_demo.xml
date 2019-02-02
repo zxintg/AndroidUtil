@@ -130,6 +130,16 @@
                 app:left_button_textSize="@dimen/size_15px"
                 app:show_right_button="true" />
 
+            <com.zxin.zxinlib.view.CommonCrosswiseBar
+                android:id="@+id/ccb_test_executor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_background="@color/color_ffffff"
+                app:left_button_text="自定义线程池"
+                app:left_button_textColor="@color/color_333333"
+                app:left_button_textSize="@dimen/size_15px"
+                app:show_right_button="true" />
+
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>

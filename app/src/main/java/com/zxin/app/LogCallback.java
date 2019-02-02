@@ -7,9 +7,8 @@ import com.zxin.executor.callback.ThreadCallback;
 
 /**
  * <pre>
- *     @author: yangchong
- *     blog  : www.pedaily.cn
- *     time  : 2017/08/22
+ *     @author zxin
+ *     time  : 2019/02/02
  *     desc  : 回调数据
  *     revise:
  * </pre>

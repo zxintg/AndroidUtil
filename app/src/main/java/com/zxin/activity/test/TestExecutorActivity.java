@@ -19,6 +19,13 @@ import java.util.concurrent.TimeUnit;
 
 import butterknife.OnClick;
 
+/*****
+ *  @author zxin
+ * time  : 2019/02/02
+ *
+ * 测试线程池
+ *
+ */
 public class TestExecutorActivity extends BaseActivity implements View.OnClickListener {
 
     @Override

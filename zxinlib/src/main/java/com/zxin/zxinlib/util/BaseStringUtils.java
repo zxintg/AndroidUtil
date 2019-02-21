@@ -62,7 +62,23 @@ public class BaseStringUtils {
      * @return
      */
     public static boolean textIsEmpty(String str){
-        return TextUtils.isEmpty(str)||str.equals("null")||str.equals(" ");
+        return TextUtils.isEmpty(str)||str.equals("null")||str.equals(" ")|| str.length() == 0;
+    }
+    
+    /**
+     * <i> 判断输入字符串是否为空 </i>
+     *
+     * @param inputStr 指定的字符串
+     * @return 如果为空则返回true 如果不为空则返回false
+     * @author <a href="mailto:wangyf@mapbar.com">wangyf</a>
+     * @date 2011-5-25 下午02:15:02
+     */
+    public static boolean isNull(Object inputStr) {
+        return (null == inputStr) || "".equals(inputStr) || "null".equals(inputStr) || "".equals(inputStr.toString().trim());
+    }
+    
+    public static String trim(String str) {
+        return str == null?null:str.trim();
     }
 
     /*****

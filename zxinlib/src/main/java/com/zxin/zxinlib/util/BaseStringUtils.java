@@ -78,7 +78,7 @@ public class BaseStringUtils {
     }
     
     public static String trim(String str) {
-        return str == null?null:str.trim();
+        return isNull(str)||textIsEmpty(str)?"":str.trim();
     }
 
     /*****

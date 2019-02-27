@@ -211,5 +211,55 @@ public class BaseStringUtils {
         }
         return result;
     }
+    
+    /**
+     *  判断某个字符串是否存在于数组中
+     *  @param stringArray 原数组
+     *  @param subStr 查找的字符串
+     *  @return 是否找到
+     */
+    public static boolean contains(String[] stringArray, String subStr) {
+        for (String s : stringArray) {
+            if (subStr.indexOf(s) != -1) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    /**
+     * 解析地址字符串获取省、市、区、路段
+     *
+     * @param address 地址字符串
+     * @return 解析数组，0为province，1为city，2为area，3为road
+     */
+    @Nullable
+    public static String[] parseAddress(@NonNull String address) {
+        String regex = "([^省]+自治区|.*?省)?([^市]+自治州|.*?行政区|.*?地区|.*?行政单位|.+盟|市辖区|.*?市|.*?县)?([^县]+县|.+区|.+市|.+旗|.+海域|.+岛)?(.*)";
+        Matcher m = Pattern.compile(regex).matcher(address);
+        String province, city, area, road;
+
+        if (m.find()) {
+            String[] result = new String[4];
+            province = m.group(1);
+            result[0] = province == null ? "" : province.trim();
+            city = m.group(2);
+            result[1] = city == null ? "" : city.trim();
+
+            /*处理没有省份的直辖市*/
+            if ("".equals(result[0]) && contains(mMunicipality, result[1])) {
+                result[0] = result[1];
+            }
+
+            area = m.group(3);
+            result[2] = area == null ? "" : area.trim();
+            road = m.group(4);
+            result[3] = road == null ? "" : road.trim();
+
+            L.d(TAG, "provice:" + result[0] + ", city:" + result[1] + ", area:" + result[2] + ", road:" + result[3]);
+            return result;
+        }
+        return null;
+    }
 
 }

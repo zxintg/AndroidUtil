@@ -48,7 +48,7 @@ public class YoMeiCollectActivity extends BaseActivity{
             @Override
             protected void onBindViewHolder(final TrdViewHolder holder, final MeiZiCollect localTheme) {
                 holder.setText(R.id.tv_name,localTheme.getName())
-                .setText(R.id.tv_time, DateUtil.timeStamp(localTheme.getCreateTime(),"yyyy-MM-dd HH:mm"));
+                .setText(R.id.tv_time, DateUtil.getInstance().timeStamp(localTheme.getCreateTime(),"yyyy-MM-dd HH:mm"));
                 ImageUtil.loadImageViewLoding(mContext, localTheme.getCover(), holder.<ImageView>getView(R.id.iv_cover), R.mipmap.default_iamge, R.mipmap.default_iamge);
                 holder.setOnItemListener(new View.OnClickListener() {
                     @Override

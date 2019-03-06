@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/basemodel/basemodel.iml" filepath="$PROJECT_DIR$/basemodel/basemodel.iml" />
       <module fileurl="file://$PROJECT_DIR$/floataction/floataction.iml" filepath="$PROJECT_DIR$/floataction/floataction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javautil/javautil.iml" filepath="$PROJECT_DIR$/javautil/javautil.iml" />
       <module fileurl="file://$PROJECT_DIR$/jianshennannv/jianshennannv.iml" filepath="$PROJECT_DIR$/jianshennannv/jianshennannv.iml" />
       <module fileurl="file://$PROJECT_DIR$/jiuxian/jiuxian.iml" filepath="$PROJECT_DIR$/jiuxian/jiuxian.iml" />
       <module fileurl="file://$PROJECT_DIR$/jjdxm-ijkplayer/jjdxm-ijkplayer.iml" filepath="$PROJECT_DIR$/jjdxm-ijkplayer/jjdxm-ijkplayer.iml" />

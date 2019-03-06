@@ -5,9 +5,16 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.google.auto.service:auto-service:1.0-rc2'
-    compile 'com.squareup:javapoet:1.9.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    /*implementation 'com.google.auto.service:auto-service:1.0-rc2'
+    implementation 'com.squareup:javapoet:1.9.0'*/
+    //将定义注释的库添加到仅编译类路径。
+    //compileOnly'com.google.dagger ：dagger：version-number '
+    //将注释处理器依赖项添加到注释处理器类路径。
+    //annotationProcessor'com.google.dagger ：dagger-compiler：version-number '
+    // 用于生成Java文件的库  利用了annotationprocessor编译器，在编译期间创建的，用到这个的出名框架比如：Butter Knife、Glide  。
+    compileOnly 'com.squareup:javapoet:1.9.0'
+    compileOnly 'com.google.auto.service:auto-service:1.0-rc2'
 }
 
 //由于Android目前不是完全支持Java 8的语言特性，会导致编译出错。这里将项目的源和目标兼容性值保留为 Java 7。

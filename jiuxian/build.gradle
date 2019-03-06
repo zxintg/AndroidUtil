@@ -43,19 +43,19 @@ android {
     }
 }
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile project(':router')
-    compile project(':routerhelper')
-    compile project(':basemodel')
-    compile 'com.bigkoo:convenientbanner:2.0.5'
-    compile 'com.facebook.fresco:fresco:1.2.0'
-    compile 'me.relex:photodraweeview:1.1.2'
-    compile 'com.zhy:flowlayout-lib:1.0.3'
-    compile 'com.alibaba:fastjson:1.2.9'
-    compile 'cn.trinea.android.common:trinea-android-common:4.2.15'
-    compile "com.facebook.react:react-native:+"  // From node_modules
+    api project(':router')
+    api project(':routerhelper')
+    api project(':basemodel')
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.facebook.fresco:fresco:1.2.0'
+    implementation 'me.relex:photodraweeview:1.1.2'
+    implementation 'com.zhy:flowlayout-lib:1.0.3'
+    implementation 'com.alibaba:fastjson:1.2.9'
+    implementation 'cn.trinea.android.common:trinea-android-common:4.2.15'
+    implementation "com.facebook.react:react-native:+"  // From node_modules
 }
 

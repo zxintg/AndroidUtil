@@ -230,7 +230,7 @@ public class YoMeiUserDetailActivity extends BaseActivity implements YoMeiMainCo
                 }
             }
         });
-        niceDialog.setCommonLayout(ContentUtil.selectOperatorYoMei(), false);
+        niceDialog.setCommonLayout(ContentUtil.getInstance().selectOperatorYoMei(), false);
     }
 
     @Override

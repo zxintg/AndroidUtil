@@ -946,7 +946,7 @@ public class CommonContract implements IBaseView {
                     @Override
                     public void convertView(NiceDialogViewHolder holder, final BaseNiceDialog dialog) {
                         SelectorPickerView pickerView = (SelectorPickerView) holder.getConvertView();
-                        pickerView.setShowCityDatas(CityDaoUtil.getAllCityProvince());
+                        pickerView.setShowCityDatas(CityDaoUtil.getInstance().getAllCityProvince());
                         if (address != null) {
                             pickerView.setShowAddressPicker(address);
                         }

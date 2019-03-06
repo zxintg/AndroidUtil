@@ -132,7 +132,7 @@ public class TransformImageView extends ImageView {
         int maxBitmapSize = getMaxBitmapSize();
         //ImageUtil.loadImageViewLoding(getContext() , imageUri, this , R.mipmap.default_iamge,R.mipmap.default_iamge);
         ImageUtil.getDigreeFromFilePath(imageUri);
-        BitmapLoadUtils.decodeBitmapInBackground(getContext(), FileUtil.getImageContentUri(imageUri), maxBitmapSize, maxBitmapSize,
+        BitmapLoadUtils.decodeBitmapInBackground(getContext(), FileUtil.getInstance().getImageContentUri(imageUri), maxBitmapSize, maxBitmapSize,
                 new BitmapLoadUtils.BitmapLoadCallback() {
                     @Override
                     public void onBitmapLoaded(@NonNull final Bitmap bitmap) {

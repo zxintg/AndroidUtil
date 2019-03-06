@@ -83,7 +83,7 @@ public class YoMeiLocalVideoActivity extends BaseActivity{
                                 }
                             }
                         });
-                        niceDialog.setCommonLayout(ContentUtil.selectOperatorYoMei(), false);
+                        niceDialog.setCommonLayout(ContentUtil.getInstance().selectOperatorYoMei(), false);
                     }
                 });
 

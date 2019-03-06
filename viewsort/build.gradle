@@ -26,7 +26,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'cn.bingoogolapple:bga-badgeview:1.1.3@aar'
-    compile project(':zxinlib')
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'cn.bingoogolapple:bga-badgeview:1.1.3@aar'
+    api project(':zxinlib')
 }

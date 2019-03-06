@@ -120,17 +120,17 @@ public class StringUtils extends BaseStringUtils {
 
     public static String getDateTimer(long timer){
         Calendar now = Calendar.getInstance();
-        Calendar calendar = DateUtil.timeStamp2Calendar(timer);
+        Calendar calendar = DateUtil.getInstance().timeStamp2Calendar(timer);
         if (calendar.get(Calendar.YEAR) >= now.get(Calendar.YEAR)){
-            return DateUtil.timeStampDate(timer,"MM-dd HH:mm");
+            return DateUtil.getInstance().timeStampDate(timer,"MM-dd HH:mm");
         }else{
-            return DateUtil.timeStampDate(timer,"yyyy-MM-dd HH:mm");
+            return DateUtil.getInstance().timeStampDate(timer,"yyyy-MM-dd HH:mm");
         }
     }
 
     public static String getBirthDays(long timer) {
         Calendar now = Calendar.getInstance();
-        Calendar calendar = DateUtil.timeStamp2Calendar(timer);
+        Calendar calendar = DateUtil.getInstance().timeStamp2Calendar(timer);
         return String.valueOf(now.get(Calendar.YEAR) - calendar.get(Calendar.YEAR)+1);
     }
 }

@@ -311,7 +311,7 @@ public class ImageTailorActivity extends AppCompatActivity{
                 outputStream = getContentResolver().openOutputStream(mOutputUri);
                 croppedBitmap.compress(Bitmap.CompressFormat.JPEG, 85, outputStream);
                 croppedBitmap.recycle();
-                CameraAlbumUtils.getInstance(this).getIPhotoCall().onPhotoResult(FileUtil.getRealPathFromURI(mOutputUri));
+                CameraAlbumUtils.getInstance(this).getIPhotoCall().onPhotoResult(FileUtil.getInstance().getRealPathFromURI(mOutputUri));
                 finish();
             } else {
                 setResultException();

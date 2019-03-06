@@ -21,16 +21,16 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile project(':lkcamera')
-    compile project(':floataction')
-    compile project(':viewsort')
-    compile project(':pullzoom')
-    compile project(':network')
-    compile project(':router')
+    api project(':lkcamera')
+    api project(':floataction')
+    api project(':viewsort')
+    api project(':pullzoom')
+    api project(':network')
+    api project(':router')
     annotationProcessor project(':routerhelper')
-    compile project(':ncalendar')
+    api project(':ncalendar')
 }

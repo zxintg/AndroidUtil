@@ -261,5 +261,22 @@ public class BaseStringUtils {
         }
         return null;
     }
+    
+    
+    /******
+    *
+    * 比较两个字符串
+    *
+    *******/
+    public static boolean compareStr(String str1,String str2){
+        if (isNull(str1)) {
+            retrun false;
+        } else if (str2)) {
+           retrun false;
+        } else if (str1.trim().equals(str2.trim())) {
+           retrun true;
+        }
+        return false;
+    }
 
 }

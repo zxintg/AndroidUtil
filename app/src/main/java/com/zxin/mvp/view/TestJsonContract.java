@@ -8,10 +8,10 @@ import com.zxin.mvp.presenter.MeiZiJsonPresenter;
 import com.zxin.network.bean.HuaBanMeiziInfo;
 import com.zxin.network.mvp.presenter.BasePresenter;
 import com.zxin.network.mvp.view.IBaseView;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.util.ImageUtil;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.simple.adapter.simple.SimpleAdapter;
+import com.zxin.simple.adapter.simple.TrdViewHolder;
+import com.zxin.simple.util.ImageUtil;
+import com.zxin.simple.view.RefreshCommonView;
 import java.util.ArrayList;
 import java.util.List;
 

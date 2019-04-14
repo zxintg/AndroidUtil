@@ -5,23 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidUtil.iml" filepath="$PROJECT_DIR$/AndroidUtil.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/basemodel/basemodel.iml" filepath="$PROJECT_DIR$/basemodel/basemodel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/floataction/floataction.iml" filepath="$PROJECT_DIR$/floataction/floataction.iml" />
       <module fileurl="file://$PROJECT_DIR$/jianshennannv/jianshennannv.iml" filepath="$PROJECT_DIR$/jianshennannv/jianshennannv.iml" />
       <module fileurl="file://$PROJECT_DIR$/jiuxian/jiuxian.iml" filepath="$PROJECT_DIR$/jiuxian/jiuxian.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jjdxm-ijkplayer/jjdxm-ijkplayer.iml" filepath="$PROJECT_DIR$/jjdxm-ijkplayer/jjdxm-ijkplayer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lkcamera/lkcamera.iml" filepath="$PROJECT_DIR$/lkcamera/lkcamera.iml" />
       <module fileurl="file://$PROJECT_DIR$/marry/marry.iml" filepath="$PROJECT_DIR$/marry/marry.iml" />
       <module fileurl="file://$PROJECT_DIR$/meziyowu/meziyowu.iml" filepath="$PROJECT_DIR$/meziyowu/meziyowu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ncalendar/ncalendar.iml" filepath="$PROJECT_DIR$/ncalendar/ncalendar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network/network.iml" filepath="$PROJECT_DIR$/network/network.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pullzoom/pullzoom.iml" filepath="$PROJECT_DIR$/pullzoom/pullzoom.iml" />
-      <module fileurl="file://$PROJECT_DIR$/refreshlib/refreshlib.iml" filepath="$PROJECT_DIR$/refreshlib/refreshlib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/router/router.iml" filepath="$PROJECT_DIR$/router/router.iml" />
-      <module fileurl="file://$PROJECT_DIR$/routerhelper/routerhelper.iml" filepath="$PROJECT_DIR$/routerhelper/routerhelper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shortcutbadger/shortcutbadger.iml" filepath="$PROJECT_DIR$/shortcutbadger/shortcutbadger.iml" />
       <module fileurl="file://$PROJECT_DIR$/sources/sources.iml" filepath="$PROJECT_DIR$/sources/sources.iml" />
-      <module fileurl="file://$PROJECT_DIR$/viewsort/viewsort.iml" filepath="$PROJECT_DIR$/viewsort/viewsort.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zxinlib/zxinlib.iml" filepath="$PROJECT_DIR$/zxinlib/zxinlib.iml" />
     </modules>
   </component>
 </project>

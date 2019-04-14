@@ -12,7 +12,7 @@ import com.zxin.marry.mvp.view.MainCricleContract;
 import com.zxin.marry.mvp.view.UserLoginContract;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.util.ToastUtil;
+import com.zxin.root.util.ToastUtil;
 
 /**
  * Created by Administrator on 2018/6/13.

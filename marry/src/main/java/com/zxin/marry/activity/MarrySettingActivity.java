@@ -3,8 +3,8 @@ package com.zxin.marry.activity;
 import android.view.View;
 import com.zxin.marry.R;
 import com.zxin.marry.base.BaseActivity;
-import com.zxin.zxinlib.util.AppManager;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
+import com.zxin.root.util.AppManager;
+import com.zxin.root.util.SharedPreferencesManager;
 
 /**
  * Created by Administrator on 2018/6/13.

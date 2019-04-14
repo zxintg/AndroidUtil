@@ -6,7 +6,7 @@ import com.zxin.base.BaseActivity;
 import com.zxin.mvp.presenter.MeiZiHtmlPresenter;
 import com.zxin.mvp.view.TestHtmlContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.view.RefreshCommonView;
 import butterknife.BindView;
 import butterknife.OnClick;
 

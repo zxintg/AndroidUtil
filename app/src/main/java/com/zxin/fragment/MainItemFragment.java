@@ -6,12 +6,12 @@ import android.view.View;
 import com.zxin.R;
 import com.zxin.base.BaseFragment;
 import com.zxin.util.StringUtils;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.bean.BasePageBean;
-import com.zxin.zxinlib.bean.HttpUrlBean;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.bean.BasePageBean;
+import com.zxin.root.bean.HttpUrlBean;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.view.RefreshCommonView;
 
 import java.util.ArrayList;
 import java.util.List;

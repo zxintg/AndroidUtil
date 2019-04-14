@@ -9,7 +9,7 @@ import com.zxin.meziyowu.mvp.presenter.YoMeiMainPresenter;
 import com.zxin.meziyowu.mvp.view.YoMeiMainContract;
 import com.zxin.meziyowu.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/9/28.

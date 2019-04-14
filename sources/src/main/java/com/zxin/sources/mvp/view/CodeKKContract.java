@@ -8,12 +8,12 @@ import com.zxin.network.mvp.presenter.BasePresenter;
 import com.zxin.network.mvp.view.IBaseView;
 import com.zxin.sources.R;
 import com.zxin.sources.mvp.presenter.CodeKKPresenter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.bean.CodeKKBean;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.bean.CodeKKBean;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.RefreshCommonView;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -4,26 +4,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import com.common.camera.model.PhotoPreviewBean;
-import com.common.camera.utils.CameraAlbumUtils;
+import com.zxin.camera.model.PhotoPreviewBean;
+import com.zxin.camera.utils.CameraAlbumUtils;
 import com.google.gson.Gson;
 import com.zxin.meziyowu.R;
 import com.zxin.meziyowu.base.BaseActivity;
 import com.zxin.meziyowu.util.IntegerUtil;
 import com.zxin.meziyowu.util.StringUtils;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.bean.DynamicResources;
-import com.zxin.zxinlib.bean.VideoPlayBean;
-import com.zxin.zxinlib.dao.MeiZiVideoDaoUtil;
-import com.zxin.zxinlib.entity.MeiZiVideo;
-import com.zxin.zxinlib.util.ContentUtil;
-import com.zxin.zxinlib.util.ImageUtil;
-import com.zxin.zxinlib.util.SystemInfoUtil;
-import com.zxin.zxinlib.view.RefreshCommonView;
-import com.zxin.zxinlib.view.dialog.ConfirmDialog;
-import com.zxin.zxinlib.view.dialog.NiceDialog;
-import com.zxin.zxinlib.view.dialog.ProgressBarDialog;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.bean.DynamicResources;
+import com.zxin.root.bean.VideoPlayBean;
+import com.zxin.basemodel.dao.MeiZiVideoDaoUtil;
+import com.zxin.basemodel.dao.MeiZiVideo;
+import com.zxin.root.util.ContentUtil;
+import com.zxin.root.util.ImageUtil;
+import com.zxin.root.util.SystemInfoUtil;
+import com.zxin.root.view.RefreshCommonView;
+import com.zxin.root.view.dialog.ConfirmDialog;
+import com.zxin.root.view.dialog.NiceDialog;
+import com.zxin.root.view.dialog.ProgressBarDialog;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -83,7 +83,7 @@ public class YoMeiLocalVideoActivity extends BaseActivity{
                                 }
                             }
                         });
-                        niceDialog.setCommonLayout(ContentUtil.selectOperatorYoMei(), false);
+                        niceDialog.setCommonLayout(ContentUtil.getInstance().selectOperatorYoMei(), false);
                     }
                 });
 

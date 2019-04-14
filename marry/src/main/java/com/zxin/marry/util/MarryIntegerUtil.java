@@ -1,6 +1,6 @@
 package com.zxin.marry.util;
 
-import com.zxin.zxinlib.util.IntegerUtil;
+import com.zxin.root.util.IntegerUtil;
 
 /**
  * Created by 系统实数常量 on 2017/11/22.

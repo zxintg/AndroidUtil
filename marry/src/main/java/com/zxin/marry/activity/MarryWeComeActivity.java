@@ -13,7 +13,7 @@ import com.zxin.marry.mvp.presenter.CommonPresenter;
 import com.zxin.marry.mvp.view.CommonContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
 import com.zxin.router.annotation.Route;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
+import com.zxin.root.util.SharedPreferencesManager;
 
 /**
  * Created by Administrator on 2018/6/13.

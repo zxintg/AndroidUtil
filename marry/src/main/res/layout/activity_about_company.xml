@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_marray_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
                 android:src="@drawable/icon_logo" />
         </LinearLayout>
 
-        <com.zxin.zxinlib.view.CommonCrosswiseBar
+        <com.zxin.root.view.CommonCrosswiseBar
             android:id="@+id/ll_version"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             app:right_button_textColor="@color/color_666666"
             app:right_button_textSize="13px" />
 
-        <com.zxin.zxinlib.view.CommonCrosswiseBar
+        <com.zxin.root.view.CommonCrosswiseBar
             android:id="@+id/ll_service"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             app:left_button_textSize="@dimen/size_13px"
             app:show_right_button="true" />
 
-        <com.zxin.zxinlib.view.CommonCrosswiseBar
+        <com.zxin.root.view.CommonCrosswiseBar
             android:id="@+id/ll_mescore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -8,8 +8,8 @@ import com.zxin.network.util.HtmlOperatorUtil;
 import com.zxin.sources.mvp.model.SourcesModel;
 import com.zxin.sources.mvp.view.CodeKKContract;
 import com.zxin.sources.mvp.view.YunShangContract;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.ToastUtil;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.util.ToastUtil;
 
 import java.io.IOException;
 

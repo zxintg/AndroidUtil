@@ -6,8 +6,8 @@ import com.zxin.sources.R;
 import com.zxin.sources.base.BaseActivity;
 import com.zxin.sources.mvp.presenter.YunShangPresenter;
 import com.zxin.sources.mvp.view.YunShangContract;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/6/5.

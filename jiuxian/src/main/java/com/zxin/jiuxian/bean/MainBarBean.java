@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 
-import com.zxin.zxinlib.bean.TitleBean;
+import com.zxin.root.bean.TitleBean;
 
 /**
  * Created by Administrator on 2018/6/13.

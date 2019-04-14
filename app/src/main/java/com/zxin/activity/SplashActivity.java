@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.zxin.base.BaseActivity;
-import com.zxin.zxinlib.app.SystemPersimManage;
-import com.zxin.zxinlib.util.AppManager;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
+import com.zxin.root.app.SystemPersimManage;
+import com.zxin.root.util.AppManager;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.util.SharedPreferencesManager;
 
 /******
  * 闪屏页

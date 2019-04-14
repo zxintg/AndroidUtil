@@ -6,7 +6,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:bar_background="@color/color_ffffff"
@@ -31,7 +31,7 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <com.zxin.zxinlib.view.CommonCrosswiseBar
+            <com.zxin.root.view.CommonCrosswiseBar
                 android:id="@+id/ccb_userhead"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
                 app:show_right_button="true"
                 app:show_right_image="true" />
 
-            <com.zxin.zxinlib.view.CommonCrosswiseBar
+            <com.zxin.root.view.CommonCrosswiseBar
                 android:id="@+id/ccb_center_opencity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 app:right_button_textSize="@dimen/size_15px"
                 app:show_right_button="true" />
 
-            <com.zxin.zxinlib.view.CommonCrosswiseBar
+            <com.zxin.root.view.CommonCrosswiseBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:bar_background="@color/color_ffffff"
@@ -73,7 +73,7 @@
                 app:show_bar_line="false"
                 />
 
-            <com.zxin.zxinlib.view.CommonCrosswiseBar
+            <com.zxin.root.view.CommonCrosswiseBar
                 android:id="@+id/ccb_usernicename"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                 app:right_button_textSize="@dimen/size_15px"
                 app:show_right_button="true" />
 
-            <com.zxin.zxinlib.view.CommonCrosswiseBar
+            <com.zxin.root.view.CommonCrosswiseBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:bar_background="@color/color_ffffff"
@@ -103,7 +103,7 @@
                 app:right_button_textSize="@dimen/size_15px"
                 app:show_right_button="true" />
 
-            <com.zxin.zxinlib.view.CommonCrosswiseBar
+            <com.zxin.root.view.CommonCrosswiseBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:bar_background="@color/color_ffffff"
@@ -116,7 +116,7 @@
                 app:show_right_button="true"
                 app:show_right_image="true" />
 
-            <com.zxin.zxinlib.view.CommonCrosswiseBar
+            <com.zxin.root.view.CommonCrosswiseBar
                 android:id="@+id/ccb_center_sex"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

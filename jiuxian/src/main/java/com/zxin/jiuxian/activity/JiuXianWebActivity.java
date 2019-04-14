@@ -5,11 +5,11 @@ import android.webkit.JavascriptInterface;
 
 import com.zxin.basemodel.R;
 import com.zxin.jiuxian.base.BaseActivity;
-import com.zxin.zxinlib.util.BaseStringUtils;
-import com.zxin.zxinlib.util.HfFileUtil;
-import com.zxin.zxinlib.util.ToastUtil;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.X5WebView;
+import com.zxin.root.util.BaseStringUtils;
+import com.zxin.root.util.HfFileUtil;
+import com.zxin.root.util.ToastUtil;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.X5WebView;
 
 /*****
  * 公共网页加载

@@ -7,7 +7,7 @@ import com.zxin.marry.bean.TopicDetailForm;
 import com.zxin.network.AbsAPICallback;
 import com.zxin.network.exception.ResultException;
 import com.zxin.network.mvp.model.BaseModel;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
+import com.zxin.root.util.SharedPreferencesManager;
 
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;

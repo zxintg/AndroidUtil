@@ -5,10 +5,10 @@ import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
 import com.zxin.jdxsxp.bean.UserModel;
-import com.zxin.zxinlib.app.BaseApplication;
-import com.zxin.zxinlib.util.BaseStringUtils;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.util.SystemInfoUtil;
+import com.zxin.basemodel.app.BaseApplication;
+import com.zxin.basemodel.util.BaseStringUtils;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.util.SystemInfoUtil;
 
 import java.util.ArrayList;
 import java.util.HashSet;

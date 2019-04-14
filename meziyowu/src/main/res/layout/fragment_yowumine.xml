@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:bar_background="@color/color_ffffff"
@@ -16,6 +16,6 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.widget.NestedScrollView>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

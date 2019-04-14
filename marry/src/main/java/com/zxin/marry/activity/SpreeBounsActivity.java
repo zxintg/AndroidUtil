@@ -7,7 +7,7 @@ import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.mvp.presenter.OrderPresenter;
 import com.zxin.marry.mvp.view.OrderContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/6/13.

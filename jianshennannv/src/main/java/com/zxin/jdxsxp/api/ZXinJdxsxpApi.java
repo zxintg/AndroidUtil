@@ -3,7 +3,7 @@ package com.zxin.jdxsxp.api;
 import com.zxin.jdxsxp.bean.AlbumModel;
 import com.zxin.jdxsxp.bean.ArticleListBean;
 import com.zxin.jdxsxp.bean.CommentToalModel;
-import com.zxin.zxinlib.bean.DynamicModel;
+import com.zxin.root.bean.DynamicModel;
 import com.zxin.jdxsxp.bean.HomeTagModel;
 import com.zxin.jdxsxp.bean.MZPicModle;
 import com.zxin.jdxsxp.bean.MeiZuHome;

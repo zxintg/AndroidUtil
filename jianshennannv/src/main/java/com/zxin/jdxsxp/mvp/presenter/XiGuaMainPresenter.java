@@ -7,8 +7,8 @@ import com.zxin.jdxsxp.util.MeiNvPicturePreferences;
 import com.zxin.jdxsxp.util.MeiZiIntegerUtil;
 import com.zxin.network.MvpCallback;
 import com.zxin.network.mvp.presenter.BasePresenter;
-import com.zxin.zxinlib.util.Md5Util;
-import com.zxin.zxinlib.util.ToastUtil;
+import com.zxin.root.util.Md5Util;
+import com.zxin.root.util.ToastUtil;
 
 /**
  * Created by Administrator on 2018/5/21.

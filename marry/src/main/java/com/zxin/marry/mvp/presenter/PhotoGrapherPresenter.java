@@ -9,9 +9,9 @@ import com.zxin.marry.mvp.view.PhotoGrapherContract;
 import com.zxin.marry.util.MarryIntegerUtil;
 import com.zxin.network.MvpCallback;
 import com.zxin.network.mvp.presenter.BasePresenter;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.util.ToastUtil;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.util.ToastUtil;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/5/21.

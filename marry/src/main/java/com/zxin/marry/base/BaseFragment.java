@@ -3,7 +3,7 @@ package com.zxin.marry.base;
 import android.view.View;
 
 import com.zxin.marry.util.StringUtils;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
+import com.zxin.root.view.CommonCrosswiseBar;
 
 import org.greenrobot.eventbus.EventBus;
 

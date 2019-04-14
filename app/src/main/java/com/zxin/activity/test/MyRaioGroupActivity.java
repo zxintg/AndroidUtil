@@ -4,8 +4,8 @@ import android.view.View;
 
 import com.zxin.R;
 import com.zxin.base.BaseActivity;
-import com.zxin.zxinlib.util.ToastUtil;
-import com.zxin.zxinlib.view.group.MyRadioGroupView;
+import com.zxin.root.util.ToastUtil;
+import com.zxin.root.view.group.MyRadioGroupView;
 
 import butterknife.BindView;
 import butterknife.OnClick;

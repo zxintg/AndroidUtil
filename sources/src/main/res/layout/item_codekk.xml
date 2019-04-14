@@ -28,7 +28,7 @@
         android:textSize="@dimen/size_15sp"
         tools:text="内容" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/item_codekk_createtime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

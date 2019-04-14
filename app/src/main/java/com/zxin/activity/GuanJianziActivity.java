@@ -4,10 +4,10 @@ import android.view.View;
 
 import com.zxin.R;
 import com.zxin.base.BaseActivity;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.bean.GuanJianZiBean;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.bean.GuanJianZiBean;
+import com.zxin.root.view.RefreshCommonView;
 
 import java.util.ArrayList;
 import java.util.List;

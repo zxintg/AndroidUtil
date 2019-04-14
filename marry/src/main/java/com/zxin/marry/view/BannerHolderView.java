@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import com.bigkoo.convenientbanner.holder.Holder;
 import com.zxin.marry.R;
 import com.zxin.marry.bean.RecommendForm;
-import com.zxin.zxinlib.util.ImageUtil;
+import com.zxin.root.util.ImageUtil;
 
 /**
  * Created by Administrator on 2018/6/26.

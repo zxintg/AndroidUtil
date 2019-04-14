@@ -11,14 +11,14 @@ import com.zxin.meziyowu.base.BaseActivity;
 import com.zxin.meziyowu.bean.YoMeiBean;
 import com.zxin.meziyowu.util.IntegerUtil;
 import com.zxin.meziyowu.util.StringUtils;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.dao.MeiZiVideoDaoUtil;
-import com.zxin.zxinlib.entity.MeiZiCollect;
-import com.zxin.zxinlib.util.DateUtil;
-import com.zxin.zxinlib.util.ImageUtil;
-import com.zxin.zxinlib.view.RefreshCommonView;
-import com.zxin.zxinlib.view.dialog.ProgressBarDialog;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.dao.MeiZiVideoDaoUtil;
+import com.zxin.root.entity.MeiZiCollect;
+import com.zxin.root.util.DateUtil;
+import com.zxin.root.util.ImageUtil;
+import com.zxin.root.view.RefreshCommonView;
+import com.zxin.root.view.dialog.ProgressBarDialog;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +48,7 @@ public class YoMeiCollectActivity extends BaseActivity{
             @Override
             protected void onBindViewHolder(final TrdViewHolder holder, final MeiZiCollect localTheme) {
                 holder.setText(R.id.tv_name,localTheme.getName())
-                .setText(R.id.tv_time, DateUtil.timeStamp(localTheme.getCreateTime(),"yyyy-MM-dd HH:mm"));
+                .setText(R.id.tv_time, DateUtil.getInstance().timeStamp(localTheme.getCreateTime(),"yyyy-MM-dd HH:mm"));
                 ImageUtil.loadImageViewLoding(mContext, localTheme.getCover(), holder.<ImageView>getView(R.id.iv_cover), R.mipmap.default_iamge, R.mipmap.default_iamge);
                 holder.setOnItemListener(new View.OnClickListener() {
                     @Override

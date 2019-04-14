@@ -15,7 +15,7 @@
         layout="@layout/fragment_main_mine_head_login"
         android:visibility="gone" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_mine_orderlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
 
     </LinearLayout>
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_mine_mywallet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -222,7 +222,7 @@
 
     <View style="@style/line_style" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_mine_channel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -237,7 +237,7 @@
         app:right_button_textSize="@dimen/size_13px"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_mine_goodexchange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

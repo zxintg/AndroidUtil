@@ -15,14 +15,14 @@ import com.zxin.sort.adapter.DragTipAdapter;
 import com.zxin.sort.widget.DragDropGirdView;
 import com.zxin.sort.widget.TipItemView;
 import com.zxin.util.StringUtils;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.dao.HttpUrlDaoUtil;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.SystemInfoUtil;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.dialog.ConfirmDialog;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.basemodel.dao.HttpUrlDaoUtil;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.util.SystemInfoUtil;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.dialog.ConfirmDialog;
 
 import org.greenrobot.eventbus.EventBus;
 

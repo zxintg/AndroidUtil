@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="SelectorPickerView">
+        <attr name="background_color" format="reference|color" />
+        <attr name="title_background_color" format="reference|color" />
+        <attr name="picker_left_text" format="string" />
+        <attr name="picker_left_textColor" format="color" />
+        <attr name="picker_left_textSize" format="dimension" />
+        <attr name="show_picker_left" format="boolean" />
+        <attr name="picker_title_text" format="string" />
+        <attr name="picker_title_textColor" format="color" />
+        <attr name="picker_title_textSize" format="dimension" />
+        <attr name="picker_right_text" format="string" />
+        <attr name="picker_right_textColor" format="color" />
+        <attr name="picker_right_textSize" format="dimension" />
+        <attr name="show_picker_right" format="boolean" />
+        <attr name="select_picker_textColor" format="color" />
+        <attr name="select_picker_maxtextSize" format="dimension" />
+        <attr name="select_picker_mintextSize" format="dimension" />
+        <attr name="select_picker_textUnit" format="string" />
+        <attr name="picker_height" format="dimension" />
+        <attr name="picker_range" format="boolean" />
+        <attr name="picker_range_start" format="string" />
+        <attr name="picker_range_end" format="string" />
+        <attr name="picker_range_array" format="reference" />
+        <attr name="picker_islocal_datas" format="boolean" />
+        <attr name="picker_select_showType">
+            <enum name="Number" value="0" />
+            <enum name="Calendar" value="1" />
+            <enum name="Address" value="2" />
+            <enum name="StrMesg" value="3" />
+        </attr>
+        <attr name="picker_select_dateForMat">
+            <enum name="FORMAT_YMDHMS" value="0" />
+            <enum name="FORMAT_YMDHM" value="1" />
+            <enum name="FORMAT_YMD" value="2" />
+            <enum name="FORMAT_YM" value="3" />
+            <enum name="FORMAT_HM" value="4" />
+            <enum name="FORMAT_MD" value="5" />
+            <enum name="FORMAT_MDS" value="6" />
+        </attr>
+        <attr name="picker_select_strForMat">
+            <enum name="FORMAT_MESG1" value="1" />
+            <enum name="FORMAT_MESG2" value="2" />
+        </attr>
+        <attr name="picker_select_address">
+            <enum name="All" value="1" />
+            <enum name="Province" value="2" />
+            <enum name="City" value="3" />
+            <enum name="District" value="4" />
+            <enum name="Province_City" value="5" />
+            <enum name="City_District" value="6" />
+        </attr>
+    </declare-styleable>
+
+</resources>

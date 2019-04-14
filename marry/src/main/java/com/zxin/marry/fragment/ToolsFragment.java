@@ -15,12 +15,12 @@ import com.zxin.marry.activity.WeddingBudgetActivity;
 import com.zxin.marry.base.BaseFragment;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.marry.util.TitleBarUtil;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.bean.ToolsBean;
-import com.zxin.zxinlib.util.ImageUtil;
-import com.zxin.zxinlib.util.UiUtils;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.bean.ToolsBean;
+import com.zxin.root.util.ImageUtil;
+import com.zxin.root.util.UiUtils;
 import java.util.ArrayList;
 import java.util.List;
 

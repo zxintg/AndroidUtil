@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import com.bigkoo.convenientbanner.holder.Holder;
 import com.zxin.jiuxian.R;
 import com.zxin.jiuxian.bean.CatePageResult;
-import com.zxin.zxinlib.util.ImageUtil;
+import com.zxin.root.util.ImageUtil;
 
 /**
  * Created by Administrator on 2018/6/26.

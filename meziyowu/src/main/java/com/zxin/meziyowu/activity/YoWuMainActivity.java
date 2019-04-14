@@ -11,9 +11,9 @@ import com.zxin.meziyowu.R;
 import com.zxin.meziyowu.base.BaseActivity;
 import com.zxin.meziyowu.bean.MainBarBean;
 import com.zxin.meziyowu.util.TitleBarUtil;
-import com.zxin.zxinlib.adapter.ViewPageFragmentAdapter;
-import com.zxin.zxinlib.util.SelectorUtil;
-import com.zxin.zxinlib.view.MyViewPager;
+import com.zxin.root.adapter.ViewPageFragmentAdapter;
+import com.zxin.root.util.SelectorUtil;
+import com.zxin.root.view.MyViewPager;
 
 import java.util.ArrayList;
 import java.util.List;

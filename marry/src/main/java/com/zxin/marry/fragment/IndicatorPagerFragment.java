@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import com.zxin.marry.R;
 import com.zxin.marry.base.BaseFragment;
 import com.zxin.marry.util.StringUtils;
-import com.zxin.zxinlib.util.UiUtils;
+import com.zxin.root.util.UiUtils;
 
 /**
  * Created by xmuSistone on 2016/9/18.

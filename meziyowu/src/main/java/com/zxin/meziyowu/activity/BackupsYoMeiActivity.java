@@ -12,10 +12,10 @@ import com.zxin.meziyowu.R;
 import com.zxin.meziyowu.base.BaseActivity;
 import com.zxin.meziyowu.util.IntegerUtil;
 import com.zxin.meziyowu.util.StringUtils;
-import com.zxin.zxinlib.dao.MeiZiVideoDaoUtil;
-import com.zxin.zxinlib.entity.MeiZiCollect;
-import com.zxin.zxinlib.util.ToastUtil;
-import com.zxin.zxinlib.view.dialog.ProgressBarDialog;
+import com.zxin.basemodel.dao.MeiZiVideoDaoUtil;
+import com.zxin.basemodel.entity.MeiZiCollect;
+import com.zxin.root.util.ToastUtil;
+import com.zxin.root.view.dialog.ProgressBarDialog;
 
 import org.greenrobot.eventbus.EventBus;
 

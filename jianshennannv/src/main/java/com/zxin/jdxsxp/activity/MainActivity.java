@@ -11,9 +11,9 @@ import com.zxin.jdxsxp.R;
 import com.zxin.jdxsxp.base.BaseActivity;
 import com.zxin.jdxsxp.bean.MainBarBean;
 import com.zxin.jdxsxp.util.TitleBarUtil;
-import com.zxin.zxinlib.adapter.ViewPageFragmentAdapter;
-import com.zxin.zxinlib.util.SelectorUtil;
-import com.zxin.zxinlib.view.MyViewPager;
+import com.zxin.root.adapter.ViewPageFragmentAdapter;
+import com.zxin.root.util.SelectorUtil;
+import com.zxin.root.view.MyViewPager;
 
 import java.util.ArrayList;
 import java.util.List;

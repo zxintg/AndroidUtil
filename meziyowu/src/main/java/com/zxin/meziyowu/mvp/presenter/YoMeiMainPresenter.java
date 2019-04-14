@@ -8,7 +8,7 @@ import com.zxin.meziyowu.mvp.view.YoMeiMainContract;
 import com.zxin.meziyowu.util.YoWuIntegerUtil;
 import com.zxin.network.MvpCallback;
 import com.zxin.network.mvp.presenter.BasePresenter;
-import com.zxin.zxinlib.util.ToastUtil;
+import com.zxin.root.util.ToastUtil;
 
 /**
  * Created by Administrator on 2018/5/21.

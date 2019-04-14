@@ -6,8 +6,8 @@ import android.widget.RelativeLayout;
 import com.zxin.jiuxian.R;
 import com.zxin.jiuxian.base.BaseFragment;
 import com.zxin.jiuxian.util.StringUtils;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.util.SystemInfoUtil;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.util.SystemInfoUtil;
 
 /**
  * Created by Administrator on 2018/8/6.

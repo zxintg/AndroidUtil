@@ -4,9 +4,9 @@ import android.view.View;
 
 import com.zxin.R;
 import com.zxin.base.BaseActivity;
-import com.zxin.zxinlib.util.AppManager;
-import com.zxin.zxinlib.util.SystemInfoUtil;
-import com.zxin.zxinlib.view.dialog.ConfirmDialog;
+import com.zxin.root.util.AppManager;
+import com.zxin.root.util.SystemInfoUtil;
+import com.zxin.root.view.dialog.ConfirmDialog;
 
 import butterknife.OnClick;
 

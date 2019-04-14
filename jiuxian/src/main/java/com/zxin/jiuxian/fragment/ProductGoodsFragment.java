@@ -17,7 +17,7 @@ import com.zxin.jiuxian.mvp.presenter.ProductPresenter;
 import com.zxin.jiuxian.mvp.view.ProductContract;
 import com.zxin.jiuxian.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.bean.TitleBean;
+import com.zxin.root.bean.TitleBean;
 
 /**
  * Created by Administrator on 2018/8/17.

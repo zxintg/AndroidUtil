@@ -6,7 +6,7 @@
     android:background="@color/color_ffffff"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:bar_background="@color/color_ffffff"
@@ -110,7 +110,7 @@
                 android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/size_15sp" />
 
-            <com.zxin.zxinlib.view.CommonCrosswiseBar
+            <com.zxin.root.view.CommonCrosswiseBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"

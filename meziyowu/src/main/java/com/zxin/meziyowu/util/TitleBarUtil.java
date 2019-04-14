@@ -11,7 +11,7 @@ import com.zxin.meziyowu.fragment.YoGuoQuanFragment;
 import com.zxin.meziyowu.fragment.YoMeiItemFragment;
 import com.zxin.meziyowu.fragment.YoWuMineFragment;
 import com.zxin.meziyowu.fragment.YouMeiFragment;
-import com.zxin.zxinlib.bean.TitleBean;
+import com.zxin.root.bean.TitleBean;
 import java.util.ArrayList;
 import java.util.List;
 

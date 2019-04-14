@@ -12,12 +12,12 @@ import com.zxin.marry.mvp.presenter.UserPresenter;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.network.mvp.presenter.BasePresenter;
 import com.zxin.network.mvp.view.IBaseView;
-import com.zxin.zxinlib.util.ImageUtil;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.util.ToastUtil;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.util.ImageUtil;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.util.ToastUtil;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.RefreshCommonView;
 
 import org.greenrobot.eventbus.EventBus;
 

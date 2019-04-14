@@ -12,10 +12,10 @@ import com.zxin.marry.bean.ShootStategyBean;
 import com.zxin.marry.mvp.presenter.ToolsPresenter;
 import com.zxin.marry.mvp.view.ToolsContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.util.UiUtils;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.adapter.dimple.SimpleAdapter;
+import com.zxin.root.adapter.dimple.TrdViewHolder;
+import com.zxin.root.util.UiUtils;
+import com.zxin.root.view.RefreshCommonView;
 
 import java.util.ArrayList;
 import java.util.List;

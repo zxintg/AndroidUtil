@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_marray_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         app:title_textColor="@color/color_ffffff"
         app:title_textSize="@dimen/size_18px" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_updatepassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
         app:right_button_text="@string/clickUpdate"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_cache"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

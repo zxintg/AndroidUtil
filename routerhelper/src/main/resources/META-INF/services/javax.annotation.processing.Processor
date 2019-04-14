@@ -1,6 +1,0 @@
-#创建好注解处理器后，我们需要告诉编译器在编译的时候使用哪个注解处理器，这里就需要创建javax.annotation.processing.Processor文件
-#在processor模块下，main目录中创建一个resources文件夹，然后下边在创建META-INF/services，最后里边一个javax.annotation.processing.Processor文件
-
-com.zxin.router.compiler.processor.RouteProcessor
-com.zxin.router.compiler.processor.InterceptorProcessor
-com.zxin.router.compiler.processor.InjectParamProcessor

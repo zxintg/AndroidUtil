@@ -14,14 +14,15 @@ import com.bugtags.library.Bugtags;
 import com.bugtags.library.BugtagsOptions;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.tencent.smtt.sdk.QbSdk;
+import com.zxin.app.MyApplication;
 import com.zxin.network.util.NetworkUtil;
 import com.zxin.router.Configuration;
 import com.zxin.router.Router;
-import com.zxin.zxinlib.BuildConfig;
-import com.zxin.zxinlib.app.GreenDaoManager;
-import com.zxin.zxinlib.exception.CrashHandler;
-import com.zxin.zxinlib.util.LogUtils;
-import com.zxin.zxinlib.util.ToastUtil;
+import com.zxin.root.BuildConfig;
+import com.zxin.basemodel.app.GreenDaoManager;
+import com.zxin.root.exception.CrashHandler;
+import com.zxin.root.util.LogUtils;
+import com.zxin.root.util.ToastUtil;
 
 
 /**
@@ -81,7 +82,7 @@ public class InitializeService extends IntentService {
         //在这里初始化
         Fresco.initialize(this);
         //阿里百川
-        AlibcTradeSDK.asyncInit(this, new AlibcTradeInitCallback() {
+        AlibcTradeSDK.asyncInit(MyApplication.getInstance(), new AlibcTradeInitCallback() {
             public void onFailure(int paramAnonymousInt, String paramAnonymousString) {
                 LogUtils.d("阿里百川 实初始化失败 -code:" + paramAnonymousInt + "|msg:" + paramAnonymousString);
             }
@@ -100,7 +101,7 @@ public class InitializeService extends IntentService {
                 build();
 
         Bugtags.addUserStep("custom step");
-        Bugtags.start(BuildConfig.DEBUG ? "e8c283891f44c4c44f3e3f12a32bc3be" : "e8c283891f44c4c44f3e3f12a32bc3be", this, Bugtags.BTGInvocationEventBubble, options);
+        Bugtags.start(BuildConfig.DEBUG ? "e8c283891f44c4c44f3e3f12a32bc3be" : "e8c283891f44c4c44f3e3f12a32bc3be", MyApplication.getInstance(), Bugtags.BTGInvocationEventBubble, options);
         // 初始化路由（https://github.com/chenenyu/Router）
         Router.initialize(new Configuration.Builder()
                 // 调试模式，开启后会打印log

@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_codekk_head"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.zxin.zxinlib.view.PagerSlidingTabStrip
+        <com.zxin.root.view.PagerSlidingTabStrip
             android:id="@+id/pst_codekk_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

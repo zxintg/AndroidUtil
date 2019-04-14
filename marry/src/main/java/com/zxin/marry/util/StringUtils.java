@@ -9,7 +9,7 @@ import com.zxin.marry.fragment.UserOrderFragment;
 import com.zxin.marry.fragment.discovery.DiscoveryCityFragment;
 import com.zxin.marry.fragment.discovery.NationwideFragment;
 import com.zxin.marry.fragment.order.NewCircuitViewFragment;
-import com.zxin.zxinlib.util.BaseStringUtils;
+import com.zxin.root.util.BaseStringUtils;
 
 /**
  * Created by Administrator on 2017/12/5.

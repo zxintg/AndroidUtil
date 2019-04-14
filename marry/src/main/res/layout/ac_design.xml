@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_marray_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                     android:textColor="@color/color_999999"
                     android:textSize="13sp" />
 
-                <com.zxin.zxinlib.view.ViewPagerTransitionView
+                <com.zxin.root.view.ViewPagerTransitionView
                     android:id="@+id/viewPager"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

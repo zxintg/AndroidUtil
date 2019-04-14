@@ -47,7 +47,7 @@
         android:layout_height="fill_parent"
         android:orientation="horizontal">
 
-        <com.zxin.zxinlib.view.PagerSlidingVerTabStrip
+        <com.zxin.root.view.PagerSlidingVerTabStrip
             android:id="@+id/pst_cate_title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -67,7 +67,7 @@
             app:pstsVerUnderlineWeight="4dp"
             app:pstsVerWith="80dp" />
         <!--可滑动的布局内容-->
-        <com.zxin.zxinlib.view.MyViewPager
+        <com.zxin.root.view.MyViewPager
             android:id="@+id/vvp_cate_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

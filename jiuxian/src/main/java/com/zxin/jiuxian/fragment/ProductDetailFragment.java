@@ -5,8 +5,8 @@ import android.view.View;
 import com.zxin.jiuxian.R;
 import com.zxin.jiuxian.base.BaseFragment;
 import com.zxin.jiuxian.util.StringUtils;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.view.X5WebView;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.view.X5WebView;
 
 /**
  * Created by Administrator on 2018/8/17.

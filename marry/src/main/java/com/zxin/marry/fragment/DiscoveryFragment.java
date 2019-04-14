@@ -15,9 +15,9 @@ import com.zxin.marry.mvp.presenter.DiscoveryPresenter;
 import com.zxin.marry.mvp.view.MainDiscoveryContract;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.util.SharedPreferencesManager;
 
 /**
  * Created by Administrator on 2018/6/13.

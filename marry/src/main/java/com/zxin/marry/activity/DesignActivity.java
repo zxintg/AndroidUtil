@@ -6,7 +6,7 @@ import android.view.View;
 import com.zxin.marry.R;
 import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.fragment.IndicatorPagerFragment;
-import com.zxin.zxinlib.view.ViewPagerTransitionView;
+import com.zxin.root.view.ViewPagerTransitionView;
 
 import java.util.ArrayList;
 import java.util.List;

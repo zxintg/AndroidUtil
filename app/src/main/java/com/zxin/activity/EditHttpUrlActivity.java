@@ -6,11 +6,11 @@ import android.widget.EditText;
 import com.zxin.R;
 import com.zxin.base.BaseActivity;
 import com.zxin.util.StringUtils;
-import com.zxin.zxinlib.bean.HttpUrlBean;
-import com.zxin.zxinlib.dao.HttpUrlDaoUtil;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.ToastUtil;
-import com.zxin.zxinlib.view.switchbutton.SwitchButton;
+import com.zxin.root.bean.HttpUrlBean;
+import com.zxin.basemodel.dao.HttpUrlDaoUtil;
+import com.zxin.meziyowu.util.IntegerUtil;
+import com.zxin.root.util.ToastUtil;
+import com.zxin.root.view.switchbutton.SwitchButton;
 
 import org.greenrobot.eventbus.EventBus;
 import butterknife.BindView;

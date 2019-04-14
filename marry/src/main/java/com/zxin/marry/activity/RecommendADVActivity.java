@@ -9,8 +9,8 @@ import android.webkit.WebViewClient;
 
 import com.zxin.marry.R;
 import com.zxin.marry.base.BaseActivity;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.X5WebView;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.X5WebView;
 
 /**
  * Created by Administrator on 2018/6/22.

@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 import com.zxin.jiuxian.R;
 import com.zxin.jiuxian.base.BaseActivity;
-import com.zxin.zxinlib.util.UiUtils;
+import com.zxin.root.util.UiUtils;
 
 /**
  * Created by Administrator on 2018/8/3.

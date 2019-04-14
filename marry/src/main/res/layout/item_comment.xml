@@ -34,7 +34,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <com.zxin.zxinlib.view.MyRadioButton
+            <com.zxin.root.view.MyRadioButton
                 android:id="@+id/rb_best"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
                 android:gravity="center" />
 
 
-            <com.zxin.zxinlib.view.MyRadioButton
+            <com.zxin.root.view.MyRadioButton
                 android:id="@+id/rb_verysatisfied"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
                 android:gravity="center" />
 
 
-            <com.zxin.zxinlib.view.MyRadioButton
+            <com.zxin.root.view.MyRadioButton
                 android:id="@+id/rb_general"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 android:button="@drawable/selector_general"
                 android:gravity="center" />
 
-            <com.zxin.zxinlib.view.MyRadioButton
+            <com.zxin.root.view.MyRadioButton
                 android:id="@+id/rb_notsatisfied"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

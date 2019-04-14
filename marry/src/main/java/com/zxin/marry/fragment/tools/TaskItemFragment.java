@@ -7,7 +7,7 @@ import com.zxin.marry.base.BaseFragment;
 import com.zxin.marry.mvp.presenter.ToolsPresenter;
 import com.zxin.marry.mvp.view.ToolsContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/7/12.

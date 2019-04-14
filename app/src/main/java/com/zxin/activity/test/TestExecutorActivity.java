@@ -10,9 +10,9 @@ import android.widget.TextView;
 import com.zxin.R;
 import com.zxin.app.MyApplication;
 import com.zxin.base.BaseActivity;
-import com.zxin.executor.PoolThread;
-import com.zxin.executor.callback.AsyncCallback;
-import com.zxin.executor.deliver.AndroidDeliver;
+import com.zxin.network.PoolThread;
+import com.zxin.network.callback.AsyncCallback;
+import com.zxin.network.deliver.AndroidDeliver;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;

@@ -17,9 +17,9 @@ import com.zxin.jdxsxp.mvp.presenter.XiGuaMainPresenter;
 import com.zxin.jdxsxp.mvp.view.XiGuaMainContract;
 import com.zxin.jdxsxp.util.TitleBarUtil;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.adapter.ViewPageFragmentAdapter;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.PagerSlidingTabStrip;
+import com.zxin.root.adapter.ViewPageFragmentAdapter;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.PagerSlidingTabStrip;
 
 import java.util.ArrayList;
 import java.util.List;

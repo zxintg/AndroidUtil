@@ -11,7 +11,7 @@ import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.mvp.presenter.OrderPresenter;
 import com.zxin.marry.mvp.view.OrderContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
+import com.zxin.root.view.CommonCrosswiseBar;
 
 /**
  * Created by Administrator on 2018/7/11.

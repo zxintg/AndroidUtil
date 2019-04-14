@@ -29,7 +29,7 @@
             android:textSize="@dimen/size_14sp"
             tools:text="标题" />
 
-        <com.zxin.zxinlib.view.CommonCrosswiseBar
+        <com.zxin.root.view.CommonCrosswiseBar
             android:id="@+id/item_yunshangji_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             app:right_button_textColor="@color/color_999999"
             app:right_button_textSize="@dimen/size_13px" />
 
-        <com.zxin.zxinlib.view.CommonCrosswiseBar
+        <com.zxin.root.view.CommonCrosswiseBar
             android:id="@+id/item_yunshangji_product"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
             android:layout_marginTop="@dimen/size_10dp"
             />
 
-        <com.zxin.zxinlib.view.CommonCrosswiseBar
+        <com.zxin.root.view.CommonCrosswiseBar
             android:id="@+id/item_yunshangji_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             app:right_button_textSize="@dimen/size_13px"
             />
 
-        <com.zxin.zxinlib.view.CommonCrosswiseBar
+        <com.zxin.root.view.CommonCrosswiseBar
             android:id="@+id/item_yunshangji_call"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

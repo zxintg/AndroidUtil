@@ -3,10 +3,10 @@ package com.zxin.meziyowu.util;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.zxin.zxinlib.app.BaseApplication;
-import com.zxin.zxinlib.util.BaseStringUtils;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.util.SystemInfoUtil;
+import com.zxin.root.app.BaseApplication;
+import com.zxin.root.util.BaseStringUtils;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.util.SystemInfoUtil;
 
 /**
  * Created by Administrator on 2018/7/23.

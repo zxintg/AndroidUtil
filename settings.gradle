@@ -1,4 +1,4 @@
-include ':app', ':zxinlib', ':lkcamera', ':shortcutbadger', ':refreshlib', ':floataction', ':viewsort', ':network', ':pullzoom', ':router', ':routerhelper', ':sources', ':marry', ':ncalendar', ':basemodel', ':jiuxian', ':jianshennannv', ':jjdxm-ijkplayer', ':meziyowu'
+include ':app', ':basemodel', ':sources', ':marry', ':jiuxian', ':jianshennannv', ':meziyowu'
 
 /*
 project(':app').projectDir = new File("ZxinProject/app")

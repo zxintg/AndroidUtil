@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- gudie页的Botton -->
-<selector xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:state_pressed="true" android:drawable="@drawable/icon_titlebar_light_off_normal" />
-    <item android:state_pressed="false" android:drawable="@drawable/icon_titlebar_light_off_press"></item>
-</selector>

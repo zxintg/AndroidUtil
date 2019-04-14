@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:bar_background="@color/color_ffffff"
@@ -17,7 +17,7 @@
         app:title_textColor="@color/color_333333"
         app:title_textSize="@dimen/size_18px" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_setting_tv0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         app:left_button_textColor="@color/color_333333"
         app:left_button_textSize="@dimen/size_15px" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_setting_tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
         app:left_button_textColor="@color/color_333333"
         app:left_button_textSize="@dimen/size_15px" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_setting_tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
         app:left_button_textColor="@color/color_333333"
         app:left_button_textSize="@dimen/size_15px" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_setting_tv3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

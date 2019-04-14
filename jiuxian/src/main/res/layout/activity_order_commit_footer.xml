@@ -318,7 +318,7 @@
             android:textColor="@color/black_25"
             android:textSize="12.0dip" />
 
-        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+        <com.zxin.root.view.switchbutton.SwitchButton
             android:id="@+id/order_footer_cashback_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -367,7 +367,7 @@
             android:textColor="@color/black_25"
             android:textSize="12.0dip" />
 
-       <!-- <com.zxin.zxinlib.view.switchbutton.SwitchButton
+       <!-- <com.zxin.root.view.switchbutton.SwitchButton
             android:id="@+id/order_footer_balance_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

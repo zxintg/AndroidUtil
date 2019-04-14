@@ -10,11 +10,11 @@ import com.zxin.jiuxian.mvp.view.MainContract;
 import com.zxin.jiuxian.util.HtmlJiuXianJumpUtil;
 import com.zxin.jiuxian.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.util.ImageUtil;
-import com.zxin.zxinlib.view.dialog.BaseNiceDialog;
-import com.zxin.zxinlib.view.dialog.NiceDialog;
-import com.zxin.zxinlib.view.dialog.NiceDialogViewHolder;
-import com.zxin.zxinlib.view.dialog.ViewConvertListener;
+import com.zxin.root.util.ImageUtil;
+import com.zxin.root.view.dialog.BaseNiceDialog;
+import com.zxin.root.view.dialog.NiceDialog;
+import com.zxin.root.view.dialog.NiceDialogViewHolder;
+import com.zxin.root.view.dialog.ViewConvertListener;
 import com.zxin.jiuxian.R;
 
 /**

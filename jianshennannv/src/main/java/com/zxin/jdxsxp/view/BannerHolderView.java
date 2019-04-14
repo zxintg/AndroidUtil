@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import com.bigkoo.convenientbanner.holder.Holder;
 import com.zxin.jdxsxp.R;
 import com.zxin.jdxsxp.bean.MeiZuHome;
-import com.zxin.zxinlib.util.ImageUtil;
+import com.zxin.root.util.ImageUtil;
 
 /**
  * Created by Administrator on 2018/6/26.

@@ -10,10 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.squareup.leakcanary.RefWatcher;
 import com.trello.rxlifecycle.components.support.RxFragment;
+import com.zxin.basemodel.app.BaseApplication;
 import com.zxin.network.mvp.inject.InjectPresenter;
 import com.zxin.network.mvp.presenter.BasePresenter;
-import com.zxin.zxinlib.app.BaseApplication;
-import com.zxin.zxinlib.util.LogUtils;
+import com.zxin.root.util.LogUtils;
+
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 

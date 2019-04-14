@@ -17,8 +17,6 @@ import com.zxin.jdxsxp.fragment.UserDynamicFragment;
 import com.zxin.jdxsxp.fragment.VideoItemFragment;
 import com.zxin.jdxsxp.fragment.WallPaperFragment;
 import com.zxin.jdxsxp.fragment.XiGuaItemFragment;
-import com.zxin.zxinlib.bean.TitleBean;
-
 import java.util.ArrayList;
 import java.util.List;
 

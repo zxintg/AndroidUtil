@@ -3,7 +3,7 @@ package com.zxin.meziyowu.util;
 
 import com.zxin.meziyowu.activity.YoMeiCollectActivity;
 import com.zxin.meziyowu.activity.YoMeiLocalVideoActivity;
-import com.zxin.zxinlib.util.BaseStringUtils;
+import com.zxin.root.util.BaseStringUtils;
 
 /**
  * Created by Administrator on 2017/12/5.

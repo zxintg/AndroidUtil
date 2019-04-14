@@ -6,8 +6,8 @@ import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 
 import com.zxin.jiuxian.R;
-import com.zxin.zxinlib.app.BaseApplication;
-import com.zxin.zxinlib.util.BaseStringUtils;
+import com.zxin.root.app.BaseApplication;
+import com.zxin.root.util.BaseStringUtils;
 
 import java.text.DecimalFormat;
 

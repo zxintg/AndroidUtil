@@ -12,8 +12,8 @@ import com.zxin.marry.bean.CircleForm;
 import com.zxin.marry.mvp.presenter.CirclePresenter;
 import com.zxin.marry.mvp.view.CircleContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.PagerSlidingTabStrip;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.PagerSlidingTabStrip;
 
 /**
  * Created by Administrator on 2018/6/14.

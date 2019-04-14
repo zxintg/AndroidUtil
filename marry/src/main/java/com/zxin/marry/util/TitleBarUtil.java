@@ -36,9 +36,9 @@ import com.zxin.marry.fragment.strategy.IndoorSceneFragment;
 import com.zxin.marry.fragment.strategy.OutdoorSceneFragment;
 import com.zxin.marry.fragment.tools.TaskItemFragment;
 import com.zxin.marry.fragment.topic.HomeCircleFragment;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.bean.ToolsBean;
-import com.zxin.zxinlib.util.UiUtils;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.bean.ToolsBean;
+import com.zxin.root.util.UiUtils;
 import java.util.ArrayList;
 import java.util.List;
 

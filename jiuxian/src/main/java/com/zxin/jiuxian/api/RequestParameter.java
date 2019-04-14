@@ -6,8 +6,8 @@ import android.provider.Settings;
 
 import com.zxin.jiuxian.util.JiuXianSharedPreferences;
 import com.zxin.jiuxian.util.StringUtils;
-import com.zxin.zxinlib.app.BaseApplication;
-import com.zxin.zxinlib.util.SystemInfoUtil;
+import com.zxin.root.app.BaseApplication;
+import com.zxin.root.util.SystemInfoUtil;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Map;

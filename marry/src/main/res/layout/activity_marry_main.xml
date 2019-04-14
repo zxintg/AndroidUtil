@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
     <!--可滑动的布局内容-->
-    <com.zxin.zxinlib.view.MyViewPager
+    <com.zxin.root.view.MyViewPager
         android:id="@+id/vp_marrymain_pager"
         android:layout_width="fill_parent"
         android:layout_height="0dp"

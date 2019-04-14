@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.zxin.jiuxian.util.StringUtils;
-import com.zxin.zxinlib.bean.VerticalBanner;
+import com.zxin.root.bean.VerticalBanner;
 
 import java.util.ArrayList;
 import java.util.HashMap;

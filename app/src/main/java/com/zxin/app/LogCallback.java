@@ -2,7 +2,7 @@ package com.zxin.app;
 
 import android.util.Log;
 
-import com.zxin.executor.callback.ThreadCallback;
+import com.zxin.network.callback.ThreadCallback;
 
 
 /**

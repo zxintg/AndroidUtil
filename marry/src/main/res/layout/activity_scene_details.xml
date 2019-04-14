@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_marray_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         app:right_button_text="右侧"
         />
 
-    <com.zxin.zxinlib.view.X5WebView
+    <com.zxin.root.view.X5WebView
         android:id="@+id/web_scene"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"

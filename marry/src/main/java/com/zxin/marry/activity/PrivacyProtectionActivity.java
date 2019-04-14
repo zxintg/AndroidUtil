@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import com.zxin.marry.R;
 import com.zxin.marry.base.BaseActivity;
-import com.zxin.zxinlib.util.UiUtils;
+import com.zxin.root.util.UiUtils;
 
 /**
  * Created by Administrator on 2018/7/1.

@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_jiuxian_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:textColor="@color/color_666666"
             android:text="@string/msg_push" />
 
-        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+        <com.zxin.root.view.switchbutton.SwitchButton
             android:id="@+id/sb_notice_push"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             android:textColor="@color/color_666666"
             android:text="@string/msg_logistics" />
 
-        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+        <com.zxin.root.view.switchbutton.SwitchButton
             android:id="@+id/sb_logistics_push"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             android:textColor="@color/color_666666"
             android:text="@string/msg_sales" />
 
-        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+        <com.zxin.root.view.switchbutton.SwitchButton
             android:id="@+id/sb_sales_push"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
             android:textColor="@color/color_666666"
             android:text="@string/msg_depreciate" />
 
-        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+        <com.zxin.root.view.switchbutton.SwitchButton
             android:id="@+id/sb_depreciate_push"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -163,7 +163,7 @@
             android:textColor="@color/color_666666"
             android:text="@string/msg_system" />
 
-        <com.zxin.zxinlib.view.switchbutton.SwitchButton
+        <com.zxin.root.view.switchbutton.SwitchButton
             android:id="@+id/sb_system_push"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

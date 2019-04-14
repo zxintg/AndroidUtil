@@ -6,9 +6,9 @@ import android.view.View;
 import com.zxin.marry.R;
 import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.fragment.product.ProductFragment;
-import com.zxin.zxinlib.adapter.ViewPageFragmentAdapter;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.view.PagerSlidingTabStrip;
+import com.zxin.root.adapter.ViewPageFragmentAdapter;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.view.PagerSlidingTabStrip;
 import java.util.ArrayList;
 import java.util.List;
 

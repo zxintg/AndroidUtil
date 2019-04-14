@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:bar_background="@color/color_ffffff"
@@ -17,7 +17,7 @@
         app:title_textColor="@color/color_333333"
         app:title_textSize="@dimen/size_18px" />
 
-    <com.zxin.zxinlib.view.group.MyRadioGroupView
+    <com.zxin.root.view.group.MyRadioGroupView
         android:id="@+id/mrg_myradiogroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

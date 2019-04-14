@@ -12,9 +12,9 @@ import com.zxin.marry.bean.CityForm;
 import com.zxin.marry.mvp.presenter.DiscoveryPresenter;
 import com.zxin.marry.mvp.view.MainDiscoveryContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.view.RefreshCommonView;
-import com.zxin.zxinlib.view.banner.VerticalBannerView;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.view.RefreshCommonView;
+import com.zxin.root.view.banner.VerticalBannerView;
 
 /**
  * Created by Administrator on 2018/7/10.

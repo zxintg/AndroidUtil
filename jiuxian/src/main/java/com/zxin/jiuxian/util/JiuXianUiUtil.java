@@ -4,7 +4,7 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 
 import com.zxin.jiuxian.R;
-import com.zxin.zxinlib.util.UiUtils;
+import com.zxin.root.util.UiUtils;
 
 /**
  * Created by Administrator on 2018/8/16.

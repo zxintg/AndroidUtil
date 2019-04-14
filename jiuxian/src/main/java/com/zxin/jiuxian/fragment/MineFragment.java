@@ -28,8 +28,8 @@ import com.zxin.jiuxian.mvp.presenter.UserPresenter;
 import com.zxin.jiuxian.mvp.view.UserContract;
 import com.zxin.jiuxian.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/8/6.

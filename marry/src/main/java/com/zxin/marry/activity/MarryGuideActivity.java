@@ -13,7 +13,7 @@ import android.widget.RadioGroup;
 import com.zxin.marry.R;
 import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.bean.UserCommon;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
+import com.zxin.root.util.SharedPreferencesManager;
 import java.util.ArrayList;
 import java.util.List;
 

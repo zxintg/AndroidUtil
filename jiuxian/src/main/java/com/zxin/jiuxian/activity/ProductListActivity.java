@@ -12,9 +12,9 @@ import com.zxin.jiuxian.bean.MainBarBean;
 import com.zxin.jiuxian.mvp.presenter.ProductPresenter;
 import com.zxin.jiuxian.mvp.view.ProductContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.adapter.ViewPageFragmentAdapter;
-import com.zxin.zxinlib.util.SystemInfoUtil;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.adapter.ViewPageFragmentAdapter;
+import com.zxin.root.util.SystemInfoUtil;
+import com.zxin.root.view.RefreshCommonView;
 
 import java.util.ArrayList;
 import java.util.List;

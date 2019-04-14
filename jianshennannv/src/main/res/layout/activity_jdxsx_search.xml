@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_jdxsxp_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
         app:title_textColor="@color/color_666666"
         app:title_textSize="@dimen/size_18px" />
 
-    <com.zxin.zxinlib.view.PagerSlidingTabStrip
+    <com.zxin.root.view.PagerSlidingTabStrip
         android:id="@+id/pst_search_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

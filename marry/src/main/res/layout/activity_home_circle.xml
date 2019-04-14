@@ -73,7 +73,7 @@
                 app:contentInsetStart="0dp"
                 app:layout_collapseMode="pin">
 
-                <com.zxin.zxinlib.view.CommonCrosswiseBar
+                <com.zxin.root.view.CommonCrosswiseBar
                     android:id="@+id/ccb_marray_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
             </android.support.v7.widget.Toolbar>
         </android.support.design.widget.CollapsingToolbarLayout>
 
-        <com.zxin.zxinlib.view.PagerSlidingTabStrip
+        <com.zxin.root.view.PagerSlidingTabStrip
             android:id="@+id/tabStripLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

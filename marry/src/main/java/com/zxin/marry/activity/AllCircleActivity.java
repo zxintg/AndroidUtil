@@ -6,7 +6,7 @@ import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.mvp.presenter.CirclePresenter;
 import com.zxin.marry.mvp.view.CircleContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/6/22.

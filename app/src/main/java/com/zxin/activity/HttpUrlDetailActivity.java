@@ -8,10 +8,10 @@ import android.widget.TextView;
 import com.zxin.R;
 import com.zxin.base.BaseActivity;
 import com.zxin.util.StringUtils;
-import com.zxin.zxinlib.bean.HttpUrlBean;
-import com.zxin.zxinlib.dao.HttpUrlDaoUtil;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
+import com.zxin.root.bean.HttpUrlBean;
+import com.zxin.basemodel.dao.HttpUrlDaoUtil;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.view.CommonCrosswiseBar;
 import butterknife.BindView;
 import butterknife.OnClick;
 

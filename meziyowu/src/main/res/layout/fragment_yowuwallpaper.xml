@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_youmei_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         app:right_button_textColor="@color/color_666666"
         />
 
-    <com.zxin.zxinlib.view.PagerSlidingTabStrip
+    <com.zxin.root.view.PagerSlidingTabStrip
         android:id="@+id/pst_yomei_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

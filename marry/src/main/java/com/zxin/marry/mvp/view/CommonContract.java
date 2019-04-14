@@ -44,31 +44,31 @@ import com.zxin.marry.bean.ShopInformation;
 import com.zxin.marry.bean.UserCommon;
 import com.zxin.marry.bean.UserMeaagseBean;
 import com.zxin.marry.mvp.presenter.CommonPresenter;
-import com.zxin.zxinlib.util.LocationUtil;
+import com.zxin.root.util.LocationUtil;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.network.mvp.presenter.BasePresenter;
 import com.zxin.network.mvp.view.IBaseView;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.app.SystemPersimManage;
-import com.zxin.zxinlib.bean.Address;
-import com.zxin.zxinlib.util.AppManager;
-import com.zxin.zxinlib.util.CityDaoUtil;
-import com.zxin.zxinlib.util.ImageUtil;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.util.SystemInfoUtil;
-import com.zxin.zxinlib.util.ToastUtil;
-import com.zxin.zxinlib.util.UiUtils;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.RefreshCommonView;
-import com.zxin.zxinlib.view.X5WebView;
-import com.zxin.zxinlib.view.dialog.BaseNiceDialog;
-import com.zxin.zxinlib.view.dialog.NiceDialog;
-import com.zxin.zxinlib.view.dialog.NiceDialogViewHolder;
-import com.zxin.zxinlib.view.dialog.ProgressBarDialog;
-import com.zxin.zxinlib.view.dialog.ViewConvertListener;
-import com.zxin.zxinlib.view.popup.SelectorPickerView;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.app.SystemPersimManage;
+import com.zxin.root.bean.Address;
+import com.zxin.root.util.AppManager;
+import com.zxin.root.util.CityDaoUtil;
+import com.zxin.root.util.ImageUtil;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.util.SystemInfoUtil;
+import com.zxin.root.util.ToastUtil;
+import com.zxin.root.util.UiUtils;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.RefreshCommonView;
+import com.zxin.root.view.X5WebView;
+import com.zxin.root.view.dialog.BaseNiceDialog;
+import com.zxin.root.view.dialog.NiceDialog;
+import com.zxin.root.view.dialog.NiceDialogViewHolder;
+import com.zxin.root.view.dialog.ProgressBarDialog;
+import com.zxin.root.view.dialog.ViewConvertListener;
+import com.zxin.root.view.popup.SelectorPickerView;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -946,7 +946,7 @@ public class CommonContract implements IBaseView {
                     @Override
                     public void convertView(NiceDialogViewHolder holder, final BaseNiceDialog dialog) {
                         SelectorPickerView pickerView = (SelectorPickerView) holder.getConvertView();
-                        pickerView.setShowCityDatas(CityDaoUtil.getAllCityProvince());
+                        pickerView.setShowCityDatas(CityDaoUtil.getInstance().getAllCityProvince());
                         if (address != null) {
                             pickerView.setShowAddressPicker(address);
                         }

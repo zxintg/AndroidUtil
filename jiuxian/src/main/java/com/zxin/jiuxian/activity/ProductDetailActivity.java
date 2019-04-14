@@ -10,8 +10,8 @@ import com.zxin.jiuxian.R;
 import com.zxin.jiuxian.base.BaseActivity;
 import com.zxin.jiuxian.bean.MainBarBean;
 import com.zxin.jiuxian.util.TitleBarUtil;
-import com.zxin.zxinlib.adapter.ViewPageFragmentAdapter;
-import com.zxin.zxinlib.util.SystemInfoUtil;
+import com.zxin.root.adapter.ViewPageFragmentAdapter;
+import com.zxin.root.util.SystemInfoUtil;
 import java.util.ArrayList;
 import java.util.List;
 

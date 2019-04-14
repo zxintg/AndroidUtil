@@ -13,7 +13,7 @@ import com.zxin.jdxsxp.base.BaseActivity;
 import com.zxin.jdxsxp.mvp.presenter.XiGuaMainPresenter;
 import com.zxin.jdxsxp.mvp.view.XiGuaMainContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.PagerSlidingTabStrip;
+import com.zxin.root.view.PagerSlidingTabStrip;
 
 /**
  * Created by Administrator on 2018/9/7.

@@ -93,8 +93,8 @@ import com.zxin.jiuxian.bean.Image;
 import com.zxin.jiuxian.bean.JiuZhangSource;
 import com.zxin.jiuxian.bean.ReEditMixData;
 import com.zxin.jiuxian.bean.SeckillProduct;
-import com.zxin.zxinlib.util.AppManager;
-import com.zxin.zxinlib.util.UiUtils;
+import com.zxin.root.util.AppManager;
+import com.zxin.root.util.UiUtils;
 
 import java.util.ArrayList;
 

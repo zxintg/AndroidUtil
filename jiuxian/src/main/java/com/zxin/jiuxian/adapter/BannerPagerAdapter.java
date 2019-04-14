@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import com.zxin.jiuxian.R;
 import com.zxin.jiuxian.bean.ProductDetailResult;
-import com.zxin.zxinlib.util.ImageUtil;
+import com.zxin.root.util.ImageUtil;
 
 import java.util.ArrayList;
 import java.util.List;

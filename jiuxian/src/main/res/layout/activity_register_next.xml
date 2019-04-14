@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_beike_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3.0">
 
-            <!--<com.zxin.zxinlib.view.switchbutton.SwitchButton
+            <!--<com.zxin.root.view.switchbutton.SwitchButton
                 android:id="@+id/reg_password_switch"
                 style="@style/SwitchButton_login"
                 android:layout_width="wrap_content"

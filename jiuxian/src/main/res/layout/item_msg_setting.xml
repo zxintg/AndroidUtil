@@ -8,7 +8,7 @@
         android:layout_centerVertical="true"
         android:text="物流通知" />
 
-    <!--<com.zxin.zxinlib.view.switchbutton.SwitchButton
+    <!--<com.zxin.root.view.switchbutton.SwitchButton
         android:id="@+id/item_msgset_switch"
         style="@style/SwitchButton"
         android:layout_width="wrap_content"

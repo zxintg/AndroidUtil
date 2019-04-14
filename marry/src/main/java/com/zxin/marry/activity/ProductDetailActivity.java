@@ -16,8 +16,8 @@ import com.alibaba.baichuan.trade.biz.core.taoke.AlibcTaokeParams;
 import com.zxin.marry.R;
 import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.bean.ShopClassBean;
-import com.zxin.zxinlib.util.LogUtils;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
+import com.zxin.root.util.LogUtils;
+import com.zxin.root.view.CommonCrosswiseBar;
 import java.util.HashMap;
 
 /**

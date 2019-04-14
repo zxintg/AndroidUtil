@@ -5,7 +5,7 @@ import com.zxin.activity.AddressListActivity;
 import com.zxin.activity.EditTitleActivity;
 import com.zxin.activity.HttpUrlDetailActivity;
 import com.zxin.activity.MainActivity;
-import com.zxin.zxinlib.util.BaseStringUtils;
+import com.zxin.basemodel.util.BaseStringUtils;
 
 /**
  * Created by Administrator on 2017/12/5.

@@ -11,8 +11,8 @@ import com.dou361.ijkplayer.widget.PlayerView;
 import com.zxin.meziyowu.R;
 import com.zxin.meziyowu.base.BaseActivity;
 import com.zxin.meziyowu.util.StringUtils;
-import com.zxin.zxinlib.bean.VideoPlayBean;
-import com.zxin.zxinlib.util.ImageUtil;
+import com.zxin.root.bean.VideoPlayBean;
+import com.zxin.root.util.ImageUtil;
 
 
 /**

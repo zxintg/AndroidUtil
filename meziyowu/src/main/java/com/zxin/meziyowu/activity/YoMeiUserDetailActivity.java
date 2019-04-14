@@ -8,8 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.common.camera.model.PhotoPreviewBean;
-import com.common.camera.utils.CameraAlbumUtils;
+import com.zxin.camera.model.PhotoPreviewBean;
+import com.zxin.camera.utils.CameraAlbumUtils;
 import com.zxin.meziyowu.R;
 import com.zxin.meziyowu.base.BaseActivity;
 import com.zxin.meziyowu.bean.YoMeiBean;
@@ -19,20 +19,20 @@ import com.zxin.meziyowu.mvp.view.YoMeiMainContract;
 import com.zxin.meziyowu.util.IntegerUtil;
 import com.zxin.meziyowu.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.bean.DynamicResources;
-import com.zxin.zxinlib.bean.VideoPlayBean;
-import com.zxin.zxinlib.dao.MeiZiVideoDaoUtil;
-import com.zxin.zxinlib.entity.MeiZiCollect;
-import com.zxin.zxinlib.entity.MeiZiVideo;
-import com.zxin.zxinlib.util.AppManager;
-import com.zxin.zxinlib.util.ContentUtil;
-import com.zxin.zxinlib.util.SystemInfoUtil;
-import com.zxin.zxinlib.util.ToastUtil;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.RefreshCommonView;
-import com.zxin.zxinlib.view.dialog.ConfirmDialog;
-import com.zxin.zxinlib.view.dialog.NiceDialog;
-import com.zxin.zxinlib.view.dialog.ProgressBarDialog;
+import com.zxin.root.bean.DynamicResources;
+import com.zxin.root.bean.VideoPlayBean;
+import com.zxin.root.dao.MeiZiVideoDaoUtil;
+import com.zxin.basemodel.entity.MeiZiCollect;
+import com.zxin.basemodel.entity.MeiZiVideo;
+import com.zxin.root.util.AppManager;
+import com.zxin.root.util.ContentUtil;
+import com.zxin.root.util.SystemInfoUtil;
+import com.zxin.root.util.ToastUtil;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.RefreshCommonView;
+import com.zxin.root.view.dialog.ConfirmDialog;
+import com.zxin.root.view.dialog.NiceDialog;
+import com.zxin.root.view.dialog.ProgressBarDialog;
 import org.greenrobot.eventbus.EventBus;
 import java.util.ArrayList;
 import java.util.List;
@@ -230,7 +230,7 @@ public class YoMeiUserDetailActivity extends BaseActivity implements YoMeiMainCo
                 }
             }
         });
-        niceDialog.setCommonLayout(ContentUtil.selectOperatorYoMei(), false);
+        niceDialog.setCommonLayout(ContentUtil.getInstance().selectOperatorYoMei(), false);
     }
 
     @Override

@@ -14,10 +14,10 @@ import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.bean.MainBarBean;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.marry.util.TitleBarUtil;
-import com.zxin.zxinlib.adapter.ViewPageFragmentAdapter;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.UiUtils;
-import com.zxin.zxinlib.view.MyViewPager;
+import com.zxin.root.adapter.ViewPageFragmentAdapter;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.util.UiUtils;
+import com.zxin.root.view.MyViewPager;
 
 import java.util.ArrayList;
 import java.util.List;

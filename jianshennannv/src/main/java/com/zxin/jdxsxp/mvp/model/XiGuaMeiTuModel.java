@@ -5,7 +5,7 @@ import com.zxin.jdxsxp.api.RequestParameter;
 import com.zxin.jdxsxp.api.ZXinJdxsxpApi;
 import com.zxin.jdxsxp.bean.AlbumModel;
 import com.zxin.jdxsxp.bean.CommentToalModel;
-import com.zxin.zxinlib.bean.DynamicModel;
+import com.zxin.root.bean.DynamicModel;
 import com.zxin.jdxsxp.bean.HomeTagModel;
 import com.zxin.jdxsxp.bean.OtherUserAlbumModel;
 import com.zxin.jdxsxp.bean.OtherUserInfoTopModel;

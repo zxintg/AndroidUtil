@@ -5,7 +5,7 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.StringUtils;
+import com.zxin.jiuxian.util.StringUtils;
 
 /**
  * Created by Administrator on 2018/8/6.

@@ -3,19 +3,19 @@ package com.zxin.marry.activity;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.common.camera.callback.IPhotoCall;
-import com.common.camera.utils.CameraAlbumUtils;
-import com.common.camera.utils.VanCropType;
+import com.zxin.camera.callback.IPhotoCall;
+import com.zxin.camera.utils.CameraAlbumUtils;
+import com.zxin.camera.utils.VanCropType;
 import com.zxin.marry.R;
 import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.mvp.presenter.UserPresenter;
 import com.zxin.marry.mvp.view.UserContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.util.ImageUtil;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.util.SystemInfoUtil;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.dialog.NiceDialog;
+import com.zxin.root.util.ImageUtil;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.util.SystemInfoUtil;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.dialog.NiceDialog;
 
 /**
  * Created by Administrator on 2018/6/13.

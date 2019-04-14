@@ -65,7 +65,7 @@
                 app:contentInsetStart="0dp"
                 app:layout_collapseMode="pin">
 
-                <com.zxin.zxinlib.view.CommonCrosswiseBar
+                <com.zxin.root.view.CommonCrosswiseBar
                     android:id="@+id/ccb_youmei_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <com.zxin.zxinlib.view.RefreshCommonView
+    <com.zxin.root.view.RefreshCommonView
         android:id="@+id/rcv_youmei_commonlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

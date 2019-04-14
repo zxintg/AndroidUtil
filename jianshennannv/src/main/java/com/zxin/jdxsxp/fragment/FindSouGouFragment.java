@@ -9,7 +9,7 @@ import com.zxin.jdxsxp.mvp.presenter.MeiZiMainPresenter;
 import com.zxin.jdxsxp.mvp.view.MeiZiMainContract;
 import com.zxin.jdxsxp.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/8/31.

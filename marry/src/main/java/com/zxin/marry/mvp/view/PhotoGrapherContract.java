@@ -21,10 +21,10 @@ import com.zxin.marry.mvp.presenter.PhotoGrapherPresenter;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.network.mvp.presenter.BasePresenter;
 import com.zxin.network.mvp.view.IBaseView;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.util.ImageUtil;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.util.ImageUtil;
+import com.zxin.root.view.RefreshCommonView;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -9,7 +9,7 @@ import com.zxin.jdxsxp.mvp.presenter.XiGuaMainPresenter;
 import com.zxin.jdxsxp.mvp.view.XiGuaMainContract;
 import com.zxin.jdxsxp.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/9/5.

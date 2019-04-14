@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_jiuxian_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         app:title_textSize="@dimen/size_18px"
         />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_setting_clearcache"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             android:background="@color/comm_ui_bg">
 
 
-            <!--<com.zxin.zxinlib.view.switchbutton.SwitchButton
+            <!--<com.zxin.root.view.switchbutton.SwitchButton
                 android:id="@+id/mMsgPushTipSwitch"
                 style="@style/SwitchButton"
                 android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
         android:textColor="@color/color_666666"
         android:textSize="@dimen/size_13sp" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_setting_msgpush"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
         app:right_button_image="@mipmap/ic_black_right_arrow"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_setting_encouragerela"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
         app:right_button_image="@mipmap/ic_black_right_arrow"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_setting_about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
         app:right_button_textSize="@dimen/size_15px"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_setting_monitor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

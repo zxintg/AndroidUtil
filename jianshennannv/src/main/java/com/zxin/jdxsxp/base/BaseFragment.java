@@ -9,10 +9,10 @@ import android.view.View;
 
 import com.zxin.jdxsxp.R;
 import com.zxin.jdxsxp.util.StringUtils;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.SystemInfoUtil;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.dialog.ConfirmDialog;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.util.SystemInfoUtil;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.dialog.ConfirmDialog;
 import org.greenrobot.eventbus.EventBus;
 
 

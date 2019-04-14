@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import com.zxin.basemodel.util.HtmlJumpUtil;
 import com.zxin.jiuxian.activity.JiuXianWebActivity;
-import com.zxin.zxinlib.util.AppManager;
-import com.zxin.zxinlib.util.BaseStringUtils;
+import com.zxin.root.util.AppManager;
+import com.zxin.root.util.BaseStringUtils;
 
 /**
  * Created by Administrator on 2018/8/17.

@@ -7,7 +7,7 @@ import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.mvp.presenter.CommonPresenter;
 import com.zxin.marry.mvp.view.CommonContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.X5WebView;
+import com.zxin.root.view.X5WebView;
 
 /*****
  * 公共网页加载

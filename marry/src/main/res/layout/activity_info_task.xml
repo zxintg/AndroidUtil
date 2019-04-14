@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_marray_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
                     android:textColor="@color/color_666666"
                     android:textSize="@dimen/size_13sp" />
 
-                <com.zxin.zxinlib.view.switchbutton.SwitchButton
+                <com.zxin.root.view.switchbutton.SwitchButton
                     android:id="@+id/switch_compat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

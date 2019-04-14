@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
-
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -18,19 +18,54 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    //由于Android目前不是完全支持Java 8的语言特性，会导致编译出错。这里将项目的源和目标兼容性值保留为 Java 7。
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
+
+    //android studio默认so文件加载目录为:src/main/jniLibs
+    //如在module的build.gradle按照如下方式,自定义了so文件加载目录请确保对应目录下只有armeabi目录
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+greendao {
+    schemaVersion rootProject.ext.greendaoSchemaVersion
+    daoPackage 'com.zxin.basemodel.gen'
+    targetGenDir 'src/main/java'
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile project(':lkcamera')
-    compile project(':floataction')
-    compile project(':viewsort')
-    compile project(':pullzoom')
-    compile project(':network')
-    compile project(':router')
-    annotationProcessor project(':routerhelper')
-    compile project(':ncalendar')
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+    implementation 'com.android.support:support-v4:25.3.1'
+    implementation 'com.android.support:design:25.3.1'
+    implementation 'com.android.support:recyclerview-v7:25.3.1'
+    implementation 'com.android.support:cardview-v7:25.1.1'
+    implementation 'org.greenrobot:greendao:3.2.2' // 添加greendao依赖库
+    implementation 'org.greenrobot:greendao-generator:3.2.2'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+
+    implementation 'com.github.zxintg:zxinroot:v1.1.2'
+    implementation 'com.github.zxintg:router:v1.0.1'
+    implementation 'com.github.zxintg:routerhelper:v1.0.2'
+    implementation 'com.github.zxintg:network:v1.0.1'
+    implementation 'com.github.zxintg:viewsort:v1.0.1'
+    implementation 'com.github.zxintg:zxincamera:v1.1.1'
+    implementation 'com.github.zxintg:floataction:v2.0.1'
+    implementation 'com.github.zxintg:pullzoom:v1.0.2'
+    implementation 'com.github.zxintg:ncalendar_module:v1.0.1'
+    implementation 'com.github.zxintg:refreshlib:v1.0.1'
+    implementation 'com.github.zxintg:javautil:1.0.1'
 }

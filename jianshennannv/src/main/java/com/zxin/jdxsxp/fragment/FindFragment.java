@@ -14,7 +14,7 @@ import com.zxin.jdxsxp.mvp.view.MeiZiMainContract;
 import com.zxin.jdxsxp.util.StringUtils;
 import com.zxin.jdxsxp.util.TitleBarUtil;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.bean.TitleBean;
+import com.zxin.root.bean.TitleBean;
 
 /**
  * Created by Administrator on 2018/8/29.

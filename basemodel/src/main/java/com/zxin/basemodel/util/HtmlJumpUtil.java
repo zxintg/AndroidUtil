@@ -4,10 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 
 import com.zxin.basemodel.activity.CommWebActivity;
-import com.zxin.zxinlib.util.AppManager;
-import com.zxin.zxinlib.util.BaseStringUtils;
-import com.zxin.zxinlib.view.banner.BannerBean;
-
+import com.zxin.root.util.AppManager;
+import com.zxin.root.view.banner.BannerBean;
 /**
  * Created by Html跳转公共处理 on 2017/12/29.
  */

@@ -8,8 +8,8 @@ import com.zxin.marry.mvp.presenter.ProductPresenter;
 import com.zxin.marry.mvp.view.ProductContract;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/6/26.

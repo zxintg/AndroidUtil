@@ -38,7 +38,7 @@
 
         <View style="@style/line_ver_style" />
 
-        <com.zxin.zxinlib.view.banner.VerticalBannerView
+        <com.zxin.root.view.banner.VerticalBannerView
             android:id="@+id/vbv_banner"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"

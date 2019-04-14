@@ -2,10 +2,10 @@ package com.zxin.basemodel.activity;
 
 import android.view.View;
 import com.zxin.basemodel.R;
-import com.zxin.zxinlib.util.BaseStringUtils;
-import com.zxin.zxinlib.util.HfFileUtil;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.X5WebView;
+import com.zxin.root.util.BaseStringUtils;
+import com.zxin.root.util.HfFileUtil;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.X5WebView;
 
 /*****
  * 公共网页加载

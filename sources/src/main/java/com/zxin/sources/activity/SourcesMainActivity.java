@@ -5,7 +5,7 @@ import android.view.View;
 import com.zxin.router.annotation.Route;
 import com.zxin.sources.R;
 import com.zxin.sources.base.BaseActivity;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
+import com.zxin.root.view.CommonCrosswiseBar;
 
 @Route({"sources", "router://filter/sources"})
 public class SourcesMainActivity extends BaseActivity {

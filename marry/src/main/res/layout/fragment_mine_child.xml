@@ -144,7 +144,7 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dim20"
@@ -198,7 +198,7 @@
 
     </LinearLayout>
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_myorder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -213,7 +213,7 @@
         app:show_left_button="true"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_taobao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -227,7 +227,7 @@
         app:show_left_button="true"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_shop_cart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -241,7 +241,7 @@
         app:show_left_button="true"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_mine_topic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -255,7 +255,7 @@
         app:show_left_button="true"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_collection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -269,7 +269,7 @@
         app:show_left_button="true"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -283,7 +283,7 @@
         app:show_left_button="true"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_aboutus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -298,7 +298,7 @@
         app:show_left_button="true"
         app:show_right_button="true" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ll_settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1,7 +1,7 @@
 package com.zxin.sources.util;
 
 
-import com.zxin.zxinlib.util.BaseStringUtils;
+import com.zxin.root.util.BaseStringUtils;
 
 /**
  * Created by Administrator on 2017/12/5.

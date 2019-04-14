@@ -18,10 +18,10 @@ import com.zxin.marry.mvp.presenter.UserLoginPresenter;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.network.mvp.presenter.BasePresenter;
 import com.zxin.network.mvp.view.IBaseView;
-import com.zxin.zxinlib.util.AppManager;
-import com.zxin.zxinlib.util.RegUtil;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.util.ToastUtil;
+import com.zxin.root.util.AppManager;
+import com.zxin.root.util.RegUtil;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.util.ToastUtil;
 
 /**
  * Created by Administrator on 2018/5/24.

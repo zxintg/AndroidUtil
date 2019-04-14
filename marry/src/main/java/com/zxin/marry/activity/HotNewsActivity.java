@@ -8,7 +8,7 @@ import com.zxin.marry.base.BaseActivity;
 import com.zxin.marry.mvp.presenter.TopicPresenter;
 import com.zxin.marry.mvp.view.MainTopicContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.PagerSlidingTabStrip;
+import com.zxin.root.view.PagerSlidingTabStrip;
 
 /**
  * Created by Administrator on 2018/6/27.

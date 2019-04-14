@@ -5,7 +5,7 @@ import android.view.View;
 import com.zxin.meziyowu.R;
 import com.zxin.meziyowu.base.BaseFragment;
 import com.zxin.meziyowu.util.StringUtils;
-import com.zxin.zxinlib.bean.TitleBean;
+import com.zxin.root.bean.TitleBean;
 
 /**
  * Created by Administrator on 2018/9/28.

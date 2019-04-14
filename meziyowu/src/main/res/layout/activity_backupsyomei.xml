@@ -6,7 +6,7 @@
     android:orientation="vertical"
     >
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_youmei_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

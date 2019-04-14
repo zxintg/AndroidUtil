@@ -18,11 +18,11 @@ import com.zxin.marry.mvp.presenter.DiscoveryPresenter;
 import com.zxin.marry.mvp.view.MainDiscoveryContract;
 import com.zxin.marry.util.StringUtils;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.util.IntegerUtil;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.util.ToastUtil;
-import com.zxin.zxinlib.view.RefreshCommonView;
-import com.zxin.zxinlib.view.banner.VerticalBannerView;
+import com.zxin.root.util.IntegerUtil;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.util.ToastUtil;
+import com.zxin.root.view.RefreshCommonView;
+import com.zxin.root.view.banner.VerticalBannerView;
 
 /**
  * Created by Administrator on 2018/6/25.

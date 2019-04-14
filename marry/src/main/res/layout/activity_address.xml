@@ -6,7 +6,7 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_marray_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         app:right_button_text="添加"
         />
 
-    <com.zxin.zxinlib.view.RefreshCommonView
+    <com.zxin.root.view.RefreshCommonView
         android:id="@+id/rcv_address_commonlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

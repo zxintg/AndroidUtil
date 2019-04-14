@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_color"
     >
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_jdxsxp_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         app:show_left_button="true"
         />
 
-    <com.zxin.zxinlib.view.PagerSlidingTabStrip
+    <com.zxin.root.view.PagerSlidingTabStrip
         android:id="@+id/pst_video_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -8,7 +8,7 @@ import com.zxin.jiuxian.base.BaseActivity;
 import com.zxin.jiuxian.mvp.presenter.MainPresenter;
 import com.zxin.jiuxian.mvp.view.MainContract;
 import com.zxin.network.mvp.inject.InjectPresenter;
-import com.zxin.zxinlib.view.MyViewPager;
+import com.zxin.root.view.MyViewPager;
 
 /**
  * Created by Administrator on 2018/8/3.

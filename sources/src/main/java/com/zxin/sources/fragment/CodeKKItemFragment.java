@@ -9,8 +9,8 @@ import com.zxin.sources.base.BaseFragment;
 import com.zxin.sources.mvp.presenter.CodeKKPresenter;
 import com.zxin.sources.mvp.view.CodeKKContract;
 import com.zxin.sources.util.StringUtils;
-import com.zxin.zxinlib.bean.TitleBean;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.bean.TitleBean;
+import com.zxin.root.view.RefreshCommonView;
 
 /**
  * Created by Administrator on 2018/6/5.

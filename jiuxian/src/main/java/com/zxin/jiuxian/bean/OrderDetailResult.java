@@ -3,7 +3,7 @@ package com.zxin.jiuxian.bean;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.zxin.jiuxian.R;
 import com.zxin.jiuxian.activity.OrderDetailActivity;
-import com.zxin.zxinlib.util.UiUtils;
+import com.zxin.root.util.UiUtils;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

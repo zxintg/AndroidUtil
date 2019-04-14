@@ -12,7 +12,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import com.zxin.R;
 import com.zxin.base.BaseActivity;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
+import com.zxin.root.util.SharedPreferencesManager;
 import java.util.ArrayList;
 import java.util.List;
 import butterknife.BindView;

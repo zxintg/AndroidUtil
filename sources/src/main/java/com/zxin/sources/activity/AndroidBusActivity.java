@@ -6,8 +6,8 @@ import com.zxin.sources.R;
 import com.zxin.sources.base.BaseActivity;
 import com.zxin.sources.mvp.presenter.AndroidBusPresenter;
 import com.zxin.sources.mvp.view.AndroidBusContract;
-import com.zxin.zxinlib.view.CommonCrosswiseBar;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.view.CommonCrosswiseBar;
+import com.zxin.root.view.RefreshCommonView;
 
 public class AndroidBusActivity extends BaseActivity implements AndroidBusContract.AndroidBusView {
     private CommonCrosswiseBar mTitle;

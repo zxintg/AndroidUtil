@@ -12,7 +12,7 @@
         android:layout_centerInParent="true"
         android:scaleType="centerCrop" />
 
-    <com.zxin.zxinlib.view.CommonCrosswiseBar
+    <com.zxin.root.view.CommonCrosswiseBar
         android:id="@+id/ccb_image_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

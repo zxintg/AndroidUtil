@@ -27,11 +27,11 @@ import com.zxin.marry.mvp.presenter.ToolsPresenter;
 import com.zxin.marry.util.TitleBarUtil;
 import com.zxin.network.mvp.presenter.BasePresenter;
 import com.zxin.network.mvp.view.IBaseView;
-import com.zxin.zxinlib.adapter.SimpleAdapter.SimpleAdapter;
-import com.zxin.zxinlib.adapter.SimpleAdapter.TrdViewHolder;
-import com.zxin.zxinlib.adapter.ViewPageFragmentAdapter;
-import com.zxin.zxinlib.util.UiUtils;
-import com.zxin.zxinlib.view.RefreshCommonView;
+import com.zxin.root.adapter.simple.SimpleAdapter;
+import com.zxin.root.adapter.simple.TrdViewHolder;
+import com.zxin.root.adapter.ViewPageFragmentAdapter;
+import com.zxin.root.util.UiUtils;
+import com.zxin.root.view.RefreshCommonView;
 
 import java.util.ArrayList;
 import java.util.List;

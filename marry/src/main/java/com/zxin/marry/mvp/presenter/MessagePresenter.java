@@ -10,8 +10,8 @@ import com.zxin.marry.mvp.view.MessageContract;
 import com.zxin.marry.util.MarryIntegerUtil;
 import com.zxin.network.MvpCallback;
 import com.zxin.network.mvp.presenter.BasePresenter;
-import com.zxin.zxinlib.util.SharedPreferencesManager;
-import com.zxin.zxinlib.util.ToastUtil;
+import com.zxin.root.util.SharedPreferencesManager;
+import com.zxin.root.util.ToastUtil;
 
 /**
  * Created by Administrator on 2018/5/21.

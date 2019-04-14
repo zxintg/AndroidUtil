@@ -10,6 +10,15 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //添加了javaCompileOptions
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
     }
 
     buildTypes {
@@ -58,14 +67,14 @@ dependencies {
 
 
     implementation 'com.github.zxintg:zxinroot:v1.1.2'
-    implementation 'com.github.zxintg:router:v1.0.1'
-    implementation 'com.github.zxintg:routerhelper:v1.0.2'
-    implementation 'com.github.zxintg:network:v1.0.1'
-    implementation 'com.github.zxintg:viewsort:v1.0.1'
-    implementation 'com.github.zxintg:zxincamera:v1.1.1'
+    implementation 'com.github.zxintg:network:v1.0.2'
+    implementation 'com.github.zxintg:viewsort:v1.0.2'
+    implementation 'com.github.zxintg:zxincamera:v1.1.2'
     implementation 'com.github.zxintg:floataction:v2.0.1'
     implementation 'com.github.zxintg:pullzoom:v1.0.2'
     implementation 'com.github.zxintg:ncalendar_module:v1.0.1'
     implementation 'com.github.zxintg:refreshlib:v1.0.1'
     implementation 'com.github.zxintg:javautil:1.0.1'
+    implementation 'com.github.zxintg:router:v1.0.1'
+    implementation 'com.github.zxintg:routerhelper:v1.0.2'
 }

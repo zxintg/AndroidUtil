@@ -10,6 +10,13 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
+        //添加了javaCompileOptions
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = ["moduleName" : project.getName()]

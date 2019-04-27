@@ -66,10 +66,10 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.0.0'
 
 
-    implementation 'com.github.zxintg:zxinroot:v1.1.2'
-    implementation 'com.github.zxintg:network:v1.0.2'
-    implementation 'com.github.zxintg:viewsort:v1.0.2'
-    implementation 'com.github.zxintg:zxincamera:v1.1.2'
+    implementation 'com.github.zxintg:zxinroot:v1.3.2'
+    implementation 'com.github.zxintg:network:v1.0.3'
+    implementation 'com.github.zxintg:viewsort:v1.0.4'
+    implementation 'com.github.zxintg:zxincamera:v1.2.2'
     implementation 'com.github.zxintg:floataction:v2.0.1'
     implementation 'com.github.zxintg:pullzoom:v1.0.2'
     implementation 'com.github.zxintg:ncalendar_module:v1.0.1'
